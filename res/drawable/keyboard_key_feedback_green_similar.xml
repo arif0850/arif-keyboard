@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:latin="http://schemas.android.com/apk/res-auto">
-    <item android:drawable="@null" latin:state_has_morekeys="true" />
-    <item android:drawable="@null" />
+    <item latin:state_has_morekeys="true">
+        <shape>
+            <solid android:color="@android:color/transparent" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="@android:color/transparent" />
+        </shape>
+    </item>
 </selector>

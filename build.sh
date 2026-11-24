@@ -2,15 +2,19 @@
 set -e
 
 echo "=== Building Arif Keyboard APK ==="
+mkdir -p dist
 apktool b . -o dist/arif-keyboard-unsigned.apk
+zip -d dist/arif-keyboard-unsigned.apk "META-INF/*" "stamp-cert-sha256" 2>/dev/null || true
+
+echo "=== Aligning APK ==="
+python3 zipalign.py dist/arif-keyboard-unsigned.apk dist/arif-keyboard-aligned.apk
 
 echo "=== Signing APK ==="
 if [ ! -f debug.keystore ]; then
     keytool -genkey -v -keystore debug.keystore -alias androiddebugkey -storepass android -keypass android -keyalg RSA -keysize 2048 -validity 10000 -dname "CN=Arif Keyboard,O=Arif,C=US"
 fi
 
-cp dist/arif-keyboard-unsigned.apk dist/arif-keyboard.apk
-jarsigner -sigalg SHA256withRSA -digestalg SHA-256 -keystore debug.keystore -storepass android dist/arif-keyboard.apk androiddebugkey
-jarsigner -verify dist/arif-keyboard.apk
+apksigner sign --ks debug.keystore --ks-pass pass:android --out dist/arif-keyboard-final.apk dist/arif-keyboard-aligned.apk
+apksigner verify --verbose dist/arif-keyboard-final.apk
 
-echo "=== Build Complete: dist/arif-keyboard.apk ==="
+echo "=== Build Complete: dist/arif-keyboard-final.apk ==="

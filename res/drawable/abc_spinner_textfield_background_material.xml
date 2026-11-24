@@ -4,14 +4,30 @@
     <selector>
         <item android:state_checked="false" android:state_pressed="false">
             <layer-list>
-                <item android:drawable="@null" />
-                <item android:drawable="@null" />
+                <item>
+        <shape>
+            <solid android:color="@android:color/transparent" />
+        </shape>
+    </item>
+                <item>
+        <shape>
+            <solid android:color="@android:color/transparent" />
+        </shape>
+    </item>
             </layer-list>
         </item>
         <item>
             <layer-list>
-                <item android:drawable="@null" />
-                <item android:drawable="@null" />
+                <item>
+        <shape>
+            <solid android:color="@android:color/transparent" />
+        </shape>
+    </item>
+                <item>
+        <shape>
+            <solid android:color="@android:color/transparent" />
+        </shape>
+    </item>
             </layer-list>
         </item>
     </selector>

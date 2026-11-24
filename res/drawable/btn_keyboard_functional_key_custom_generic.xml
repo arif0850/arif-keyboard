@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:state_pressed="true" android:state_empty="true" android:drawable="@color/key_background_pressed_custom_generic" />
+    <item android:state_pressed="true" android:state_empty="true">
+        <shape>
+            <solid android:color="@color/key_background_pressed_custom_generic" />
+        </shape>
+    </item>
     <item android:state_empty="true" android:drawable="@android:color/transparent" />
-    <item android:state_pressed="true" android:drawable="@color/key_background_pressed_custom_generic" />
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="@color/key_background_pressed_custom_generic" />
+        </shape>
+    </item>
     <item android:drawable="@drawable/functional_key_background_custom_generic" />
 </selector>

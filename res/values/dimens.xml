@@ -1075,4 +1075,9 @@
     <dimen name="translate_view_height">170.0dp</dimen>
     <dimen name="translate_view_height_small">130.0dp</dimen>
     <dimen name="vertical_bias_in_audio_permission_activity">0.25</dimen>
+    <dimen name="otp_view_cursor_width">2.0dp</dimen>
+    <dimen name="otp_view_item_line_width">1.0dp</dimen>
+    <dimen name="otp_view_item_radius">4.0dp</dimen>
+    <dimen name="otp_view_item_size">48.0dp</dimen>
+    <dimen name="otp_view_item_spacing">8.0dp</dimen>
 </resources>

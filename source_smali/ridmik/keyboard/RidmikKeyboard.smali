@@ -2,10 +2,12 @@
 .super Lcom/android/inputmethod/latin/h1;
 .source "RidmikKeyboard.java"
 
+
 # static fields
+.field public static sAltActive:Z
+
 .field public static sCtrlActive:Z
 
-.field public static sAltActive:Z
 
 # direct methods
 .method public constructor <init>()V
@@ -16,16 +18,52 @@
     return-void
 .end method
 
-.method private showModifierToast(Ljava/lang/String;)V
-    .locals 2
+.method private static dispatchModifiedKey(Landroid/view/inputmethod/InputConnection;I)V
+    .locals 10
 
-    const/4 v0, 0x0
+    invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
-    invoke-static {p0, p1, v0}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+    move-result-wide v1
 
-    move-result-object v0
+    move-wide v3, v1
 
-    invoke-virtual {v0}, Landroid/widget/Toast;->show()V
+    const/4 v8, 0x0
+
+    sget-boolean v9, Lridmik/keyboard/RidmikKeyboard;->sCtrlActive:Z
+
+    if-eqz v9, :cond_ctrl
+
+    const/16 v9, 0x3000
+
+    or-int/2addr v8, v9
+
+    :cond_ctrl
+    sget-boolean v9, Lridmik/keyboard/RidmikKeyboard;->sAltActive:Z
+
+    if-eqz v9, :cond_alt
+
+    or-int/lit8 v8, v8, 0x12
+
+    :cond_alt
+    move v6, p1
+
+    const/4 v7, 0x0
+
+    const/4 v5, 0x0
+
+    new-instance v0, Landroid/view/KeyEvent;
+
+    invoke-direct/range {v0 .. v8}, Landroid/view/KeyEvent;-><init>(JJIIII)V
+
+    invoke-interface {p0, v0}, Landroid/view/inputmethod/InputConnection;->sendKeyEvent(Landroid/view/KeyEvent;)Z
+
+    const/4 v5, 0x1
+
+    new-instance v0, Landroid/view/KeyEvent;
+
+    invoke-direct/range {v0 .. v8}, Landroid/view/KeyEvent;-><init>(JJIIII)V
+
+    invoke-interface {p0, v0}, Landroid/view/inputmethod/InputConnection;->sendKeyEvent(Landroid/view/KeyEvent;)Z
 
     return-void
 .end method
@@ -34,251 +72,295 @@
     .locals 2
 
     const/16 v0, 0x61
-    if-lt p0, v0, :cond_check_upper
+
+    if-lt p0, v0, :cond_0
 
     const/16 v0, 0x7a
-    if-gt p0, v0, :cond_check_upper
+
+    if-gt p0, v0, :cond_0
 
     add-int/lit8 v0, p0, -0x44
+
     return v0
 
-    :cond_check_upper
+    :cond_0
     const/16 v0, 0x41
-    if-lt p0, v0, :cond_check_digits
+
+    if-lt p0, v0, :cond_1
 
     const/16 v0, 0x5a
-    if-gt p0, v0, :cond_check_digits
+
+    if-gt p0, v0, :cond_1
 
     add-int/lit8 v0, p0, -0x24
+
     return v0
 
-    :cond_check_digits
+    :cond_1
     const/16 v0, 0x30
-    if-lt p0, v0, :cond_check_special
+
+    if-lt p0, v0, :cond_2
 
     const/16 v0, 0x39
-    if-gt p0, v0, :cond_check_special
+
+    if-gt p0, v0, :cond_2
 
     add-int/lit8 v0, p0, -0x29
+
     return v0
 
-    :cond_check_special
+    :cond_2
     const/16 v0, 0xa
-    if-ne p0, v0, :cond_not_enter
+
+    if-ne p0, v0, :cond_3
+
     const/16 v0, 0x42
+
     return v0
 
-    :cond_not_enter
+    :cond_3
     const/4 v0, -0x5
-    if-ne p0, v0, :cond_not_del
+
+    if-ne p0, v0, :cond_4
+
     const/16 v0, 0x43
+
     return v0
 
-    :cond_not_del
+    :cond_4
     const/16 v0, 0x20
-    if-ne p0, v0, :cond_not_space
+
+    if-ne p0, v0, :cond_5
+
     const/16 v0, 0x3e
+
     return v0
 
-    :cond_not_space
+    :cond_5
     const/16 v0, 0x9
-    if-ne p0, v0, :cond_not_tab
+
+    if-ne p0, v0, :cond_6
+
     const/16 v0, 0x3d
+
     return v0
 
-    :cond_not_tab
+    :cond_6
     const/16 v0, 0x2e
-    if-ne p0, v0, :cond_not_period
+
+    if-ne p0, v0, :cond_7
+
     const/16 v0, 0x38
+
     return v0
 
-    :cond_not_period
+    :cond_7
     const/16 v0, 0x2c
-    if-ne p0, v0, :cond_not_comma
+
+    if-ne p0, v0, :cond_8
+
     const/16 v0, 0x37
+
     return v0
 
-    :cond_not_comma
+    :cond_8
     const/16 v0, 0x2f
-    if-ne p0, v0, :cond_not_slash
+
+    if-ne p0, v0, :cond_9
+
     const/16 v0, 0x4c
+
     return v0
 
-    :cond_not_slash
+    :cond_9
     const/16 v0, 0x2d
-    if-ne p0, v0, :cond_not_minus
+
+    if-ne p0, v0, :cond_a
+
     const/16 v0, 0x45
+
     return v0
 
-    :cond_not_minus
+    :cond_a
     const/16 v0, 0x3d
-    if-ne p0, v0, :cond_not_equals
+
+    if-ne p0, v0, :cond_b
+
     const/16 v0, 0x46
+
     return v0
 
-    :cond_not_equals
+    :cond_b
     const/4 v0, 0x0
+
     return v0
 .end method
 
-.method private static dispatchModifiedKey(Landroid/view/inputmethod/InputConnection;I)V
-    .locals 9
+.method private showModifierToast(Ljava/lang/String;)V
+    .locals 2
 
-    invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
-    move-result-wide v1
+    :try_start_toast
+    const/4 v0, 0x0
 
-    const/4 v8, 0x0
+    invoke-static {p0, p1, v0}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
 
-    sget-boolean v0, Lridmik/keyboard/RidmikKeyboard;->sCtrlActive:Z
-    if-eqz v0, :cond_check_alt_meta
+    move-result-object v0
 
-    const/16 v7, 0x3000
-    or-int/2addr v8, v7
+    invoke-virtual {v0}, Landroid/widget/Toast;->show()V
+    :try_end_toast
+    .catchall {:try_start_toast .. :try_end_toast} :catch_toast
 
-    :cond_check_alt_meta
-    sget-boolean v7, Lridmik/keyboard/RidmikKeyboard;->sAltActive:Z
-    if-eqz v7, :cond_check_ctrl_press
-
-    or-int/lit8 v8, v8, 0x12
-
-    :cond_check_ctrl_press
-    if-eqz v0, :cond_check_alt_press
-
-    new-instance v0, Landroid/view/KeyEvent;
-    const/4 v3, 0x0
-    const/16 v4, 0x71
-    const/4 v5, 0x0
-    move-object v6, v0
-    invoke-direct/range {v0 .. v8}, Landroid/view/KeyEvent;-><init>(JJIIII)V
-    invoke-interface {p0, v0}, Landroid/view/inputmethod/InputConnection;->sendKeyEvent(Landroid/view/KeyEvent;)Z
-
-    :cond_check_alt_press
-    sget-boolean v7, Lridmik/keyboard/RidmikKeyboard;->sAltActive:Z
-    if-eqz v7, :cond_send_target
-
-    new-instance v0, Landroid/view/KeyEvent;
-    const/4 v3, 0x0
-    const/16 v4, 0x39
-    const/4 v5, 0x0
-    invoke-direct/range {v0 .. v8}, Landroid/view/KeyEvent;-><init>(JJIIII)V
-    invoke-interface {p0, v0}, Landroid/view/inputmethod/InputConnection;->sendKeyEvent(Landroid/view/KeyEvent;)Z
-
-    :cond_send_target
-    new-instance v0, Landroid/view/KeyEvent;
-    const/4 v3, 0x0
-    move v4, p1
-    const/4 v5, 0x0
-    invoke-direct/range {v0 .. v8}, Landroid/view/KeyEvent;-><init>(JJIIII)V
-    invoke-interface {p0, v0}, Landroid/view/inputmethod/InputConnection;->sendKeyEvent(Landroid/view/KeyEvent;)Z
-
-    new-instance v0, Landroid/view/KeyEvent;
-    const/4 v3, 0x1
-    move v4, p1
-    const/4 v5, 0x0
-    invoke-direct/range {v0 .. v8}, Landroid/view/KeyEvent;-><init>(JJIIII)V
-    invoke-interface {p0, v0}, Landroid/view/inputmethod/InputConnection;->sendKeyEvent(Landroid/view/KeyEvent;)Z
-
-    sget-boolean v7, Lridmik/keyboard/RidmikKeyboard;->sAltActive:Z
-    if-eqz v7, :cond_release_ctrl
-
-    new-instance v0, Landroid/view/KeyEvent;
-    const/4 v3, 0x1
-    const/16 v4, 0x39
-    const/4 v5, 0x0
-    const/4 v6, 0x0
-    invoke-direct/range {v0 .. v6}, Landroid/view/KeyEvent;-><init>(JJIII)V
-    invoke-interface {p0, v0}, Landroid/view/inputmethod/InputConnection;->sendKeyEvent(Landroid/view/KeyEvent;)Z
-
-    :cond_release_ctrl
-    sget-boolean v0, Lridmik/keyboard/RidmikKeyboard;->sCtrlActive:Z
-    if-eqz v0, :cond_done
-
-    new-instance v0, Landroid/view/KeyEvent;
-    const/4 v3, 0x1
-    const/16 v4, 0x71
-    const/4 v5, 0x0
-    const/4 v6, 0x0
-    invoke-direct/range {v0 .. v6}, Landroid/view/KeyEvent;-><init>(JJIII)V
-    invoke-interface {p0, v0}, Landroid/view/inputmethod/InputConnection;->sendKeyEvent(Landroid/view/KeyEvent;)Z
-
-    :cond_done
+    :catch_toast
     return-void
 .end method
 
+
+# virtual methods
 .method public onCodeInput(IIIZ)V
     .locals 2
 
     const/4 v0, -0x3
-    if-ne p1, v0, :cond_check_alt
+
+    if-ne p1, v0, :cond_1
 
     sget-boolean v0, Lridmik/keyboard/RidmikKeyboard;->sCtrlActive:Z
+
     xor-int/lit8 v0, v0, 0x1
+
     sput-boolean v0, Lridmik/keyboard/RidmikKeyboard;->sCtrlActive:Z
 
-    if-eqz v0, :cond_ctrl_off
+    if-eqz v0, :cond_0
+
     const-string v0, "Ctrl ON"
-    invoke-direct {p0, v0}, Lridmik/keyboard/RidmikKeyboard;->showModifierToast(Ljava/lang/String;)V
-    goto :goto_ret
 
-    :cond_ctrl_off
+    invoke-direct {p0, v0}, Lridmik/keyboard/RidmikKeyboard;->showModifierToast(Ljava/lang/String;)V
+
+    goto :goto_0
+
+    :cond_0
     const-string v0, "Ctrl OFF"
+
     invoke-direct {p0, v0}, Lridmik/keyboard/RidmikKeyboard;->showModifierToast(Ljava/lang/String;)V
 
-    :goto_ret
+    :goto_0
+    return-void
+
+    :cond_1
+    const/16 v0, -0xb
+
+    if-ne p1, v0, :cond_3
+
+    sget-boolean v0, Lridmik/keyboard/RidmikKeyboard;->sAltActive:Z
+
+    xor-int/lit8 v0, v0, 0x1
+
+    sput-boolean v0, Lridmik/keyboard/RidmikKeyboard;->sAltActive:Z
+
+    if-eqz v0, :cond_2
+
+    const-string v0, "Alt ON"
+
+    invoke-direct {p0, v0}, Lridmik/keyboard/RidmikKeyboard;->showModifierToast(Ljava/lang/String;)V
+
+    goto :goto_1
+
+    :cond_2
+    const-string v0, "Alt OFF"
+
+    invoke-direct {p0, v0}, Lridmik/keyboard/RidmikKeyboard;->showModifierToast(Ljava/lang/String;)V
+
+    :goto_1
+    return-void
+
+    :cond_3
+    sget-boolean v0, Lridmik/keyboard/RidmikKeyboard;->sCtrlActive:Z
+
+    if-nez v0, :cond_4
+
+    sget-boolean v0, Lridmik/keyboard/RidmikKeyboard;->sAltActive:Z
+
+    if-nez v0, :cond_4
+
+    invoke-super {p0, p1, p2, p3, p4}, Lcom/android/inputmethod/latin/h1;->onCodeInput(IIIZ)V
+
+    return-void
+
+    :cond_4
+    invoke-static {p1}, Lridmik/keyboard/RidmikKeyboard;->getAndroidKeyCode(I)I
+
+    move-result v0
+
+    if-nez v0, :cond_5
+
+    const/4 v0, 0x0
+
+    sput-boolean v0, Lridmik/keyboard/RidmikKeyboard;->sCtrlActive:Z
+
+    sput-boolean v0, Lridmik/keyboard/RidmikKeyboard;->sAltActive:Z
+
+    invoke-super {p0, p1, p2, p3, p4}, Lcom/android/inputmethod/latin/h1;->onCodeInput(IIIZ)V
+
+    return-void
+
+    :cond_5
+    invoke-virtual {p0}, Landroid/inputmethodservice/InputMethodService;->getCurrentInputConnection()Landroid/view/inputmethod/InputConnection;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_6
+
+    invoke-static {v1, v0}, Lridmik/keyboard/RidmikKeyboard;->dispatchModifiedKey(Landroid/view/inputmethod/InputConnection;I)V
+
+    :cond_6
+    const/4 v0, 0x0
+
+    sput-boolean v0, Lridmik/keyboard/RidmikKeyboard;->sCtrlActive:Z
+
+    sput-boolean v0, Lridmik/keyboard/RidmikKeyboard;->sAltActive:Z
+
+    return-void
+.end method
+
+.method public onPressKey(IIZ)V
+    .locals 1
+
+    const/4 v0, -0x3
+
+    if-ne p1, v0, :cond_check_alt
+
     return-void
 
     :cond_check_alt
     const/16 v0, -0xb
-    if-ne p1, v0, :cond_check_modifiers
 
-    sget-boolean v0, Lridmik/keyboard/RidmikKeyboard;->sAltActive:Z
-    xor-int/lit8 v0, v0, 0x1
-    sput-boolean v0, Lridmik/keyboard/RidmikKeyboard;->sAltActive:Z
+    if-ne p1, v0, :cond_normal
 
-    if-eqz v0, :cond_alt_off
-    const-string v0, "Alt ON"
-    invoke-direct {p0, v0}, Lridmik/keyboard/RidmikKeyboard;->showModifierToast(Ljava/lang/String;)V
-    goto :goto_ret2
-
-    :cond_alt_off
-    const-string v0, "Alt OFF"
-    invoke-direct {p0, v0}, Lridmik/keyboard/RidmikKeyboard;->showModifierToast(Ljava/lang/String;)V
-
-    :goto_ret2
     return-void
 
-    :cond_check_modifiers
-    sget-boolean v0, Lridmik/keyboard/RidmikKeyboard;->sCtrlActive:Z
-    if-nez v0, :cond_modifier_active
+    :cond_normal
+    invoke-super {p0, p1, p2, p3}, Lcom/android/inputmethod/latin/h1;->onPressKey(IIZ)V
 
-    sget-boolean v0, Lridmik/keyboard/RidmikKeyboard;->sAltActive:Z
-    if-nez v0, :cond_modifier_active
+    return-void
+.end method
 
-    invoke-super {p0, p1, p2, p3, p4}, Lcom/android/inputmethod/latin/h1;->onCodeInput(IIIZ)V
+.method public onReleaseKey(IZ)V
+    .locals 1
+
+    const/4 v0, -0x3
+
+    if-ne p1, v0, :cond_check_alt
+
     return-void
 
-    :cond_modifier_active
-    invoke-static {p1}, Lridmik/keyboard/RidmikKeyboard;->getAndroidKeyCode(I)I
-    move-result v0
+    :cond_check_alt
+    const/16 v0, -0xb
 
-    if-nez v0, :cond_dispatch_key
+    if-ne p1, v0, :cond_normal
 
-    const/4 v0, 0x0
-    sput-boolean v0, Lridmik/keyboard/RidmikKeyboard;->sCtrlActive:Z
-    sput-boolean v0, Lridmik/keyboard/RidmikKeyboard;->sAltActive:Z
-    invoke-super {p0, p1, p2, p3, p4}, Lcom/android/inputmethod/latin/h1;->onCodeInput(IIIZ)V
     return-void
 
-    :cond_dispatch_key
-    invoke-virtual {p0}, Landroid/inputmethodservice/InputMethodService;->getCurrentInputConnection()Landroid/view/inputmethod/InputConnection;
-    move-result-object v1
+    :cond_normal
+    invoke-super {p0, p1, p2}, Lcom/android/inputmethod/latin/h1;->onReleaseKey(IZ)V
 
-    if-eqz v1, :cond_reset_modifiers
-    invoke-static {v1, v0}, Lridmik/keyboard/RidmikKeyboard;->dispatchModifiedKey(Landroid/view/inputmethod/InputConnection;I)V
-
-    :cond_reset_modifiers
-    const/4 v0, 0x0
-    sput-boolean v0, Lridmik/keyboard/RidmikKeyboard;->sCtrlActive:Z
-    sput-boolean v0, Lridmik/keyboard/RidmikKeyboard;->sAltActive:Z
     return-void
 .end method

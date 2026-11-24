@@ -1,6 +1,6 @@
 # Arif Keyboard ⌨️
 
-A powerful modified Android keyboard tailored for developers, terminal users (Termux), and power users. Based on reverse engineering and customizing the popular Ridmik Keyboard base.
+A powerful modified Android keyboard tailored for developers, terminal users (Termux), and power users. Based on reverse engineering, decompiling, and customizing the popular Ridmik Keyboard base.
 
 ## 🚀 Key Features Added
 
@@ -8,11 +8,18 @@ A powerful modified Android keyboard tailored for developers, terminal users (Te
    - Replaced the bottom-left `?123` button with a dedicated **Ctrl** button.
    - Replaced the `Emoji` button with a dedicated **Alt** button.
 2. **Sticky Modifier Engine**:
-   - **Tap Ctrl**: Activates Control mode (displays `Ctrl ON` toast). The next typed key (e.g., `C`, `V`, `Z`, `A`, `X`) sends a `Ctrl + <Key>` shortcut combo and automatically resets.
-   - **Tap Alt**: Activates Alternate mode (displays `Alt ON` toast). The next typed key sends an `Alt + <Key>` combo.
-   - **Double-Tap / Toggle**: Tapping again deactivates modifier mode (`Ctrl OFF` / `Alt OFF`).
-   - Works natively in **Termux** (SIGINT `Ctrl+C`, EOF `Ctrl+D`, Suspend `Ctrl+Z`, Clear `Ctrl+L`), shell editors (Nano, Vim), and standard Android applications (Copy, Paste, Cut, Select All, Undo, Redo).
-3. **Renamed Identity**:
+   - **Tap Ctrl**: Activates Control mode (`Ctrl ON` toast feedback). The next typed key (e.g., `A`, `C`, `V`, `Z`, `X`, `L`) sends a `Ctrl + <Key>` shortcut combo and automatically disarms.
+   - **Tap Alt**: Activates Alternate mode (`Alt ON` toast feedback). The next typed key sends an `Alt + <Key>` combo.
+   - **Double-Tap / Toggle**: Tapping again toggles the modifier off (`Ctrl OFF` / `Alt OFF`).
+   - **Layout Stability**: Overrides keyboard switcher events so pressing Ctrl or Alt preserves the alphabet keyboard layout without jumping into symbol or emoji mode.
+   - Works natively in **Termux** (SIGINT `Ctrl+C`, EOF `Ctrl+D`, Suspend `Ctrl+Z`, Clear `Ctrl+L`), shell editors (Nano, Vim), and standard Android applications (Select All, Copy, Paste, Cut, Undo).
+3. **Theme & Visual Polish**:
+   - **Twilight & Pink Themes**: `Alt` button text styled with `followFunctionalTextColor`, ensuring crisp, readable white text on functional key backgrounds.
+   - **Dark Mode (Pure Dark, LXX Dark, Holo)**: All missing icons (`Shift` up-arrow, `Shift Locked`, `Backspace/Delete`, `Enter/Return`) restored with proper drawable assets from the original base.
+4. **Standalone Architecture**:
+   - Merged all 7 native 64-bit `.so` libraries (`libjni_ridmik.so`, `libjni_autocorrect.so`, `libdatastore_shared_counter.so`, `libavif_android.so`, `libapplovin-native-crash-reporter.so`, `libanimation-decoder-gif.so`, `libandroidx.graphics.path.so`).
+   - Merged density resources (`xxxhdpi`), eliminating any split APK dependencies.
+5. **Renamed Identity**:
    - Package ID changed to `com.arif.keyboard` (allows installation side-by-side with original keyboard apps without conflict).
    - Display name set to **Arif Keyboard** across all system locales and IME selection dialogs.
 
@@ -20,16 +27,16 @@ A powerful modified Android keyboard tailored for developers, terminal users (Te
 
 ## 🛠️ Reverse Engineering & Implementation Details
 
-- **Tooling**: Apktool, Baksmali, AAPT2, OpenJDK 21, Jarsigner.
-- **Layout Adjustments**:
-  - `res/xml/key_to_symbol.xml` updated to `<Key latin:keySpec="Ctrl|!code/key_switch_alpha_symbol" latin:keyStyle="toSymbolKeyStyle" />`.
-  - `res/xml/key_styles_common.xml` updated to style `toSymbolKeyStyle` with `Ctrl` label and `emojiKeyStyle` with `Alt` label (`latin:keySpec="Alt|!code/key_emoji"`).
-  - `res/xml/key_space_5kw.xml` configured to always display the Alt button on the bottom row.
-- **Bytecode (Smali) Logic**:
-  - `ridmik.keyboard.RidmikKeyboard` overrides `onCodeInput(int primaryCode, int x, int y, boolean isKeyRepeat)`.
-  - Intercepts primary codes `-3` (Ctrl) and `-11` (Alt).
-  - Translates ASCII key inputs to Android `KeyEvent.KEYCODE_*` codes paired with `KeyEvent.META_CTRL_ON` and `KeyEvent.META_ALT_ON`.
-  - Dispatches `ACTION_DOWN` / `ACTION_UP` events directly via the active `InputConnection`.
+- **Tooling**: Apktool, Baksmali, Smali, AAPT2, Zipalign, Apksigner, OpenJDK.
+- **Modified Smali Classes**:
+  - `ridmik.keyboard.RidmikKeyboard`: Overrides `onCodeInput`, `onPressKey`, and `onReleaseKey` for `-3` (Ctrl) and `-11` (Alt); implements sticky meta-state management, Toast notifications, and direct `InputConnection` key-event dispatching.
+  - `ridmik.keyboard.VoiceView`: Guarded Paint initialization to eliminate startup null pointer exceptions.
+  - `com.android.inputmethod.keyboard.MainKeyboardView`: Guarded spacebar indicator drawable rendering (`y` and `z`) against null drawables in custom themes.
+  - `com.android.inputmethod.latin.suggestions.SuggestionStripView`: Added safe icon fallback handling.
+- **Layout & Style Adjustments**:
+  - `res/xml/key_to_symbol.xml`: Configured for `Ctrl` key specification.
+  - `res/xml/key_emoji.xml` & `res/xml/key_styles_common.xml`: Configured for `Alt` key specification with functional text coloring.
+  - `res/values/styles.xml`: Restored authentic `KeyboardIcons` drawable references across all dark and light themes.
 
 ---
 
@@ -45,15 +52,20 @@ chmod +x build.sh
 ./build.sh
 ```
 
-The signed APK will be generated at `dist/arif-keyboard.apk`.
+The signed, aligned standalone APK will be generated at `dist/arif-keyboard-final.apk`.
 
 ---
 
 ## 📲 Installation
 
-Download the signed `arif-keyboard.apk` from the Releases section or build it locally, then install on your Android device:
+Download the signed `arif-keyboard-final.apk` from the [GitHub Releases](https://github.com/arif0850/arif-keyboard/releases) page, then install via ADB or directly on your Android device:
 
 ```bash
-adb install dist/arif-keyboard.apk
+adb install -r -d -g arif-keyboard-final.apk
 ```
-Or open the APK directly on your Android device to install.
+
+Then enable and select the keyboard in Android Settings:
+```bash
+adb shell ime enable com.arif.keyboard/ridmik.keyboard.RidmikKeyboard
+adb shell ime set com.arif.keyboard/ridmik.keyboard.RidmikKeyboard
+```
