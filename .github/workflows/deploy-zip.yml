@@ -1,0 +1,89 @@
+name: Deploy ZIP to Main
+
+on:
+  repository_dispatch:
+    types: [deploy-zip]
+  workflow_dispatch:
+    inputs:
+      download_url:
+        description: 'Direct download URL or Google Drive link for ZIP'
+        required: true
+        type: string
+      commit_message:
+        description: 'Commit message'
+        required: false
+        default: 'Deploy ZIP update to main'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install gdown requests
+
+      - name: Resolve Download URL
+        id: resolve
+        run: |
+          URL="${{ github.event.client_payload.download_url || inputs.download_url }}"
+          FILE_NAME="${{ github.event.client_payload.file_name || 'update.zip' }}"
+          echo "url=$URL" >> $GITHUB_OUTPUT
+          echo "file_name=$FILE_NAME" >> $GITHUB_OUTPUT
+          echo "Target URL: $URL"
+
+      - name: Download and Extract ZIP
+        run: |
+          python3 -c '
+          import os, sys, requests, zipfile, gdown
+
+          url = "${{ steps.resolve.outputs.url }}"
+          output = "deploy_archive.zip"
+
+          print(f"Downloading from {url}...")
+          if "drive.google.com" in url:
+              gdown.download(url, output, quiet=False, fuzzy=True)
+          else:
+              resp = requests.get(url, stream=True)
+              with open(output, "wb") as f:
+                  for chunk in resp.iter_content(chunk_size=8192):
+                      f.write(chunk)
+
+          if not os.path.exists(output) or os.path.getsize(output) == 0:
+              print("Error: downloaded file is empty or missing")
+              sys.exit(1)
+
+          print(f"Extracting {output} (size: {os.path.getsize(output)} bytes)...")
+          with zipfile.ZipFile(output, "r") as zip_ref:
+              zip_ref.extractall(".")
+
+          os.remove(output)
+          print("Extraction complete!")
+          '
+
+      - name: Commit and Push Changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          if [ -n "$(git status --porcelain)" ]; then
+            git add -A
+            COMMIT_MSG="${{ github.event.client_payload.commit_message || inputs.commit_message || 'Auto-deploy ZIP from Google Drive' }}"
+            git commit -m "$COMMIT_MSG"
+            git push origin main
+            echo "Changes successfully pushed to main branch."
+          else
+            echo "No changes detected after extracting ZIP."
+          fi
