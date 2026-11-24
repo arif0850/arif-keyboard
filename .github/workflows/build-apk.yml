@@ -85,14 +85,11 @@ jobs:
           git tag -f latest HEAD
           git push -f origin latest
 
-          NOTES=$(cat <<EOF
-Auto-built standalone APK from \`main\` (\`${COMMIT_SHA}\`): ${COMMIT_MSG}
-
-- **Package**: \`com.arif.keyboard\`
-- **Signing Certificate SHA-256**: \`${CERT_SHA256}\`
-- **Direct Update Compatible**: Signed with the same persistent keystore as your device build.
-EOF
-          )
+          NOTES=$(printf '%s\n\n%s\n%s\n%s\n' \
+            "Auto-built standalone APK from \`main\` (\`${COMMIT_SHA}\`): ${COMMIT_MSG}" \
+            "- **Package**: \`com.arif.keyboard\`" \
+            "- **Signing Certificate SHA-256**: \`${CERT_SHA256}\`" \
+            "- **Direct Update Compatible**: Signed with the same persistent keystore as your device build.")
 
           if gh release view latest >/dev/null 2>&1; then
             gh release upload latest dist/arif-keyboard-final.apk --clobber
