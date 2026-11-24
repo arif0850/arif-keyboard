@@ -25,10 +25,10 @@
     <key-style latin:backgroundType="functional" latin:keyActionFlags="isRepeatable|noKeyPreview" latin:keySpec="!icon/delete_key|!code/key_delete" latin:styleName="deleteKeyStyle" />
     <switch>
         <case latin:keyboardTheme="ICS|KLP|BorderedWhite">
-            <key-style latin:backgroundType="functional" latin:keyActionFlags="noKeyPreview" latin:keyLabelFlags="preserveCase|followFunctionalTextColor" latin:keySpec="Alt|!code/key_emoji" latin:parentStyle="baseForLayoutSwitchKeyStyle" latin:styleName="emojiKeyStyle" />
+            <key-style latin:backgroundType="functional" latin:keyActionFlags="noKeyPreview" latin:keyLabelFlags="preserveCase|followFunctionalTextColor" latin:keySpec="Alt|!code/key_emoji" latin:styleName="emojiKeyStyle" />
         </case>
         <default>
-            <key-style latin:backgroundType="functional" latin:keyActionFlags="noKeyPreview" latin:keyLabelFlags="preserveCase|followFunctionalTextColor" latin:keySpec="Alt|!code/key_emoji" latin:parentStyle="baseForLayoutSwitchKeyStyle" latin:styleName="emojiKeyStyle" />
+            <key-style latin:backgroundType="functional" latin:keyActionFlags="noKeyPreview" latin:keyLabelFlags="preserveCase|followFunctionalTextColor" latin:keySpec="Alt|!code/key_emoji" latin:styleName="emojiKeyStyle" />
         </default>
     </switch>
     <include latin:keyboardLayout="@xml/key_styles_enter" />
