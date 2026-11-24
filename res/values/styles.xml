@@ -4008,7 +4008,8 @@
     <style name="KeyboardIcons.Custom_Generic" parent="@style/KeyboardIcons.Holo">
         <item name="iconDeleteKey">@drawable/sym_keyboard_delete_custom_generic</item>
         <item name="iconEnterKey">@drawable/sym_keyboard_return_lxx_dark</item>
-        <item name="iconShiftKey">@drawable/sym_keyboard_shift_custom_generic</item>
+        <item name="iconShiftKey">@drawable/sym_keyboard_shift_holo_dark</item>
+        <item name="iconShiftKeyShifted">@drawable/sym_keyboard_shift_locked_holo_dark</item>
         <item name="iconSpaceKeyForNumberLayout">@drawable/sym_keyboard_space_lxx_dark</item>
     </style>
     <style name="KeyboardIcons.Dark_Silver" parent="@style/KeyboardIcons">
@@ -4026,8 +4027,8 @@
         <item name="iconSearchKey">@drawable/sym_keyboard_search_lxx_dark</item>
         <item name="iconSendKey">@drawable/sym_keyboard_send_lxx_dark</item>
         <item name="iconSettingsKey">@drawable/sym_keyboard_settings_lxx_dark</item>
-        <item name="iconShiftKey">@drawable/sym_keyboard_shift_lxx_dark</item>
-        <item name="iconShiftKeyShifted">@drawable/sym_keyboard_shift_locked_lxx_dark</item>
+        <item name="iconShiftKey">@drawable/sym_keyboard_shift_holo_dark</item>
+        <item name="iconShiftKeyShifted">@drawable/sym_keyboard_shift_locked_holo_dark</item>
         <item name="iconShortcutKey">@drawable/sym_keyboard_voice_lxx_light</item>
         <item name="iconShortcutKeyDisabled">@drawable/sym_keyboard_voice_off_lxx_dark</item>
         <item name="iconSpaceKey">@null</item>
@@ -4071,8 +4072,8 @@
         <item name="iconSearchKey">@drawable/sym_keyboard_search_lxx_dark</item>
         <item name="iconSendKey">@drawable/sym_keyboard_send_lxx_dark</item>
         <item name="iconSettingsKey">@drawable/sym_keyboard_settings_lxx_dark</item>
-        <item name="iconShiftKey">@drawable/sym_keyboard_shift_lxx_dark</item>
-        <item name="iconShiftKeyShifted">@drawable/sym_keyboard_shift_locked_lxx_dark</item>
+        <item name="iconShiftKey">@drawable/sym_keyboard_shift_holo_dark</item>
+        <item name="iconShiftKeyShifted">@drawable/sym_keyboard_shift_locked_holo_dark</item>
         <item name="iconShortcutKey">@drawable/sym_keyboard_voice_lxx_dark</item>
         <item name="iconShortcutKeyDisabled">@drawable/sym_keyboard_voice_off_lxx_dark</item>
         <item name="iconSpaceKey">@null</item>
