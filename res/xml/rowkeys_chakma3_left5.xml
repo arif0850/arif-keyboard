@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <switch>
+        <case latin:keyboardLayoutSetElement="chakmaShifted">
+            <Key latin:keySpec="𑅆" />
+            <Key latin:keySpec="𑄯" />
+            <Key latin:keySpec="𑄰" />
+            <Key latin:keySpec="𑄣" />
+            <Key latin:keySpec="𑄕" />
+        </case>
+        <default>
+            <Key latin:keySpec="𑄄" />
+            <Key latin:keySpec="𑄮" />
+            <Key latin:keySpec="𑄬" />
+            <Key latin:keySpec="𑄢" />
+            <Key latin:keySpec="𑄚" />
+        </default>
+    </switch>
+</merge>

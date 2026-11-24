@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <switch>
+        <case latin:fifthAvenue="true" latin:keyboardLayoutSetElement="chakmaShifted">
+            <Key latin:keySpec="𑄍" />
+            <Key latin:keySpec="𑄏" />
+            <Key latin:keySpec="𑄐" />
+            <Key latin:keySpec="𑄊" />
+            <Key latin:keySpec="𑄅" />
+        </case>
+        <case latin:fifthAvenue="false" latin:keyboardLayoutSetElement="chakmaShifted">
+            <Key latin:keyHintLabel="6" latin:keySpec="𑄍" latin:moreKeys="6" />
+            <Key latin:keyHintLabel="7" latin:keySpec="𑄏" latin:moreKeys="7" />
+            <Key latin:keyHintLabel="8" latin:keySpec="𑄐" latin:moreKeys="8" />
+            <Key latin:keyHintLabel="9" latin:keySpec="𑄊" latin:moreKeys="9" />
+            <Key latin:keyHintLabel="0" latin:keySpec="𑄅" latin:moreKeys="0" />
+        </case>
+        <case latin:fifthAvenue="true" latin:keyboardLayoutSetElement="chakma">
+            <Key latin:keySpec="𑄌" />
+            <Key latin:keySpec="𑄎" />
+            <Key latin:keySpec="𑄦" />
+            <Key latin:keySpec="𑄉" />
+            <Key latin:keySpec="𑄤" />
+        </case>
+        <case latin:fifthAvenue="false" latin:keyboardLayoutSetElement="chakma">
+            <Key latin:keyHintLabel="𑄼" latin:keySpec="𑄌" latin:moreKeys="𑄼" />
+            <Key latin:keyHintLabel="𑄽" latin:keySpec="𑄎" latin:moreKeys="𑄽" />
+            <Key latin:keyHintLabel="𑄾" latin:keySpec="𑄦" latin:moreKeys="𑄾" />
+            <Key latin:keyHintLabel="𑄿" latin:keySpec="𑄉" latin:moreKeys="𑄿" />
+            <Key latin:keyHintLabel="𑄶" latin:keySpec="𑄤" latin:moreKeys="𑄶" />
+        </case>
+    </switch>
+</merge>

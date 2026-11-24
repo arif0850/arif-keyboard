@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="@style/AppThemeWithLightNavigation">
+        <item name="android:forceDarkAllowed">@bool/force_dark</item>
+    </style>
+    <style name="Base.Theme.SplashScreen" parent="@android:style/Theme.DeviceDefault.DayNight">
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+        <item name="android:enforceStatusBarContrast">false</item>
+        <item name="android:enforceNavigationBarContrast">false</item>
+        <item name="isLightTheme">?android:isLightTheme</item>
+    </style>
+    <style name="Base.Theme.SplashScreen.Light" parent="@style/Base.Theme.SplashScreen" />
+    <style name="BottomDialog" parent="@style/BottomDialog.Base">
+        <item name="android:forceDarkAllowed">@bool/force_dark</item>
+    </style>
+    <style name="DialogTheme" parent="@style/DialogTheme.Base">
+        <item name="android:forceDarkAllowed">@bool/force_dark</item>
+    </style>
+    <style name="FullScreenTheme" parent="@style/FullScreenThemeWithLightNavigationBar">
+        <item name="android:forceDarkAllowed">@bool/force_dark</item>
+    </style>
+    <style name="KeyboardTheme.BORDERED_BLACK" parent="@style/KeyboardTheme.BORDERED_BLACK.Base">
+        <item name="android:forceDarkAllowed">@bool/force_dark</item>
+    </style>
+    <style name="KeyboardTheme.BORDERED_WHITE" parent="@style/KeyboardTheme.BORDERED_WHITE.Base">
+        <item name="android:forceDarkAllowed">@bool/force_dark</item>
+    </style>
+    <style name="KeyboardTheme.Blue" parent="@style/KeyboardTheme.Blue.Base">
+        <item name="android:forceDarkAllowed">@bool/force_dark</item>
+    </style>
+    <style name="KeyboardTheme.CUSTOM" parent="@style/KeyboardTheme.CUSTOM.Base">
+        <item name="android:forceDarkAllowed">@bool/force_dark</item>
+    </style>
+    <style name="KeyboardTheme.CUSTOM_NO_BORDER" parent="@style/KeyboardTheme.CUSTOM_NO_BORDER.Base">
+        <item name="android:forceDarkAllowed">@bool/force_dark</item>
+    </style>
+    <style name="KeyboardTheme.Custom_Generic" parent="@style/KeyboardTheme.Custom_Generic.Base">
+        <item name="android:forceDarkAllowed">@bool/force_dark</item>
+    </style>
+    <style name="KeyboardTheme.Dark_Blue" parent="@style/KeyboardTheme.Dark_Blue.Base">
+        <item name="android:forceDarkAllowed">@bool/force_dark</item>
+    </style>
+    <style name="KeyboardTheme.Dark_Silver" parent="@style/KeyboardTheme.Dark_Silver.Base">
+        <item name="android:forceDarkAllowed">@bool/force_dark</item>
+    </style>
+    <style name="KeyboardTheme.GRADIENT_GREEN" parent="@style/KeyboardTheme.GRADIENT_GREEN.Base">
+        <item name="android:forceDarkAllowed">@bool/force_dark</item>
+    </style>
+    <style name="KeyboardTheme.GRADIENT_ORANGE" parent="@style/KeyboardTheme.GRADIENT_ORANGE.Base">
+        <item name="android:forceDarkAllowed">@bool/force_dark</item>
+    </style>
+    <style name="KeyboardTheme.GRADIENT_PURPLE" parent="@style/KeyboardTheme.GRADIENT_PURPLE.Base">
+        <item name="android:forceDarkAllowed">@bool/force_dark</item>
+    </style>
+    <style name="KeyboardTheme.Green" parent="@style/KeyboardTheme.Green.Base">
+        <item name="android:forceDarkAllowed">@bool/force_dark</item>
+    </style>
+    <style name="KeyboardTheme.Green_Similar" parent="@style/KeyboardTheme.Green_Similar.Base">
+        <item name="android:forceDarkAllowed">@bool/force_dark</item>
+    </style>
+    <style name="KeyboardTheme.ICS" parent="@style/KeyboardTheme.ICS.Base">
+        <item name="android:forceDarkAllowed">@bool/force_dark</item>
+    </style>
+    <style name="KeyboardTheme.KLP" parent="@style/KeyboardTheme.KLP.Base">
+        <item name="android:forceDarkAllowed">@bool/force_dark</item>
+    </style>
+    <style name="KeyboardTheme.LXX_Dark" parent="@style/KeyboardTheme.LXX_Dark.Base">
+        <item name="android:forceDarkAllowed">@bool/force_dark</item>
+    </style>
+    <style name="KeyboardTheme.LXX_Light" parent="@style/KeyboardTheme.LXX_Light.Base">
+        <item name="android:forceDarkAllowed">@bool/force_dark</item>
+    </style>
+    <style name="KeyboardTheme.MIDNIGHT_BLACK" parent="@style/KeyboardTheme.MIDNIGHT_BLACK.Base">
+        <item name="android:forceDarkAllowed">@bool/force_dark</item>
+    </style>
+    <style name="KeyboardTheme.MIDNIGHT_GREEN" parent="@style/KeyboardTheme.MIDNIGHT_GREEN.Base">
+        <item name="android:forceDarkAllowed">@bool/force_dark</item>
+    </style>
+    <style name="KeyboardTheme.Pink" parent="@style/KeyboardTheme.Pink.Base">
+        <item name="android:forceDarkAllowed">@bool/force_dark</item>
+    </style>
+    <style name="KeyboardTheme.Pure_Dark" parent="@style/KeyboardTheme.Pure_Dark.Base">
+        <item name="android:forceDarkAllowed">@bool/force_dark</item>
+    </style>
+    <style name="KeyboardTheme.ROUNDED_BLACK" parent="@style/KeyboardTheme.ROUNDED_BLACK.Base">
+        <item name="android:forceDarkAllowed">@bool/force_dark</item>
+    </style>
+    <style name="ThemeForIME" parent="@android:style/Theme.DeviceDefault.InputMethod">
+        <item name="android:forceDarkAllowed">@bool/force_dark</item>
+    </style>
+</resources>

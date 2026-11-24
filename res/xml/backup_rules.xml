@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <include domain="database" path="ClipboardDatabase" />
+    <include domain="database" path="RIDMIK_KB_DB" />
+    <include domain="sharedpref" />
+    <include domain="external" path="storage/" />
+    <exclude domain="external" path="storage/noBackupForKb/" />
+    <include domain="file" path="keyboard_preview_root/" />
+    <include domain="file" path="UserHistoryDictionary.en.dict" />
+    <include domain="file" path="UserHistoryDictionary.bn_BD.dict" />
+</full-backup-content>

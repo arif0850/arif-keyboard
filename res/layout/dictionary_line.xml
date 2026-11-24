@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:background="?android:selectableItemBackground" android:paddingRight="?android:scrollbarSize" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:layout_marginTop="6.0dp" android:layout_marginRight="6.0dp" android:layout_marginBottom="6.0dp" android:minHeight="?android:listPreferredItemHeight" android:layout_weight="1.0" android:paddingEnd="?android:scrollbarSize" android:layout_marginStart="15.0dp" android:layout_marginEnd="6.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:ellipsize="marquee" android:id="@android:id/title" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:singleLine="true" android:layout_marginStart="5.0dp" />
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dp" android:layout_marginStart="5.0dp">
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="?android:textColorSecondary" android:id="@android:id/summary" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" />
+            <com.android.inputmethod.dictionarypack.DictionaryDownloadProgressBar android:gravity="center" android:id="@id/dictionary_line_progress_bar" android:layout_width="match_parent" android:layout_height="match_parent" style="@android:style/Widget.Holo.ProgressBar.Horizontal" />
+        </FrameLayout>
+    </LinearLayout>
+    <com.android.inputmethod.dictionarypack.ButtonSwitcher android:id="@id/wordlist_button_switcher" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dp" android:layout_weight="0.0" android:layout_marginStart="13.0dp">
+        <Button android:textAppearance="?android:textAppearanceMedium" android:layout_gravity="right|center" android:id="@id/dict_install_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/install_dict" android:singleLine="true" />
+        <Button android:textAppearance="?android:textAppearanceMedium" android:layout_gravity="right|center" android:id="@id/dict_cancel_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel_download_dict" android:singleLine="true" />
+        <Button android:textAppearance="?android:textAppearanceMedium" android:layout_gravity="right|center" android:id="@id/dict_delete_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/delete_dict" android:singleLine="true" />
+    </com.android.inputmethod.dictionarypack.ButtonSwitcher>
+</LinearLayout>

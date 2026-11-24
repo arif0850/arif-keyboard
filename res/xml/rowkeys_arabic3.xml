@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <include latin:keyboardLayout="@xml/keys_arabic3_left" />
+    <Key latin:keySpec="ء" />
+    <Key latin:keySpec="ؤ" />
+    <Key latin:keyHintLabel="ڑ" latin:keySpec="ر" latin:moreKeys="ڑ,﷼" />
+    <Key latin:keyHintLabel="ئ" latin:keySpec="ى" latin:moreKeys="ئ,ے" />
+    <Key latin:keySpec="ة" />
+    <Key latin:keyHintLabel="ﷺ" latin:keySpec="و" latin:moreKeys="ﷺ" />
+    <Key latin:keyHintLabel="ژ" latin:keySpec="ز" latin:moreKeys="ژ" />
+    <Key latin:keySpec="ظ" />
+    <Key latin:keyHintLabel="ڈ" latin:keySpec="د" latin:moreKeys="ڈ" />
+</merge>

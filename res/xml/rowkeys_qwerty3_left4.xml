@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <Key latin:keyHintLabel="&quot;" latin:keySpec="z" latin:moreKeys="&quot;,❞,❝" />
+    <Key latin:keyActionFlags="enableLongPress" latin:keySpec="x" />
+    <Key latin:keyActionFlags="enableLongPress" latin:keySpec="c" />
+    <Key latin:keyActionFlags="enableLongPress" latin:keySpec="v" />
+</merge>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <Key latin:keySpec="~" />
+    <Key latin:keySpec="`" />
+    <Key latin:keySpec="|" />
+    <Key latin:keyHintLabel="৺" latin:keySpec="ঽ" latin:moreKeys="৺,ॐ,॥" />
+    <Key latin:keySpec="√" />
+    <Key latin:keyHintLabel="Π" latin:keySpec="π" latin:moreKeys="Π" />
+    <Key latin:keySpec="÷" />
+    <Key latin:keySpec="×" />
+    <include latin:keyboardLayout="@xml/keys_curly_brackets" />
+</merge>

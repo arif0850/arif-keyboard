@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ridmik.keyboard.practice.CustomToolTipView android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" app:popupBackground="@color/typography_primary_text_color"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/large_text_size" android:textColor="@color/white" android:gravity="center" android:id="@id/messageTv" android:paddingLeft="20.0dp" android:paddingRight="20.0dp" android:paddingBottom="10.0dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/app_left_right_padding" android:layout_marginBottom="@dimen/app_left_right_padding" android:fontFamily="@font/primary" android:paddingHorizontal="20.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/rulesTv" app:layout_constraintTop_toTopOf="parent" />
+</ridmik.keyboard.practice.CustomToolTipView>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/settings_screen_preferences"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <CheckBoxPreference android:persistent="true" android:title="@string/auto_cap" android:key="auto_cap" android:summary="@string/auto_cap_summary" android:defaultValue="true" android:iconSpaceReserved="false" />
+    <PreferenceScreen android:layout="@layout/divider_layout" />
+    <CheckBoxPreference android:persistent="true" android:title="@string/use_double_space_period" android:key="pref_key_use_double_space_period" android:summary="@string/use_double_space_period_summary" android:defaultValue="true" app:iconSpaceReserved="false" />
+    <PreferenceScreen android:layout="@layout/divider_layout" />
+    <CheckBoxPreference android:persistent="true" android:title="@string/use_double_space_tab" android:key="pref_key_use_double_space_tab" android:summary="@string/use_double_space_tab_summary" android:defaultValue="false" app:iconSpaceReserved="false" />
+    <PreferenceScreen android:layout="@layout/divider_layout" />
+    <CheckBoxPreference android:persistent="true" android:title="@string/clip_board_option" android:key="pref_key_show_clip_board_copy_text" android:summary="@string/clip_board_option_summary" android:defaultValue="true" app:iconSpaceReserved="false" />
+    <PreferenceScreen android:layout="@layout/divider_layout" />
+    <ListPreference android:title="@string/copied_text_on_clipboard" android:key="pref_key_copied_text_on_clipboard" android:summary="@string/clip_board_option_summary_for_time" android:dependency="pref_key_show_clip_board_copy_text" />
+    <PreferenceScreen android:layout="@layout/divider_layout" />
+    <CheckBoxPreference android:persistent="true" android:title="@string/clip_board_option_for_image" android:key="pref_key_show_clip_board_copy_image" android:summary="@string/clip_board_option_summary_for_image" android:dependency="pref_key_show_clip_board_copy_text" android:defaultValue="true" app:iconSpaceReserved="false" />
+    <PreferenceScreen android:layout="@layout/divider_layout" />
+    <CheckBoxPreference android:persistent="true" android:title="@string/vibrate_on_keypress" android:key="vibrate_on" android:defaultValue="@bool/config_default_vibration_enabled" app:iconSpaceReserved="false" />
+    <PreferenceScreen android:layout="@layout/divider_layout" />
+    <CheckBoxPreference android:persistent="true" android:title="@string/sound_on_keypress" android:key="sound_on" android:defaultValue="@bool/config_default_sound_enabled" app:iconSpaceReserved="false" />
+    <PreferenceScreen android:layout="@layout/divider_layout" />
+    <CheckBoxPreference android:persistent="true" android:title="@string/popup_on_keypress" android:key="popup_on" android:defaultValue="@bool/config_default_key_preview_popup" app:iconSpaceReserved="false" />
+    <PreferenceScreen android:layout="@layout/divider_layout" />
+    <CheckBoxPreference android:persistent="true" android:title="@string/voice_input" android:key="pref_voice_input_key" android:defaultValue="true" app:iconSpaceReserved="false" />
+    <PreferenceScreen android:layout="@layout/divider_layout" />
+    <CheckBoxPreference android:persistent="true" android:title="@string/show_emoji_key_title" android:key="show_emoji_key" android:summary="@string/show_emoji_key_summary" android:defaultValue="true" app:iconSpaceReserved="false" />
+    <PreferenceScreen android:layout="@layout/divider_layout" />
+    <CheckBoxPreference android:persistent="true" android:title="@string/show_globe_key_title" android:key="show_globe_key" android:summary="@string/show_globe_key_summary" android:defaultValue="false" app:iconSpaceReserved="false" />
+    <PreferenceScreen android:layout="@layout/divider_layout" />
+    <CheckBoxPreference android:persistent="true" android:title="@string/globe_goes_out_title" android:key="globe_goes_out" android:summary="@string/globe_goes_out_summary" android:dependency="show_globe_key" android:defaultValue="false" app:iconSpaceReserved="false" />
+    <PreferenceScreen android:layout="@layout/divider_layout" />
+    <CheckBoxPreference android:persistent="true" android:title="@string/volume_cursor_title" android:key="volume_cursor" android:summary="@string/volume_cursor_summary" android:defaultValue="true" app:iconSpaceReserved="false" />
+    <PreferenceScreen android:layout="@layout/divider_layout" />
+    <CheckBoxPreference android:persistent="true" android:title="@string/smart_volume_cursor_title" android:key="smart_volume_cursor" android:summary="@string/smart_volume_cursor_summary" android:dependency="volume_cursor" android:defaultValue="false" app:iconSpaceReserved="false" />
+</PreferenceScreen>

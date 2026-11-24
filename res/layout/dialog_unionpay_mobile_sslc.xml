@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:padding="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/tvUnionPay" android:layout_width="35.0dp" android:layout_height="35.0dp" app:srcCompat="@drawable/ic_unionpay" />
+        <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="@color/black" android:gravity="center_vertical" android:id="@id/tvUnionPayHeader" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:text="@string/unionpay" android:layout_toRightOf="@id/tvUnionPay" android:layout_alignTop="@id/tvUnionPay" android:layout_alignBottom="@id/tvUnionPay" android:layout_marginStart="10.0dp" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/edit_text_color" android:id="@id/tvTitle" android:padding="8.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="@string/verify_mobile_unionpay_card" android:layout_below="@id/tvUnionPay" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/llPhoneView" android:background="@drawable/bg_action_outlined_gray" android:padding="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:layout_below="@id/tvTitle">
+            <EditText android:textSize="18.0sp" android:layout_gravity="center_vertical" android:id="@id/etCountryCode" android:background="@android:color/transparent" android:paddingLeft="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="20.0dp" android:text="+88" android:maxLength="4" />
+            <EditText android:textSize="16.0sp" android:layout_gravity="center_vertical" android:id="@id/etMobile" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/ssl_enter_mobile_number" android:maxLines="1" android:maxLength="16" android:inputType="phone" android:imeOptions="actionDone" android:layout_marginStart="16.0dp" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dp" android:layout_below="@id/llPhoneView" android:layout_alignParentRight="true">
+            <TextView android:textSize="16.0sp" android:textColor="@color/colorPrimarySSL" android:id="@id/buttonExit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dp" android:layout_marginRight="15.0dp" android:text="@string/cancel" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="right" android:id="@id/buttonOk" android:background="@drawable/custom_btn_polo_blue_sslc" android:paddingLeft="16.0dp" android:paddingTop="10.0dp" android:paddingRight="16.0dp" android:paddingBottom="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/get_otp" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultsMap>
+    <entry>
+        <key>show_suggestion_bar_emoji_icon</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>enable_home_test_api</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>emoji_height_multiplier</key>
+        <value>1.0</value>
+    </entry>
+</defaultsMap>

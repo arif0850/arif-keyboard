@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<KeyboardLayoutSet
+  xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <Element latin:elementKeyboard="@xml/kbd_sylheti" latin:elementName="sylheti" latin:supportsSplitLayout="true" />
+    <Element latin:elementKeyboard="@xml/kbd_sylheti" latin:elementName="sylhetiShifted" latin:supportsSplitLayout="true" />
+</KeyboardLayoutSet>

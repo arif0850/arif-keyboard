@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/mainLinearLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="16.0dp">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.sslwireless.sslcommerzlibrary.view.custom.SSLCCustomTextView android:textSize="20.0sp" android:textColor="@color/black" android:id="@id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/save_bkash_wallet" app:textStyle="Bold" />
+                <com.sslwireless.sslcommerzlibrary.view.custom.SSLCCustomTextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@id/tvMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:text="@string/want_to_save_bkash_wallet" app:textStyle="Normal" />
+            </LinearLayout>
+            <com.sslwireless.sslcommerzlibrary.view.custom.SSLCCustomTextView android:textSize="17.0sp" android:id="@id/tvTerms" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/terms" android:layout_alignParentRight="true" app:textStyle="Bold" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp">
+            <com.sslwireless.sslcommerzlibrary.view.custom.SSLCCustomTextView android:textSize="17.0sp" android:textColor="@color/colorPrimarySSL" android:id="@id/tvNo" android:padding="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ssl_no" app:textStyle="Bold" />
+            <com.sslwireless.sslcommerzlibrary.view.custom.SSLCCustomTextView android:textSize="17.0sp" android:textColor="@color/white" android:id="@id/tvYes" android:background="@drawable/custom_btn_punch_sslc" android:paddingLeft="16.0dp" android:paddingTop="10.0dp" android:paddingRight="16.0dp" android:paddingBottom="10.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dp" android:text="@string/yes_save_it" app:textStyle="Bold" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/view" android:background="@color/white_off" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginLeft="16.0dp" android:layout_marginTop="8.0dp" android:layout_marginRight="16.0dp" />
+</LinearLayout>

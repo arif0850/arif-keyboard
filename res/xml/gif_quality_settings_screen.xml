@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/settings_screen_gif_quality" android:key="screen_gif_quality_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <SwitchPreference android:persistent="true" android:title="@string/prefs_show_high_quality_gif" android:key="pref_show_high_quality_gif" android:summary="@string/prefs_show_high_quality_gif_summary" android:defaultValue="false" />
+    <PreferenceScreen android:layout="@layout/divider_layout" />
+    <SwitchPreference android:persistent="true" android:title="@string/prefs_send_high_quality_gif" android:key="pref_send_high_quality_gif" android:summary="@string/prefs_send_high_quality_gif_summary" android:defaultValue="true" />
+</PreferenceScreen>

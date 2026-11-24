@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <padding android:left="0.0dp" android:top="0.0dp" android:right="0.0dp" android:bottom="1.5dp" />
+            <solid android:color="@color/card_shadow_color1" />
+            <corners android:radius="@dimen/branded_sticker_image_height_half" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding android:left="0.0dp" android:top="0.0dp" android:right="0.0dp" android:bottom="1.5dp" />
+            <solid android:color="@color/card_shadow_color2" />
+            <corners android:radius="@dimen/branded_sticker_image_height_half" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="@android:color/transparent" />
+        </shape>
+    </item>
+</layer-list>

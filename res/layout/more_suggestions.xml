@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.inputmethod.latin.suggestions.MoreSuggestionsView android:id="@id/more_suggestions_view" android:layout_width="wrap_content" android:layout_height="wrap_content" latin:keyHintLetterColor="@android:color/white" latin:keyHintLetterRatio="@fraction/config_more_suggestions_info_ratio" latin:keyLabelSize="@dimen/config_suggestion_text_size" latin:keyLetterSize="@dimen/config_suggestion_text_size"
+      xmlns:latin="http://schemas.android.com/apk/res-auto" />
+</LinearLayout>

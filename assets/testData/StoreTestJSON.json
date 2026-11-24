@@ -1,0 +1,268 @@
+{
+  "data": [
+    {
+      "title": "Dog World",
+      "title_bn": "ডগ ওয়ার্ল্ড",
+      "subtitle": "Dogs to make your day beautiful",
+      "subtitle_bn": "ঘেউ খোক্ষসের বাঁদরামি",
+      "more": "",
+      "items": [
+        {
+          "id": 51,
+          "name": "কিউট ডগি",
+          "image": "https://ridmikone.s3-ap-southeast-1.amazonaws.com/stickers/cute_doggie/cover_301fd191fb154f33.png",
+          "cover": "https://ridmikone.s3-ap-southeast-1.amazonaws.com/stickers/cute_doggie/cover_large_0f6075665a714eca.jpg",
+          "type": "sticker",
+          "price_bdt": 200,
+          "price_bdt_original": 400,
+          "giftable": true,
+          "tags": [
+            {
+              "text": "50% off",
+              "color": "#FFFFFF",
+              "background": "#FFC107"
+            }
+          ],
+          "style": "large",
+          "free": false
+        },
+        {
+          "id": 49,
+          "name": "ডগ স্কোয়াড",
+          "image": "https://ridmikone.s3-ap-southeast-1.amazonaws.com/stickers/dog_squad/cover_57ba05c81da44a91.png",
+          "cover": "https://ridmikone.s3-ap-southeast-1.amazonaws.com/stickers/dog_squad/cover_large_637984687eed4ef2.jpg",
+          "type": "sticker",
+          "price_bdt": 0,
+          "price_bdt_original": 0,
+          "giftable": true,
+          "tags": [],
+          "style": "small",
+          "free": true
+        },
+        {
+          "id": 87,
+          "name": "কুকুর চক্র",
+          "image": "https://ridmikone.s3-ap-southeast-1.amazonaws.com/stickers/kukur_chakro/cover_87b6f489c40d4cd0.png",
+          "cover": null,
+          "type": "sticker",
+          "price_bdt": 200,
+          "price_bdt_original": 0,
+          "giftable": true,
+          "tags": [],
+          "style": "small",
+          "free": true
+        }
+      ]
+    },
+    {
+      "title": "Folk Style",
+      "title_bn": "বাঙালির স্টাইল",
+      "subtitle": "Just for fun",
+      "subtitle_bn": "চিন্তায় মননে ও কথনে বাঙালিয়ানা",
+      "more": "",
+      "items": [
+        {
+          "id": 122,
+          "name": "রিক্সা পেইন্ট",
+          "image": "https://ridmikone.s3-ap-southeast-1.amazonaws.com/stickers/rickshaw_paint/cover_6a3bb31c40a04bf5.png",
+          "cover": "https://ridmikone.s3-ap-southeast-1.amazonaws.com/stickers/rickshaw_paint/cover_large_9902e21558f74093.jpg",
+          "type": "sticker",
+          "price_bdt": 200,
+          "price_bdt_original": 200,
+          "giftable": true,
+          "tags": [],
+          "style": "large",
+          "free": true
+        }
+      ]
+    },
+    {
+      "title": "Keyboard Themes",
+      "title_bn": "কিবোর্ড থিম",
+      "subtitle": "রাঙিয়ে নিন কিবোর্ড",
+      "subtitle_bn": "রাঙিয়ে নিন কিবোর্ড",
+      "more": "",
+      "items": [
+        {
+          "id": 185,
+          "name": "বিজয় উৎসব",
+          "image": "https://ridmikone.s3-ap-southeast-1.amazonaws.com/content/items/cover_8fdef5dd377f4231.png",
+          "cover": "https://ridmikone.s3-ap-southeast-1.amazonaws.com/content/items/cover_large_f04ac52eea8b40fc.jpg",
+          "type": "theme",
+          "price_bdt": 200,
+          "price_bdt_original": 200,
+          "giftable": true,
+          "tags": [],
+          "style": "large",
+          "free": false
+        }
+      ]
+    },
+    {
+      "title": "Bangali Festivals",
+      "title_bn": "দূর্গা পূজা উৎসব",
+      "subtitle": "Full of traditions",
+      "subtitle_bn": "বাঙালির উৎসব",
+      "more": "",
+      "items": [
+        {
+          "id": 128,
+          "name": "দূর্গা পূজা",
+          "image": "https://ridmikone.s3-ap-southeast-1.amazonaws.com/stickers/durga_puja_celebration/cover_8aa6a56404114d51.png",
+          "cover": "https://ridmikone.s3-ap-southeast-1.amazonaws.com/stickers/durga_puja_celebration/cover_large_ad3db30eb50346a2.jpg",
+          "type": "sticker",
+          "price_bdt": 200,
+          "price_bdt_original": 0,
+          "giftable": true,
+          "tags": [],
+          "style": "small",
+          "free": true
+        },
+        {
+          "id": 31,
+          "name": "মা দুর্গা",
+          "image": "https://ridmikone.s3-ap-southeast-1.amazonaws.com/stickers/maa_durga/cover_5b28a5c9b6e8421c.png",
+          "cover": null,
+          "type": "sticker",
+          "price_bdt": 150,
+          "price_bdt_original": 0,
+          "giftable": true,
+          "tags": [],
+          "style": "small",
+          "free": true
+        }
+      ]
+    },
+    {
+      "title": "Cat Castle",
+      "title_bn": "ক্যাট ক্যাসেল",
+      "subtitle": "Funny cat expressions",
+      "subtitle_bn": "মজার সব বিড়ালি এক্সপ্রেশন",
+      "more": "",
+      "items": [
+        {
+          "id": 106,
+          "name": "বিল্লীর প্রেম",
+          "image": "https://ridmikone.s3-ap-southeast-1.amazonaws.com/stickers/billi_prem/cover_0fa257f782054625.png",
+          "cover": "https://ridmikone.s3-ap-southeast-1.amazonaws.com/stickers/billi_prem/cover_large_7930e2116d734bb2.jpg",
+          "type": "sticker",
+          "price_bdt": 200,
+          "price_bdt_original": 0,
+          "giftable": true,
+          "tags": [],
+          "style": "large",
+          "free": true
+        },
+        {
+          "id": 105,
+          "name": "বিল্লু অ্যান্ড বিল্লী",
+          "image": "https://ridmikone.s3-ap-southeast-1.amazonaws.com/stickers/billu_and_billi/cover_66bf0ba8c5004352.png",
+          "cover": "https://ridmikone.s3-ap-southeast-1.amazonaws.com/stickers/billu_and_billi/cover_large_aece321e931d4ec9.jpg",
+          "type": "sticker",
+          "price_bdt": 100,
+          "price_bdt_original": 0,
+          "giftable": true,
+          "tags": [],
+          "style": "small",
+          "free": true
+        },
+        {
+          "id": 2,
+          "name": "কিটি ক্যাট",
+          "image": "https://ridmikone.s3-ap-southeast-1.amazonaws.com/stickers/kitty_cat/cover_a19a971000fb4cd1.png",
+          "cover": "https://ridmikone.s3-ap-southeast-1.amazonaws.com/stickers/kitty_cat/cover_large_c0438d774a9f4ac7.jpg",
+          "type": "sticker",
+          "price_bdt": 0,
+          "price_bdt_original": 0,
+          "giftable": true,
+          "tags": [],
+          "style": "small",
+          "free": true
+        }
+      ]
+    },
+    {
+      "title": "Local expressions",
+      "title_bn": "আঞ্চলিক বুলি সমগ্র",
+      "subtitle": "Local expressions that are priceless",
+      "subtitle_bn": "আপন আঞ্চলিকতায় মনের ভাব প্রকাশ",
+      "more": "",
+      "items": [
+        {
+          "id": 25,
+          "name": "চিটাইংগা হতা",
+          "image": "https://ridmikone.s3-ap-southeast-1.amazonaws.com/stickers/chitaingga_hata/cover_3530a88a70dc44b6.png",
+          "cover": null,
+          "type": "sticker",
+          "price_bdt": 100,
+          "price_bdt_original": 0,
+          "giftable": true,
+          "tags": [],
+          "style": "small",
+          "free": true
+        },
+        {
+          "id": 20,
+          "name": "বরিশাইল্লা বুলি",
+          "image": "https://ridmikone.s3-ap-southeast-1.amazonaws.com/stickers/barisailla_buli/cover_2c873bbc0799473f.png",
+          "cover": null,
+          "type": "sticker",
+          "price_bdt": 100,
+          "price_bdt_original": 0,
+          "giftable": true,
+          "tags": [],
+          "style": "small",
+          "free": true
+        }
+      ]
+    },
+    {
+      "title": "Peculiar Character",
+      "title_bn": "পিকুলিয়ার ক্যারেক্টার",
+      "subtitle": "Peculiar stickers for peculiar mind",
+      "subtitle_bn": "পিকুলিয়ার মনের পিকুলিয়ার প্যাক",
+      "more": "",
+      "items": [
+        {
+          "id": 39,
+          "name": "পিকুলিয়ার মনস্টার",
+          "image": "https://ridmikone.s3-ap-southeast-1.amazonaws.com/stickers/peculiar_monster/cover_1f04ac4fa8b246ff.png",
+          "cover": "https://ridmikone.s3-ap-southeast-1.amazonaws.com/stickers/peculiar_monster/cover_large_5819ff974b034efe.jpg",
+          "type": "sticker",
+          "price_bdt": 200,
+          "price_bdt_original": 0,
+          "giftable": true,
+          "tags": [],
+          "style": "large",
+          "free": true
+        },
+        {
+          "id": 103,
+          "name": "দ্যা আইটেম বক্স",
+          "image": "https://ridmikone.s3-ap-southeast-1.amazonaws.com/stickers/the_item_box/cover_f1cdcedf15f34cac.png",
+          "cover": "https://ridmikone.s3-ap-southeast-1.amazonaws.com/stickers/the_item_box/cover_large_7e71f5f4fd084965.jpg",
+          "type": "sticker",
+          "price_bdt": 100,
+          "price_bdt_original": 0,
+          "giftable": true,
+          "tags": [],
+          "style": "small",
+          "free": true
+        },
+        {
+          "id": 102,
+          "name": "কাওয়াই ভাব",
+          "image": "https://ridmikone.s3-ap-southeast-1.amazonaws.com/stickers/kawaii_vab/cover_086c20358aba47e8.png",
+          "cover": "https://ridmikone.s3-ap-southeast-1.amazonaws.com/stickers/kawaii_vab/cover_large_6365a73a8c0f4e86.jpg",
+          "type": "sticker",
+          "price_bdt": 0,
+          "price_bdt_original": 0,
+          "giftable": true,
+          "tags": [],
+          "style": "small",
+          "free": true
+        }
+      ]
+    }
+  ]
+}

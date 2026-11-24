@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <include latin:keyboardLayout="@xml/key_styles_common" />
+    <switch>
+        <case latin:fifthAvenue="true">
+            <switch>
+                <case latin:fifthAvenueWithLargeRow="true">
+                    <Row latin:keyWidth="10.000002%p">
+                        <include latin:keyboardLayout="@xml/rowkeys_chakma5_left5" />
+                        <include latin:keyboardLayout="@xml/rowkeys_chakma5_right5" />
+                    </Row>
+                </case>
+                <default>
+                    <Row latin:keyWidth="10.000002%p" latin:rowHeight="14.999998%p">
+                        <include latin:keyboardLayout="@xml/rowkeys_chakma5_left5" />
+                        <include latin:keyboardLayout="@xml/rowkeys_chakma5_right5" />
+                    </Row>
+                </default>
+            </switch>
+        </case>
+    </switch>
+    <Row latin:keyWidth="10.000002%p">
+        <include latin:keyboardLayout="@xml/rowkeys_chakma1_left5" />
+        <include latin:keyboardLayout="@xml/rowkeys_chakma1_right5" />
+    </Row>
+    <Row latin:keyWidth="10.000002%p">
+        <include latin:keyboardLayout="@xml/rowkeys_chakma2_left5" />
+        <include latin:keyboardLayout="@xml/rowkeys_chakma2_right5" />
+    </Row>
+    <Row latin:keyWidth="8.000004%p">
+        <Key latin:keyStyle="shiftKeyStyle" latin:keyWidth="13.999998%p" latin:visualInsetsRight="0.99999905%p" />
+        <include latin:keyboardLayout="@xml/rowkeys_chakma3_left5" />
+        <include latin:keyboardLayout="@xml/rowkeys_chakma3_right5" />
+        <Key latin:keyStyle="deleteKeyStyle" latin:keyWidth="fillRight" latin:visualInsetsLeft="0.99999905%p" />
+    </Row>
+    <include latin:keyboardLayout="@xml/row_qwerty4" />
+</merge>

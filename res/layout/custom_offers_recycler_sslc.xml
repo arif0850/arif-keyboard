@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/mainLinearLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="16.0dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="0.8">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/visaCard" android:visibility="gone" android:layout_width="35.0dp" android:layout_height="35.0dp" app:srcCompat="@drawable/ic_visa_new" />
+                <ImageView android:id="@id/masterCard" android:visibility="gone" android:layout_width="35.0dp" android:layout_height="35.0dp" android:layout_marginLeft="8.0dp" android:layout_marginRight="8.0dp" app:srcCompat="@drawable/ic_mastercard_new" />
+                <ImageView android:id="@id/amexCard" android:visibility="gone" android:layout_width="35.0dp" android:layout_height="35.0dp" app:srcCompat="@drawable/ic_amex_new" />
+                <ImageView android:id="@id/unionPayCard" android:visibility="gone" android:layout_width="35.0dp" android:layout_height="35.0dp" app:srcCompat="@drawable/ic_unionpay" />
+                <ImageView android:id="@id/dinersClubCard" android:visibility="gone" android:layout_width="35.0dp" android:layout_height="35.0dp" app:srcCompat="@drawable/ic_dinnerclub" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dp">
+                <com.sslwireless.sslcommerzlibrary.view.custom.SSLCCustomTextView android:textSize="14.0sp" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" app:textStyle="Bold" />
+                <com.sslwireless.sslcommerzlibrary.view.custom.SSLCCustomTextView android:textSize="11.0sp" android:id="@id/desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" app:textStyle="Normal" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_marginLeft="8.0dp" android:layout_marginTop="4.0dp" android:layout_weight="0.2">
+            <com.sslwireless.sslcommerzlibrary.view.custom.SSLCCustomTextView android:id="@id/previousAmount" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="AAA" android:textAlignment="center" app:textStyle="Normal" />
+            <com.sslwireless.sslcommerzlibrary.view.custom.SSLCCustomTextView android:textSize="18.0sp" android:id="@id/discountedAmount" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:textAlignment="center" app:textStyle="Bold" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/view" android:background="@color/white_off" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginLeft="16.0dp" android:layout_marginTop="8.0dp" android:layout_marginRight="16.0dp" />
+</LinearLayout>

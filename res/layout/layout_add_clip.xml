@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/clipboard_bg_color" android:padding="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textColor="#212121" android:id="@id/title" android:paddingTop="10.0dp" android:paddingBottom="20.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Add a clip" />
+    <EditText android:id="@id/input" android:background="@drawable/clipboard_shortcut_item_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dp" android:hint="Type here" android:ems="10" android:layout_below="@id/title" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:inputType="textPersonName|textMultiLine" />
+    <Button android:textColor="#ffffff" android:id="@id/save" android:background="@drawable/clip_save_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Save" android:layout_below="@id/input" android:layout_alignRight="@id/input" style="@style/Widget.AppCompat.Button.Borderless" />
+</RelativeLayout>

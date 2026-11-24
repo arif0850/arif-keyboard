@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/settings_screen_appearance" android:key="screen_appearance"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <CheckBoxPreference android:persistent="true" android:title="@string/enable_number_row_title" android:key="pref_enable_number_row" android:summary="@string/enable_number_row_summary" android:defaultValue="false" />
+    <PreferenceScreen android:layout="@layout/divider_layout" />
+    <CheckBoxPreference android:persistent="true" android:title="@string/enable_large_number_row_title" android:key="pref_enable_number_row_with_large_row" android:dependency="pref_enable_number_row" android:defaultValue="false" />
+    <PreferenceScreen android:layout="@layout/divider_layout" />
+    <CheckBoxPreference android:persistent="true" android:title="@string/hide_hint_text_in_key_title" android:key="pref_hint_key_enable" android:summary="@string/hide_hint_text_in_key_summary" android:defaultValue="false" />
+    <PreferenceScreen android:layout="@layout/divider_layout" />
+    <CheckBoxPreference android:persistent="true" android:title="@string/prefs_resize_keyboard" android:key="pref_resize_keyboard" android:defaultValue="false" />
+    <PreferenceScreen android:layout="@layout/divider_layout" />
+    <com.android.inputmethod.latin.settings.SeekBarDialogPreference android:title="@string/prefs_keyboard_height_scale" android:key="pref_keyboard_height_scale" android:dependency="pref_resize_keyboard" latin:maxValue="150" latin:minValue="50" />
+    <PreferenceScreen android:layout="@layout/divider_layout" />
+    <com.android.inputmethod.latin.settings.SeekBarDialogPreference android:title="@string/prefs_keyboard_height_scale_landscape" android:key="pref_keyboard_height_scale_landscape" android:dependency="pref_resize_keyboard" latin:maxValue="150" latin:minValue="50" />
+    <PreferenceScreen android:layout="@layout/divider_layout" />
+    <com.android.inputmethod.latin.settings.SeekBarDialogPreference android:title="@string/prefs_keyboard_width_scale" android:key="pref_keyboard_width_scale" latin:maxValue="85" latin:minValue="70" />
+    <PreferenceScreen android:layout="@layout/divider_layout" />
+    <com.android.inputmethod.latin.settings.SeekBarDialogPreference android:title="@string/prefs_keyboard_width_scale_landscape" android:key="pref_keyboard_width_scale_landscape" latin:maxValue="85" latin:minValue="40" />
+    <PreferenceScreen android:layout="@layout/divider_layout" />
+    <CheckBoxPreference android:persistent="true" android:title="@string/enable_split_keyboard" android:key="pref_split_keyboard" android:defaultValue="true" />
+    <PreferenceScreen android:layout="@layout/divider_layout" />
+    <CheckBoxPreference android:persistent="true" android:title="@string/enable_split_keyboard_for_fold_device" android:key="pref_split_keyboard_folded_phone" android:defaultValue="false" />
+    <PreferenceScreen android:layout="@layout/divider_layout" />
+    <CheckBoxPreference android:persistent="true" android:title="@string/forced_enter_button" android:key="pref_forced_enter_button" android:summary="@string/forced_enter_button_summary" android:defaultValue="true" />
+</PreferenceScreen>

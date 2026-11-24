@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="voice_engine_titles">
+        <item>@string/voice_engine_google</item>
+        <item>@string/voice_engine_default</item>
+    </string-array>
+</resources>

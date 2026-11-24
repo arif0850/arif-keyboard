@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charSet="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <style type="text/css">
+    *,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/*
+! tailwindcss v3.4.15 | MIT License | https://tailwindcss.com
+*/*,:after,:before{box-sizing:border-box;border:0 solid #e5e7eb}:after,:before{--tw-content:""}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.collapse{visibility:collapse}.sticky{position:sticky}.top-0{top:0}.mx-auto{margin-left:auto;margin-right:auto}.mb-2{margin-bottom:.5rem}.block{display:block}.table{display:table}.w-full{width:100%}.max-w-2xl{max-width:42rem}.rounded-lg{border-radius:.5rem}.border{border-width:1px}.border-gray-300{--tw-border-opacity:1;border-color:rgb(209 213 219/var(--tw-border-opacity,1))}.bg-gray-50{--tw-bg-opacity:1;background-color:rgb(249 250 251/var(--tw-bg-opacity,1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity,1))}.p-2\.5{padding:.625rem}.px-3{padding-left:.75rem;padding-right:.75rem}.py-3{padding-top:.75rem;padding-bottom:.75rem}.pb-4{padding-bottom:1rem}.font-\[family-name\:var\(--font-geist-sans\)\]{font-family:var(--font-geist-sans)}.text-sm{font-size:.875rem;line-height:1.25rem}.lowercase{text-transform:lowercase}.text-gray-900{--tw-text-opacity:1;color:rgb(17 24 39/var(--tw-text-opacity,1))}:root{--background:#fff;--foreground:#171717}@media (prefers-color-scheme:dark){:root{--background:#0a0a0a;--foreground:#ededed}}body{color:var(--foreground);background:var(--background);font-family:Arial,Helvetica,sans-serif}.focus\:border-blue-500:focus{--tw-border-opacity:1;border-color:rgb(59 130 246/var(--tw-border-opacity,1))}.focus\:ring-blue-500:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(59 130 246/var(--tw-ring-opacity,1))}@media (min-width:768px){.md\:px-6{padding-left:1.5rem;padding-right:1.5rem}.md\:py-6{padding-top:1.5rem;padding-bottom:1.5rem}}@media (min-width:1024px){.lg\:px-8{padding-left:2rem;padding-right:2rem}.lg\:py-8{padding-top:2rem;padding-bottom:2rem}}@media (prefers-color-scheme:dark){.dark\:border-gray-600{--tw-border-opacity:1;border-color:rgb(75 85 99/var(--tw-border-opacity,1))}.dark\:bg-gray-700{--tw-bg-opacity:1;background-color:rgb(55 65 81/var(--tw-bg-opacity,1))}.dark\:text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.dark\:placeholder-gray-400::placeholder{--tw-placeholder-opacity:1;color:rgb(156 163 175/var(--tw-placeholder-opacity,1))}.dark\:focus\:border-blue-500:focus{--tw-border-opacity:1;border-color:rgb(59 130 246/var(--tw-border-opacity,1))}.dark\:focus\:ring-blue-500:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(59 130 246/var(--tw-ring-opacity,1))}}
+  </style>
+</head>
+<body class="bg-white">
+<div class="font-[family-name:var(--font-geist-sans)] max-w-2xl mx-auto px-3 md:px-6 lg:px-8">
+  <!--<div class="sticky top-0 bg-white py-3 md:py-6 lg:py-8"><label for="message"
+                                                                 class="block mb-2 text-sm font-mediumtext-gray-900 dark:text-white">নিচের
+    কি-ম্যাপ অনুসারে লিখুন</label><textarea id="message" rows="4"
+                                            class="block p-2.5 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                            placeholder="এখানে লিখুন"></textarea></div>-->
+  <div class="pb-4" dir="ltr">
+    <table class="w-full" cellSpacing="0" cellPadding="0">
+      <tbody>
+      <tr style="height:20px">
+        <td class="s4" dir="ltr" style="border-bottom:1px solid #000000;background-color:#ffffff"></td>
+        <td class="s4" dir="ltr" style="border-bottom:1px solid #000000;background-color:#ffffff"></td>
+        <td class="s4" dir="ltr" style="border-bottom:1px solid #000000;background-color:#ffffff"></td>
+        <td class="s4" dir="ltr" style="border-bottom:1px solid #000000;background-color:#ffffff"></td>
+      </tr>
+      <tr style="height:20px">
+        <td class="s5" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;border-left:1px solid #000000;background-color:#ffffff;text-align:center;color:#000000;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">অ</div>
+        </td>
+        <td class="s6" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;background-color:#ffffff;text-align:center;color:#a86902;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">o</div>
+        </td>
+        <td class="s5" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;border-left:1px solid #000000;background-color:#ffffff;text-align:center;color:#000000;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">ঋ,  ৃ</div>
+        </td>
+        <td class="s6" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;background-color:#ffffff;text-align:center;color:#a86902;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">rri</div>
+        </td>
+      </tr>
+      <tr style="height:20px">
+        <td class="s7" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;border-left:1px solid #000000;background-color:#f8f6ea;text-align:center;color:#000000;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">আ,  া</div>
+        </td>
+        <td class="s8" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;background-color:#f8f6ea;text-align:center;color:#a86902;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">a</div>
+        </td>
+        <td class="s7" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;border-left:1px solid #000000;background-color:#f8f6ea;text-align:center;color:#000000;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">এ,  ে</div>
+        </td>
+        <td class="s9" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;background-color:#f8f6ea;text-align:center;color:#a86902;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">e</div>
+        </td>
+      </tr>
+      <tr style="height:20px">
+        <td class="s5" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;border-left:1px solid #000000;background-color:#ffffff;text-align:center;color:#000000;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">ই,  ি</div>
+        </td>
+        <td class="s6" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;background-color:#ffffff;text-align:center;color:#a86902;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">i</div>
+        </td>
+        <td class="s5" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;border-left:1px solid #000000;background-color:#ffffff;text-align:center;color:#000000;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">ঐ,  ৈ</div>
+        </td>
+        <td class="s11" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;background-color:#ffff00;text-align:center;color:#e90c13;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">oii</div>
+        </td>
+      </tr>
+      <tr style="height:20px">
+        <td class="s7" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;border-left:1px solid #000000;background-color:#f8f6ea;text-align:center;color:#000000;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">ঈ,  ী</div>
+        </td>
+        <td class="s11" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;background-color:#ffff00;text-align:center;color:#e90c13;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">ii</div>
+        </td>
+        <td class="s7" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;border-left:1px solid #000000;background-color:#f8f6ea;text-align:center;color:#000000;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">ও,  ো</div>
+        </td>
+        <td class="s11" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;background-color:#ffff00;text-align:center;color:#e90c13;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">oo</div>
+        </td>
+      </tr>
+      <tr style="height:20px">
+        <td class="s5" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;border-left:1px solid #000000;background-color:#ffffff;text-align:center;color:#000000;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">উ,  ু</div>
+        </td>
+        <td class="s6" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;background-color:#ffffff;text-align:center;color:#a86902;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">u</div>
+        </td>
+        <td class="s5" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;border-left:1px solid #000000;background-color:#ffffff;text-align:center;color:#000000;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">ঔ,  ৌ</div>
+        </td>
+        <td class="s11" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;background-color:#ffff00;text-align:center;color:#e90c13;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">ouu</div>
+        </td>
+      </tr>
+      <tr style="height:20px">
+        <td class="s7" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;border-left:1px solid #000000;background-color:#f8f6ea;text-align:center;color:#000000;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">ঊ,  ূ</div>
+        </td>
+        <td class="s11" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;background-color:#ffff00;text-align:center;color:#e90c13;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">uu</div>
+        </td>
+        <td class="s7" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;border-left:1px solid #000000;background-color:#f8f6ea;text-align:center;color:#000000;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px"></td>
+        <td class="s8" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;background-color:#f8f6ea;text-align:center;color:#a86902;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px"></td>
+      </tr>
+      <tr style="height:20px">
+        <td class="s4" dir="ltr" style="border-bottom:1px solid #000000;background-color:#ffffff"></td>
+        <td class="s4" dir="ltr" style="border-bottom:1px solid #000000;background-color:#ffffff"></td>
+        <td class="s4" dir="ltr" style="border-bottom:1px solid #000000;background-color:#ffffff"></td>
+        <td class="s4" dir="ltr" style="border-bottom:1px solid #000000;background-color:#ffffff"></td>
+      </tr>
+      <tr style="height:20px">
+        <td class="s5" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;border-left:1px solid #000000;background-color:#ffffff;text-align:center;color:#000000;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">ক</div>
+        </td>
+        <td class="s10" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;background-color:#ffffff;text-align:center;color:#a86902;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">k</div>
+        </td>
+        <td class="s5" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;border-left:1px solid #000000;background-color:#ffffff;text-align:center;color:#000000;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">চ</div>
+        </td>
+        <td class="s10" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;background-color:#ffffff;text-align:center;color:#a86902;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">c</div>
+        </td>
+      </tr>
+      <tr style="height:20px">
+        <td class="s7" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;border-left:1px solid #000000;background-color:#f8f6ea;text-align:center;color:#000000;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">খ</div>
+        </td>
+        <td class="s8" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;background-color:#f8f6ea;text-align:center;color:#a86902;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">kh</div>
+        </td>
+        <td class="s7" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;border-left:1px solid #000000;background-color:#f8f6ea;text-align:center;color:#000000;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">ছ</div>
+        </td>
+        <td class="s8" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;background-color:#f8f6ea;text-align:center;color:#a86902;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">ch</div>
+        </td>
+      </tr>
+      <tr style="height:20px">
+        <td class="s5" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;border-left:1px solid #000000;background-color:#ffffff;text-align:center;color:#000000;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">গ</div>
+        </td>
+        <td class="s10" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;background-color:#ffffff;text-align:center;color:#a86902;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">g</div>
+        </td>
+        <td class="s5" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;border-left:1px solid #000000;background-color:#ffffff;text-align:center;color:#000000;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">জ</div>
+        </td>
+        <td class="s6" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;background-color:#ffffff;text-align:center;color:#a86902;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">j</div>
+        </td>
+      </tr>
+      <tr style="height:20px">
+        <td class="s7" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;border-left:1px solid #000000;background-color:#f8f6ea;text-align:center;color:#000000;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">ঘ</div>
+        </td>
+        <td class="s8" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;background-color:#f8f6ea;text-align:center;color:#a86902;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">gh</div>
+        </td>
+        <td class="s7" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;border-left:1px solid #000000;background-color:#f8f6ea;text-align:center;color:#000000;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">ঝ</div>
+        </td>
+        <td class="s9" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;background-color:#f8f6ea;text-align:center;color:#a86902;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">jh</div>
+        </td>
+      </tr>
+      <tr style="height:20px">
+        <td class="s5" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;border-left:1px solid #000000;background-color:#ffffff;text-align:center;color:#000000;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">ঙ</div>
+        </td>
+        <td class="s11" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;background-color:#ffff00;text-align:center;color:#e90c13;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">ngg</div>
+        </td>
+        <td class="s5" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;border-left:1px solid #000000;background-color:#ffffff;text-align:center;color:#000000;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">ঞ</div>
+        </td>
+        <td class="s11" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;background-color:#ffff00;text-align:center;color:#e90c13;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">ngh</div>
+        </td>
+      </tr>
+      <tr style="height:20px">
+        <td class="s5" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;border-left:1px solid #000000;background-color:#ffffff;text-align:center;color:#000000;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px"> ং</div>
+        </td>
+        <td class="s10" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;background-color:#ffffff;text-align:center;color:#a86902;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">ng</div>
+        </td>
+        <td class="s7" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;border-left:1px solid #000000;background-color:#f8f6ea;text-align:center;color:#000000;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">ঁ</div>
+        </td>
+        <td class="s8" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;background-color:#f8f6ea;text-align:center;color:#a86902;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">vv</div>
+        </td>
+      </tr>
+      <tr style="height:20px">
+        <td class="s4" dir="ltr" style="border-bottom:1px solid #000000;background-color:#ffffff"></td>
+        <td class="s4" dir="ltr" style="border-bottom:1px solid #000000;background-color:#ffffff"></td>
+        <td class="s4" dir="ltr" style="border-bottom:1px solid #000000;background-color:#ffffff"></td>
+        <td class="s4" dir="ltr" style="border-bottom:1px solid #000000;background-color:#ffffff"></td>
+      </tr>
+      <tr style="height:20px">
+        <td class="s5" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;border-left:1px solid #000000;background-color:#ffffff;text-align:center;color:#000000;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">ত</div>
+        </td>
+        <td class="s6" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;background-color:#ffffff;text-align:center;color:#a86902;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">t</div>
+        </td>
+        <td class="s5" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;border-left:1px solid #000000;background-color:#ffffff;text-align:center;color:#000000;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">ট</div>
+        </td>
+        <td class="s12" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;background-color:#ffff00;text-align:center;color:#ff0000;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">thh</div>
+        </td>
+      </tr>
+      <tr style="height:20px">
+        <td class="s7" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;border-left:1px solid #000000;background-color:#f8f6ea;text-align:center;color:#000000;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">থ</div>
+        </td>
+        <td class="s9" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;background-color:#f8f6ea;text-align:center;color:#a86902;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">th</div>
+        </td>
+        <td class="s7" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;border-left:1px solid #000000;background-color:#f8f6ea;text-align:center;color:#000000;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">ঠ</div>
+        </td>
+        <td class="s11" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;background-color:#ffff00;text-align:center;color:#e90c13;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">thhh</div>
+        </td>
+      </tr>
+      <tr style="height:20px">
+        <td class="s7" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;border-left:1px solid #000000;background-color:#f8f6ea;text-align:center;color:#000000;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">ৎ</div>
+        </td>
+        <td class="s13" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;background-color:#ffff00;text-align:center;color:#ff0000;font-family:docs-Times,Arial;font-size:10pt">
+          <div class="softmerge-inner" style="left:-1px">thth</div>
+        </td>
+        <td class="s14" dir="ltr"></td>
+        <td class="s15" dir="ltr"></td>
+      </tr>
+      <tr style="height:20px">
+        <td class="s14" dir="ltr"></td>
+        <td class="s16" dir="ltr"></td>
+        <td class="s14" dir="ltr"></td>
+        <td class="s15" dir="ltr"></td>
+      </tr>
+      <tr style="height:20px">
+        <td class="s4" dir="ltr" style="border-bottom:1px solid #000000;background-color:#ffffff"></td>
+        <td class="s4" dir="ltr" style="border-bottom:1px solid #000000;background-color:#ffffff"></td>
+        <td class="s4" dir="ltr" style="border-bottom:1px solid #000000;background-color:#ffffff"></td>
+        <td class="s4" dir="ltr" style="border-bottom:1px solid #000000;background-color:#ffffff"></td>
+      </tr>
+      <tr style="height:20px">
+        <td class="s5" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;border-left:1px solid #000000;background-color:#ffffff;text-align:center;color:#000000;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">ড</div>
+        </td>
+        <td class="s11" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;background-color:#ffff00;text-align:center;color:#e90c13;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">dhh</div>
+        </td>
+        <td class="s5" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;border-left:1px solid #000000;background-color:#ffffff;text-align:center;color:#000000;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">দ</div>
+        </td>
+        <td class="s6" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;background-color:#ffffff;text-align:center;color:#a86902;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">d</div>
+        </td>
+      </tr>
+      <tr style="height:20px">
+        <td class="s7" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;border-left:1px solid #000000;background-color:#f8f6ea;text-align:center;color:#000000;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">ঢ</div>
+        </td>
+        <td class="s11" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;background-color:#ffff00;text-align:center;color:#e90c13;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">dhhh</div>
+        </td>
+        <td class="s7" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;border-left:1px solid #000000;background-color:#f8f6ea;text-align:center;color:#000000;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">ধ</div>
+        </td>
+        <td class="s9" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;background-color:#f8f6ea;text-align:center;color:#a86902;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">dh</div>
+        </td>
+      </tr>
+      <tr style="height:20px">
+        <td class="s5" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;border-left:1px solid #000000;background-color:#ffffff;text-align:center;color:#000000;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">ণ</div>
+        </td>
+        <td class="s11" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;background-color:#ffff00;text-align:center;color:#e90c13;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">nh</div>
+        </td>
+        <td class="s5" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;border-left:1px solid #000000;background-color:#ffffff;text-align:center;color:#000000;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">ন</div>
+        </td>
+        <td class="s6" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;background-color:#ffffff;text-align:center;color:#a86902;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">n</div>
+        </td>
+      </tr>
+      <tr style="height:20px">
+        <td class="s4" dir="ltr" style="border-bottom:1px solid #000000;background-color:#ffffff"></td>
+        <td class="s4" dir="ltr" style="border-bottom:1px solid #000000;background-color:#ffffff"></td>
+        <td class="s4" dir="ltr" style="border-bottom:1px solid #000000;background-color:#ffffff"></td>
+        <td class="s4" dir="ltr" style="border-bottom:1px solid #000000;background-color:#ffffff"></td>
+      </tr>
+      <tr style="height:20px">
+        <td class="s5" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;border-left:1px solid #000000;background-color:#ffffff;text-align:center;color:#000000;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">প</div>
+        </td>
+        <td class="s10" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;background-color:#ffffff;text-align:center;color:#a86902;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">p</div>
+        </td>
+        <td class="s5" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;border-left:1px solid #000000;background-color:#ffffff;text-align:center;color:#000000;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">য</div>
+        </td>
+        <td class="s10" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;background-color:#ffffff;text-align:center;color:#a86902;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">z</div>
+        </td>
+      </tr>
+      <tr style="height:20px">
+        <td class="s7" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;border-left:1px solid #000000;background-color:#f8f6ea;text-align:center;color:#000000;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">ফ</div>
+        </td>
+        <td class="s8" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;background-color:#f8f6ea;text-align:center;color:#a86902;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">f, ph</div>
+        </td>
+        <td class="s4" dir="ltr" style="border-bottom:1px solid #000000;background-color:#ffffff"></td>
+        <td class="s4" dir="ltr" style="border-bottom:1px solid #000000;background-color:#ffffff"></td>
+      </tr>
+      <tr style="height:20px">
+        <td class="s5" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;border-left:1px solid #000000;background-color:#ffffff;text-align:center;color:#000000;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">ব</div>
+        </td>
+        <td class="s10" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;background-color:#ffffff;text-align:center;color:#a86902;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">b</div>
+        </td>
+        <td class="s5" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;border-left:1px solid #000000;background-color:#ffffff;text-align:center;color:#000000;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">ল</div>
+        </td>
+        <td class="s10" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;background-color:#ffffff;text-align:center;color:#a86902;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">l</div>
+        </td>
+      </tr>
+      <tr style="height:20px">
+        <td class="s7" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;border-left:1px solid #000000;background-color:#f8f6ea;text-align:center;color:#000000;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">ভ</div>
+        </td>
+        <td class="s8" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;background-color:#f8f6ea;text-align:center;color:#a86902;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">v, bh</div>
+        </td>
+        <td class="s7" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;border-left:1px solid #000000;background-color:#f8f6ea;text-align:center;color:#000000;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">শ</div>
+        </td>
+        <td class="s9" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;background-color:#f8f6ea;text-align:center;color:#a86902;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">sh</div>
+        </td>
+      </tr>
+      <tr style="height:20px">
+        <td class="s5" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;border-left:1px solid #000000;background-color:#ffffff;text-align:center;color:#000000;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">ম</div>
+        </td>
+        <td class="s10" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;background-color:#ffffff;text-align:center;color:#a86902;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">m</div>
+        </td>
+        <td class="s7" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;border-left:1px solid #000000;background-color:#f8f6ea;text-align:center;color:#000000;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">ষ</div>
+        </td>
+        <td class="s11" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;background-color:#ffff00;text-align:center;color:#e90c13;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">shh</div>
+        </td>
+      </tr>
+      <tr style="height:20px">
+        <td class="s4" dir="ltr" style="border-bottom:1px solid #000000;background-color:#ffffff"></td>
+        <td class="s4" dir="ltr" style="border-bottom:1px solid #000000;background-color:#ffffff"></td>
+        <td class="s4" dir="ltr" style="border-bottom:1px solid #000000;background-color:#ffffff"></td>
+        <td class="s4" dir="ltr" style="border-bottom:1px solid #000000;background-color:#ffffff"></td>
+      </tr>
+      <tr style="height:20px">
+        <td class="s5" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;border-left:1px solid #000000;background-color:#ffffff;text-align:center;color:#000000;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">স</div>
+        </td>
+        <td class="s6" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;background-color:#ffffff;text-align:center;color:#a86902;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">s</div>
+        </td>
+        <td class="s5" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;border-left:1px solid #000000;background-color:#ffffff;text-align:center;color:#000000;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">য়</div>
+        </td>
+        <td class="s10" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;background-color:#ffffff;text-align:center;color:#a86902;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">y</div>
+        </td>
+      </tr>
+      <tr style="height:20px">
+        <td class="s7" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;border-left:1px solid #000000;background-color:#f8f6ea;text-align:center;color:#000000;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">হ</div>
+        </td>
+        <td class="s8" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;background-color:#f8f6ea;text-align:center;color:#a86902;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">h</div>
+        </td>
+        <td dir="ltr"></td>
+        <td dir="ltr"></td>
+      </tr>
+      <tr style="height:20px">
+        <td class="s4" dir="ltr" style="border-bottom:1px solid #000000;background-color:#ffffff"></td>
+        <td class="s4" dir="ltr" style="border-bottom:1px solid #000000;background-color:#ffffff"></td>
+        <td class="s4" dir="ltr" style="border-bottom:1px solid #000000;background-color:#ffffff"></td>
+        <td class="s4" dir="ltr" style="border-bottom:1px solid #000000;background-color:#ffffff"></td>
+      </tr>
+      <tr style="height:20px">
+        <td class="s5" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;border-left:1px solid #000000;background-color:#ffffff;text-align:center;color:#000000;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">ড়</div>
+        </td>
+        <td class="s11" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;background-color:#ffff00;text-align:center;color:#e90c13;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">rh</div>
+        </td>
+        <td class="s7" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;border-left:1px solid #000000;background-color:#f8f6ea;text-align:center;color:#000000;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">র</div>
+        </td>
+        <td class="s10" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;background-color:#ffffff;text-align:center;color:#a86902;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">r</div>
+        </td>
+      </tr>
+      <tr style="height:20px">
+        <td class="s7" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;border-left:1px solid #000000;background-color:#f8f6ea;text-align:center;color:#000000;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">ঢ়</div>
+        </td>
+        <td class="s11" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;background-color:#ffff00;text-align:center;color:#e90c13;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">rhh</div>
+        </td>
+        <td dir="ltr"></td>
+        <td dir="ltr"></td>
+      </tr>
+      <tr style="height:20px">
+        <td class="s4" dir="ltr" style="border-bottom:1px solid #000000;background-color:#ffffff"></td>
+        <td class="s4" dir="ltr" style="border-bottom:1px solid #000000;background-color:#ffffff"></td>
+        <td class="s4" dir="ltr" style="border-bottom:1px solid #000000;background-color:#ffffff"></td>
+        <td class="s4" dir="ltr" style="border-bottom:1px solid #000000;background-color:#ffffff"></td>
+      </tr>
+      <tr style="height:20px">
+        <td class="s5" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;border-left:1px solid #000000;background-color:#ffffff;text-align:center;color:#000000;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">ক্ষ</div>
+        </td>
+        <td class="s10" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;background-color:#ffffff;text-align:center;color:#a86902;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">kkh</div>
+        </td>
+        <td class="s5" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;border-left:1px solid #000000;background-color:#ffffff;text-align:center;color:#000000;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">জ্ঞ</div>
+        </td>
+        <td class="s10" dir="ltr"
+            style="border-bottom:1px solid #000000;border-right:1px solid #000000;background-color:#ffffff;text-align:center;color:#a86902;font-family:docs-Times,Arial;font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px">
+          <div class="softmerge-inner" style="left:-1px">gg</div>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+</body>
+</html>

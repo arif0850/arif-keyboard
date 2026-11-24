@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/common_padding" android:paddingRight="@dimen/common_padding" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingHorizontal="@dimen/common_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="@color/colorPrimary" android:id="@id/setup_welcome_title" style="@style/setupTitleStyle" />
+    <TextView android:textSize="18.0sp" android:textStyle="bold" android:id="@id/but_first_text" android:layout_marginTop="20.0dp" android:text="@string/setup_but_first" style="@style/setupWelcomeDescritpionStyle" />
+    <TextView android:textSize="@dimen/title_text_size" android:textStyle="normal" android:id="@id/welcome_instruction_text" android:layout_marginTop="@dimen/setup_welcome_description_top_margin" android:text="@string/welcome_instruction" style="@style/setupWelcomeDescritpionStyle" />
+    <com.android.inputmethod.latin.setup.SetupStartIndicatorView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="50.0dp" />
+    <LinearLayout android:gravity="center|bottom" android:orientation="vertical" android:paddingBottom="50.0dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.google.android.material.button.MaterialButton android:textSize="13.0sp" android:layout_gravity="center|top" android:id="@id/toggle_lang" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="150.0dp" android:text="@string/setup_lang_toggle" android:fontFamily="@font/primary" app:cornerRadius="50.0dp" app:strokeColor="@color/colorPrimary" style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+        <include layout="@layout/ridmik_keyboard_logo_text" />
+    </LinearLayout>
+</LinearLayout>

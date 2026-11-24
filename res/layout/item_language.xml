@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_language_item_selector" android:paddingLeft="12.0dp" android:paddingTop="14.0dp" android:paddingRight="12.0dp" android:paddingBottom="14.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="12.0dp" android:paddingVertical="14.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="16.0sp" android:textColor="@android:color/black" android:id="@id/languageTextView" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:fontFamily="@font/primary" />
+    <ImageView android:id="@id/checkmarkImageView" android:visibility="visible" android:layout_width="16.0dp" android:layout_height="16.0dp" android:src="@drawable/ic_tik_icon_language_dialog" />
+</LinearLayout>

@@ -1,0 +1,18 @@
+{
+  "background_image": "https://cdn.discordapp.com/attachments/689439556394549278/1040120772070477854/Property_1Variant4.jpg",
+  "background_image_land": "",
+  "background_color": "",
+  "key_background_color": "#1AFFFFFF",
+  "key_selected_background_color": "#62CCFF",
+  "key_text_color": "#FCFFFFFF",
+  "key_hint_color": "#8F8F8F",
+  "suggestion_bar_background_color": "#1AFFFFFF",
+  "suggestion_bar_text_color": "#FCFFFFFF",
+  "functional_background_color": "#1FFFFFFF",
+  "functional_text_color": "#FCFFFFFF",
+  "navigation_bar_color": "#2B3843",
+  "popup_background_color": "#0EB1FF",
+  "popup_selected_background_color": "#62CCFF",
+  "pop_up_text_color": "#FCFFFFFF",
+  "full_image": true
+}

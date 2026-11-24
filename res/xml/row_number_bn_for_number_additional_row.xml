@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <Row latin:keyWidth="10.000002%p" latin:rowHeight="14.999998%p">
+        <Key latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/font_size_ratio_for_for_additional_number_row" latin:keySpec="¤|১" />
+        <Key latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/font_size_ratio_for_for_additional_number_row" latin:keySpec="¥|২" />
+        <Key latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/font_size_ratio_for_for_additional_number_row" latin:keySpec="¦|৩" />
+        <Key latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/font_size_ratio_for_for_additional_number_row" latin:keySpec="§|৪" />
+        <Key latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/font_size_ratio_for_for_additional_number_row" latin:keySpec="¨|৫" />
+        <Key latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/font_size_ratio_for_for_additional_number_row" latin:keySpec="ª|৬" />
+        <Key latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/font_size_ratio_for_for_additional_number_row" latin:keySpec="«|৭" />
+        <Key latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/font_size_ratio_for_for_additional_number_row" latin:keySpec="¬|৮" />
+        <Key latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/font_size_ratio_for_for_additional_number_row" latin:keySpec="¯|৯" />
+        <Key latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/font_size_ratio_for_for_additional_number_row" latin:keySpec="¡|০" />
+    </Row>
+</merge>

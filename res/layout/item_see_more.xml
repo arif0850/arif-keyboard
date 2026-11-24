@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="@dimen/theme_item_height" android:layout_marginLeft="@dimen/app_left_right_padding" android:layout_marginBottom="5.0dp" android:layout_marginStart="@dimen/app_left_right_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ridmik.keyboard.uihelper.FontText android:textSize="@dimen/extra_large_text_size" android:textStyle="bold" android:textColor="@color/typography_secondary_text_color" android:gravity="center" android:id="@id/iconSeeMore" android:background="?selectableItemBackground" android:paddingLeft="5.0dp" android:paddingRight="5.0dp" android:layout_width="wrap_content" android:layout_height="0.0dp" android:text="" android:fontFamily="@font/primary" android:paddingHorizontal="5.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

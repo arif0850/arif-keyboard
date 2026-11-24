@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="?android:selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/iconView" android:background="@drawable/circular_home_grid_bg" android:padding="16.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/settings" />
+    <TextView android:textSize="@dimen/large_text_size" android:textStyle="bold" android:textColor="@color/typography_primary_text_color" android:gravity="center" android:id="@id/gridItemName" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:text="@string/home_grid_item_store" android:fontFamily="@font/primary" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/iconView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

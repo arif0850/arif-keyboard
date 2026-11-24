@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <include latin:keyboardLayout="@xml/key_styles_common" />
+    <switch>
+        <case latin:fifthAvenue="true">
+            <switch>
+                <case latin:fifthAvenueWithLargeRow="true">
+                    <include latin:keyboardLayout="@xml/row_number_en_bn" />
+                </case>
+                <default>
+                    <include latin:keyboardLayout="@xml/row_number_en_bn_for_number_additional_row" />
+                </default>
+            </switch>
+        </case>
+    </switch>
+    <Row latin:keyWidth="10.000002%p">
+        <include latin:keyboardLayout="@xml/rowkeys_sylheti1_left5" />
+        <include latin:keyboardLayout="@xml/rowkeys_sylheti1_right5" />
+    </Row>
+    <Row latin:keyWidth="10.000002%p">
+        <include latin:keyXPos="4.999995%p" latin:keyboardLayout="@xml/rowkeys_sylheti2_left5" />
+        <include latin:keyboardLayout="@xml/rowkeys_sylhet2_right4" />
+    </Row>
+    <Row latin:keyWidth="10.000002%p">
+        <Key latin:keyStyle="shiftKeyStyle" latin:keyWidth="13.999998%p" latin:visualInsetsRight="0.99999905%p" />
+        <include latin:keyboardLayout="@xml/rowkeys_sylheti3_left4" />
+        <include latin:keyboardLayout="@xml/rowkeys_sylheti_3_right3" />
+        <Key latin:keyStyle="deleteKeyStyle" latin:keyWidth="fillRight" latin:visualInsetsLeft="0.99999905%p" />
+    </Row>
+    <include latin:keyboardLayout="@xml/row_qwerty4" />
+</merge>

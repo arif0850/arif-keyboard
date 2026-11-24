@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <switch>
+        <case latin:keyboardLayoutSetElement="arabicShifted">
+            <Key latin:keySpec="1" />
+            <Key latin:keySpec="2" />
+            <Key latin:keySpec="3" />
+            <Key latin:keySpec="4" />
+            <Key latin:keySpec="5" />
+        </case>
+        <default>
+            <Key latin:additionalMoreKeys="١" latin:keySpec="ً" />
+            <Key latin:additionalMoreKeys="٢" latin:keySpec="ٖ" />
+            <Key latin:additionalMoreKeys="٣" latin:keySpec="ٗ" />
+            <Key latin:additionalMoreKeys="٤" latin:keySpec="ِ" />
+            <Key latin:additionalMoreKeys="٥" latin:keySpec="ُ" />
+        </default>
+    </switch>
+</merge>

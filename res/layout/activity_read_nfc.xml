@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/logo" android:layout_width="200.0dp" android:layout_height="200.0dp" android:layout_marginTop="50.0dp" android:layout_centerHorizontal="true" app:srcCompat="@drawable/ic_visa_new" />
+    <TextView android:textSize="20.0sp" android:textStyle="bold" android:gravity="center_horizontal" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:layout_marginTop="50.0dp" android:layout_marginRight="20.0dp" android:text="Hold a tag against the back of your device" android:layout_below="@id/logo" android:layout_centerHorizontal="true" />
+</RelativeLayout>

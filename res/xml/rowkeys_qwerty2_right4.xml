@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <Key latin:keyHintLabel="!" latin:keySpec="h" latin:moreKeys="!" />
+    <Key latin:keyHintLabel="?" latin:keySpec="j" latin:moreKeys="?" />
+    <Key latin:additionalMoreKeys="(" latin:keyHintLabel="(" latin:keySpec="k" latin:moreKeys="[,{" />
+    <Key latin:additionalMoreKeys=")" latin:keyHintLabel=")" latin:keySpec="l" latin:moreKeys="},]" />
+</merge>

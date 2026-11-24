@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="@style/AppThemeWithLightNavigation" />
+    <style name="AppThemeWithLightNavigation" parent="@style/AppThemeWithStatusBarBackground">
+        <item name="android:windowLightNavigationBar">true</item>
+    </style>
+    <style name="Base.Theme.SplashScreen" parent="@style/Base.v27.Theme.SplashScreen" />
+    <style name="Base.Theme.SplashScreen.Light" parent="@style/Base.v27.Theme.SplashScreen.Light" />
+    <style name="Base.v27.Theme.SplashScreen" parent="@style/Base.v21.Theme.SplashScreen">
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+    </style>
+    <style name="Base.v27.Theme.SplashScreen.Light" parent="@style/Base.v21.Theme.SplashScreen.Light">
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+    </style>
+    <style name="FullScreenTheme" parent="@style/FullScreenThemeWithLightNavigationBar" />
+    <style name="FullScreenThemeWithLightNavigationBar" parent="@style/FullScreenThemeWithStatusBarBackground">
+        <item name="android:windowLightNavigationBar">true</item>
+    </style>
+</resources>

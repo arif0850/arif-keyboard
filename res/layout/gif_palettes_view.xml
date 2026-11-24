@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.inputmethod.keyboard.emoji.StickerOrGifPalettesView android:layout_width="match_parent" android:layout_height="match_parent" app:isGif="true" style="?emojiPalettesViewStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/llContainers" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="horizontal" android:id="@id/llTabs" android:layout_width="match_parent" android:layout_height="@dimen/config_suggestions_strip_height" style="?suggestionStripViewStyle">
+            <ImageView android:gravity="center" android:id="@id/gif_search_btn" android:visibility="gone" android:layout_width="36.0dp" android:layout_height="match_parent" android:src="@drawable/ic_emoji_search_24" android:scaleType="fitCenter" android:soundEffectsEnabled="false" android:hapticFeedbackEnabled="false" android:contentDescription="@null" />
+            <TabHost android:id="@id/sticker_or_gif_category_tabhost" android:layout_width="match_parent" android:layout_height="match_parent">
+                <HorizontalScrollView android:id="@id/scrollTabItems" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="match_parent" android:fillViewport="true">
+                    <TabWidget android:id="@android:id/tabs" android:layout_width="wrap_content" android:layout_height="match_parent" android:divider="@null" android:measureWithLargestChild="false" />
+                </HorizontalScrollView>
+                <FrameLayout android:id="@android:id/tabcontent" android:layout_width="0.0dp" android:layout_height="0.0dp">
+                    <View android:id="@id/sticker_or_gif_keyboard_dummy" android:visibility="gone" android:layout_width="0.0dp" android:layout_height="0.0dp" />
+                </FrameLayout>
+            </TabHost>
+        </LinearLayout>
+        <androidx.viewpager.widget.ViewPager android:id="@id/sticker_or_gif_keyboard_pager" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/config_suggestions_strip_height" />
+    </LinearLayout>
+    <ridmik.keyboard.customLoader.ArcProgressLoader android:id="@id/progressBar" android:visibility="visible" android:layout_marginTop="@dimen/config_suggestions_strip_height" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/arcProgressLoaderStyleMedium" />
+    <ViewStub android:id="@id/viewGifAPIError" android:layout="@layout/no_sticker_page" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/config_suggestions_strip_height" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</com.android.inputmethod.keyboard.emoji.StickerOrGifPalettesView>

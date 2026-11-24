@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="config_emoji_keyboard_max_page_key_count">20</integer>
+    <integer name="config_max_more_suggestions_row">2</integer>
+    <integer name="mtrl_calendar_header_orientation">0</integer>
+    <integer name="mtrl_calendar_selection_text_lines">6</integer>
+    <integer name="no_of_columns_in_grid">3</integer>
+    <integer name="setup_body_weight_in_screen">60</integer>
+    <integer name="setup_title_weight_in_screen">40</integer>
+    <integer name="setup_welcome_video_end_padding_weight_in_screen">30</integer>
+    <integer name="setup_welcome_video_weight_in_screen">70</integer>
+</resources>

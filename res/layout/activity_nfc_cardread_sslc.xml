@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#7a7afd" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rlBack" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/ivBack" android:padding="15.0dp" android:layout_width="60.0dp" android:layout_height="60.0dp" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:contentDescription="TODO" android:layout_alignParentStart="true" app:srcCompat="@drawable/ic_back_sslc" />
+        <TextView android:textSize="20.0sp" android:textColor="@android:color/white" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Read with NFC Card" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <TextView android:textSize="15.0sp" android:textColor="#ffffff" android:gravity="center" android:id="@id/tvText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dp" android:text="Tap your Credit Card on mobile to read" android:maxLines="1" android:layout_below="@id/rlBack" android:layout_centerHorizontal="true" android:layout_marginStart="10.0dp" />
+    <RelativeLayout android:gravity="center" android:id="@id/rlGif" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@id/llText" android:layout_below="@id/tvText" android:layout_centerInParent="true">
+        <com.sslwireless.sslcommerzlibrary.model.util.GifImageView android:id="@id/imgRead" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="10.0dp" android:layout_marginTop="5.0dp" android:layout_centerInParent="true" />
+        <com.sslwireless.sslcommerzlibrary.model.util.GifImageView android:id="@id/imgRight" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dp" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/llText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerInParent="true">
+        <TextView android:textSize="25.0sp" android:textColor="@android:color/white" android:id="@id/tvNFCMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="Scanning" />
+    </LinearLayout>
+</RelativeLayout>

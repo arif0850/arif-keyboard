@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/settings_screen_keyboard_layouts" android:key="keyboard_layouts"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:title="@string/bangla_layout" android:key="bangla_layout" android:fragment="com.android.inputmethod.latin.settings.BanglaLayoutsSettingsFragment" />
+</PreferenceScreen>

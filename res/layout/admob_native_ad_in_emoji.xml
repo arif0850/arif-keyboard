@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.ads.nativetemplates.TemplateView android:id="@id/nativeTemplateView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dp" android:layout_marginBottom="8.0dp" app:gnt_template_type="@layout/gnt_small_template_view" app:layout_constraintBottom_toTopOf="@id/tvWhyThisAd" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="12.0sp" android:gravity="center" android:id="@id/tvWhyThisAd" android:paddingBottom="4.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/app_left_right_padding" android:layout_marginRight="@dimen/app_left_right_padding" android:layout_marginHorizontal="@dimen/app_left_right_padding" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/nativeTemplateView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

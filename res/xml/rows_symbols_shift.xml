@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <include latin:keyboardLayout="@xml/key_styles_common" />
+    <include latin:keyboardLayout="@xml/key_styles_currency" />
+    <switch>
+        <case latin:fifthAvenue="true">
+            <switch>
+                <case latin:fifthAvenueWithLargeRow="true">
+                    <Row latin:keyWidth="10.000002%p">
+                        <Key latin:keySpec="☞|☞" latin:moreKeys="☜|☜" />
+                        <Key latin:keySpec="◑|◑" latin:moreKeys="○|○" />
+                        <Key latin:keySpec="⊕|⊕" />
+                        <Key latin:keySpec="✘|✘" />
+                        <Key latin:keySpec="✔|✔" latin:moreKeys="☑|☑" />
+                        <Key latin:keyHintLabel="★" latin:keySpec="✪|✪" latin:moreKeys="☆|☆,★|★,✪|✪,✰|✰" />
+                        <Key latin:keySpec="∞|∞" />
+                        <Key latin:keySpec="⇨|⇨" />
+                        <Key latin:keySpec="➤|➤" />
+                        <Key latin:keyHintLabel="✉" latin:keySpec="✆|✆" latin:moreKeys="✉|✉" />
+                    </Row>
+                </case>
+                <default>
+                    <Row latin:keyWidth="10.000002%p" latin:rowHeight="14.999998%p">
+                        <Key latin:keySpec="☞|☞" latin:moreKeys="☜|☜" />
+                        <Key latin:keySpec="◑|◑" latin:moreKeys="○|○" />
+                        <Key latin:keySpec="⊕|⊕" />
+                        <Key latin:keySpec="✘|✘" />
+                        <Key latin:keySpec="✔|✔" latin:moreKeys="☑|☑" />
+                        <Key latin:keyHintLabel="★" latin:keySpec="✪|✪" latin:moreKeys="☆|☆,★|★,✪|✪,✰|✰" />
+                        <Key latin:keySpec="∞|∞" />
+                        <Key latin:keySpec="⇨|⇨" />
+                        <Key latin:keySpec="➤|➤" />
+                        <Key latin:keyHintLabel="✉" latin:keySpec="✆|✆" latin:moreKeys="✉|✉" />
+                    </Row>
+                </default>
+            </switch>
+        </case>
+    </switch>
+    <Row latin:keyWidth="10.000002%p">
+        <include latin:keyboardLayout="@xml/rowkeys_symbols_shift1" />
+    </Row>
+    <Row latin:keyWidth="10.000002%p">
+        <include latin:keyboardLayout="@xml/rowkeys_symbols_shift2" />
+    </Row>
+    <Row latin:keyWidth="10.000002%p">
+        <switch>
+            <case latin:currentLanguageType="banglaFixed|sylheti">
+                <Key latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/ridmik_font_size_ratio_symbol_switch" latin:keySpec="\?¤¥¦|!code/key_shift" latin:keyStyle="backFromMoreSymbolKeyStyle" latin:keyWidth="14.999998%p" latin:visualInsetsRight="0.99999905%p" />
+            </case>
+            <case latin:currentLanguageType="arabic">
+                <Key latin:keySpec="\?١٢٣|!code/key_shift" latin:keyStyle="backFromMoreSymbolKeyStyle" latin:keyWidth="14.999998%p" latin:visualInsetsRight="0.99999905%p" />
+            </case>
+            <case latin:currentLanguageType="chakma">
+                <Key latin:keySpec="\?𑄷𑄸𑄹|!code/key_shift" latin:keyStyle="backFromMoreSymbolKeyStyle" latin:keyWidth="14.999998%p" latin:visualInsetsRight="0.99999905%p" />
+            </case>
+            <default>
+                <Key latin:keyStyle="backFromMoreSymbolKeyStyle" latin:keyWidth="14.999998%p" latin:visualInsetsRight="0.99999905%p" />
+            </default>
+        </switch>
+        <include latin:keyboardLayout="@xml/rowkeys_symbols_shift3" />
+        <Key latin:keyStyle="deleteKeyStyle" latin:keyWidth="fillRight" latin:visualInsetsLeft="0.99999905%p" />
+    </Row>
+    <Row latin:backgroundType="functional" latin:keyWidth="10.000002%p">
+        <switch>
+            <case latin:currentLanguageType="banglaFixed">
+                <Key latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio|preserveCase|followFunctionalTextColor" latin:keyLabelSize="@fraction/ridmik_font_size_ratio_alpha_switch" latin:keySpec="±»¼|!code/key_switch_alpha_symbol" latin:keyStyle="toAlphaKeyStyle" latin:keyWidth="14.999998%p" />
+            </case>
+            <case latin:currentLanguageType="arabic">
+                <Key latin:keySpec="أبت|!code/key_switch_alpha_symbol" latin:keyStyle="toAlphaKeyStyle" latin:keyWidth="14.999998%p" />
+            </case>
+            <case latin:currentLanguageType="sylheti">
+                <Key latin:keySpec="ꠀꠇꠈ|!code/key_switch_alpha_symbol" latin:keyStyle="toAlphaKeyStyle" latin:keyWidth="14.999998%p" />
+            </case>
+            <case latin:currentLanguageType="chakma">
+                <Key latin:keySpec="𑄃𑄇𑄈|!code/key_switch_alpha_symbol" latin:keyStyle="toAlphaKeyStyle" latin:keyWidth="14.999998%p" />
+            </case>
+            <default>
+                <Key latin:keyStyle="toAlphaKeyStyle" latin:keyWidth="14.999998%p" />
+            </default>
+        </switch>
+        <include latin:keyboardLayout="@xml/row_symbols_shift4" />
+        <Key latin:keyStyle="enterKeyStyle" latin:keyWidth="fillRight" />
+    </Row>
+</merge>

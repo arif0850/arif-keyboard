@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/settings_screen_advanced" android:key="screen_advanced"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <ListPreference android:title="@string/key_preview_popup_dismiss_delay" android:key="pref_key_preview_popup_dismiss_delay" />
+    <PreferenceScreen android:layout="@layout/divider_layout" />
+    <com.android.inputmethod.latin.settings.SeekBarDialogPreference android:title="@string/prefs_keypress_vibration_duration_settings" android:key="pref_vibration_duration_settings" latin:maxValue="@integer/config_max_vibration_duration" />
+    <PreferenceScreen android:layout="@layout/divider_layout" />
+    <com.android.inputmethod.latin.settings.SeekBarDialogPreference android:title="@string/prefs_keypress_sound_volume_settings" android:key="pref_keypress_sound_volume" latin:maxValue="100" />
+    <PreferenceScreen android:layout="@layout/divider_layout" />
+    <com.android.inputmethod.latin.settings.SeekBarDialogPreference android:title="@string/prefs_key_longpress_timeout_settings" android:key="pref_key_longpress_timeout" latin:maxValue="@integer/config_max_longpress_timeout" latin:minValue="@integer/config_min_longpress_timeout" latin:stepValue="@integer/config_longpress_timeout_step" />
+    <PreferenceScreen android:layout="@layout/divider_layout" />
+    <com.android.inputmethod.latin.settings.SeekBarDialogPreference android:title="@string/prefs_long_press_duration_for_moving_cursor" android:key="pref_keyboard_long_press_duration" latin:maxValue="1500" latin:minValue="500" latin:stepValue="100" />
+    <PreferenceScreen android:layout="@layout/divider_layout" />
+    <com.android.inputmethod.latin.settings.SeekBarDialogPreference android:title="@string/prefs_cursor_moving_speed" android:key="pref_keyboard_cursor_move_speed" latin:maxValue="250" latin:minValue="25" latin:stepValue="25" />
+    <PreferenceScreen android:layout="@layout/divider_layout" />
+    <CheckBoxPreference android:persistent="true" android:title="@string/prefs_enable_emoji_alt_physical_key" android:key="pref_enable_emoji_alt_physical_key" android:summary="@string/prefs_enable_emoji_alt_physical_key_summary" android:defaultValue="true" />
+    <PreferenceScreen android:layout="@layout/divider_layout" />
+    <CheckBoxPreference android:persistent="true" android:title="@string/prefs_show_typed_word" android:key="pref_show_typed_word" android:summary="@string/prefs_show_typed_word_summary" android:defaultValue="false" />
+    <PreferenceScreen android:layout="@layout/divider_layout" />
+    <PreferenceScreen android:persistent="true" android:title="@string/screen_debug_title" android:key="screen_debug" android:defaultValue="false" android:fragment="com.android.inputmethod.latin.settings.DebugSettingsFragment" />
+    <PreferenceScreen android:layout="@layout/divider_layout" />
+    <ListPreference android:entries="@array/voice_engine_titles" android:title="@string/voice_typing_engine" android:key="pref_voice_engine" android:defaultValue="@string/voice_engine_default" android:entryValues="@array/voice_engine_titles" />
+</PreferenceScreen>

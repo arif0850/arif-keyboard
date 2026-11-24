@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/settings_screen_correction" android:key="screen_correction"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:latin="http://schemas.android.com/apk/res-auto">
+    <CheckBoxPreference android:persistent="true" android:title="@string/prefs_block_potentially_offensive_title" android:key="pref_key_block_potentially_offensive" android:summary="@string/prefs_block_potentially_offensive_summary" android:defaultValue="@bool/config_block_potentially_offensive" />
+    <PreferenceScreen android:layout="@layout/divider_layout" />
+    <CheckBoxPreference android:persistent="true" android:title="@string/auto_correction" android:key="pref_key_auto_correction" android:summary="@string/auto_correction_summary" android:defaultValue="false" />
+    <CheckBoxPreference android:persistent="true" android:title="@string/phonetic_avro_auto_correction" android:key="pref_key_phonetic_avro_auto_correction" android:summary="@string/phonetic_avro_auto_correction_summary" android:defaultValue="true" />
+    <PreferenceScreen android:layout="@layout/divider_layout" />
+    <CheckBoxPreference android:persistent="true" android:title="@string/prefs_show_suggestions" android:key="show_suggestions" android:summary="@string/prefs_show_suggestions_summary" android:defaultValue="true" />
+    <PreferenceScreen android:layout="@layout/divider_layout" />
+    <CheckBoxPreference android:persistent="true" android:title="@string/use_personalized_dicts" android:key="pref_key_use_personalized_dicts" android:summary="@string/use_personalized_dicts_summary" android:defaultValue="true" />
+    <PreferenceScreen android:layout="@layout/divider_layout" />
+    <CheckBoxPreference android:persistent="true" android:title="@string/bigram_prediction" android:key="next_word_prediction" android:summary="@string/bigram_prediction_summary" android:defaultValue="true" />
+</PreferenceScreen>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/toolbar" layout="@layout/app_toolbar" />
+    <RelativeLayout android:background="#ffffff" android:paddingLeft="20.0dp" android:paddingTop="20.0dp" android:paddingRight="20.0dp" android:paddingBottom="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="20.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/language_arabic" android:layout_centerVertical="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/arabic_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ProgressBar android:layout_gravity="center_vertical" android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginRight="10.0dp" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="20.0dp" android:src="@drawable/download" android:layout_alignParentRight="true" />
+            <TextView android:textSize="16.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0.0dp" android:text="@string/install_text" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:background="#efefef" android:layout_width="match_parent" android:layout_height="1.0dp" />
+    <RelativeLayout android:id="@id/lang_chakma" android:paddingLeft="20.0dp" android:paddingTop="20.0dp" android:paddingRight="20.0dp" android:paddingBottom="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="20.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/language_chakma" android:layout_centerVertical="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/chakma_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ProgressBar android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginRight="10.0dp" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="20.0dp" android:src="@drawable/download" android:layout_alignParentRight="true" />
+            <TextView android:textSize="16.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0.0dp" android:text="@string/install_text" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:background="#efefef" android:layout_width="match_parent" android:layout_height="1.0dp" />
+    <RelativeLayout android:id="@id/lang_sylheti" android:paddingLeft="20.0dp" android:paddingTop="20.0dp" android:paddingRight="20.0dp" android:paddingBottom="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="20.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/language_syloti_beta" android:layout_centerVertical="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/sylheti_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ProgressBar android:layout_width="20.0dp" android:layout_height="20.0dp" android:layout_marginRight="10.0dp" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="20.0dp" android:src="@drawable/download" android:layout_alignParentRight="true" />
+            <TextView android:textSize="16.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0.0dp" android:text="@string/install_text" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
