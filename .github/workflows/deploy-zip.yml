@@ -152,4 +152,7 @@ jobs:
   build-apk:
     needs: deploy
     if: needs.deploy.outputs.updated == 'true'
+    permissions:
+      contents: write
     uses: ./.github/workflows/build-apk.yml
+    secrets: inherit
