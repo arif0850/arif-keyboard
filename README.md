@@ -47,12 +47,26 @@ A powerful modified Android keyboard tailored for developers, terminal users (Te
 git clone https://github.com/arif0850/arif-keyboard.git
 cd arif-keyboard
 
-# Make build script executable and run
-chmod +x build.sh
-./build.sh
+# Build, zipalign, and sign APK
+bash build.sh
 ```
 
 The signed, aligned standalone APK will be generated at `dist/arif-keyboard-final.apk`.
+
+---
+
+## 🔄 Mobile ZIP Auto-Deploy & CI APK Build
+
+This repository includes two automated GitHub Actions workflows so you can easily add, modify, or delete features from mobile:
+
+1. **Google Drive Auto-Deploy (`Arif-Keyboard-Auto-Deployer`)**:
+   - Upload any `.zip` containing your updated/added files (preserving paths like `res/xml/...`, `res/values/...`, `classes5.dex`, etc., or a zipped project folder) into the **`Arif-Keyboard-Deploy`** folder in Google Drive (`arifspramanik@gmail.com`).
+   - To **delete** files via ZIP, include a `_delete.txt` file at the root of your ZIP with one relative file path per line.
+   - The Apps Script trigger checks every minute, dispatches `.github/workflows/deploy-zip.yml`, commits changes to `main`, and automatically triggers an APK build.
+
+2. **Automatic APK Build (`.github/workflows/build-apk.yml`)**:
+   - Runs automatically on every push to `main` (or manually via **Actions → Build Arif Keyboard APK → Run workflow**).
+   - Outputs `arif-keyboard-final.apk` as a downloadable **Workflow Artifact**.
 
 ---
 

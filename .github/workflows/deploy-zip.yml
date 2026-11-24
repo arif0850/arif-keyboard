@@ -19,6 +19,8 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+    outputs:
+      updated: ${{ steps.commit.outputs.updated }}
 
     steps:
       - name: Checkout repository
@@ -44,10 +46,10 @@ jobs:
           echo "file_name=$FILE_NAME" >> $GITHUB_OUTPUT
           echo "Target URL: $URL"
 
-      - name: Download and Extract ZIP
+      - name: Download, Extract, and Apply ZIP Updates
         run: |
           python3 -c '
-          import os, sys, requests, zipfile, gdown
+          import os, sys, shutil, requests, zipfile, gdown
 
           url = "${{ steps.resolve.outputs.url }}"
           output = "deploy_archive.zip"
@@ -56,7 +58,8 @@ jobs:
           if "drive.google.com" in url:
               gdown.download(url, output, quiet=False, fuzzy=True)
           else:
-              resp = requests.get(url, stream=True)
+              resp = requests.get(url, stream=True, timeout=120)
+              resp.raise_for_status()
               with open(output, "wb") as f:
                   for chunk in resp.iter_content(chunk_size=8192):
                       f.write(chunk)
@@ -65,25 +68,88 @@ jobs:
               print("Error: downloaded file is empty or missing")
               sys.exit(1)
 
+          extract_tmp = "_zip_extract_tmp"
+          if os.path.exists(extract_tmp):
+              shutil.rmtree(extract_tmp)
+          os.makedirs(extract_tmp, exist_ok=True)
+
           print(f"Extracting {output} (size: {os.path.getsize(output)} bytes)...")
           with zipfile.ZipFile(output, "r") as zip_ref:
-              zip_ref.extractall(".")
-
+              zip_ref.extractall(extract_tmp)
           os.remove(output)
-          print("Extraction complete!")
+
+          # Strip a single wrapper folder if someone zipped a parent directory
+          known_roots = {"res", "assets", "lib", "original", "unknown", "source_smali", ".github"}
+          entries = [e for e in os.listdir(extract_tmp) if e != "__MACOSX"]
+          src_root = extract_tmp
+          if len(entries) == 1:
+              candidate = os.path.join(extract_tmp, entries[0])
+              if os.path.isdir(candidate) and entries[0] not in known_roots:
+                  print(f"Detected wrapper folder `{entries[0]}/`; stripping prefix...")
+                  src_root = candidate
+
+          repo_root = os.path.abspath(".")
+
+          # Apply optional _delete.txt manifest if included in ZIP
+          delete_manifest = os.path.join(src_root, "_delete.txt")
+          if os.path.isfile(delete_manifest):
+              with open(delete_manifest, "r", encoding="utf-8") as df:
+                  for line in df:
+                      rel = line.strip().lstrip("/")
+                      if not rel or rel.startswith("#"):
+                          continue
+                      target = os.path.abspath(os.path.join(repo_root, rel))
+                      if not target.startswith(repo_root + os.sep) or rel.startswith(".git"):
+                          print(f"Skipping unsafe delete path: {rel}")
+                          continue
+                      if os.path.isdir(target):
+                          shutil.rmtree(target)
+                          print(f"Deleted directory: {rel}")
+                      elif os.path.isfile(target):
+                          os.remove(target)
+                          print(f"Deleted file: {rel}")
+              os.remove(delete_manifest)
+
+          # Copy extracted files into repository root (skip .github/workflows to avoid GITHUB_TOKEN permission errors)
+          for root, dirs, files in os.walk(src_root):
+              dirs[:] = [d for d in dirs if d not in {".git", "__MACOSX"}]
+              rel_dir = os.path.relpath(root, src_root)
+              for fname in files:
+                  rel_path = fname if rel_dir == "." else os.path.join(rel_dir, fname)
+                  norm_rel = rel_path.replace(os.sep, "/")
+                  if norm_rel.startswith(".github/workflows/"):
+                      print(f"Skipping protected workflow path: {norm_rel}")
+                      continue
+                  dst = os.path.abspath(os.path.join(repo_root, rel_path))
+                  if not dst.startswith(repo_root + os.sep):
+                      continue
+                  os.makedirs(os.path.dirname(dst), exist_ok=True)
+                  shutil.copy2(os.path.join(root, fname), dst)
+                  print(f"Updated: {norm_rel}")
+
+          shutil.rmtree(extract_tmp)
+          print("ZIP update applied cleanly!")
           '
 
       - name: Commit and Push Changes
+        id: commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          
+
           if [ -n "$(git status --porcelain)" ]; then
             git add -A
             COMMIT_MSG="${{ github.event.client_payload.commit_message || inputs.commit_message || 'Auto-deploy ZIP from Google Drive' }}"
             git commit -m "$COMMIT_MSG"
             git push origin main
+            echo "updated=true" >> $GITHUB_OUTPUT
             echo "Changes successfully pushed to main branch."
           else
+            echo "updated=false" >> $GITHUB_OUTPUT
             echo "No changes detected after extracting ZIP."
           fi
+
+  build-apk:
+    needs: deploy
+    if: needs.deploy.outputs.updated == 'true'
+    uses: ./.github/workflows/build-apk.yml
