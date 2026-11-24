@@ -3,18 +3,18 @@
   xmlns:latin="http://schemas.android.com/apk/res-auto">
     <switch>
         <case latin:keyboardLayoutSetElement="banglaFixedAlphabetShifted">
-            <Key latin:additionalMoreKeys="ì|্য" latin:keyHintLabel="ì" latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/ridmik_font_size_ratio" latin:keySpec="Ô|য" latin:moreKeys="ò|র‍্য" />
-            <Key latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/ridmik_font_size_ratio" latin:keySpec="Ü|ঢ়" />
-            <Key latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/ridmik_font_size_ratio" latin:keySpec="Á|ছ" />
-            <Key latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/ridmik_font_size_ratio" latin:keySpec="¶|ঋ" />
-            <Key latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/ridmik_font_size_ratio" latin:keySpec="Ò|ভ" />
+            <Key latin:additionalMoreKeys="ì|্য" latin:keyHintLabel="ì" latin:keyLabelFlags="fontArifAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/arif_font_size_ratio" latin:keySpec="Ô|য" latin:moreKeys="ò|র‍্য" />
+            <Key latin:keyLabelFlags="fontArifAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/arif_font_size_ratio" latin:keySpec="Ü|ঢ়" />
+            <Key latin:keyLabelFlags="fontArifAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/arif_font_size_ratio" latin:keySpec="Á|ছ" />
+            <Key latin:keyLabelFlags="fontArifAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/arif_font_size_ratio" latin:keySpec="¶|ঋ" />
+            <Key latin:keyLabelFlags="fontArifAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/arif_font_size_ratio" latin:keySpec="Ò|ভ" />
         </case>
         <default>
-            <Key latin:additionalMoreKeys="ì|্য" latin:keyHintLabel="ì" latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/ridmik_font_size_ratio" latin:keySpec="Ý|য়" latin:moreKeys="Ô|য,ò|র‍্য" />
-            <Key latin:keyHintLabel="Ü" latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/ridmik_font_size_ratio" latin:keySpec="×|শ" latin:moreKeys="Ü|ঢ়" />
-            <Key latin:keyHintLabel="Á" latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/ridmik_font_size_ratio" latin:keySpec="À|চ" latin:moreKeys="Á|ছ" />
-            <Key latin:keyHintLabel="¶" latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/ridmik_font_size_ratio" latin:keySpec="ð|আ" latin:moreKeys="¶|ঋ" />
-            <Key latin:keyHintLabel="Ò" latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/ridmik_font_size_ratio" latin:keySpec="Ñ|ব" latin:moreKeys="Ò|ভ" />
+            <Key latin:additionalMoreKeys="ì|্য" latin:keyHintLabel="ì" latin:keyLabelFlags="fontArifAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/arif_font_size_ratio" latin:keySpec="Ý|য়" latin:moreKeys="Ô|য,ò|র‍্য" />
+            <Key latin:keyHintLabel="Ü" latin:keyLabelFlags="fontArifAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/arif_font_size_ratio" latin:keySpec="×|শ" latin:moreKeys="Ü|ঢ়" />
+            <Key latin:keyHintLabel="Á" latin:keyLabelFlags="fontArifAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/arif_font_size_ratio" latin:keySpec="À|চ" latin:moreKeys="Á|ছ" />
+            <Key latin:keyHintLabel="¶" latin:keyLabelFlags="fontArifAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/arif_font_size_ratio" latin:keySpec="ð|আ" latin:moreKeys="¶|ঋ" />
+            <Key latin:keyHintLabel="Ò" latin:keyLabelFlags="fontArifAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/arif_font_size_ratio" latin:keySpec="Ñ|ব" latin:moreKeys="Ò|ভ" />
         </default>
     </switch>
 </merge>

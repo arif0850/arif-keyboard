@@ -4,58 +4,58 @@
     <switch>
         <case latin:keyboardLayoutSetElement="avroAlphabet|avroManualShifted|avroAutomaticShifted|avroShiftLocked|avroShiftLockShifted|banglaFixedAlphabet|banglaFixedAlphabetShifted|symbolsBangla|sylheti|sylhetiShifted">
             <Row latin:keyWidth="10.000002%p" latin:rowHeight="14.999998%p">
-                <Key latin:keyHintLabel="1" latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/font_size_ratio_for_for_additional_number_row" latin:keySpec="¤|১" latin:moreKeys="1" />
-                <Key latin:keyHintLabel="2" latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/font_size_ratio_for_for_additional_number_row" latin:keySpec="¥|২" latin:moreKeys="2" />
-                <Key latin:keyHintLabel="3" latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/font_size_ratio_for_for_additional_number_row" latin:keySpec="¦|৩" latin:moreKeys="3" />
-                <Key latin:keyHintLabel="4" latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/font_size_ratio_for_for_additional_number_row" latin:keySpec="§|৪" latin:moreKeys="4" />
-                <Key latin:keyHintLabel="5" latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/font_size_ratio_for_for_additional_number_row" latin:keySpec="¨|৫" latin:moreKeys="5" />
-                <Key latin:keyHintLabel="6" latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/font_size_ratio_for_for_additional_number_row" latin:keySpec="ª|৬" latin:moreKeys="6" />
-                <Key latin:keyHintLabel="7" latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/font_size_ratio_for_for_additional_number_row" latin:keySpec="«|৭" latin:moreKeys="7" />
-                <Key latin:keyHintLabel="8" latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/font_size_ratio_for_for_additional_number_row" latin:keySpec="¬|৮" latin:moreKeys="8" />
-                <Key latin:keyHintLabel="9" latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/font_size_ratio_for_for_additional_number_row" latin:keySpec="¯|৯" latin:moreKeys="9" />
-                <Key latin:keyHintLabel="0" latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/font_size_ratio_for_for_additional_number_row" latin:keySpec="¡|০" latin:moreKeys="0" />
+                <Key latin:keyHintLabel="1" latin:keyLabelFlags="fontArifAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/font_size_ratio_for_for_additional_number_row" latin:keySpec="¤|১" latin:moreKeys="1" />
+                <Key latin:keyHintLabel="2" latin:keyLabelFlags="fontArifAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/font_size_ratio_for_for_additional_number_row" latin:keySpec="¥|২" latin:moreKeys="2" />
+                <Key latin:keyHintLabel="3" latin:keyLabelFlags="fontArifAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/font_size_ratio_for_for_additional_number_row" latin:keySpec="¦|৩" latin:moreKeys="3" />
+                <Key latin:keyHintLabel="4" latin:keyLabelFlags="fontArifAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/font_size_ratio_for_for_additional_number_row" latin:keySpec="§|৪" latin:moreKeys="4" />
+                <Key latin:keyHintLabel="5" latin:keyLabelFlags="fontArifAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/font_size_ratio_for_for_additional_number_row" latin:keySpec="¨|৫" latin:moreKeys="5" />
+                <Key latin:keyHintLabel="6" latin:keyLabelFlags="fontArifAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/font_size_ratio_for_for_additional_number_row" latin:keySpec="ª|৬" latin:moreKeys="6" />
+                <Key latin:keyHintLabel="7" latin:keyLabelFlags="fontArifAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/font_size_ratio_for_for_additional_number_row" latin:keySpec="«|৭" latin:moreKeys="7" />
+                <Key latin:keyHintLabel="8" latin:keyLabelFlags="fontArifAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/font_size_ratio_for_for_additional_number_row" latin:keySpec="¬|৮" latin:moreKeys="8" />
+                <Key latin:keyHintLabel="9" latin:keyLabelFlags="fontArifAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/font_size_ratio_for_for_additional_number_row" latin:keySpec="¯|৯" latin:moreKeys="9" />
+                <Key latin:keyHintLabel="0" latin:keyLabelFlags="fontArifAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/font_size_ratio_for_for_additional_number_row" latin:keySpec="¡|০" latin:moreKeys="0" />
             </Row>
         </case>
         <case latin:keyboardLayoutSetElement="symbolsArabic">
             <Row latin:keyWidth="10.000002%p" latin:rowHeight="14.999998%p">
-                <Key latin:keyHintLabel="1" latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/ridmik_font_size_ratio" latin:keySpec="١" latin:moreKeys="1" />
-                <Key latin:keyHintLabel="2" latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/ridmik_font_size_ratio" latin:keySpec="٢" latin:moreKeys="2" />
-                <Key latin:keyHintLabel="3" latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/ridmik_font_size_ratio" latin:keySpec="٣" latin:moreKeys="3" />
-                <Key latin:keyHintLabel="4" latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/ridmik_font_size_ratio" latin:keySpec="٤" latin:moreKeys="4" />
-                <Key latin:keyHintLabel="5" latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/ridmik_font_size_ratio" latin:keySpec="٥" latin:moreKeys="5" />
-                <Key latin:keyHintLabel="6" latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/ridmik_font_size_ratio" latin:keySpec="٦" latin:moreKeys="6" />
-                <Key latin:keyHintLabel="7" latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/ridmik_font_size_ratio" latin:keySpec="٧" latin:moreKeys="7" />
-                <Key latin:keyHintLabel="8" latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/ridmik_font_size_ratio" latin:keySpec="٨" latin:moreKeys="8" />
-                <Key latin:keyHintLabel="9" latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/ridmik_font_size_ratio" latin:keySpec="٩" latin:moreKeys="9" />
-                <Key latin:keyHintLabel="0" latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/ridmik_font_size_ratio" latin:keySpec="٠" latin:moreKeys="0" />
+                <Key latin:keyHintLabel="1" latin:keyLabelFlags="fontArifAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/arif_font_size_ratio" latin:keySpec="١" latin:moreKeys="1" />
+                <Key latin:keyHintLabel="2" latin:keyLabelFlags="fontArifAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/arif_font_size_ratio" latin:keySpec="٢" latin:moreKeys="2" />
+                <Key latin:keyHintLabel="3" latin:keyLabelFlags="fontArifAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/arif_font_size_ratio" latin:keySpec="٣" latin:moreKeys="3" />
+                <Key latin:keyHintLabel="4" latin:keyLabelFlags="fontArifAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/arif_font_size_ratio" latin:keySpec="٤" latin:moreKeys="4" />
+                <Key latin:keyHintLabel="5" latin:keyLabelFlags="fontArifAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/arif_font_size_ratio" latin:keySpec="٥" latin:moreKeys="5" />
+                <Key latin:keyHintLabel="6" latin:keyLabelFlags="fontArifAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/arif_font_size_ratio" latin:keySpec="٦" latin:moreKeys="6" />
+                <Key latin:keyHintLabel="7" latin:keyLabelFlags="fontArifAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/arif_font_size_ratio" latin:keySpec="٧" latin:moreKeys="7" />
+                <Key latin:keyHintLabel="8" latin:keyLabelFlags="fontArifAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/arif_font_size_ratio" latin:keySpec="٨" latin:moreKeys="8" />
+                <Key latin:keyHintLabel="9" latin:keyLabelFlags="fontArifAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/arif_font_size_ratio" latin:keySpec="٩" latin:moreKeys="9" />
+                <Key latin:keyHintLabel="0" latin:keyLabelFlags="fontArifAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/arif_font_size_ratio" latin:keySpec="٠" latin:moreKeys="0" />
             </Row>
         </case>
         <case latin:keyboardLayoutSetElement="symbolsChakma">
             <Row latin:keyWidth="10.000002%p" latin:rowHeight="14.999998%p">
-                <Key latin:keyHintLabel="1" latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/ridmik_font_size_ratio" latin:keySpec="𑄷" latin:moreKeys="1" />
-                <Key latin:keyHintLabel="2" latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/ridmik_font_size_ratio" latin:keySpec="𑄸" latin:moreKeys="2" />
-                <Key latin:keyHintLabel="3" latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/ridmik_font_size_ratio" latin:keySpec="𑄹" latin:moreKeys="3" />
-                <Key latin:keyHintLabel="4" latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/ridmik_font_size_ratio" latin:keySpec="𑄺" latin:moreKeys="4" />
-                <Key latin:keyHintLabel="5" latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/ridmik_font_size_ratio" latin:keySpec="𑄻" latin:moreKeys="5" />
-                <Key latin:keyHintLabel="6" latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/ridmik_font_size_ratio" latin:keySpec="𑄼" latin:moreKeys="6" />
-                <Key latin:keyHintLabel="7" latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/ridmik_font_size_ratio" latin:keySpec="𑄽" latin:moreKeys="7" />
-                <Key latin:keyHintLabel="8" latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/ridmik_font_size_ratio" latin:keySpec="𑄾" latin:moreKeys="8" />
-                <Key latin:keyHintLabel="9" latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/ridmik_font_size_ratio" latin:keySpec="𑄿" latin:moreKeys="9" />
-                <Key latin:keyHintLabel="0" latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/ridmik_font_size_ratio" latin:keySpec="𑄶" latin:moreKeys="0" />
+                <Key latin:keyHintLabel="1" latin:keyLabelFlags="fontArifAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/arif_font_size_ratio" latin:keySpec="𑄷" latin:moreKeys="1" />
+                <Key latin:keyHintLabel="2" latin:keyLabelFlags="fontArifAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/arif_font_size_ratio" latin:keySpec="𑄸" latin:moreKeys="2" />
+                <Key latin:keyHintLabel="3" latin:keyLabelFlags="fontArifAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/arif_font_size_ratio" latin:keySpec="𑄹" latin:moreKeys="3" />
+                <Key latin:keyHintLabel="4" latin:keyLabelFlags="fontArifAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/arif_font_size_ratio" latin:keySpec="𑄺" latin:moreKeys="4" />
+                <Key latin:keyHintLabel="5" latin:keyLabelFlags="fontArifAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/arif_font_size_ratio" latin:keySpec="𑄻" latin:moreKeys="5" />
+                <Key latin:keyHintLabel="6" latin:keyLabelFlags="fontArifAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/arif_font_size_ratio" latin:keySpec="𑄼" latin:moreKeys="6" />
+                <Key latin:keyHintLabel="7" latin:keyLabelFlags="fontArifAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/arif_font_size_ratio" latin:keySpec="𑄽" latin:moreKeys="7" />
+                <Key latin:keyHintLabel="8" latin:keyLabelFlags="fontArifAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/arif_font_size_ratio" latin:keySpec="𑄾" latin:moreKeys="8" />
+                <Key latin:keyHintLabel="9" latin:keyLabelFlags="fontArifAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/arif_font_size_ratio" latin:keySpec="𑄿" latin:moreKeys="9" />
+                <Key latin:keyHintLabel="0" latin:keyLabelFlags="fontArifAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/arif_font_size_ratio" latin:keySpec="𑄶" latin:moreKeys="0" />
             </Row>
         </case>
         <default>
             <Row latin:keyWidth="10.000002%p" latin:rowHeight="14.999998%p">
-                <Key latin:keyHintLabel="¤" latin:keyLabelFlags="fontHintRidmikAscii" latin:keyLabelSize="@fraction/font_size_ratio_for_for_additional_number_row" latin:keySpec="1" latin:moreKeys="¤|১" />
-                <Key latin:keyHintLabel="¥" latin:keyLabelFlags="fontHintRidmikAscii" latin:keyLabelSize="@fraction/font_size_ratio_for_for_additional_number_row" latin:keySpec="2" latin:moreKeys="¥|২" />
-                <Key latin:keyHintLabel="¦" latin:keyLabelFlags="fontHintRidmikAscii" latin:keyLabelSize="@fraction/font_size_ratio_for_for_additional_number_row" latin:keySpec="3" latin:moreKeys="¦|৩" />
-                <Key latin:keyHintLabel="§" latin:keyLabelFlags="fontHintRidmikAscii" latin:keyLabelSize="@fraction/font_size_ratio_for_for_additional_number_row" latin:keySpec="4" latin:moreKeys="§|৪" />
-                <Key latin:keyHintLabel="¨" latin:keyLabelFlags="fontHintRidmikAscii" latin:keyLabelSize="@fraction/font_size_ratio_for_for_additional_number_row" latin:keySpec="5" latin:moreKeys="¨|৫" />
-                <Key latin:keyHintLabel="ª" latin:keyLabelFlags="fontHintRidmikAscii" latin:keyLabelSize="@fraction/font_size_ratio_for_for_additional_number_row" latin:keySpec="6" latin:moreKeys="ª|৬" />
-                <Key latin:keyHintLabel="«" latin:keyLabelFlags="fontHintRidmikAscii" latin:keyLabelSize="@fraction/font_size_ratio_for_for_additional_number_row" latin:keySpec="7" latin:moreKeys="«|৭" />
-                <Key latin:keyHintLabel="¬" latin:keyLabelFlags="fontHintRidmikAscii" latin:keyLabelSize="@fraction/font_size_ratio_for_for_additional_number_row" latin:keySpec="8" latin:moreKeys="¬|৮" />
-                <Key latin:keyHintLabel="¯" latin:keyLabelFlags="fontHintRidmikAscii" latin:keyLabelSize="@fraction/font_size_ratio_for_for_additional_number_row" latin:keySpec="9" latin:moreKeys="¯|৯" />
-                <Key latin:keyHintLabel="¡" latin:keyLabelFlags="fontHintRidmikAscii" latin:keyLabelSize="@fraction/font_size_ratio_for_for_additional_number_row" latin:keySpec="0" latin:moreKeys="¡|০" />
+                <Key latin:keyHintLabel="¤" latin:keyLabelFlags="fontHintArifAscii" latin:keyLabelSize="@fraction/font_size_ratio_for_for_additional_number_row" latin:keySpec="1" latin:moreKeys="¤|১" />
+                <Key latin:keyHintLabel="¥" latin:keyLabelFlags="fontHintArifAscii" latin:keyLabelSize="@fraction/font_size_ratio_for_for_additional_number_row" latin:keySpec="2" latin:moreKeys="¥|২" />
+                <Key latin:keyHintLabel="¦" latin:keyLabelFlags="fontHintArifAscii" latin:keyLabelSize="@fraction/font_size_ratio_for_for_additional_number_row" latin:keySpec="3" latin:moreKeys="¦|৩" />
+                <Key latin:keyHintLabel="§" latin:keyLabelFlags="fontHintArifAscii" latin:keyLabelSize="@fraction/font_size_ratio_for_for_additional_number_row" latin:keySpec="4" latin:moreKeys="§|৪" />
+                <Key latin:keyHintLabel="¨" latin:keyLabelFlags="fontHintArifAscii" latin:keyLabelSize="@fraction/font_size_ratio_for_for_additional_number_row" latin:keySpec="5" latin:moreKeys="¨|৫" />
+                <Key latin:keyHintLabel="ª" latin:keyLabelFlags="fontHintArifAscii" latin:keyLabelSize="@fraction/font_size_ratio_for_for_additional_number_row" latin:keySpec="6" latin:moreKeys="ª|৬" />
+                <Key latin:keyHintLabel="«" latin:keyLabelFlags="fontHintArifAscii" latin:keyLabelSize="@fraction/font_size_ratio_for_for_additional_number_row" latin:keySpec="7" latin:moreKeys="«|৭" />
+                <Key latin:keyHintLabel="¬" latin:keyLabelFlags="fontHintArifAscii" latin:keyLabelSize="@fraction/font_size_ratio_for_for_additional_number_row" latin:keySpec="8" latin:moreKeys="¬|৮" />
+                <Key latin:keyHintLabel="¯" latin:keyLabelFlags="fontHintArifAscii" latin:keyLabelSize="@fraction/font_size_ratio_for_for_additional_number_row" latin:keySpec="9" latin:moreKeys="¯|৯" />
+                <Key latin:keyHintLabel="¡" latin:keyLabelFlags="fontHintArifAscii" latin:keyLabelSize="@fraction/font_size_ratio_for_for_additional_number_row" latin:keySpec="0" latin:moreKeys="¡|০" />
             </Row>
         </default>
     </switch>

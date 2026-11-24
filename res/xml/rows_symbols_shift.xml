@@ -46,7 +46,7 @@
     <Row latin:keyWidth="10.000002%p">
         <switch>
             <case latin:currentLanguageType="banglaFixed|sylheti">
-                <Key latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/ridmik_font_size_ratio_symbol_switch" latin:keySpec="\?¤¥¦|!code/key_shift" latin:keyStyle="backFromMoreSymbolKeyStyle" latin:keyWidth="14.999998%p" latin:visualInsetsRight="0.99999905%p" />
+                <Key latin:keyLabelFlags="fontArifAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/arif_font_size_ratio_symbol_switch" latin:keySpec="\?¤¥¦|!code/key_shift" latin:keyStyle="backFromMoreSymbolKeyStyle" latin:keyWidth="14.999998%p" latin:visualInsetsRight="0.99999905%p" />
             </case>
             <case latin:currentLanguageType="arabic">
                 <Key latin:keySpec="\?١٢٣|!code/key_shift" latin:keyStyle="backFromMoreSymbolKeyStyle" latin:keyWidth="14.999998%p" latin:visualInsetsRight="0.99999905%p" />
@@ -64,7 +64,7 @@
     <Row latin:backgroundType="functional" latin:keyWidth="10.000002%p">
         <switch>
             <case latin:currentLanguageType="banglaFixed">
-                <Key latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio|preserveCase|followFunctionalTextColor" latin:keyLabelSize="@fraction/ridmik_font_size_ratio_alpha_switch" latin:keySpec="±»¼|!code/key_switch_alpha_symbol" latin:keyStyle="toAlphaKeyStyle" latin:keyWidth="14.999998%p" />
+                <Key latin:keyLabelFlags="fontArifAscii|followKeyLabelRatio|preserveCase|followFunctionalTextColor" latin:keyLabelSize="@fraction/arif_font_size_ratio_alpha_switch" latin:keySpec="±»¼|!code/key_switch_alpha_symbol" latin:keyStyle="toAlphaKeyStyle" latin:keyWidth="14.999998%p" />
             </case>
             <case latin:currentLanguageType="arabic">
                 <Key latin:keySpec="أبت|!code/key_switch_alpha_symbol" latin:keyStyle="toAlphaKeyStyle" latin:keyWidth="14.999998%p" />

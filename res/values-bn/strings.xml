@@ -33,7 +33,7 @@
     <string name="about_debug_error_toast">ডিবাগ এরর টোস্ট চালু করুন</string>
     <string name="about_help">সাহায্য</string>
     <string name="about_keymap">কীম্যাপ</string>
-    <string name="about_scrolling_text">"রিদ্মিক কিবোর্ড একটি ফ্রি অ্যাপ, 
+    <string name="about_scrolling_text">"Arif Keyboard একটি ফ্রি অ্যাপ, 
 যা 'মেশিনে' বাংলার প্রসারে সহায়তার জন্য তৈরি।
 "</string>
     <string name="about_version">ভার্সন</string>
@@ -133,7 +133,7 @@
     <string name="allow_text">অনুমতি দিন</string>
     <string name="already_registered_so_verify">আপনি ইতিমধ্যে আমাদের সাথে যুক্ত আছেন, দয়া করে নিশ্চিত করুন এটা আপনার <b>মোবাইল নাম্বার|</b></string>
     <string name="amount_colon">ফি:</string>
-    <string name="android_spell_checker_settings">রিদ্মিক বানান পরীক্ষক সেটিংস</string>
+    <string name="android_spell_checker_settings">Arif Keyboard বানান পরীক্ষক সেটিংস</string>
     <string name="announce_keyboard_hidden">কিবোর্ড লুকানো রয়েছে</string>
     <string name="announce_keyboard_mode">%s কিবোর্ড দেখানো হচ্ছে</string>
     <string name="app_name">অভিধান প্রদানকারী</string>
@@ -174,7 +174,7 @@
     <string name="button_default">ডিফল্ট</string>
     <string name="button_text">বাটন</string>
     <string name="buy_now">এখনই কিনুন</string>
-    <string name="buy_now_hint">%s প্রাপকের রিদ্মিক কিবোর্ড অ্যাকাউন্টে যোগ করা হবে। আমরা প্রাপককে ইমেইলের মাধ্যমে জানিয়ে দেব।</string>
+    <string name="buy_now_hint">%s প্রাপকের Arif Keyboard অ্যাকাউন্টে যোগ করা হবে। আমরা প্রাপককে ইমেইলের মাধ্যমে জানিয়ে দেব।</string>
     <string name="call_notification_answer_action">উত্তর দিন</string>
     <string name="call_notification_answer_video_action">ভিডিও</string>
     <string name="call_notification_decline_action">বাতিল করুন</string>
@@ -381,8 +381,8 @@
     <string name="delete_text">মুছে ফেলুন</string>
     <string name="device_limit_exceeded">ডিভাইস লিমিট অতিক্রম করেছে</string>
     <string name="device_quota_exceeded">ডিভাইস লিমিট অতিক্রম করেছে!</string>
-    <string name="device_quota_limit_exceeded">আপনি একজন প্রিমিয়াম ইউজার। তবে আপনার একাউন্টের বিপরীতে ডিভাইসের সীমা অতিক্রম করেছে। অনুগ্রহ করে keyboard@ridmik.com এ ইমেইল করুন অথবা আমাদের ফেসবুক পেইজে মেসেজ দিন। ধন্যবাদ।</string>
-    <string name="device_quota_warning_after_login">আপনি এই ডিভাইসে ডাউনলোড করতে পারবেন না কারণ আপনার অ্যাকাউন্টের জন্য ডিভাইস লগইন সীমা অতিক্রম করেছে৷ পুরানো ডিভাইসগুলি সরাতে অনুগ্রহ করে আমাদের ফেসবুক পেইজের মাধ্যমে আমাদের সাথে যোগাযোগ করুন অথবা keyboard@ridmik.com এ ইমেইল করুন।</string>
+    <string name="device_quota_limit_exceeded">আপনি একজন প্রিমিয়াম ইউজার। তবে আপনার একাউন্টের বিপরীতে ডিভাইসের সীমা অতিক্রম করেছে। অনুগ্রহ করে support@arif-keyboard.app এ ইমেইল করুন অথবা আমাদের ফেসবুক পেইজে মেসেজ দিন। ধন্যবাদ।</string>
+    <string name="device_quota_warning_after_login">আপনি এই ডিভাইসে ডাউনলোড করতে পারবেন না কারণ আপনার অ্যাকাউন্টের জন্য ডিভাইস লগইন সীমা অতিক্রম করেছে৷ পুরানো ডিভাইসগুলি সরাতে অনুগ্রহ করে আমাদের ফেসবুক পেইজের মাধ্যমে আমাদের সাথে যোগাযোগ করুন অথবা support@arif-keyboard.app এ ইমেইল করুন।</string>
     <string name="dictionary_available">অভিধান উপলব্ধ</string>
     <string name="dictionary_disabled">ইন্সটল হয়েছে, অক্ষম করা হয়েছে</string>
     <string name="dictionary_downloading">বর্তমানে ডাউনলোড হচ্ছে</string>
@@ -409,7 +409,7 @@
     <string name="edit_clip_title">ক্লিপবোর্ড এডিট করুন</string>
     <string name="edit_personal_dictionary">ব্যক্তিগত অভিধান</string>
     <string name="email_text">আমাদের ইমেইল করতে ক্লিক করুন</string>
-    <string name="email_us_in_any_need">যেকোন প্রয়োজনে আমাদের ইমেইল করুন keyboard@ridmik.com অথবা আমাদের ফেসবুক পেইজে মেসেজ দিন।</string>
+    <string name="email_us_in_any_need">যেকোন প্রয়োজনে আমাদের ইমেইল করুন support@arif-keyboard.app অথবা আমাদের ফেসবুক পেইজে মেসেজ দিন।</string>
     <string name="emi_bank_list_heading">EMI প্রযোজ্য</string>
     <string name="enable">সক্ষম করুন</string>
     <string name="enable_large_number_row_title">বড় নম্বর সারি</string>
@@ -421,7 +421,7 @@
     <string name="english_ime_debug_settings">Android কিবোর্ড ডিবাগ সেটিংস</string>
     <string name="english_ime_input_options">ইনপুট বিকল্পগুলি</string>
     <string name="english_ime_name">Arif Keyboard</string>
-    <string name="english_ime_settings">রিদ্মিক কিবোর্ড সেটিংস</string>
+    <string name="english_ime_settings">Arif Keyboard সেটিংস</string>
     <string name="english_str">ইংরেজি</string>
     <string name="enter_card_holder_name">কার্ডের বাহকের নাম লিখুন</string>
     <string name="enter_cvv">সিভিভি প্রবেশ করান</string>
@@ -477,8 +477,8 @@
     <string name="home_feature_learn_title">লিখতে শিখুন</string>
     <string name="home_keyboard_activate_btn">চালু করুন</string>
     <string name="home_keyboard_not_active_desc">বাংলা লিখতে নিচের বাটনে চাপ দিয়ে কিবোর্ড চালু করুন</string>
-    <string name="home_keyboard_not_active_title">রিদ্মিক কিবোর্ড চালু নেই!</string>
-    <string name="home_label_keyboard">রিদ্মিক কিবোর্ড</string>
+    <string name="home_keyboard_not_active_title">Arif Keyboard চালু নেই!</string>
+    <string name="home_label_keyboard">Arif Keyboard</string>
     <string name="home_label_layout">লেআউট</string>
     <string name="home_label_theme">থিম</string>
     <string name="home_more_apps_title">আরও অ্যাপস</string>
@@ -531,7 +531,7 @@
     <string name="keyboard_mode_text">পাঠ্য</string>
     <string name="keyboard_mode_time">সময়</string>
     <string name="keyboard_mode_url">URL</string>
-    <string name="keyboard_store_login">আপনার রিদ্মিক কিবোর্ডের একাউন্টে লগিন করুন</string>
+    <string name="keyboard_store_login">আপনার Arif Keyboard-এর একাউন্টে লগিন করুন</string>
     <string name="keyboard_store_login_subtitle">লগিনের মাধ্যমে আপনি স্টিকার, থিম ইত্যাদি পরিচালনা করতে পারবেন</string>
     <string name="keyboard_theme">কিবোর্ড থিম</string>
     <string name="keys_text">বাটনগুলো</string>
@@ -596,7 +596,7 @@
     <string name="messenger_text">মেসেঞ্জার এ চ্যাট করতে ক্লিক করুন</string>
     <string name="more_apps">আরো অ্যাপস</string>
     <string name="more_items">আরও দেখুন</string>
-    <string name="more_safe_text">রিদ্মিক কিবোর্ড থেকে আপনার লেখা কোনো কিছু কখনো আপনার ডিভাইসের বাইরে যায় না। গত ১০ বছরে কখনো এর ব্যতিক্রম হয়নি। শুধু সাজেশন দেখানোর জন্য লেখা থেকে শব্দগুলো একটি বিশেষ ফরমেটে শুধু আপনার ডিভাইসে রাখা হয়, যা সরাসরি পড়া যায় না। এমনকি গোপন তথ্য যেমন পাসওয়ার্ড বা ক্রেডিট কার্ডের তথ্য কখনো আপনার ডিভাইসেও সংরক্ষণ করা হয় না। সামাজিক যোগাযোগ মাধ্যমে কেউ এ ব্যাপারে সন্দেহ প্রকাশ করলে অনুগ্রহ করে প্রমাণ দেখাতে বলুন। সম্পূর্ণ নিরাপদ থাকতে, সবসময় রিদ্মিক কিবোর্ড প্লে-স্টোর থেকে ইন্সটল করুন। আপনার ব্যক্তিগত তথ্যের সুরক্ষায় আমরা সর্বদা প্রতিশ্রুতিবদ্ধ।</string>
+    <string name="more_safe_text">Arif Keyboard থেকে আপনার লেখা কোনো কিছু কখনো আপনার ডিভাইসের বাইরে যায় না। গত ১০ বছরে কখনো এর ব্যতিক্রম হয়নি। শুধু সাজেশন দেখানোর জন্য লেখা থেকে শব্দগুলো একটি বিশেষ ফরমেটে শুধু আপনার ডিভাইসে রাখা হয়, যা সরাসরি পড়া যায় না। এমনকি গোপন তথ্য যেমন পাসওয়ার্ড বা ক্রেডিট কার্ডের তথ্য কখনো আপনার ডিভাইসেও সংরক্ষণ করা হয় না। সামাজিক যোগাযোগ মাধ্যমে কেউ এ ব্যাপারে সন্দেহ প্রকাশ করলে অনুগ্রহ করে প্রমাণ দেখাতে বলুন। সম্পূর্ণ নিরাপদ থাকতে, সবসময় Arif Keyboard প্লে-স্টোর থেকে ইন্সটল করুন। আপনার ব্যক্তিগত তথ্যের সুরক্ষায় আমরা সর্বদা প্রতিশ্রুতিবদ্ধ।</string>
     <string name="more_themes">আরও থিম</string>
     <string name="mtrl_badge_numberless_content_description">নতুন বিজ্ঞপ্তি</string>
     <string name="mtrl_checkbox_state_description_checked">টিক চিহ্ন দেওয়া হয়েছে</string>
@@ -711,7 +711,7 @@
     <string name="please_select_language_change_option">কিবোর্ডের ভাষা পরিবর্তনের অপশন বাছাই করুন</string>
     <string name="please_select_number_row_option">নম্বর সারির জন্য একটি অপশন বাছাই করুন</string>
     <string name="popup_on_keypress">কীপ্রেস এর ফলে পপআপ</string>
-    <string name="pref_about_summary">রিদ্মিক কিবোর্ড সম্পর্কে</string>
+    <string name="pref_about_summary">Arif Keyboard সম্পর্কে</string>
     <string name="pref_about_title">পরিচিতি</string>
     <string name="pref_app_language_summary">বাংলা ও ইংরেজির মধ্যে পরিবর্তন করুন</string>
     <string name="pref_app_language_title">অ্যাপের ভাষা</string>
@@ -797,8 +797,8 @@
     <string name="restore_purchase">কেনাকাটা পুনরুদ্ধার করুন</string>
     <string name="restoring">পুনরুদ্ধার করা হচ্ছে…</string>
     <string name="retry">আবার চেষ্টা করুন</string>
-    <string name="ridmik_is_more_fun_with_stickers">স্টিকারের সাথে রিদ্মিক কিবোর্ড আরও মজার! স্টিকার স্টোরে গিয়ে আপনার পছন্দের স্টিকার খুঁজে নিন।</string>
-    <string name="safe_text">রিদ্মিক কিবোর্ড আপনার লেখা কোনো কিছু সংগ্রহ করে না। আপনি যে ওয়ার্নিংটি দেখতে পান তা এন্ড্রয়েড সিস্টেম থেকে সব থার্ড-পার্টি কিবোর্ডের ক্ষেত্রেই দেখানো হয়।</string>
+    <string name="arif_is_more_fun_with_stickers">স্টিকারের সাথে Arif Keyboard আরও মজার! স্টিকার স্টোরে গিয়ে আপনার পছন্দের স্টিকার খুঁজে নিন।</string>
+    <string name="safe_text">Arif Keyboard আপনার লেখা কোনো কিছু সংগ্রহ করে না। আপনি যে ওয়ার্নিংটি দেখতে পান তা এন্ড্রয়েড সিস্টেম থেকে সব থার্ড-পার্টি কিবোর্ডের ক্ষেত্রেই দেখানো হয়।</string>
     <string name="save">সেভ করুন</string>
     <string name="save_apply">সংরক্ষণ ও প্রয়োগ করুন</string>
     <string name="save_bkash_wallet">বিকাশ ওয়ালেট সংরক্ষণ করুন</string>
@@ -891,7 +891,7 @@
     <string name="sound_on_keypress">কীপ্রেস এর সময়ের শব্দ</string>
     <string name="source_and_target_lang_same">দুটি ভাষা একই হলে ট্রান্সলেশন করা যাবে না। ভিন্ন ভাষা নির্বাচন করুন।</string>
     <string name="speak_now">এখন বলুন</string>
-    <string name="spell_checker_service_name">রিদ্মিক বানান পরীক্ষক</string>
+    <string name="spell_checker_service_name">Arif Keyboard বানান পরীক্ষক</string>
     <string name="spin_ai_credits">AI ক্রেডিট</string>
     <string name="spin_already_tried_body">এই মাসের স্পিন ব্যবহার হয়ে গেছে। পরের মাসে আবার চেষ্টা করুন — প্রতি মাসে নতুন করে বিজয়ী বাছাই হয়।</string>
     <string name="spin_already_tried_title">আপনি ইতিমধ্যে চেষ্টা করেছেন</string>
@@ -907,7 +907,7 @@
     <string name="spin_btn_spin">স্পিন করুন</string>
     <string name="spin_congratulations">অভিনন্দন!</string>
     <string name="spin_disclaimer_btn">ঠিক আছে</string>
-    <string name="spin_disclaimer_s1_body">রিদ্মিক কিবোর্ড ৫ কোটিরও বেশি মানুষ ব্যবহার করেন। তাই প্রতিদিন লক্ষ লক্ষ স্পিন হতে পারে। তবে প্রতি মাসে আমরা সর্বোচ্চ &lt;b>১ লক্ষ ব্যবহারকারীকে&lt;/b> লটারির মাধ্যমে ফ্রি AI ক্রেডিট দিতে পারছি। এ কারণে জেতার সম্ভাবনা স্বাভাবিকভাবেই কম।</string>
+    <string name="spin_disclaimer_s1_body">Arif Keyboard ৫ কোটিরও বেশি মানুষ ব্যবহার করেন। তাই প্রতিদিন লক্ষ লক্ষ স্পিন হতে পারে। তবে প্রতি মাসে আমরা সর্বোচ্চ &lt;b>১ লক্ষ ব্যবহারকারীকে&lt;/b> লটারির মাধ্যমে ফ্রি AI ক্রেডিট দিতে পারছি। এ কারণে জেতার সম্ভাবনা স্বাভাবিকভাবেই কম।</string>
     <string name="spin_disclaimer_s1_title">🎁 &lt;b>জেতার সম্ভাবনা কম&lt;/b></string>
     <string name="spin_disclaimer_s2_body">স্পিনে যে AI ক্রেডিট দেওয়া হয়, সেগুলো আমাদের নিজস্ব নয়। আমরা OpenAI-এর মতো বৈশ্বিক AI সেবাদানকারী প্রতিষ্ঠান থেকে এসব সেবা কিনে আপনাদের কাছে পৌঁছে দিই। প্রতিটি AI ক্রেডিটের পেছনে আমাদের প্রকৃত অর্থ ব্যয় হয়। তাই সবাইকে বিনামূল্যে এই সেবা দেওয়া আমাদের পক্ষে সম্ভব নয়।&lt;br>&lt;br>বর্তমানে আমরা মূলত পেইড সাবস্ক্রিপশন এবং বিজ্ঞাপন থেকে প্রাপ্ত আয়ের মাধ্যমে প্রতি মাসে প্রায় &lt;b>১ লক্ষ ব্যবহারকারীকে&lt;/b> ফ্রি AI ক্রেডিট দেওয়ার পরিকল্পনা করেছি। ভবিষ্যতে আয় বৃদ্ধি বা হ্রাসের ওপর ভিত্তি করে বিজয়ীর সংখ্যা এবং ক্রেডিটের পরিমাণ পরিবর্তিত হতে পারে।&lt;br>&lt;br>বিষয়টি বোঝার জন্য এবং আমাদের পাশে থাকার জন্য আপনাকে আন্তরিক ধন্যবাদ। ❤️</string>
     <string name="spin_disclaimer_s2_title">🤖 &lt;b>AI ক্রেডিট আমাদেরও কিনতে হয়&lt;/b></string>
@@ -2169,11 +2169,11 @@
     <string name="volume_cursor_title">ভলিউম কার্সর</string>
     <string name="want_to_save_bkash_wallet">আপনি কি বিকাশ ওয়ালেট সংরক্ষণ করতে চান?</string>
     <string name="warning">সতর্কতা!</string>
-    <string name="warning_before_buy_for_device_limit_exceeded">আপনার অ্যাকাউন্টের জন্য আপনার ডিভাইসের সীমা অতিক্রম করেছে৷ আপনি এই ডিভাইসে কোনো স্টিকার বা থিম ডাউনলোড করতে পারবেন না। তবে, আপনি এই ডিভাইসে কিনতে পারবেন এবং আপনার পূর্বে লগ ইন করা ডিভাইসগুলিতে সাধারণভাবে স্টিকার এবং থিম ডাউনলোড করতে পারবেন। আপন যদি আপনার পুরানো ডিভাইসগুলি সরাতে চান, আমাদের ফেসবুক পেইজের মাধ্যমে আমাদের সাথে যোগাযোগ করুন অথবা keyboard@ridmik.com এ ইমেইল করুন।</string>
+    <string name="warning_before_buy_for_device_limit_exceeded">আপনার অ্যাকাউন্টের জন্য আপনার ডিভাইসের সীমা অতিক্রম করেছে৷ আপনি এই ডিভাইসে কোনো স্টিকার বা থিম ডাউনলোড করতে পারবেন না। তবে, আপনি এই ডিভাইসে কিনতে পারবেন এবং আপনার পূর্বে লগ ইন করা ডিভাইসগুলিতে সাধারণভাবে স্টিকার এবং থিম ডাউনলোড করতে পারবেন। আপন যদি আপনার পুরানো ডিভাইসগুলি সরাতে চান, আমাদের ফেসবুক পেইজের মাধ্যমে আমাদের সাথে যোগাযোগ করুন অথবা support@arif-keyboard.app এ ইমেইল করুন।</string>
     <string name="warning_str_theme"><b>সতর্কতা:</b> এই থিমটির ব্যাকআপ হবে না কারণ ব্যাকআপের স্টোরেজ সীমা অতিক্রম করেছে। ব্যাকআপ করতে পুরাতন থিম ডিলিট করুন।</string>
     <string name="welcome_back_coma">আবারো স্বাগতম,</string>
     <string name="welcome_coma">স্বাগতম,</string>
-    <string name="welcome_instruction">রিদ্মিক কিবোর্ড কে সিস্টেম সেটিং এ অন করে, এটাকে সক্রিয় কিবোর্ড হিসেবে সেট করতে হবে</string>
+    <string name="welcome_instruction">Arif Keyboard-কে সিস্টেম সেটিং এ অন করে, এটাকে সক্রিয় কিবোর্ড হিসেবে সেট করতে হবে</string>
     <string name="with_number_row">নম্বর সারি সহ</string>
     <string name="without_number_row">নম্বর সারি বাদে</string>
     <string name="write_clip_hint">ক্লিপবোর্ডে যোগ করতে লেখা লিখুন</string>

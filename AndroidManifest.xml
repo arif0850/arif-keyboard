@@ -13,10 +13,8 @@
     <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
     <queries>
-        <package android:name="ridmik.news"/>
-        <package android:name="ridmik.boitoi"/>
+
         <package android:name="bondhu.buzz"/>
-        <package android:name="ridmik.words"/>
         <package android:name="com.google.android.googlequicksearchbox"/>
         <intent>
             <action android:name="android.intent.action.SEND"/>
@@ -94,15 +92,15 @@
     <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
     <permission android:name="com.arif.keyboard.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
     <uses-permission android:name="com.arif.keyboard.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
-    <application android:allowBackup="true" android:extractNativeLibs="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:dataExtractionRules="@xml/data_extraction_rules" android:defaultToDeviceProtectedStorage="true"  android:fullBackupContent="@xml/backup_rules" android:hardwareAccelerated="true" android:icon="@mipmap/ic_launcher" android:label="@string/english_ime_name" android:localeConfig="@xml/locale_config" android:name="ridmik.keyboard.RidmikApp" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:theme="@style/AppTheme" android:usesCleartextTraffic="true">
-        <activity android:exported="true" android:label="@string/install_languages" android:name="ridmik.keyboard.InstallLanguageActivity" android:theme="@style/AppTheme.BanglaFont">
+    <application android:allowBackup="true" android:extractNativeLibs="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:dataExtractionRules="@xml/data_extraction_rules" android:defaultToDeviceProtectedStorage="true"  android:fullBackupContent="@xml/backup_rules" android:hardwareAccelerated="true" android:icon="@mipmap/ic_launcher" android:label="@string/english_ime_name" android:localeConfig="@xml/locale_config" android:name="com.arif.keyboard.ArifApp" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:theme="@style/AppTheme" android:usesCleartextTraffic="true">
+        <activity android:exported="true" android:label="@string/install_languages" android:name="com.arif.keyboard.InstallLanguageActivity" android:theme="@style/AppTheme.BanglaFont">
             <intent-filter>
-                <action android:name="ridmik.keyboard.InstallLanguageActivity"/>
+                <action android:name="com.arif.keyboard.InstallLanguageActivity"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
-        <activity android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|density|layoutDirection|colorMode|fontWeightAdjustment|fontScale" android:exported="true" android:name="ridmik.survey.MainActivity"/>
-        <service android:exported="true" android:label="@string/english_ime_name" android:name="ridmik.keyboard.RidmikKeyboard" android:permission="android.permission.BIND_INPUT_METHOD">
+        <activity android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|density|layoutDirection|colorMode|fontWeightAdjustment|fontScale" android:exported="true" android:name="com.arif.survey.MainActivity"/>
+        <service android:exported="true" android:label="@string/english_ime_name" android:name="com.arif.keyboard.ArifKeyboard" android:permission="android.permission.BIND_INPUT_METHOD">
             <intent-filter>
                 <action android:name="android.view.InputMethod"/>
             </intent-filter>
@@ -114,28 +112,28 @@
             </intent-filter>
             <meta-data android:name="android.view.textservice.scs" android:resource="@xml/spellchecker"/>
         </service>
-        <activity android:exported="true" android:hardwareAccelerated="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_launcher_name" android:launchMode="singleTask" android:name="ridmik.keyboard.composeUi.MainActivity" android:roundIcon="@mipmap/ic_launcher_round" android:theme="@style/Theme.App.SplashScreen" android:windowSoftInputMode="stateVisible|adjustResize">
+        <activity android:exported="true" android:hardwareAccelerated="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_launcher_name" android:launchMode="singleTask" android:name="com.arif.keyboard.composeUi.MainActivity" android:roundIcon="@mipmap/ic_launcher_round" android:theme="@style/Theme.App.SplashScreen" android:windowSoftInputMode="stateVisible|adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
         <activity android:exported="true" android:name="com.android.inputmethod.latin.permissions.PermissionsActivity" android:taskAffinity="" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
-        <activity android:exported="true" android:name="ridmik.keyboard.translate.DownloadOfflineTranslationActivity" android:theme="@style/AppTheme"/>
-        <activity android:exported="true" android:name="ridmik.keyboard.AppChangeLogActivity" android:theme="@style/AppTheme">
+        <activity android:exported="true" android:name="com.arif.keyboard.translate.DownloadOfflineTranslationActivity" android:theme="@style/AppTheme"/>
+        <activity android:exported="true" android:name="com.arif.keyboard.AppChangeLogActivity" android:theme="@style/AppTheme">
             <intent-filter>
-                <action android:name="ridmik.keyboard.AppChangeLogActivity"/>
+                <action android:name="com.arif.keyboard.AppChangeLogActivity"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
-        <activity android:exported="true" android:name="ridmik.keyboard.GameWebViewActivity" android:process=":GameProcess" android:taskAffinity="" android:theme="@style/AppTheme">
+        <activity android:exported="true" android:name="com.arif.keyboard.GameWebViewActivity" android:process=":GameProcess" android:taskAffinity="" android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
-        <activity android:exported="true" android:name="ridmik.keyboard.GameCustomTabActivity" android:process=":GameProcessCustom" android:taskAffinity="" android:theme="@style/AppTheme">
-            <meta-data android:name="android.support.customtabs.trusted.DEFAULT_URL" android:value="https://ridmik.com/"/>
+        <activity android:exported="true" android:name="com.arif.keyboard.GameCustomTabActivity" android:process=":GameProcessCustom" android:taskAffinity="" android:theme="@style/AppTheme">
+            <meta-data android:name="android.support.customtabs.trusted.DEFAULT_URL" android:value="https://arif0850.github.io/arif-keyboard/"/>
             <meta-data android:name="android.support.customtabs.trusted.STATUS_BAR_COLOR" android:resource="@color/white"/>
             <meta-data android:name="android.support.customtabs.trusted.NAVIGATION_BAR_COLOR" android:resource="@color/white"/>
             <intent-filter>
@@ -148,7 +146,7 @@
                 <category android:name="android.intent.category.BROWSABLE"/>
                 <data android:scheme="https"/>
                 <data android:scheme="https"/>
-                <data android:host="ridmik.com"/>
+                <data android:host="arif0850.github.io"/>
                 <data android:host="games.gogames.io"/>
                 <data android:pathPattern=".*"/>
             </intent-filter>
@@ -169,17 +167,17 @@
             </intent-filter>
         </activity>
         <activity android:exported="true" android:name="com.android.inputmethod.latin.settings.TestFragmentActivity"/>
-        <activity android:exported="true" android:label="About" android:name="ridmik.keyboard.extra.AboutActivity" android:theme="@style/AppTheme.BanglaFont">
+        <activity android:exported="true" android:label="About" android:name="com.arif.keyboard.extra.AboutActivity" android:theme="@style/AppTheme.BanglaFont">
             <intent-filter>
-                <action android:name="ridmik.keyboard.extra.AboutActivity"/>
+                <action android:name="com.arif.keyboard.extra.AboutActivity"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
-        <activity android:exported="true" android:label="@string/audio_permission" android:name="ridmik.keyboard.AudioPermissionActivity" android:theme="@style/AppTheme"/>
-        <activity android:exported="true" android:label="@string/google_app_installation_title" android:name="ridmik.keyboard.GoogleAppInstallationActivity" android:theme="@style/AppTheme"/>
-        <activity android:exported="true" android:label="@string/store_title" android:name="ridmik.keyboard.StoreActivity" android:theme="@style/AppTheme"/>
+        <activity android:exported="true" android:label="@string/audio_permission" android:name="com.arif.keyboard.AudioPermissionActivity" android:theme="@style/AppTheme"/>
+        <activity android:exported="true" android:label="@string/google_app_installation_title" android:name="com.arif.keyboard.GoogleAppInstallationActivity" android:theme="@style/AppTheme"/>
+        <activity android:exported="true" android:label="@string/store_title" android:name="com.arif.keyboard.StoreActivity" android:theme="@style/AppTheme"/>
         <activity android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|density|layoutDirection|colorMode|fontWeightAdjustment|fontScale" android:exported="true" android:name="com.android.inputmethod.latin.setup.TypingTestActivity" android:theme="@style/AppTheme"/>
-        <activity android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|density|layoutDirection|colorMode|fontWeightAdjustment|fontScale" android:exported="true" android:name="ridmik.keyboard.test.AvroPhoneticTestActivity"/>
+        <activity android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|density|layoutDirection|colorMode|fontWeightAdjustment|fontScale" android:exported="true" android:name="com.arif.keyboard.test.AvroPhoneticTestActivity"/>
         <receiver android:exported="true" android:name="com.android.inputmethod.latin.SystemBroadcastReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
@@ -193,23 +191,23 @@
                 <action android:name="android.accounts.LOGIN_ACCOUNTS_CHANGED"/>
             </intent-filter>
         </receiver>
-        <service android:exported="true" android:name="ridmik.keyboard.RidmikFirebaseMessagingService">
+        <service android:exported="true" android:name="com.arif.keyboard.ArifFirebaseMessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT"/>
             </intent-filter>
         </service>
-        <activity android:exported="true" android:label="Save to Clipboard" android:name="ridmik.keyboard.clipboard.ClipShareActivity" android:theme="@style/AppTheme">
+        <activity android:exported="true" android:label="Save to Clipboard" android:name="com.arif.keyboard.clipboard.ClipShareActivity" android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.SEND"/>
                 <category android:name="android.intent.category.DEFAULT"/>
                 <data android:mimeType="image/*"/>
             </intent-filter>
         </activity>
-        <activity android:exported="true" android:name="ridmik.keyboard.extra.FactCheckActivity" android:theme="@style/AppTheme"/>
+        <activity android:exported="true" android:name="com.arif.keyboard.extra.FactCheckActivity" android:theme="@style/AppTheme"/>
         <activity android:exported="true" android:name="com.canhub.cropper.CropImageActivity" android:theme="@style/Base.Theme.AppCompat"/> ] 
-        <activity android:exported="true" android:name="ridmik.keyboard.MyStickerActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
-        <activity android:exported="true" android:name="ridmik.keyboard.LoginForSurveyActivity" android:theme="@style/Theme.TRANSPARENT"/>
-        <activity android:exported="true" android:name="ridmik.keyboard.ProfileActivity" android:theme="@style/AppTheme"/>
+        <activity android:exported="true" android:name="com.arif.keyboard.MyStickerActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:exported="true" android:name="com.arif.keyboard.LoginForSurveyActivity" android:theme="@style/Theme.TRANSPARENT"/>
+        <activity android:exported="true" android:name="com.arif.keyboard.ProfileActivity" android:theme="@style/AppTheme"/>
         <activity android:exported="true" android:name="com.sslwireless.sslcommerzlibrary.view.activity.WebViewActivitySSLC" android:process=":sslCommerzWebProcess" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="com.sslwireless.sslcommerzlibrary.view.activity.WebViewActivitySSLC"/>
@@ -219,7 +217,7 @@
         <provider android:authorities="com.arif.keyboard.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
             <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
         </provider>
-        <provider android:authorities="com.arif.keyboard.CertificateImageProvider" android:exported="false" android:grantUriPermissions="true" android:name="ridmik.keyboard.providers.CertificateImageProvider">
+        <provider android:authorities="com.arif.keyboard.CertificateImageProvider" android:exported="false" android:grantUriPermissions="true" android:name="com.arif.keyboard.providers.CertificateImageProvider">
             <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_folder_path"/>
         </provider>
         <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
@@ -248,7 +246,7 @@
                 <action android:name="android.intent.action.VIEW"/>
                 <category android:name="android.intent.category.DEFAULT"/>
                 <category android:name="android.intent.category.BROWSABLE"/>
-                <data android:host="cct.ridmik.keyboard" android:scheme="fbconnect"/>
+                <data android:host="cct.com.arif.keyboard" android:scheme="fbconnect"/>
             </intent-filter>
         </activity>
         <meta-data android:name="com.google.android.play.billingclient.version" android:value="8.0.0"/>

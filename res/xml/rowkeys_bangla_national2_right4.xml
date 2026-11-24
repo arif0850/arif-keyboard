@@ -3,16 +3,16 @@
   xmlns:latin="http://schemas.android.com/apk/res-auto">
     <switch>
         <case latin:keyboardLayoutSetElement="banglaFixedAlphabetShifted">
-            <Key latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/ridmik_font_size_ratio" latin:keySpec="±|অ" />
-            <Key latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/ridmik_font_size_ratio" latin:keySpec="¼|খ" />
-            <Key latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/ridmik_font_size_ratio" latin:keySpec="Ë|থ" />
-            <Key latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/ridmik_font_size_ratio" latin:keySpec="Í|ধ" />
+            <Key latin:keyLabelFlags="fontArifAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/arif_font_size_ratio" latin:keySpec="±|অ" />
+            <Key latin:keyLabelFlags="fontArifAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/arif_font_size_ratio" latin:keySpec="¼|খ" />
+            <Key latin:keyLabelFlags="fontArifAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/arif_font_size_ratio" latin:keySpec="Ë|থ" />
+            <Key latin:keyLabelFlags="fontArifAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/arif_font_size_ratio" latin:keySpec="Í|ধ" />
         </case>
         <default>
-            <Key latin:keyHintLabel="ð" latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/ridmik_font_size_ratio" latin:keySpec="â|া" latin:moreKeys="ð|আ" />
-            <Key latin:keyHintLabel="¼" latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/ridmik_font_size_ratio" latin:keySpec="»|ক" latin:moreKeys="¼|খ" />
-            <Key latin:keyHintLabel="Þ" latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/ridmik_font_size_ratio" latin:keySpec="Ê|ত" latin:moreKeys="Þ|ৎ" />
-            <Key latin:keyHintLabel="Í" latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/ridmik_font_size_ratio" latin:keySpec="Ì|দ" latin:moreKeys="Í|ধ" />
+            <Key latin:keyHintLabel="ð" latin:keyLabelFlags="fontArifAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/arif_font_size_ratio" latin:keySpec="â|া" latin:moreKeys="ð|আ" />
+            <Key latin:keyHintLabel="¼" latin:keyLabelFlags="fontArifAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/arif_font_size_ratio" latin:keySpec="»|ক" latin:moreKeys="¼|খ" />
+            <Key latin:keyHintLabel="Þ" latin:keyLabelFlags="fontArifAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/arif_font_size_ratio" latin:keySpec="Ê|ত" latin:moreKeys="Þ|ৎ" />
+            <Key latin:keyHintLabel="Í" latin:keyLabelFlags="fontArifAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/arif_font_size_ratio" latin:keySpec="Ì|দ" latin:moreKeys="Í|ধ" />
         </default>
     </switch>
 </merge>

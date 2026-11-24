@@ -219,7 +219,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v4}, Lcom/android/inputmethod/keyboard/e1;->getCurrentCustomTheme()Lridmik/keyboard/model/CustomThemeModel;
+    invoke-virtual {v4}, Lcom/android/inputmethod/keyboard/e1;->getCurrentCustomTheme()Lcom/arif/keyboard/model/CustomThemeModel;
 
     move-result-object v4
 
@@ -315,14 +315,14 @@
     if-eqz v4, :cond_0
 
     .line 34
-    invoke-virtual {v4}, Lridmik/keyboard/model/CustomThemeModel;->getThemeKeyTextColor()I
+    invoke-virtual {v4}, Lcom/arif/keyboard/model/CustomThemeModel;->getThemeKeyTextColor()I
 
     move-result v1
 
     if-eq v1, p3, :cond_0
 
     .line 35
-    invoke-virtual {v4}, Lridmik/keyboard/model/CustomThemeModel;->getThemeKeyTextColor()I
+    invoke-virtual {v4}, Lcom/arif/keyboard/model/CustomThemeModel;->getThemeKeyTextColor()I
 
     move-result v1
 
@@ -550,7 +550,7 @@
     if-eqz v4, :cond_1
 
     .line 67
-    invoke-virtual {v4}, Lridmik/keyboard/model/CustomThemeModel;->getThemeKeyTextColor()I
+    invoke-virtual {v4}, Lcom/arif/keyboard/model/CustomThemeModel;->getThemeKeyTextColor()I
 
     move-result p2
 
@@ -562,7 +562,7 @@
     move-result-object p2
 
     .line 69
-    invoke-virtual {v4}, Lridmik/keyboard/model/CustomThemeModel;->getThemeKeyTextColor()I
+    invoke-virtual {v4}, Lcom/arif/keyboard/model/CustomThemeModel;->getThemeKeyTextColor()I
 
     move-result p3
 
@@ -581,7 +581,7 @@
     move-result-object p2
 
     .line 72
-    invoke-virtual {v4}, Lridmik/keyboard/model/CustomThemeModel;->getThemeKeyTextColor()I
+    invoke-virtual {v4}, Lcom/arif/keyboard/model/CustomThemeModel;->getThemeKeyTextColor()I
 
     move-result p3
 
@@ -1568,7 +1568,7 @@
 
     .line 25
     .line 26
-    if-ne v0, v1, :cond_b
+    if-ne v0, v1, :cond_d
 
     .line 27
     .line 28
@@ -1576,7 +1576,7 @@
 
     .line 29
     .line 30
-    if-eqz p4, :cond_c
+    if-eqz p4, :cond_e
 
     .line 31
     .line 32
@@ -1588,7 +1588,7 @@
     move-result p4
 
     .line 36
-    if-nez p4, :cond_c
+    if-nez p4, :cond_e
 
     .line 37
     .line 38
@@ -1916,19 +1916,19 @@
     .line 184
     .line 185
     :goto_2
-    :try_start_arrows
+    :try_start_0
     iget-object p3, p0, Lcom/android/inputmethod/keyboard/MainKeyboardView;->y:Landroid/graphics/drawable/Drawable;
 
-    if-eqz p3, :cond_skip_arrows
+    if-eqz p3, :cond_b
 
     iget-object p4, p0, Lcom/android/inputmethod/keyboard/MainKeyboardView;->z:Landroid/graphics/drawable/Drawable;
 
-    if-nez p4, :cond_draw_arrows
+    if-nez p4, :cond_c
 
-    :cond_skip_arrows
+    :cond_b
     return-void
 
-    :cond_draw_arrows
+    :cond_c
     invoke-virtual {p3}, Landroid/graphics/drawable/Drawable;->getIntrinsicWidth()I
 
     .line 188
@@ -2061,24 +2061,24 @@
     .line 243
     .line 244
     invoke-virtual {p4, p2}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
-    :try_end_arrows
-    .catch Ljava/lang/Throwable; {:try_start_arrows .. :try_end_arrows} :catch_arrows
+    :try_end_0
+    .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 245
     .line 246
     .line 247
     return-void
 
-    :catch_arrows
+    :catch_0
     return-void
 
     .line 248
-    :cond_b
+    :cond_d
     const/16 v1, -0xa
 
     .line 249
     .line 250
-    if-ne v0, v1, :cond_c
+    if-ne v0, v1, :cond_e
 
     .line 251
     .line 252
@@ -2087,7 +2087,7 @@
     .line 253
     .line 254
     .line 255
-    :cond_c
+    :cond_e
     return-void
 .end method
 
@@ -2409,7 +2409,7 @@
 
     .line 103
     .line 104
-    invoke-virtual {p1}, Lcom/android/inputmethod/keyboard/e1;->getCurrentCustomTheme()Lridmik/keyboard/model/CustomThemeModel;
+    invoke-virtual {p1}, Lcom/android/inputmethod/keyboard/e1;->getCurrentCustomTheme()Lcom/arif/keyboard/model/CustomThemeModel;
 
     .line 105
     .line 106
@@ -2421,7 +2421,7 @@
 
     .line 109
     .line 110
-    invoke-virtual {p1}, Lcom/android/inputmethod/keyboard/e1;->getCurrentCustomTheme()Lridmik/keyboard/model/CustomThemeModel;
+    invoke-virtual {p1}, Lcom/android/inputmethod/keyboard/e1;->getCurrentCustomTheme()Lcom/arif/keyboard/model/CustomThemeModel;
 
     .line 111
     .line 112
@@ -2429,7 +2429,7 @@
     move-result-object v1
 
     .line 114
-    invoke-virtual {v1}, Lridmik/keyboard/model/CustomThemeModel;->getFullImage()I
+    invoke-virtual {v1}, Lcom/arif/keyboard/model/CustomThemeModel;->getFullImage()I
 
     .line 115
     .line 116
@@ -2442,7 +2442,7 @@
     .line 119
     .line 120
     :cond_4
-    invoke-virtual {p2}, Lcom/android/inputmethod/latin/h1;->getImageDataToShowOnKeyboard()Lridmik/keyboard/model/ImageDataToShowOnKeyboard;
+    invoke-virtual {p2}, Lcom/android/inputmethod/latin/h1;->getImageDataToShowOnKeyboard()Lcom/arif/keyboard/model/ImageDataToShowOnKeyboard;
 
     .line 121
     .line 122
@@ -2478,7 +2478,7 @@
 
     .line 137
     .line 138
-    invoke-virtual {v0}, Lridmik/keyboard/model/ImageDataToShowOnKeyboard;->getKeys()Ljava/util/List;
+    invoke-virtual {v0}, Lcom/arif/keyboard/model/ImageDataToShowOnKeyboard;->getKeys()Ljava/util/List;
 
     .line 139
     .line 140
@@ -2490,7 +2490,7 @@
 
     .line 143
     .line 144
-    invoke-virtual {v0}, Lridmik/keyboard/model/ImageDataToShowOnKeyboard;->getKeys()Ljava/util/List;
+    invoke-virtual {v0}, Lcom/arif/keyboard/model/ImageDataToShowOnKeyboard;->getKeys()Ljava/util/List;
 
     .line 145
     .line 146
@@ -2553,7 +2553,7 @@
     move-result p2
 
     .line 175
-    invoke-virtual {v0}, Lridmik/keyboard/model/ImageDataToShowOnKeyboard;->getMaximum()I
+    invoke-virtual {v0}, Lcom/arif/keyboard/model/ImageDataToShowOnKeyboard;->getMaximum()I
 
     .line 176
     .line 177
@@ -2565,7 +2565,7 @@
 
     .line 180
     .line 181
-    invoke-virtual {p1, v0, p2}, Lcom/android/inputmethod/keyboard/e1;->showViewImageInMainKeyboard(Lridmik/keyboard/model/ImageDataToShowOnKeyboard;I)V
+    invoke-virtual {p1, v0, p2}, Lcom/android/inputmethod/keyboard/e1;->showViewImageInMainKeyboard(Lcom/arif/keyboard/model/ImageDataToShowOnKeyboard;I)V
 
     .line 182
     .line 183
@@ -4990,7 +4990,7 @@
     move-result-object v0
 
     .line 158
-    invoke-virtual {v0}, Lcom/android/inputmethod/keyboard/e1;->getCurrentCustomTheme()Lridmik/keyboard/model/CustomThemeModel;
+    invoke-virtual {v0}, Lcom/android/inputmethod/keyboard/e1;->getCurrentCustomTheme()Lcom/arif/keyboard/model/CustomThemeModel;
 
     .line 159
     .line 160

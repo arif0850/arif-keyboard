@@ -23,7 +23,7 @@
 # instance fields
 .field public A:Ljava/util/List;
 
-.field public B:Lridmik/keyboard/model/ApiFetchIntervalData;
+.field public B:Lcom/arif/keyboard/model/ApiFetchIntervalData;
 
 .field public C:Z
 
@@ -53,13 +53,13 @@
 
 .field public P:Z
 
-.field public Q:Lridmik/keyboard/model/AdMobAdShowStatus;
+.field public Q:Lcom/arif/keyboard/model/AdMobAdShowStatus;
 
-.field public R:Lridmik/keyboard/model/AdShowingReason;
+.field public R:Lcom/arif/keyboard/model/AdShowingReason;
 
-.field public S:Lridmik/keyboard/model/BrandedStickersData;
+.field public S:Lcom/arif/keyboard/model/BrandedStickersData;
 
-.field public T:Lridmik/keyboard/model/EmojiBannerInfo;
+.field public T:Lcom/arif/keyboard/model/EmojiBannerInfo;
 
 .field public U:Ljava/lang/String;
 
@@ -151,11 +151,11 @@
 
 .field public w:Z
 
-.field public x:Lridmik/keyboard/model/ImageDataToShowOnKeyboard;
+.field public x:Lcom/arif/keyboard/model/ImageDataToShowOnKeyboard;
 
 .field public y:Z
 
-.field public z:Lridmik/keyboard/model/SuggestionBarAppPackageInfo;
+.field public z:Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;
 
 
 # direct methods
@@ -803,7 +803,7 @@
     sub-long/2addr v9, v11
 
     .line 109
-    invoke-static {p0}, Lridmik/keyboard/database/AppRoomDatabase;->getInstance(Landroid/content/Context;)Lridmik/keyboard/database/AppRoomDatabase;
+    invoke-static {p0}, Lcom/arif/keyboard/database/AppRoomDatabase;->getInstance(Landroid/content/Context;)Lcom/arif/keyboard/database/AppRoomDatabase;
 
     .line 110
     .line 111
@@ -811,7 +811,7 @@
     move-result-object v8
 
     .line 113
-    invoke-virtual {v8}, Lridmik/keyboard/database/AppRoomDatabase;->localAdDao()Lxt/f;
+    invoke-virtual {v8}, Lcom/arif/keyboard/database/AppRoomDatabase;->localAdDao()Lxt/f;
 
     .line 114
     .line 115
@@ -831,7 +831,7 @@
     move-result-object v6
 
     .line 123
-    invoke-static {p0}, Lridmik/keyboard/database/AppRoomDatabase;->getInstance(Landroid/content/Context;)Lridmik/keyboard/database/AppRoomDatabase;
+    invoke-static {p0}, Lcom/arif/keyboard/database/AppRoomDatabase;->getInstance(Landroid/content/Context;)Lcom/arif/keyboard/database/AppRoomDatabase;
 
     .line 124
     .line 125
@@ -839,7 +839,7 @@
     move-result-object v7
 
     .line 127
-    invoke-virtual {v7}, Lridmik/keyboard/database/AppRoomDatabase;->localAdDao()Lxt/f;
+    invoke-virtual {v7}, Lcom/arif/keyboard/database/AppRoomDatabase;->localAdDao()Lxt/f;
 
     .line 128
     .line 129
@@ -859,7 +859,7 @@
     move-result-object v7
 
     .line 137
-    invoke-static {p0}, Lridmik/keyboard/database/AppRoomDatabase;->getInstance(Landroid/content/Context;)Lridmik/keyboard/database/AppRoomDatabase;
+    invoke-static {p0}, Lcom/arif/keyboard/database/AppRoomDatabase;->getInstance(Landroid/content/Context;)Lcom/arif/keyboard/database/AppRoomDatabase;
 
     .line 138
     .line 139
@@ -867,7 +867,7 @@
     move-result-object v8
 
     .line 141
-    invoke-virtual {v8}, Lridmik/keyboard/database/AppRoomDatabase;->localAdDao()Lxt/f;
+    invoke-virtual {v8}, Lcom/arif/keyboard/database/AppRoomDatabase;->localAdDao()Lxt/f;
 
     .line 142
     .line 143
@@ -887,7 +887,7 @@
     move-result-object v4
 
     .line 151
-    invoke-static {v2, v4, v7, v6}, Lbt/o0;->processAdsSavedData(Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;)Lridmik/keyboard/model/EmojiBannerInfo;
+    invoke-static {v2, v4, v7, v6}, Lbt/o0;->processAdsSavedData(Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;)Lcom/arif/keyboard/model/EmojiBannerInfo;
 
     .line 152
     .line 153
@@ -895,7 +895,7 @@
     move-result-object v2
 
     .line 155
-    iput-object v2, p0, Lcom/android/inputmethod/latin/h1;->T:Lridmik/keyboard/model/EmojiBannerInfo;
+    iput-object v2, p0, Lcom/android/inputmethod/latin/h1;->T:Lcom/arif/keyboard/model/EmojiBannerInfo;
 
     .line 156
     .line 157
@@ -962,27 +962,27 @@
 
     .line 191
     :cond_3
-    invoke-virtual {v2}, Lridmik/keyboard/model/EmojiBannerInfo;->getId()Ljava/lang/String;
+    invoke-virtual {v2}, Lcom/arif/keyboard/model/EmojiBannerInfo;->getId()Ljava/lang/String;
 
     .line 192
     .line 193
     .line 194
-    invoke-virtual {v2}, Lridmik/keyboard/model/EmojiBannerInfo;->getProbability()D
+    invoke-virtual {v2}, Lcom/arif/keyboard/model/EmojiBannerInfo;->getProbability()D
 
     .line 195
     .line 196
     .line 197
-    invoke-virtual {v2}, Lridmik/keyboard/model/EmojiBannerInfo;->getOverallImpressionCount()I
+    invoke-virtual {v2}, Lcom/arif/keyboard/model/EmojiBannerInfo;->getOverallImpressionCount()I
 
     .line 198
     .line 199
     .line 200
-    invoke-virtual {v2}, Lridmik/keyboard/model/EmojiBannerInfo;->getPerDayImpressionCount()I
+    invoke-virtual {v2}, Lcom/arif/keyboard/model/EmojiBannerInfo;->getPerDayImpressionCount()I
 
     .line 201
     .line 202
     .line 203
-    invoke-virtual {v2}, Lridmik/keyboard/model/EmojiBannerInfo;->getPerHourImpression()I
+    invoke-virtual {v2}, Lcom/arif/keyboard/model/EmojiBannerInfo;->getPerHourImpression()I
 
     .line 204
     .line 205
@@ -996,7 +996,7 @@
     .line 209
     .line 210
     .line 211
-    invoke-virtual {v2}, Lridmik/keyboard/model/EmojiBannerInfo;->getId()Ljava/lang/String;
+    invoke-virtual {v2}, Lcom/arif/keyboard/model/EmojiBannerInfo;->getId()Ljava/lang/String;
 
     .line 212
     .line 213
@@ -1018,7 +1018,7 @@
     .line 221
     .line 222
     .line 223
-    invoke-virtual {v2}, Lridmik/keyboard/model/EmojiBannerInfo;->getProbability()D
+    invoke-virtual {v2}, Lcom/arif/keyboard/model/EmojiBannerInfo;->getProbability()D
 
     .line 224
     .line 225
@@ -1040,7 +1040,7 @@
     .line 233
     .line 234
     .line 235
-    invoke-virtual {v2}, Lridmik/keyboard/model/EmojiBannerInfo;->getOverallImpressionCount()I
+    invoke-virtual {v2}, Lcom/arif/keyboard/model/EmojiBannerInfo;->getOverallImpressionCount()I
 
     .line 236
     .line 237
@@ -1062,7 +1062,7 @@
     .line 245
     .line 246
     .line 247
-    invoke-virtual {v2}, Lridmik/keyboard/model/EmojiBannerInfo;->getPerDayImpressionCount()I
+    invoke-virtual {v2}, Lcom/arif/keyboard/model/EmojiBannerInfo;->getPerDayImpressionCount()I
 
     .line 248
     .line 249
@@ -1084,7 +1084,7 @@
     .line 257
     .line 258
     .line 259
-    invoke-virtual {v2}, Lridmik/keyboard/model/EmojiBannerInfo;->getPerHourImpression()I
+    invoke-virtual {v2}, Lcom/arif/keyboard/model/EmojiBannerInfo;->getPerHourImpression()I
 
     .line 260
     .line 261
@@ -1128,7 +1128,7 @@
     .line 281
     .line 282
     .line 283
-    invoke-virtual {v2}, Lridmik/keyboard/model/EmojiBannerInfo;->toString()Ljava/lang/String;
+    invoke-virtual {v2}, Lcom/arif/keyboard/model/EmojiBannerInfo;->toString()Ljava/lang/String;
 
     .line 284
     .line 285
@@ -1253,7 +1253,7 @@
     return-object p0
 .end method
 
-.method public static g(Landroid/content/Intent;Lridmik/keyboard/model/SuggestionBarAppPackageInfo;)V
+.method public static g(Landroid/content/Intent;Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;)V
     .locals 2
 
     .line 1
@@ -1261,7 +1261,7 @@
 
     .line 2
     .line 3
-    invoke-virtual {p1}, Lridmik/keyboard/model/SuggestionBarAppPackageInfo;->getLink()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;->getLink()Ljava/lang/String;
 
     .line 4
     .line 5
@@ -1278,7 +1278,7 @@
 
     .line 11
     .line 12
-    invoke-virtual {p1}, Lridmik/keyboard/model/SuggestionBarAppPackageInfo;->getJsInterface()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;->getJsInterface()Ljava/lang/String;
 
     .line 13
     .line 14
@@ -1295,7 +1295,7 @@
 
     .line 20
     .line 21
-    invoke-virtual {p1}, Lridmik/keyboard/model/SuggestionBarAppPackageInfo;->getGameWindow()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;->getGameWindow()Ljava/lang/String;
 
     .line 22
     .line 23
@@ -1312,7 +1312,7 @@
 
     .line 29
     .line 30
-    invoke-virtual {p1}, Lridmik/keyboard/model/SuggestionBarAppPackageInfo;->getTitle()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;->getTitle()Ljava/lang/String;
 
     .line 31
     .line 32
@@ -1329,7 +1329,7 @@
 
     .line 38
     .line 39
-    invoke-virtual {p1}, Lridmik/keyboard/model/SuggestionBarAppPackageInfo;->getTermsUrl()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;->getTermsUrl()Ljava/lang/String;
 
     .line 40
     .line 41
@@ -1346,7 +1346,7 @@
 
     .line 47
     .line 48
-    invoke-virtual {p1}, Lridmik/keyboard/model/SuggestionBarAppPackageInfo;->getPrivacyUrl()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;->getPrivacyUrl()Ljava/lang/String;
 
     .line 49
     .line 50
@@ -1363,7 +1363,7 @@
 
     .line 56
     .line 57
-    invoke-virtual {p1}, Lridmik/keyboard/model/SuggestionBarAppPackageInfo;->getOpenInWebView()Z
+    invoke-virtual {p1}, Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;->getOpenInWebView()Z
 
     .line 58
     .line 59
@@ -1504,7 +1504,7 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lcom/android/inputmethod/latin/h1;->Q:Lridmik/keyboard/model/AdMobAdShowStatus;
+    iget-object v0, p0, Lcom/android/inputmethod/latin/h1;->Q:Lcom/arif/keyboard/model/AdMobAdShowStatus;
 
     .line 2
     .line 3
@@ -1512,7 +1512,7 @@
 
     .line 4
     .line 5
-    invoke-virtual {v0}, Lridmik/keyboard/model/AdMobAdShowStatus;->getCacheExpirationTimeV2()Ljava/lang/Long;
+    invoke-virtual {v0}, Lcom/arif/keyboard/model/AdMobAdShowStatus;->getCacheExpirationTimeV2()Ljava/lang/Long;
 
     .line 6
     .line 7
@@ -1528,11 +1528,11 @@
 
     .line 12
     :cond_0
-    iget-object v0, p0, Lcom/android/inputmethod/latin/h1;->Q:Lridmik/keyboard/model/AdMobAdShowStatus;
+    iget-object v0, p0, Lcom/android/inputmethod/latin/h1;->Q:Lcom/arif/keyboard/model/AdMobAdShowStatus;
 
     .line 13
     .line 14
-    invoke-virtual {v0}, Lridmik/keyboard/model/AdMobAdShowStatus;->getCacheExpirationTimeV2()Ljava/lang/Long;
+    invoke-virtual {v0}, Lcom/arif/keyboard/model/AdMobAdShowStatus;->getCacheExpirationTimeV2()Ljava/lang/Long;
 
     .line 15
     .line 16
@@ -2802,7 +2802,7 @@
     .line 27
     .line 28
     :cond_0
-    iget-object v0, p0, Lcom/android/inputmethod/latin/h1;->Q:Lridmik/keyboard/model/AdMobAdShowStatus;
+    iget-object v0, p0, Lcom/android/inputmethod/latin/h1;->Q:Lcom/arif/keyboard/model/AdMobAdShowStatus;
 
     .line 29
     .line 30
@@ -2810,7 +2810,7 @@
 
     .line 31
     .line 32
-    invoke-virtual {v0}, Lridmik/keyboard/model/AdMobAdShowStatus;->getDestroyMediatedAdsAfterHiddenSec()Ljava/lang/Long;
+    invoke-virtual {v0}, Lcom/arif/keyboard/model/AdMobAdShowStatus;->getDestroyMediatedAdsAfterHiddenSec()Ljava/lang/Long;
 
     .line 33
     .line 34
@@ -2905,11 +2905,11 @@
     return-void
 .end method
 
-.method public getAdMobAdShowStatus()Lridmik/keyboard/model/AdMobAdShowStatus;
+.method public getAdMobAdShowStatus()Lcom/arif/keyboard/model/AdMobAdShowStatus;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/android/inputmethod/latin/h1;->Q:Lridmik/keyboard/model/AdMobAdShowStatus;
+    iget-object v0, p0, Lcom/android/inputmethod/latin/h1;->Q:Lcom/arif/keyboard/model/AdMobAdShowStatus;
 
     .line 2
     .line 3
@@ -2927,22 +2927,22 @@
     return v0
 .end method
 
-.method public getApiFetchIntervalData()Lridmik/keyboard/model/ApiFetchIntervalData;
+.method public getApiFetchIntervalData()Lcom/arif/keyboard/model/ApiFetchIntervalData;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/android/inputmethod/latin/h1;->B:Lridmik/keyboard/model/ApiFetchIntervalData;
+    iget-object v0, p0, Lcom/android/inputmethod/latin/h1;->B:Lcom/arif/keyboard/model/ApiFetchIntervalData;
 
     .line 2
     .line 3
     return-object v0
 .end method
 
-.method public getBrandedStickersData()Lridmik/keyboard/model/BrandedStickersData;
+.method public getBrandedStickersData()Lcom/arif/keyboard/model/BrandedStickersData;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/android/inputmethod/latin/h1;->S:Lridmik/keyboard/model/BrandedStickersData;
+    iget-object v0, p0, Lcom/android/inputmethod/latin/h1;->S:Lcom/arif/keyboard/model/BrandedStickersData;
 
     .line 2
     .line 3
@@ -3107,11 +3107,11 @@
     return v0
 .end method
 
-.method public getCurrentShowingEmojiBannerInfo()Lridmik/keyboard/model/EmojiBannerInfo;
+.method public getCurrentShowingEmojiBannerInfo()Lcom/arif/keyboard/model/EmojiBannerInfo;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/android/inputmethod/latin/h1;->T:Lridmik/keyboard/model/EmojiBannerInfo;
+    iget-object v0, p0, Lcom/android/inputmethod/latin/h1;->T:Lcom/arif/keyboard/model/EmojiBannerInfo;
 
     .line 2
     .line 3
@@ -3220,11 +3220,11 @@
     return-object v0
 .end method
 
-.method public getImageDataToShowOnKeyboard()Lridmik/keyboard/model/ImageDataToShowOnKeyboard;
+.method public getImageDataToShowOnKeyboard()Lcom/arif/keyboard/model/ImageDataToShowOnKeyboard;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/android/inputmethod/latin/h1;->x:Lridmik/keyboard/model/ImageDataToShowOnKeyboard;
+    iget-object v0, p0, Lcom/android/inputmethod/latin/h1;->x:Lcom/arif/keyboard/model/ImageDataToShowOnKeyboard;
 
     .line 2
     .line 3
@@ -3232,7 +3232,7 @@
 
     .line 4
     .line 5
-    invoke-static {p0}, Lcom/android/inputmethod/latin/settings/y;->getImageDataToShowOnKeyboard(Landroid/content/Context;)Lridmik/keyboard/model/ImageDataToShowOnKeyboard;
+    invoke-static {p0}, Lcom/android/inputmethod/latin/settings/y;->getImageDataToShowOnKeyboard(Landroid/content/Context;)Lcom/arif/keyboard/model/ImageDataToShowOnKeyboard;
 
     .line 6
     .line 7
@@ -3240,12 +3240,12 @@
     move-result-object v0
 
     .line 9
-    iput-object v0, p0, Lcom/android/inputmethod/latin/h1;->x:Lridmik/keyboard/model/ImageDataToShowOnKeyboard;
+    iput-object v0, p0, Lcom/android/inputmethod/latin/h1;->x:Lcom/arif/keyboard/model/ImageDataToShowOnKeyboard;
 
     .line 10
     .line 11
     :cond_0
-    iget-object v0, p0, Lcom/android/inputmethod/latin/h1;->x:Lridmik/keyboard/model/ImageDataToShowOnKeyboard;
+    iget-object v0, p0, Lcom/android/inputmethod/latin/h1;->x:Lcom/arif/keyboard/model/ImageDataToShowOnKeyboard;
 
     .line 12
     .line 13
@@ -3269,7 +3269,7 @@
         value = {
             "()",
             "Ljava/util/List<",
-            "Lridmik/keyboard/model/EmojiBannerInfo;",
+            "Lcom/arif/keyboard/model/EmojiBannerInfo;",
             ">;"
         }
     .end annotation
@@ -3297,11 +3297,11 @@
     return-object v0
 .end method
 
-.method public getPackageInfoToShowOnSuggestionBar()Lridmik/keyboard/model/SuggestionBarAppPackageInfo;
+.method public getPackageInfoToShowOnSuggestionBar()Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/android/inputmethod/latin/h1;->z:Lridmik/keyboard/model/SuggestionBarAppPackageInfo;
+    iget-object v0, p0, Lcom/android/inputmethod/latin/h1;->z:Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;
 
     .line 2
     .line 3
@@ -3802,7 +3802,7 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lcom/android/inputmethod/latin/h1;->Q:Lridmik/keyboard/model/AdMobAdShowStatus;
+    iget-object v0, p0, Lcom/android/inputmethod/latin/h1;->Q:Lcom/arif/keyboard/model/AdMobAdShowStatus;
 
     .line 2
     .line 3
@@ -3810,7 +3810,7 @@
 
     .line 4
     .line 5
-    invoke-virtual {v0}, Lridmik/keyboard/model/AdMobAdShowStatus;->getEmojiBannerFailExpiredInterval()I
+    invoke-virtual {v0}, Lcom/arif/keyboard/model/AdMobAdShowStatus;->getEmojiBannerFailExpiredInterval()I
 
     .line 6
     .line 7
@@ -4370,7 +4370,7 @@
     .line 3
     .line 4
     .line 5
-    iget-object v0, p0, Lcom/android/inputmethod/latin/h1;->Q:Lridmik/keyboard/model/AdMobAdShowStatus;
+    iget-object v0, p0, Lcom/android/inputmethod/latin/h1;->Q:Lcom/arif/keyboard/model/AdMobAdShowStatus;
 
     .line 6
     .line 7
@@ -4382,7 +4382,7 @@
 
     .line 10
     .line 11
-    invoke-virtual {v0}, Lridmik/keyboard/model/AdMobAdShowStatus;->getReloadInstantlyInAdScreen()Z
+    invoke-virtual {v0}, Lcom/arif/keyboard/model/AdMobAdShowStatus;->getReloadInstantlyInAdScreen()Z
 
     .line 12
     .line 13
@@ -4463,7 +4463,7 @@
 
     .line 53
     .line 54
-    iget-object v0, p0, Lcom/android/inputmethod/latin/h1;->Q:Lridmik/keyboard/model/AdMobAdShowStatus;
+    iget-object v0, p0, Lcom/android/inputmethod/latin/h1;->Q:Lcom/arif/keyboard/model/AdMobAdShowStatus;
 
     .line 55
     .line 56
@@ -4475,7 +4475,7 @@
 
     .line 59
     .line 60
-    invoke-virtual {v0}, Lridmik/keyboard/model/AdMobAdShowStatus;->getShowRecentTab()Ljava/lang/Boolean;
+    invoke-virtual {v0}, Lcom/arif/keyboard/model/AdMobAdShowStatus;->getShowRecentTab()Ljava/lang/Boolean;
 
     .line 61
     .line 62
@@ -4507,11 +4507,11 @@
 
     .line 75
     .line 76
-    iget-object v0, p0, Lcom/android/inputmethod/latin/h1;->Q:Lridmik/keyboard/model/AdMobAdShowStatus;
+    iget-object v0, p0, Lcom/android/inputmethod/latin/h1;->Q:Lcom/arif/keyboard/model/AdMobAdShowStatus;
 
     .line 77
     .line 78
-    invoke-virtual {v0}, Lridmik/keyboard/model/AdMobAdShowStatus;->getEmojiRecentTabAdType()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/arif/keyboard/model/AdMobAdShowStatus;->getEmojiRecentTabAdType()Ljava/lang/String;
 
     .line 79
     .line 80
@@ -4603,7 +4603,7 @@
 
     .line 121
     .line 122
-    iget-object v0, p0, Lcom/android/inputmethod/latin/h1;->Q:Lridmik/keyboard/model/AdMobAdShowStatus;
+    iget-object v0, p0, Lcom/android/inputmethod/latin/h1;->Q:Lcom/arif/keyboard/model/AdMobAdShowStatus;
 
     .line 123
     .line 124
@@ -4611,7 +4611,7 @@
 
     .line 125
     .line 126
-    invoke-virtual {v0}, Lridmik/keyboard/model/AdMobAdShowStatus;->getEmojiRecentTabAdUnitId()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/arif/keyboard/model/AdMobAdShowStatus;->getEmojiRecentTabAdUnitId()Ljava/lang/String;
 
     .line 127
     .line 128
@@ -4631,11 +4631,11 @@
 
     .line 135
     .line 136
-    iget-object v0, p0, Lcom/android/inputmethod/latin/h1;->Q:Lridmik/keyboard/model/AdMobAdShowStatus;
+    iget-object v0, p0, Lcom/android/inputmethod/latin/h1;->Q:Lcom/arif/keyboard/model/AdMobAdShowStatus;
 
     .line 137
     .line 138
-    invoke-virtual {v0}, Lridmik/keyboard/model/AdMobAdShowStatus;->getEmojiRecentTabAdUnitId()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/arif/keyboard/model/AdMobAdShowStatus;->getEmojiRecentTabAdUnitId()Ljava/lang/String;
 
     .line 139
     .line 140
@@ -5060,7 +5060,7 @@
     .locals 8
 
     .line 1
-    iget-object v0, p0, Lcom/android/inputmethod/latin/h1;->Q:Lridmik/keyboard/model/AdMobAdShowStatus;
+    iget-object v0, p0, Lcom/android/inputmethod/latin/h1;->Q:Lcom/arif/keyboard/model/AdMobAdShowStatus;
 
     .line 2
     .line 3
@@ -5072,7 +5072,7 @@
 
     .line 6
     .line 7
-    invoke-virtual {v0}, Lridmik/keyboard/model/AdMobAdShowStatus;->getEmojiSearch()Ljava/lang/Boolean;
+    invoke-virtual {v0}, Lcom/arif/keyboard/model/AdMobAdShowStatus;->getEmojiSearch()Ljava/lang/Boolean;
 
     .line 8
     .line 9
@@ -7509,7 +7509,7 @@
     move-result-object v0
 
     .line 38
-    const-string v1, "font/font_file_ridmik.ttf"
+    const-string v1, "font/font_file_arif.ttf"
 
     .line 39
     .line 40
@@ -7660,8 +7660,6 @@
     .line 118
     .line 119
     .line 120
-    # Neutralized FirebaseAnalytics and FirebaseMessaging
-
     .line 130
     .line 131
     .line 132
@@ -7735,7 +7733,7 @@
     const/4 v0, 0x0
 
     .line 166
-    iput-object v0, p0, Lcom/android/inputmethod/latin/h1;->Q:Lridmik/keyboard/model/AdMobAdShowStatus;
+    iput-object v0, p0, Lcom/android/inputmethod/latin/h1;->Q:Lcom/arif/keyboard/model/AdMobAdShowStatus;
 
     .line 167
     .line 168
@@ -7759,7 +7757,7 @@
 
     .line 176
     .line 177
-    invoke-static {p0}, Lcom/android/inputmethod/latin/settings/y;->getAdMobAdShowStatus(Landroid/content/Context;)Lridmik/keyboard/model/AdMobAdShowStatus;
+    invoke-static {p0}, Lcom/android/inputmethod/latin/settings/y;->getAdMobAdShowStatus(Landroid/content/Context;)Lcom/arif/keyboard/model/AdMobAdShowStatus;
 
     .line 178
     .line 179
@@ -7767,7 +7765,7 @@
     move-result-object v0
 
     .line 181
-    iput-object v0, p0, Lcom/android/inputmethod/latin/h1;->Q:Lridmik/keyboard/model/AdMobAdShowStatus;
+    iput-object v0, p0, Lcom/android/inputmethod/latin/h1;->Q:Lcom/arif/keyboard/model/AdMobAdShowStatus;
 
     .line 182
     .line 183
@@ -10168,11 +10166,11 @@
     move-result-object v0
 
     .line 36
-    check-cast v0, Lridmik/keyboard/RidmikApp;
+    check-cast v0, Lcom/arif/keyboard/ArifApp;
 
     .line 37
     .line 38
-    invoke-virtual {v0, p2}, Lridmik/keyboard/RidmikApp;->requestEmojiFontDownload(Z)V
+    invoke-virtual {v0, p2}, Lcom/arif/keyboard/ArifApp;->requestEmojiFontDownload(Z)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -10219,7 +10217,7 @@
     .line 59
     .line 60
     .line 61
-    iget-object v1, p0, Lcom/android/inputmethod/latin/h1;->z:Lridmik/keyboard/model/SuggestionBarAppPackageInfo;
+    iget-object v1, p0, Lcom/android/inputmethod/latin/h1;->z:Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;
 
     .line 62
     .line 63
@@ -10227,7 +10225,7 @@
 
     .line 64
     .line 65
-    invoke-virtual {v1}, Lridmik/keyboard/model/SuggestionBarAppPackageInfo;->getId()Ljava/lang/String;
+    invoke-virtual {v1}, Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;->getId()Ljava/lang/String;
 
     .line 66
     .line 67
@@ -10247,11 +10245,11 @@
 
     .line 74
     .line 75
-    iget-object v1, p0, Lcom/android/inputmethod/latin/h1;->z:Lridmik/keyboard/model/SuggestionBarAppPackageInfo;
+    iget-object v1, p0, Lcom/android/inputmethod/latin/h1;->z:Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;
 
     .line 76
     .line 77
-    invoke-virtual {v1}, Lridmik/keyboard/model/SuggestionBarAppPackageInfo;->getId()Ljava/lang/String;
+    invoke-virtual {v1}, Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;->getId()Ljava/lang/String;
 
     .line 78
     .line 79
@@ -10268,11 +10266,11 @@
     .line 84
     .line 85
     .line 86
-    iget-object v1, p0, Lcom/android/inputmethod/latin/h1;->z:Lridmik/keyboard/model/SuggestionBarAppPackageInfo;
+    iget-object v1, p0, Lcom/android/inputmethod/latin/h1;->z:Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;
 
     .line 87
     .line 88
-    invoke-virtual {v1}, Lridmik/keyboard/model/SuggestionBarAppPackageInfo;->getId()Ljava/lang/String;
+    invoke-virtual {v1}, Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;->getId()Ljava/lang/String;
 
     .line 89
     .line 90
@@ -10302,11 +10300,11 @@
     .line 102
     .line 103
     .line 104
-    iget-object v3, p0, Lcom/android/inputmethod/latin/h1;->z:Lridmik/keyboard/model/SuggestionBarAppPackageInfo;
+    iget-object v3, p0, Lcom/android/inputmethod/latin/h1;->z:Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;
 
     .line 105
     .line 106
-    invoke-virtual {v3}, Lridmik/keyboard/model/SuggestionBarAppPackageInfo;->getId()Ljava/lang/String;
+    invoke-virtual {v3}, Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;->getId()Ljava/lang/String;
 
     .line 107
     .line 108
@@ -10336,11 +10334,11 @@
     .line 120
     .line 121
     .line 122
-    iget-object v2, p0, Lcom/android/inputmethod/latin/h1;->z:Lridmik/keyboard/model/SuggestionBarAppPackageInfo;
+    iget-object v2, p0, Lcom/android/inputmethod/latin/h1;->z:Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;
 
     .line 123
     .line 124
-    invoke-virtual {v2}, Lridmik/keyboard/model/SuggestionBarAppPackageInfo;->getId()Ljava/lang/String;
+    invoke-virtual {v2}, Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;->getId()Ljava/lang/String;
 
     .line 125
     .line 126
@@ -10406,7 +10404,7 @@
     move-result-object v1
 
     .line 156
-    invoke-virtual {v1}, Lcom/android/inputmethod/keyboard/e1;->getCurrentCustomTheme()Lridmik/keyboard/model/CustomThemeModel;
+    invoke-virtual {v1}, Lcom/android/inputmethod/keyboard/e1;->getCurrentCustomTheme()Lcom/arif/keyboard/model/CustomThemeModel;
 
     .line 157
     .line 158
@@ -10426,7 +10424,7 @@
     move-result-object v1
 
     .line 166
-    invoke-virtual {v1}, Lcom/android/inputmethod/keyboard/e1;->getCurrentCustomTheme()Lridmik/keyboard/model/CustomThemeModel;
+    invoke-virtual {v1}, Lcom/android/inputmethod/keyboard/e1;->getCurrentCustomTheme()Lcom/arif/keyboard/model/CustomThemeModel;
 
     .line 167
     .line 168
@@ -10434,7 +10432,7 @@
     move-result-object v1
 
     .line 170
-    invoke-virtual {v1}, Lridmik/keyboard/model/CustomThemeModel;->getThemeName()Ljava/lang/String;
+    invoke-virtual {v1}, Lcom/arif/keyboard/model/CustomThemeModel;->getThemeName()Ljava/lang/String;
 
     .line 171
     .line 172
@@ -11841,7 +11839,7 @@
     return-void
 .end method
 
-.method public openOtherApp(Lridmik/keyboard/model/SuggestionBarAppPackageInfo;)V
+.method public openOtherApp(Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;)V
     .locals 13
 
     .line 1
@@ -11862,7 +11860,7 @@
     .line 8
     .line 9
     :cond_0
-    invoke-virtual {p1}, Lridmik/keyboard/model/SuggestionBarAppPackageInfo;->getOpenInWebView()Z
+    invoke-virtual {p1}, Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;->getOpenInWebView()Z
 
     .line 10
     .line 11
@@ -11877,7 +11875,7 @@
 
     .line 15
     .line 16
-    invoke-virtual {p1}, Lridmik/keyboard/model/SuggestionBarAppPackageInfo;->isChromeCTEnable()Z
+    invoke-virtual {p1}, Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;->isChromeCTEnable()Z
 
     .line 17
     .line 18
@@ -11898,7 +11896,7 @@
 
     .line 26
     .line 27
-    const-class v1, Lridmik/keyboard/GameWebViewActivity;
+    const-class v1, Lcom/arif/keyboard/GameWebViewActivity;
 
     .line 28
     .line 29
@@ -11907,7 +11905,7 @@
     .line 30
     .line 31
     .line 32
-    invoke-static {v0, p1}, Lcom/android/inputmethod/latin/h1;->g(Landroid/content/Intent;Lridmik/keyboard/model/SuggestionBarAppPackageInfo;)V
+    invoke-static {v0, p1}, Lcom/android/inputmethod/latin/h1;->g(Landroid/content/Intent;Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;)V
 
     .line 33
     .line 34
@@ -11930,7 +11928,7 @@
     move-result-object v0
 
     .line 45
-    const-string v1, "fet_ridmik_game_webView"
+    const-string v1, "fet_arif_game_webView"
 
     .line 46
     .line 47
@@ -11943,7 +11941,7 @@
 
     .line 51
     :cond_1
-    invoke-virtual {p1}, Lridmik/keyboard/model/SuggestionBarAppPackageInfo;->getOpenInWebView()Z
+    invoke-virtual {p1}, Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;->getOpenInWebView()Z
 
     .line 52
     .line 53
@@ -11955,7 +11953,7 @@
 
     .line 56
     .line 57
-    invoke-virtual {p1}, Lridmik/keyboard/model/SuggestionBarAppPackageInfo;->isChromeCTEnable()Z
+    invoke-virtual {p1}, Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;->isChromeCTEnable()Z
 
     .line 58
     .line 59
@@ -11976,7 +11974,7 @@
 
     .line 67
     .line 68
-    const-class v1, Lridmik/keyboard/GameCustomTabActivity;
+    const-class v1, Lcom/arif/keyboard/GameCustomTabActivity;
 
     .line 69
     .line 70
@@ -11985,7 +11983,7 @@
     .line 71
     .line 72
     .line 73
-    invoke-static {v0, p1}, Lcom/android/inputmethod/latin/h1;->g(Landroid/content/Intent;Lridmik/keyboard/model/SuggestionBarAppPackageInfo;)V
+    invoke-static {v0, p1}, Lcom/android/inputmethod/latin/h1;->g(Landroid/content/Intent;Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;)V
 
     .line 74
     .line 75
@@ -12008,7 +12006,7 @@
     move-result-object v0
 
     .line 86
-    const-string v1, "fet_ridmik_game_chrome_custom_tab"
+    const-string v1, "fet_arif_game_chrome_custom_tab"
 
     .line 87
     .line 88
@@ -12021,7 +12019,7 @@
 
     .line 92
     :cond_2
-    invoke-virtual {p1}, Lridmik/keyboard/model/SuggestionBarAppPackageInfo;->getStoreItem()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;->getStoreItem()Ljava/lang/String;
 
     .line 93
     .line 94
@@ -12044,7 +12042,7 @@
 
     .line 102
     .line 103
-    const-class v11, Lridmik/keyboard/StoreActivity;
+    const-class v11, Lcom/arif/keyboard/StoreActivity;
 
     .line 104
     .line 105
@@ -12065,11 +12063,11 @@
     .line 112
     .line 113
     :try_start_0
-    iget-object v0, p0, Lcom/android/inputmethod/latin/h1;->z:Lridmik/keyboard/model/SuggestionBarAppPackageInfo;
+    iget-object v0, p0, Lcom/android/inputmethod/latin/h1;->z:Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;
 
     .line 114
     .line 115
-    invoke-virtual {v0}, Lridmik/keyboard/model/SuggestionBarAppPackageInfo;->getId()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;->getId()Ljava/lang/String;
 
     .line 116
     .line 117
@@ -12098,11 +12096,11 @@
     .line 128
     .line 129
     .line 130
-    iget-object v3, p0, Lcom/android/inputmethod/latin/h1;->z:Lridmik/keyboard/model/SuggestionBarAppPackageInfo;
+    iget-object v3, p0, Lcom/android/inputmethod/latin/h1;->z:Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;
 
     .line 131
     .line 132
-    invoke-virtual {v3}, Lridmik/keyboard/model/SuggestionBarAppPackageInfo;->getId()Ljava/lang/String;
+    invoke-virtual {v3}, Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;->getId()Ljava/lang/String;
 
     .line 133
     .line 134
@@ -12132,11 +12130,11 @@
     .line 146
     .line 147
     .line 148
-    iget-object v2, p0, Lcom/android/inputmethod/latin/h1;->z:Lridmik/keyboard/model/SuggestionBarAppPackageInfo;
+    iget-object v2, p0, Lcom/android/inputmethod/latin/h1;->z:Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;
 
     .line 149
     .line 150
-    invoke-virtual {v2}, Lridmik/keyboard/model/SuggestionBarAppPackageInfo;->getId()Ljava/lang/String;
+    invoke-virtual {v2}, Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;->getId()Ljava/lang/String;
 
     .line 151
     .line 152
@@ -12202,7 +12200,7 @@
     move-result-object v0
 
     .line 181
-    const-string v1, "fet_ridmik_store_item"
+    const-string v1, "fet_arif_store_item"
 
     .line 182
     .line 183
@@ -12220,7 +12218,7 @@
     .line 189
     .line 190
     .line 191
-    invoke-virtual {p1}, Lridmik/keyboard/model/SuggestionBarAppPackageInfo;->getStoreItem()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;->getStoreItem()Ljava/lang/String;
 
     .line 192
     .line 193
@@ -12349,7 +12347,7 @@
 
     .line 255
     :cond_5
-    invoke-virtual {p1}, Lridmik/keyboard/model/SuggestionBarAppPackageInfo;->getStoreMoreItem()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;->getStoreMoreItem()Ljava/lang/String;
 
     .line 256
     .line 257
@@ -12388,7 +12386,7 @@
 
     .line 274
     .line 275
-    invoke-virtual {p1}, Lridmik/keyboard/model/SuggestionBarAppPackageInfo;->getStoreMoreItem()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;->getStoreMoreItem()Ljava/lang/String;
 
     .line 276
     .line 277
@@ -12424,7 +12422,7 @@
     move-result-object v0
 
     .line 295
-    const-string v1, "fet_ridmik_open_more_store"
+    const-string v1, "fet_arif_open_more_store"
 
     .line 296
     .line 297
@@ -12460,7 +12458,7 @@
 
     .line 311
     :cond_6
-    invoke-virtual {p1}, Lridmik/keyboard/model/SuggestionBarAppPackageInfo;->isEnabled()Z
+    invoke-virtual {p1}, Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;->isEnabled()Z
 
     .line 312
     .line 313
@@ -12472,7 +12470,7 @@
 
     .line 316
     .line 317
-    invoke-virtual {p1}, Lridmik/keyboard/model/SuggestionBarAppPackageInfo;->getInAppDestination()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;->getInAppDestination()Ljava/lang/String;
 
     .line 318
     .line 319
@@ -12492,7 +12490,7 @@
 
     .line 326
     .line 327
-    invoke-virtual {p1}, Lridmik/keyboard/model/SuggestionBarAppPackageInfo;->getInAppDestination()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;->getInAppDestination()Ljava/lang/String;
 
     .line 328
     .line 329
@@ -12500,7 +12498,7 @@
     move-result-object v1
 
     .line 331
-    invoke-virtual {p1}, Lridmik/keyboard/model/SuggestionBarAppPackageInfo;->getId()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;->getId()Ljava/lang/String;
 
     .line 332
     .line 333
@@ -12534,7 +12532,7 @@
 
     .line 347
     .line 348
-    const-class v3, Lridmik/keyboard/composeUi/MainActivity;
+    const-class v3, Lcom/arif/keyboard/composeUi/MainActivity;
 
     .line 349
     .line 350
@@ -12547,7 +12545,7 @@
 
     .line 354
     .line 355
-    invoke-virtual {p1}, Lridmik/keyboard/model/SuggestionBarAppPackageInfo;->getInAppDestination()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;->getInAppDestination()Ljava/lang/String;
 
     .line 356
     .line 357
@@ -12691,7 +12689,7 @@
 
     .line 424
     .line 425
-    const-class v4, Lridmik/survey/MainActivity;
+    const-class v4, Lcom/arif/survey/MainActivity;
 
     .line 426
     .line 427
@@ -12776,7 +12774,7 @@
     move-result-object v0
 
     .line 464
-    const-string v3, "fet_ridmik_open_"
+    const-string v3, "fet_arif_open_"
 
     .line 465
     .line 466
@@ -12801,7 +12799,7 @@
 
     .line 476
     :cond_b
-    invoke-virtual {p1}, Lridmik/keyboard/model/SuggestionBarAppPackageInfo;->getLink()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;->getLink()Ljava/lang/String;
 
     .line 477
     .line 478
@@ -12839,7 +12837,7 @@
 
     .line 494
     .line 495
-    invoke-virtual {p1}, Lridmik/keyboard/model/SuggestionBarAppPackageInfo;->getLink()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;->getLink()Ljava/lang/String;
 
     .line 496
     .line 497
@@ -12852,11 +12850,11 @@
     .line 500
     .line 501
     .line 502
-    iget-object v0, p0, Lcom/android/inputmethod/latin/h1;->z:Lridmik/keyboard/model/SuggestionBarAppPackageInfo;
+    iget-object v0, p0, Lcom/android/inputmethod/latin/h1;->z:Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;
 
     .line 503
     .line 504
-    invoke-virtual {v0}, Lridmik/keyboard/model/SuggestionBarAppPackageInfo;->getId()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;->getId()Ljava/lang/String;
 
     .line 505
     .line 506
@@ -12876,11 +12874,11 @@
 
     .line 513
     .line 514
-    const-string v0, "fet_ridmik_link_id"
+    const-string v0, "fet_arif_link_id"
 
     .line 515
     .line 516
-    invoke-virtual {p1}, Lridmik/keyboard/model/SuggestionBarAppPackageInfo;->getId()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;->getId()Ljava/lang/String;
 
     .line 517
     .line 518
@@ -12902,11 +12900,11 @@
     .line 526
     .line 527
     .line 528
-    iget-object v3, p0, Lcom/android/inputmethod/latin/h1;->z:Lridmik/keyboard/model/SuggestionBarAppPackageInfo;
+    iget-object v3, p0, Lcom/android/inputmethod/latin/h1;->z:Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;
 
     .line 529
     .line 530
-    invoke-virtual {v3}, Lridmik/keyboard/model/SuggestionBarAppPackageInfo;->getId()Ljava/lang/String;
+    invoke-virtual {v3}, Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;->getId()Ljava/lang/String;
 
     .line 531
     .line 532
@@ -12936,11 +12934,11 @@
     .line 544
     .line 545
     .line 546
-    iget-object v2, p0, Lcom/android/inputmethod/latin/h1;->z:Lridmik/keyboard/model/SuggestionBarAppPackageInfo;
+    iget-object v2, p0, Lcom/android/inputmethod/latin/h1;->z:Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;
 
     .line 547
     .line 548
-    invoke-virtual {v2}, Lridmik/keyboard/model/SuggestionBarAppPackageInfo;->getId()Ljava/lang/String;
+    invoke-virtual {v2}, Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;->getId()Ljava/lang/String;
 
     .line 549
     .line 550
@@ -13006,7 +13004,7 @@
     move-result-object v0
 
     .line 579
-    const-string v1, "fet_ridmik_link"
+    const-string v1, "fet_arif_link"
 
     .line 580
     .line 581
@@ -13024,7 +13022,7 @@
 
     .line 588
     .line 589
-    invoke-virtual {p1}, Lridmik/keyboard/model/SuggestionBarAppPackageInfo;->getLink()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;->getLink()Ljava/lang/String;
 
     .line 590
     .line 591
@@ -13075,7 +13073,7 @@
 
     .line 614
     :cond_d
-    invoke-virtual {p1}, Lridmik/keyboard/model/SuggestionBarAppPackageInfo;->getPackageName()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;->getPackageName()Ljava/lang/String;
 
     .line 615
     .line 616
@@ -13100,7 +13098,7 @@
     .line 625
     .line 626
     :cond_e
-    invoke-virtual {p1}, Lridmik/keyboard/model/SuggestionBarAppPackageInfo;->getPackageName()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;->getPackageName()Ljava/lang/String;
 
     .line 627
     .line 628
@@ -13140,11 +13138,11 @@
     .line 644
     .line 645
     .line 646
-    iget-object v0, p0, Lcom/android/inputmethod/latin/h1;->z:Lridmik/keyboard/model/SuggestionBarAppPackageInfo;
+    iget-object v0, p0, Lcom/android/inputmethod/latin/h1;->z:Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;
 
     .line 647
     .line 648
-    invoke-virtual {v0}, Lridmik/keyboard/model/SuggestionBarAppPackageInfo;->getId()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;->getId()Ljava/lang/String;
 
     .line 649
     .line 650
@@ -13164,11 +13162,11 @@
 
     .line 657
     .line 658
-    iget-object v0, p0, Lcom/android/inputmethod/latin/h1;->z:Lridmik/keyboard/model/SuggestionBarAppPackageInfo;
+    iget-object v0, p0, Lcom/android/inputmethod/latin/h1;->z:Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;
 
     .line 659
     .line 660
-    invoke-virtual {v0}, Lridmik/keyboard/model/SuggestionBarAppPackageInfo;->getId()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;->getId()Ljava/lang/String;
 
     .line 661
     .line 662
@@ -13185,11 +13183,11 @@
     .line 667
     .line 668
     .line 669
-    iget-object v0, p0, Lcom/android/inputmethod/latin/h1;->z:Lridmik/keyboard/model/SuggestionBarAppPackageInfo;
+    iget-object v0, p0, Lcom/android/inputmethod/latin/h1;->z:Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;
 
     .line 670
     .line 671
-    invoke-virtual {v0}, Lridmik/keyboard/model/SuggestionBarAppPackageInfo;->getId()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;->getId()Ljava/lang/String;
 
     .line 672
     .line 673
@@ -13197,7 +13195,7 @@
     move-result-object v0
 
     .line 675
-    const-string v3, "fet_ridmik_app_id"
+    const-string v3, "fet_arif_app_id"
 
     .line 676
     .line 677
@@ -13215,11 +13213,11 @@
     .line 683
     .line 684
     .line 685
-    iget-object v3, p0, Lcom/android/inputmethod/latin/h1;->z:Lridmik/keyboard/model/SuggestionBarAppPackageInfo;
+    iget-object v3, p0, Lcom/android/inputmethod/latin/h1;->z:Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;
 
     .line 686
     .line 687
-    invoke-virtual {v3}, Lridmik/keyboard/model/SuggestionBarAppPackageInfo;->getId()Ljava/lang/String;
+    invoke-virtual {v3}, Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;->getId()Ljava/lang/String;
 
     .line 688
     .line 689
@@ -13249,11 +13247,11 @@
     .line 701
     .line 702
     .line 703
-    iget-object v2, p0, Lcom/android/inputmethod/latin/h1;->z:Lridmik/keyboard/model/SuggestionBarAppPackageInfo;
+    iget-object v2, p0, Lcom/android/inputmethod/latin/h1;->z:Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;
 
     .line 704
     .line 705
-    invoke-virtual {v2}, Lridmik/keyboard/model/SuggestionBarAppPackageInfo;->getId()Ljava/lang/String;
+    invoke-virtual {v2}, Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;->getId()Ljava/lang/String;
 
     .line 706
     .line 707
@@ -13308,7 +13306,7 @@
     move-result-object v0
 
     .line 733
-    const-string v1, "fet_ridmik_app"
+    const-string v1, "fet_arif_app"
 
     .line 734
     .line 735
@@ -13404,7 +13402,7 @@
     .line 780
     .line 781
     .line 782
-    invoke-virtual {p1}, Lridmik/keyboard/model/SuggestionBarAppPackageInfo;->getPackageName()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;->getPackageName()Ljava/lang/String;
 
     .line 783
     .line 784
@@ -13490,7 +13488,7 @@
     .line 824
     .line 825
     .line 826
-    invoke-virtual {p1}, Lridmik/keyboard/model/SuggestionBarAppPackageInfo;->getPackageName()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;->getPackageName()Ljava/lang/String;
 
     .line 827
     .line 828
@@ -13605,7 +13603,7 @@
 
     .line 20
     .line 21
-    const-class v1, Lridmik/keyboard/composeUi/MainActivity;
+    const-class v1, Lcom/arif/keyboard/composeUi/MainActivity;
 
     .line 22
     .line 23
@@ -14152,7 +14150,7 @@
 
     .line 23
     .line 24
-    invoke-virtual {p1}, Lcom/android/inputmethod/keyboard/e1;->getCurrentCustomTheme()Lridmik/keyboard/model/CustomThemeModel;
+    invoke-virtual {p1}, Lcom/android/inputmethod/keyboard/e1;->getCurrentCustomTheme()Lcom/arif/keyboard/model/CustomThemeModel;
 
     .line 25
     .line 26
@@ -14171,7 +14169,7 @@
 
     .line 32
     .line 33
-    invoke-virtual {p1}, Lridmik/keyboard/model/CustomThemeModel;->getThemeNavigationBarColor()I
+    invoke-virtual {p1}, Lcom/arif/keyboard/model/CustomThemeModel;->getThemeNavigationBarColor()I
 
     .line 34
     .line 35
@@ -14183,7 +14181,7 @@
 
     .line 38
     .line 39
-    invoke-virtual {p1}, Lridmik/keyboard/model/CustomThemeModel;->getThemeNavigationBarColor()I
+    invoke-virtual {p1}, Lcom/arif/keyboard/model/CustomThemeModel;->getThemeNavigationBarColor()I
 
     .line 40
     .line 41
@@ -14191,7 +14189,7 @@
     move-result v0
 
     .line 43
-    invoke-virtual {p1}, Lridmik/keyboard/model/CustomThemeModel;->getThemeBrightness()I
+    invoke-virtual {p1}, Lcom/arif/keyboard/model/CustomThemeModel;->getThemeBrightness()I
 
     .line 44
     .line 45
@@ -14225,7 +14223,7 @@
 
     .line 56
     .line 57
-    invoke-virtual {p1}, Lridmik/keyboard/model/CustomThemeModel;->getThemeBackgroundColor()I
+    invoke-virtual {p1}, Lcom/arif/keyboard/model/CustomThemeModel;->getThemeBackgroundColor()I
 
     .line 58
     .line 59
@@ -14237,7 +14235,7 @@
 
     .line 62
     .line 63
-    invoke-virtual {p1}, Lridmik/keyboard/model/CustomThemeModel;->getThemeBackgroundColor()I
+    invoke-virtual {p1}, Lcom/arif/keyboard/model/CustomThemeModel;->getThemeBackgroundColor()I
 
     .line 64
     .line 65
@@ -14245,7 +14243,7 @@
     move-result v0
 
     .line 67
-    invoke-virtual {p1}, Lridmik/keyboard/model/CustomThemeModel;->getThemeBrightness()I
+    invoke-virtual {p1}, Lcom/arif/keyboard/model/CustomThemeModel;->getThemeBrightness()I
 
     .line 68
     .line 69
@@ -14272,7 +14270,7 @@
 
     .line 78
     .line 79
-    invoke-virtual {p1}, Lridmik/keyboard/model/CustomThemeModel;->getThemeBackgroundPath()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/arif/keyboard/model/CustomThemeModel;->getThemeBackgroundPath()Ljava/lang/String;
 
     .line 80
     .line 81
@@ -14284,7 +14282,7 @@
 
     .line 84
     .line 85
-    invoke-virtual {p1}, Lridmik/keyboard/model/CustomThemeModel;->getThemeBackgroundPath()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/arif/keyboard/model/CustomThemeModel;->getThemeBackgroundPath()Ljava/lang/String;
 
     .line 86
     .line 87
@@ -14300,7 +14298,7 @@
     move-result-object v0
 
     .line 93
-    invoke-virtual {p1}, Lridmik/keyboard/model/CustomThemeModel;->getThemeBrightness()I
+    invoke-virtual {p1}, Lcom/arif/keyboard/model/CustomThemeModel;->getThemeBrightness()I
 
     .line 94
     .line 95
@@ -14407,7 +14405,7 @@
 
     .line 6
     .line 7
-    iget-object v0, p0, Lcom/android/inputmethod/latin/h1;->T:Lridmik/keyboard/model/EmojiBannerInfo;
+    iget-object v0, p0, Lcom/android/inputmethod/latin/h1;->T:Lcom/arif/keyboard/model/EmojiBannerInfo;
 
     .line 8
     .line 9
@@ -14415,7 +14413,7 @@
 
     .line 10
     .line 11
-    iget-object v0, p0, Lcom/android/inputmethod/latin/h1;->Q:Lridmik/keyboard/model/AdMobAdShowStatus;
+    iget-object v0, p0, Lcom/android/inputmethod/latin/h1;->Q:Lcom/arif/keyboard/model/AdMobAdShowStatus;
 
     .line 12
     .line 13
@@ -14427,7 +14425,7 @@
 
     .line 16
     .line 17
-    invoke-virtual {v0}, Lridmik/keyboard/model/AdMobAdShowStatus;->getShowRecentTab()Ljava/lang/Boolean;
+    invoke-virtual {v0}, Lcom/arif/keyboard/model/AdMobAdShowStatus;->getShowRecentTab()Ljava/lang/Boolean;
 
     .line 18
     .line 19
@@ -14516,7 +14514,7 @@
     .line 59
     .line 60
     .line 61
-    iget-object v1, p0, Lcom/android/inputmethod/latin/h1;->Q:Lridmik/keyboard/model/AdMobAdShowStatus;
+    iget-object v1, p0, Lcom/android/inputmethod/latin/h1;->Q:Lcom/arif/keyboard/model/AdMobAdShowStatus;
 
     .line 62
     .line 63
@@ -15463,11 +15461,11 @@
     return-void
 .end method
 
-.method public setCurrentShowingEmojiBannerInfo(Lridmik/keyboard/model/EmojiBannerInfo;)V
+.method public setCurrentShowingEmojiBannerInfo(Lcom/arif/keyboard/model/EmojiBannerInfo;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/android/inputmethod/latin/h1;->T:Lridmik/keyboard/model/EmojiBannerInfo;
+    iput-object p1, p0, Lcom/android/inputmethod/latin/h1;->T:Lcom/arif/keyboard/model/EmojiBannerInfo;
 
     .line 2
     .line 3
@@ -16504,7 +16502,7 @@
     return-void
 .end method
 
-.method public showOrHideSuggestionBarEmojiIcon(Lridmik/keyboard/uihelper/FontText;)V
+.method public showOrHideSuggestionBarEmojiIcon(Lcom/arif/keyboard/uihelper/FontText;)V
     .locals 1
 
     .line 1
@@ -16963,7 +16961,7 @@
 
     .line 14
     .line 15
-    invoke-virtual {p0}, Lcom/android/inputmethod/latin/h1;->getPackageInfoToShowOnSuggestionBar()Lridmik/keyboard/model/SuggestionBarAppPackageInfo;
+    invoke-virtual {p0}, Lcom/android/inputmethod/latin/h1;->getPackageInfoToShowOnSuggestionBar()Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;
 
     .line 16
     .line 17
@@ -16979,7 +16977,7 @@
     move-result v2
 
     .line 23
-    invoke-virtual {v0, v1, v2}, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->controlButtonsOnSuggestionStripViewShown(Lridmik/keyboard/model/SuggestionBarAppPackageInfo;Z)V
+    invoke-virtual {v0, v1, v2}, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->controlButtonsOnSuggestionStripViewShown(Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;Z)V
 
     .line 24
     .line 25

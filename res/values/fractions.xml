@@ -46,11 +46,11 @@
     <fraction name="one_hand_keyboard_space">14.999998%p</fraction>
     <fraction name="one_handed_keyboard_side_bar_width_percent">0.2</fraction>
     <fraction name="one_handed_keyboard_width_percent">0.8</fraction>
-    <fraction name="ridmik_font_size_ratio">55.000008%p</fraction>
-    <fraction name="ridmik_font_size_ratio_alpha_switch">41.999996%p</fraction>
-    <fraction name="ridmik_font_size_ratio_for_num">85.0%p</fraction>
-    <fraction name="ridmik_font_size_ratio_for_percentage">100.0%p</fraction>
-    <fraction name="ridmik_font_size_ratio_num_switch">50.0%p</fraction>
-    <fraction name="ridmik_font_size_ratio_num_top_en">25.0%p</fraction>
-    <fraction name="ridmik_font_size_ratio_symbol_switch">39.999996%p</fraction>
+    <fraction name="arif_font_size_ratio">55.000008%p</fraction>
+    <fraction name="arif_font_size_ratio_alpha_switch">41.999996%p</fraction>
+    <fraction name="arif_font_size_ratio_for_num">85.0%p</fraction>
+    <fraction name="arif_font_size_ratio_for_percentage">100.0%p</fraction>
+    <fraction name="arif_font_size_ratio_num_switch">50.0%p</fraction>
+    <fraction name="arif_font_size_ratio_num_top_en">25.0%p</fraction>
+    <fraction name="arif_font_size_ratio_symbol_switch">39.999996%p</fraction>
 </resources>

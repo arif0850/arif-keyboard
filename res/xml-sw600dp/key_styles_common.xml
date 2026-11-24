@@ -24,7 +24,7 @@
     </switch>
     <key-style latin:backgroundType="functional" latin:keyActionFlags="isRepeatable|noKeyPreview" latin:keySpec="!icon/delete_key|!code/key_delete" latin:styleName="deleteKeyStyle" />
     <include latin:keyboardLayout="@xml/key_styles_enter" />
-    <key-style latin:backgroundType="spacebar" latin:keyLabelFlags="fontRidmikAscii" latin:keySpec="!icon/space_key|!code/key_space" latin:styleName="spaceKeyStyle" />
+    <key-style latin:backgroundType="spacebar" latin:keyLabelFlags="fontArifAscii" latin:keySpec="!icon/space_key|!code/key_space" latin:styleName="spaceKeyStyle" />
     <key-style latin:keyActionFlags="noKeyPreview" latin:keyLabelFlags="hasPopupHint" latin:keySpec="!icon/zwnj_key|‌" latin:moreKeys="!icon/zwj_key|‍" latin:styleName="zwnjKeyStyle" />
     <key-style latin:backgroundType="functional" latin:keyActionFlags="noKeyPreview" latin:keyIconDisabled="!icon/shortcut_key_disabled" latin:keySpec="!icon/shortcut_key|!code/key_shortcut" latin:styleName="shortcutKeyStyle" />
     <key-style latin:altCode="!code/key_space" latin:backgroundType="functional" latin:keyActionFlags="noKeyPreview|altCodeWhileTyping|enableLongPress" latin:keySpec="!icon/language_switch_key|!code/key_language_switch" latin:styleName="languageSwitchKeyStyle" />

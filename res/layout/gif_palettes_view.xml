@@ -15,6 +15,6 @@
         </LinearLayout>
         <androidx.viewpager.widget.ViewPager android:id="@id/sticker_or_gif_keyboard_pager" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/config_suggestions_strip_height" />
     </LinearLayout>
-    <ridmik.keyboard.customLoader.ArcProgressLoader android:id="@id/progressBar" android:visibility="visible" android:layout_marginTop="@dimen/config_suggestions_strip_height" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/arcProgressLoaderStyleMedium" />
+    <com.arif.keyboard.customLoader.ArcProgressLoader android:id="@id/progressBar" android:visibility="visible" android:layout_marginTop="@dimen/config_suggestions_strip_height" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/arcProgressLoaderStyleMedium" />
     <ViewStub android:id="@id/viewGifAPIError" android:layout="@layout/no_sticker_page" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/config_suggestions_strip_height" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent" />
 </com.android.inputmethod.keyboard.emoji.StickerOrGifPalettesView>

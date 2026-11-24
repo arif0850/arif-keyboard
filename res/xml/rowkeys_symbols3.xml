@@ -4,7 +4,7 @@
     <Key latin:keySpec="!" latin:moreKeys="!text/morekeys_exclamation" />
     <Key latin:keySpec="&quot;" latin:moreKeys="!text/morekeys_double_quote" />
     <Key latin:keySpec="'" latin:moreKeys="!text/morekeys_single_quote" />
-    <Key latin:keyHintLabel="à" latin:keyLabelFlags="fontHintRidmikAscii" latin:keySpec=":" latin:moreKeys="à|ঃ" />
+    <Key latin:keyHintLabel="à" latin:keyLabelFlags="fontHintArifAscii" latin:keySpec=":" latin:moreKeys="à|ঃ" />
     <Key latin:keySpec="!text/keyspec_symbols_semicolon" latin:moreKeys="!text/morekeys_symbols_semicolon" />
     <Key latin:keySpec="/" />
     <switch>

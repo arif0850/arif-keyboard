@@ -2138,10 +2138,10 @@
     <public type="color" name="applovin_sdk_xmarkColor" id="0x7f060038" />
     <public type="color" name="auto_correct_color_lxx_dark" id="0x7f060039" />
     <public type="color" name="auto_correct_color_lxx_light" id="0x7f06003a" />
-    <public type="color" name="background_color_in_ridmik_dark_silver" id="0x7f06003b" />
-    <public type="color" name="background_color_in_ridmik_green_theme" id="0x7f06003c" />
-    <public type="color" name="background_color_ridmik_green_similar" id="0x7f06003d" />
-    <public type="color" name="background_color_ridmik_pure_dark" id="0x7f06003e" />
+    <public type="color" name="background_color_in_arif_dark_silver" id="0x7f06003b" />
+    <public type="color" name="background_color_in_arif_green_theme" id="0x7f06003c" />
+    <public type="color" name="background_color_arif_green_similar" id="0x7f06003d" />
+    <public type="color" name="background_color_arif_pure_dark" id="0x7f06003e" />
     <public type="color" name="background_color_signup" id="0x7f06003f" />
     <public type="color" name="background_dark_blue_gradient_end_color" id="0x7f060040" />
     <public type="color" name="background_dark_blue_gradient_start_color" id="0x7f060041" />
@@ -2999,7 +2999,7 @@
     <public type="color" name="product_text_color" id="0x7f060476" />
     <public type="color" name="punch" id="0x7f060477" />
     <public type="color" name="red_text_color" id="0x7f060478" />
-    <public type="color" name="ridmik_plus_promotion_background" id="0x7f060479" />
+    <public type="color" name="arif_plus_promotion_background" id="0x7f060479" />
     <public type="color" name="ripple_color" id="0x7f06047a" />
     <public type="color" name="ripple_material_dark" id="0x7f06047b" />
     <public type="color" name="ripple_material_light" id="0x7f06047c" />
@@ -4942,10 +4942,10 @@
     <public type="drawable" name="preview_midnight_green" id="0x7f08044c" />
     <public type="drawable" name="preview_new" id="0x7f08044d" />
     <public type="drawable" name="preview_pink" id="0x7f08044e" />
-    <public type="drawable" name="preview_ridmik_blue" id="0x7f08044f" />
-    <public type="drawable" name="preview_ridmik_green" id="0x7f080450" />
-    <public type="drawable" name="preview_ridmik_green_similar" id="0x7f080451" />
-    <public type="drawable" name="preview_ridmik_pure_dark" id="0x7f080452" />
+    <public type="drawable" name="preview_arif_blue" id="0x7f08044f" />
+    <public type="drawable" name="preview_arif_green" id="0x7f080450" />
+    <public type="drawable" name="preview_arif_green_similar" id="0x7f080451" />
+    <public type="drawable" name="preview_arif_pure_dark" id="0x7f080452" />
     <public type="drawable" name="preview_rounded_black" id="0x7f080453" />
     <public type="drawable" name="profile_icon" id="0x7f080454" />
     <public type="drawable" name="profile_icon_fill" id="0x7f080455" />
@@ -4959,10 +4959,10 @@
     <public type="drawable" name="red_glowing_circle_with_white_stroke" id="0x7f080460" />
     <public type="drawable" name="red_round_background_button" id="0x7f080461" />
     <public type="drawable" name="red_wide_button_state" id="0x7f080462" />
-    <public type="drawable" name="ridmik_boitoi_dark" id="0x7f080463" />
-    <public type="drawable" name="ridmik_boitoi_light" id="0x7f080464" />
-    <public type="drawable" name="ridmik_news_dark" id="0x7f080465" />
-    <public type="drawable" name="ridmik_news_light" id="0x7f080466" />
+    <public type="drawable" name="arif_boitoi_dark" id="0x7f080463" />
+    <public type="drawable" name="arif_boitoi_light" id="0x7f080464" />
+    <public type="drawable" name="arif_news_dark" id="0x7f080465" />
+    <public type="drawable" name="arif_news_light" id="0x7f080466" />
     <public type="drawable" name="round_background_white" id="0x7f080467" />
     <public type="drawable" name="round_pin_icon_bg" id="0x7f080468" />
     <public type="drawable" name="round_rect_primary_color_bg" id="0x7f080469" />
@@ -5017,7 +5017,7 @@
     <public type="font" name="noto_serif_bengali_without_english_bold" id="0x7f090001" />
     <public type="font" name="primary" id="0x7f090002" />
     <public type="font" name="primary_bold" id="0x7f090003" />
-    <public type="font" name="ridmik_keyboard" id="0x7f090004" />
+    <public type="font" name="arif_keyboard" id="0x7f090004" />
     <public type="fraction" name="config_center_suggestion_percentile" id="0x7f0a0000" />
     <public type="fraction" name="config_emoji_keyboard_key_letter_size" id="0x7f0a0001" />
     <public type="fraction" name="config_emoji_keyboard_key_width" id="0x7f0a0002" />
@@ -5064,13 +5064,13 @@
     <public type="fraction" name="one_hand_keyboard_space" id="0x7f0a002b" />
     <public type="fraction" name="one_handed_keyboard_side_bar_width_percent" id="0x7f0a002c" />
     <public type="fraction" name="one_handed_keyboard_width_percent" id="0x7f0a002d" />
-    <public type="fraction" name="ridmik_font_size_ratio" id="0x7f0a002e" />
-    <public type="fraction" name="ridmik_font_size_ratio_alpha_switch" id="0x7f0a002f" />
-    <public type="fraction" name="ridmik_font_size_ratio_for_num" id="0x7f0a0030" />
-    <public type="fraction" name="ridmik_font_size_ratio_for_percentage" id="0x7f0a0031" />
-    <public type="fraction" name="ridmik_font_size_ratio_num_switch" id="0x7f0a0032" />
-    <public type="fraction" name="ridmik_font_size_ratio_num_top_en" id="0x7f0a0033" />
-    <public type="fraction" name="ridmik_font_size_ratio_symbol_switch" id="0x7f0a0034" />
+    <public type="fraction" name="arif_font_size_ratio" id="0x7f0a002e" />
+    <public type="fraction" name="arif_font_size_ratio_alpha_switch" id="0x7f0a002f" />
+    <public type="fraction" name="arif_font_size_ratio_for_num" id="0x7f0a0030" />
+    <public type="fraction" name="arif_font_size_ratio_for_percentage" id="0x7f0a0031" />
+    <public type="fraction" name="arif_font_size_ratio_num_switch" id="0x7f0a0032" />
+    <public type="fraction" name="arif_font_size_ratio_num_top_en" id="0x7f0a0033" />
+    <public type="fraction" name="arif_font_size_ratio_symbol_switch" id="0x7f0a0034" />
     <public type="id" name="ACTIVE" id="0x7f0b0000" />
     <public type="id" name="ALT" id="0x7f0b0001" />
     <public type="id" name="ArabicNum" id="0x7f0b0002" />
@@ -5698,10 +5698,10 @@
     <public type="id" name="followKeyLargeLetterRatio" id="0x7f0b0270" />
     <public type="id" name="followKeyLetterRatio" id="0x7f0b0271" />
     <public type="id" name="fontDefault" id="0x7f0b0272" />
-    <public type="id" name="fontHintRidmikAscii" id="0x7f0b0273" />
+    <public type="id" name="fontHintArifAscii" id="0x7f0b0273" />
     <public type="id" name="fontMonoSpace" id="0x7f0b0274" />
     <public type="id" name="fontNormal" id="0x7f0b0275" />
-    <public type="id" name="fontRidmikAscii" id="0x7f0b0276" />
+    <public type="id" name="fontArifAscii" id="0x7f0b0276" />
     <public type="id" name="footerTv" id="0x7f0b0277" />
     <public type="id" name="forever" id="0x7f0b0278" />
     <public type="id" name="fragment_container_view_tag" id="0x7f0b0279" />
@@ -6214,8 +6214,8 @@
     <public type="id" name="reverseSawtooth" id="0x7f0b0474" />
     <public type="id" name="rewarded_control_button" id="0x7f0b0475" />
     <public type="id" name="rewarded_control_view" id="0x7f0b0476" />
-    <public type="id" name="ridmikLogo" id="0x7f0b0477" />
-    <public type="id" name="ridmikTitle" id="0x7f0b0478" />
+    <public type="id" name="arifLogo" id="0x7f0b0477" />
+    <public type="id" name="arifTitle" id="0x7f0b0478" />
     <public type="id" name="right" id="0x7f0b0479" />
     <public type="id" name="rightToLeft" id="0x7f0b047a" />
     <public type="id" name="right_icon" id="0x7f0b047b" />
@@ -7290,7 +7290,7 @@
     <public type="layout" name="purchased_items_fragment" id="0x7f0e014c" />
     <public type="layout" name="question_result_view" id="0x7f0e014d" />
     <public type="layout" name="radio_button_preference_widget" id="0x7f0e014e" />
-    <public type="layout" name="ridmik_keyboard_logo_text" id="0x7f0e014f" />
+    <public type="layout" name="arif_keyboard_logo_text" id="0x7f0e014f" />
     <public type="layout" name="rules_lesson_layout" id="0x7f0e0150" />
     <public type="layout" name="save_custom_theme_bottom_sheet" id="0x7f0e0151" />
     <public type="layout" name="seek_bar_dialog" id="0x7f0e0152" />
@@ -8350,8 +8350,8 @@
     <public type="string" name="restoring" id="0x7f140417" />
     <public type="string" name="result_title" id="0x7f140418" />
     <public type="string" name="retry" id="0x7f140419" />
-    <public type="string" name="ridmik_is_more_fun_with_stickers" id="0x7f14041a" />
-    <public type="string" name="ridmik_mail" id="0x7f14041b" />
+    <public type="string" name="arif_is_more_fun_with_stickers" id="0x7f14041a" />
+    <public type="string" name="arif_mail" id="0x7f14041b" />
     <public type="string" name="s1" id="0x7f14041c" />
     <public type="string" name="s2" id="0x7f14041d" />
     <public type="string" name="s3" id="0x7f14041e" />

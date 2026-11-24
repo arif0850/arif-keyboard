@@ -70,7 +70,7 @@
 
 .field public final c0:Landroid/view/GestureDetector;
 
-.field public final d:Lridmik/keyboard/VoiceView;
+.field public final d:Lcom/arif/keyboard/VoiceView;
 
 .field public final d0:Laa/m;
 
@@ -84,15 +84,15 @@
 
 .field public i:Lcom/android/inputmethod/keyboard/MainKeyboardView;
 
-.field public final j:Lridmik/keyboard/uihelper/FontText;
+.field public final j:Lcom/arif/keyboard/uihelper/FontText;
 
-.field public final k:Lridmik/keyboard/uihelper/FontText;
+.field public final k:Lcom/arif/keyboard/uihelper/FontText;
 
-.field public final l:Lridmik/keyboard/uihelper/FontText;
+.field public final l:Lcom/arif/keyboard/uihelper/FontText;
 
-.field public final m:Lridmik/keyboard/uihelper/FontText;
+.field public final m:Lcom/arif/keyboard/uihelper/FontText;
 
-.field public final n:Lridmik/keyboard/uihelper/FontText;
+.field public final n:Lcom/arif/keyboard/uihelper/FontText;
 
 .field public final o:Landroid/view/View;
 
@@ -100,9 +100,9 @@
 
 .field public final q:Landroid/view/View;
 
-.field public final r:Lridmik/keyboard/uihelper/FontText;
+.field public final r:Lcom/arif/keyboard/uihelper/FontText;
 
-.field public final s:Lridmik/keyboard/uihelper/FontText;
+.field public final s:Lcom/arif/keyboard/uihelper/FontText;
 
 .field public final t:Landroid/view/View;
 
@@ -280,9 +280,9 @@
 
     move-result-object v4
 
-    check-cast v4, Lridmik/keyboard/VoiceView;
+    check-cast v4, Lcom/arif/keyboard/VoiceView;
 
-    iput-object v4, v0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->d:Lridmik/keyboard/VoiceView;
+    iput-object v4, v0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->d:Lcom/arif/keyboard/VoiceView;
 
     const v4, 0x7f0b00fa
 
@@ -318,9 +318,9 @@
 
     move-result-object v5
 
-    check-cast v5, Lridmik/keyboard/uihelper/FontText;
+    check-cast v5, Lcom/arif/keyboard/uihelper/FontText;
 
-    iput-object v5, v0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->m:Lridmik/keyboard/uihelper/FontText;
+    iput-object v5, v0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->m:Lcom/arif/keyboard/uihelper/FontText;
 
     const v5, 0x7f0b0689
 
@@ -338,9 +338,9 @@
 
     move-result-object v6
 
-    check-cast v6, Lridmik/keyboard/uihelper/FontText;
+    check-cast v6, Lcom/arif/keyboard/uihelper/FontText;
 
-    iput-object v6, v0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->n:Lridmik/keyboard/uihelper/FontText;
+    iput-object v6, v0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->n:Lcom/arif/keyboard/uihelper/FontText;
 
     const v6, 0x7f0b02c1
 
@@ -398,9 +398,9 @@
 
     move-result-object v5
 
-    check-cast v5, Lridmik/keyboard/uihelper/FontText;
+    check-cast v5, Lcom/arif/keyboard/uihelper/FontText;
 
-    iput-object v5, v0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->j:Lridmik/keyboard/uihelper/FontText;
+    iput-object v5, v0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->j:Lcom/arif/keyboard/uihelper/FontText;
 
     const v5, 0x7f0b0533
 
@@ -409,9 +409,9 @@
 
     move-result-object v5
 
-    check-cast v5, Lridmik/keyboard/uihelper/FontText;
+    check-cast v5, Lcom/arif/keyboard/uihelper/FontText;
 
-    iput-object v5, v0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->l:Lridmik/keyboard/uihelper/FontText;
+    iput-object v5, v0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->l:Lcom/arif/keyboard/uihelper/FontText;
 
     const v5, 0x7f0b0190
 
@@ -420,9 +420,9 @@
 
     move-result-object v5
 
-    check-cast v5, Lridmik/keyboard/uihelper/FontText;
+    check-cast v5, Lcom/arif/keyboard/uihelper/FontText;
 
-    iput-object v5, v0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->k:Lridmik/keyboard/uihelper/FontText;
+    iput-object v5, v0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->k:Lcom/arif/keyboard/uihelper/FontText;
 
     const v5, 0x7f0b02c6
 
@@ -431,9 +431,9 @@
 
     move-result-object v5
 
-    check-cast v5, Lridmik/keyboard/uihelper/FontText;
+    check-cast v5, Lcom/arif/keyboard/uihelper/FontText;
 
-    iput-object v5, v0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->r:Lridmik/keyboard/uihelper/FontText;
+    iput-object v5, v0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->r:Lcom/arif/keyboard/uihelper/FontText;
 
     const v5, 0x7f0b02c4
 
@@ -442,9 +442,9 @@
 
     move-result-object v5
 
-    check-cast v5, Lridmik/keyboard/uihelper/FontText;
+    check-cast v5, Lcom/arif/keyboard/uihelper/FontText;
 
-    iput-object v5, v0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->s:Lridmik/keyboard/uihelper/FontText;
+    iput-object v5, v0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->s:Lcom/arif/keyboard/uihelper/FontText;
 
     const v5, 0x7f0b03b4
 
@@ -455,7 +455,7 @@
 
     move-object v10, v5
 
-    check-cast v10, Lridmik/keyboard/uihelper/FontText;
+    check-cast v10, Lcom/arif/keyboard/uihelper/FontText;
 
     const v5, 0x7f0b069e
 
@@ -656,7 +656,7 @@
 
     move-result-object v3
 
-    invoke-static {v3}, Lcom/android/inputmethod/latin/settings/y;->getPackageInfoToShowOnSuggestionBar(Landroid/content/Context;)Lridmik/keyboard/model/SuggestionBarAppPackageInfo;
+    invoke-static {v3}, Lcom/android/inputmethod/latin/settings/y;->getPackageInfoToShowOnSuggestionBar(Landroid/content/Context;)Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;
 
     move-result-object v3
 
@@ -671,7 +671,7 @@
     invoke-virtual {v4}, Laa/o;->showFeatureStrip()V
 
     .line 66
-    invoke-virtual {v0, v3, v12}, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->controlButtonsOnSuggestionStripViewShown(Lridmik/keyboard/model/SuggestionBarAppPackageInfo;Z)V
+    invoke-virtual {v0, v3, v12}, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->controlButtonsOnSuggestionStripViewShown(Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;Z)V
 
     .line 67
     :cond_1
@@ -696,93 +696,93 @@
 
     move-result-object v4
 
-    invoke-virtual {v4}, Lcom/android/inputmethod/keyboard/e1;->getCurrentCustomTheme()Lridmik/keyboard/model/CustomThemeModel;
+    invoke-virtual {v4}, Lcom/android/inputmethod/keyboard/e1;->getCurrentCustomTheme()Lcom/arif/keyboard/model/CustomThemeModel;
 
     move-result-object v4
 
     if-eqz v4, :cond_3
 
     .line 71
-    invoke-virtual {v4}, Lridmik/keyboard/model/CustomThemeModel;->getThemeSuggestionBarTextColor()I
+    invoke-virtual {v4}, Lcom/arif/keyboard/model/CustomThemeModel;->getThemeSuggestionBarTextColor()I
 
     move-result v5
 
     if-eq v5, v11, :cond_3
 
     .line 72
-    iget-object v2, v0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->m:Lridmik/keyboard/uihelper/FontText;
+    iget-object v2, v0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->m:Lcom/arif/keyboard/uihelper/FontText;
 
-    invoke-virtual {v4}, Lridmik/keyboard/model/CustomThemeModel;->getThemeSuggestionBarTextColor()I
+    invoke-virtual {v4}, Lcom/arif/keyboard/model/CustomThemeModel;->getThemeSuggestionBarTextColor()I
 
     move-result v5
 
-    invoke-virtual {v2, v5}, Lridmik/keyboard/uihelper/FontText;->setTextColor(I)V
+    invoke-virtual {v2, v5}, Lcom/arif/keyboard/uihelper/FontText;->setTextColor(I)V
 
     .line 73
-    iget-object v2, v0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->j:Lridmik/keyboard/uihelper/FontText;
+    iget-object v2, v0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->j:Lcom/arif/keyboard/uihelper/FontText;
 
-    invoke-virtual {v4}, Lridmik/keyboard/model/CustomThemeModel;->getThemeSuggestionBarTextColor()I
+    invoke-virtual {v4}, Lcom/arif/keyboard/model/CustomThemeModel;->getThemeSuggestionBarTextColor()I
 
     move-result v5
 
-    invoke-virtual {v2, v5}, Lridmik/keyboard/uihelper/FontText;->setTextColor(I)V
+    invoke-virtual {v2, v5}, Lcom/arif/keyboard/uihelper/FontText;->setTextColor(I)V
 
     .line 74
-    iget-object v2, v0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->l:Lridmik/keyboard/uihelper/FontText;
+    iget-object v2, v0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->l:Lcom/arif/keyboard/uihelper/FontText;
 
-    invoke-virtual {v4}, Lridmik/keyboard/model/CustomThemeModel;->getThemeSuggestionBarTextColor()I
+    invoke-virtual {v4}, Lcom/arif/keyboard/model/CustomThemeModel;->getThemeSuggestionBarTextColor()I
 
     move-result v5
 
-    invoke-virtual {v2, v5}, Lridmik/keyboard/uihelper/FontText;->setTextColor(I)V
+    invoke-virtual {v2, v5}, Lcom/arif/keyboard/uihelper/FontText;->setTextColor(I)V
 
     .line 75
-    iget-object v2, v0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->k:Lridmik/keyboard/uihelper/FontText;
+    iget-object v2, v0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->k:Lcom/arif/keyboard/uihelper/FontText;
 
-    invoke-virtual {v4}, Lridmik/keyboard/model/CustomThemeModel;->getThemeSuggestionBarTextColor()I
+    invoke-virtual {v4}, Lcom/arif/keyboard/model/CustomThemeModel;->getThemeSuggestionBarTextColor()I
 
     move-result v5
 
-    invoke-virtual {v2, v5}, Lridmik/keyboard/uihelper/FontText;->setTextColor(I)V
+    invoke-virtual {v2, v5}, Lcom/arif/keyboard/uihelper/FontText;->setTextColor(I)V
 
     .line 76
-    iget-object v2, v0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->r:Lridmik/keyboard/uihelper/FontText;
+    iget-object v2, v0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->r:Lcom/arif/keyboard/uihelper/FontText;
 
-    invoke-virtual {v4}, Lridmik/keyboard/model/CustomThemeModel;->getThemeSuggestionBarTextColor()I
+    invoke-virtual {v4}, Lcom/arif/keyboard/model/CustomThemeModel;->getThemeSuggestionBarTextColor()I
 
     move-result v5
 
-    invoke-virtual {v2, v5}, Lridmik/keyboard/uihelper/FontText;->setTextColor(I)V
+    invoke-virtual {v2, v5}, Lcom/arif/keyboard/uihelper/FontText;->setTextColor(I)V
 
     .line 77
-    iget-object v2, v0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->s:Lridmik/keyboard/uihelper/FontText;
+    iget-object v2, v0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->s:Lcom/arif/keyboard/uihelper/FontText;
 
-    invoke-virtual {v4}, Lridmik/keyboard/model/CustomThemeModel;->getThemeSuggestionBarTextColor()I
+    invoke-virtual {v4}, Lcom/arif/keyboard/model/CustomThemeModel;->getThemeSuggestionBarTextColor()I
 
     move-result v5
 
-    invoke-virtual {v2, v5}, Lridmik/keyboard/uihelper/FontText;->setTextColor(I)V
+    invoke-virtual {v2, v5}, Lcom/arif/keyboard/uihelper/FontText;->setTextColor(I)V
 
     .line 78
-    iget-object v2, v0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->n:Lridmik/keyboard/uihelper/FontText;
+    iget-object v2, v0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->n:Lcom/arif/keyboard/uihelper/FontText;
 
-    invoke-virtual {v4}, Lridmik/keyboard/model/CustomThemeModel;->getThemeSuggestionBarTextColor()I
+    invoke-virtual {v4}, Lcom/arif/keyboard/model/CustomThemeModel;->getThemeSuggestionBarTextColor()I
 
     move-result v5
 
-    invoke-virtual {v2, v5}, Lridmik/keyboard/uihelper/FontText;->setTextColor(I)V
+    invoke-virtual {v2, v5}, Lcom/arif/keyboard/uihelper/FontText;->setTextColor(I)V
 
     .line 79
-    invoke-virtual {v4}, Lridmik/keyboard/model/CustomThemeModel;->getThemeSuggestionBarTextColor()I
+    invoke-virtual {v4}, Lcom/arif/keyboard/model/CustomThemeModel;->getThemeSuggestionBarTextColor()I
 
     move-result v2
 
-    invoke-virtual {v10, v2}, Lridmik/keyboard/uihelper/FontText;->setTextColor(I)V
+    invoke-virtual {v10, v2}, Lcom/arif/keyboard/uihelper/FontText;->setTextColor(I)V
 
     .line 80
     iget-object v2, v0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->y:Landroid/widget/TextView;
 
-    invoke-virtual {v4}, Lridmik/keyboard/model/CustomThemeModel;->getThemeSuggestionBarTextColor()I
+    invoke-virtual {v4}, Lcom/arif/keyboard/model/CustomThemeModel;->getThemeSuggestionBarTextColor()I
 
     move-result v5
 
@@ -794,7 +794,7 @@
     move-result-object v2
 
     .line 82
-    invoke-virtual {v4}, Lridmik/keyboard/model/CustomThemeModel;->getThemeSuggestionBarTextColor()I
+    invoke-virtual {v4}, Lcom/arif/keyboard/model/CustomThemeModel;->getThemeSuggestionBarTextColor()I
 
     move-result v5
 
@@ -808,7 +808,7 @@
     if-eqz v3, :cond_2
 
     .line 84
-    invoke-virtual {v4}, Lridmik/keyboard/model/CustomThemeModel;->getThemeSuggestionBarTextColor()I
+    invoke-virtual {v4}, Lcom/arif/keyboard/model/CustomThemeModel;->getThemeSuggestionBarTextColor()I
 
     move-result v4
 
@@ -849,84 +849,84 @@
     :goto_1
     if-eqz v2, :cond_4
 
-    iget-object v4, v0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->d:Lridmik/keyboard/VoiceView;
+    iget-object v4, v0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->d:Lcom/arif/keyboard/VoiceView;
 
     if-eqz v4, :cond_4
 
-    invoke-virtual {v4, v2}, Lridmik/keyboard/VoiceView;->setDrawable(Landroid/graphics/drawable/Drawable;)V
+    invoke-virtual {v4, v2}, Lcom/arif/keyboard/VoiceView;->setDrawable(Landroid/graphics/drawable/Drawable;)V
 
     :cond_4
     if-nez v8, :cond_5
 
     .line 89
-    iget-object v2, v0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->m:Lridmik/keyboard/uihelper/FontText;
+    iget-object v2, v0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->m:Lcom/arif/keyboard/uihelper/FontText;
 
     invoke-virtual {v1}, Laa/g;->getFeaturesStripColor()I
 
     move-result v4
 
-    invoke-virtual {v2, v4}, Lridmik/keyboard/uihelper/FontText;->setTextColor(I)V
+    invoke-virtual {v2, v4}, Lcom/arif/keyboard/uihelper/FontText;->setTextColor(I)V
 
     .line 90
-    iget-object v2, v0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->j:Lridmik/keyboard/uihelper/FontText;
+    iget-object v2, v0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->j:Lcom/arif/keyboard/uihelper/FontText;
 
     invoke-virtual {v1}, Laa/g;->getFeaturesStripColor()I
 
     move-result v4
 
-    invoke-virtual {v2, v4}, Lridmik/keyboard/uihelper/FontText;->setTextColor(I)V
+    invoke-virtual {v2, v4}, Lcom/arif/keyboard/uihelper/FontText;->setTextColor(I)V
 
     .line 91
-    iget-object v2, v0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->l:Lridmik/keyboard/uihelper/FontText;
+    iget-object v2, v0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->l:Lcom/arif/keyboard/uihelper/FontText;
 
     invoke-virtual {v1}, Laa/g;->getFeaturesStripColor()I
 
     move-result v4
 
-    invoke-virtual {v2, v4}, Lridmik/keyboard/uihelper/FontText;->setTextColor(I)V
+    invoke-virtual {v2, v4}, Lcom/arif/keyboard/uihelper/FontText;->setTextColor(I)V
 
     .line 92
-    iget-object v2, v0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->k:Lridmik/keyboard/uihelper/FontText;
+    iget-object v2, v0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->k:Lcom/arif/keyboard/uihelper/FontText;
 
     invoke-virtual {v1}, Laa/g;->getFeaturesStripColor()I
 
     move-result v4
 
-    invoke-virtual {v2, v4}, Lridmik/keyboard/uihelper/FontText;->setTextColor(I)V
+    invoke-virtual {v2, v4}, Lcom/arif/keyboard/uihelper/FontText;->setTextColor(I)V
 
     .line 93
-    iget-object v2, v0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->r:Lridmik/keyboard/uihelper/FontText;
+    iget-object v2, v0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->r:Lcom/arif/keyboard/uihelper/FontText;
 
     invoke-virtual {v1}, Laa/g;->getFeaturesStripColor()I
 
     move-result v4
 
-    invoke-virtual {v2, v4}, Lridmik/keyboard/uihelper/FontText;->setTextColor(I)V
+    invoke-virtual {v2, v4}, Lcom/arif/keyboard/uihelper/FontText;->setTextColor(I)V
 
     .line 94
-    iget-object v2, v0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->s:Lridmik/keyboard/uihelper/FontText;
+    iget-object v2, v0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->s:Lcom/arif/keyboard/uihelper/FontText;
 
     invoke-virtual {v1}, Laa/g;->getFeaturesStripColor()I
 
     move-result v4
 
-    invoke-virtual {v2, v4}, Lridmik/keyboard/uihelper/FontText;->setTextColor(I)V
+    invoke-virtual {v2, v4}, Lcom/arif/keyboard/uihelper/FontText;->setTextColor(I)V
 
     .line 95
-    iget-object v2, v0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->n:Lridmik/keyboard/uihelper/FontText;
+    iget-object v2, v0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->n:Lcom/arif/keyboard/uihelper/FontText;
 
     invoke-virtual {v1}, Laa/g;->getFeaturesStripColor()I
 
     move-result v4
 
-    invoke-virtual {v2, v4}, Lridmik/keyboard/uihelper/FontText;->setTextColor(I)V
+    invoke-virtual {v2, v4}, Lcom/arif/keyboard/uihelper/FontText;->setTextColor(I)V
 
     .line 96
     invoke-virtual {v1}, Laa/g;->getFeaturesStripColor()I
 
     move-result v2
 
-    invoke-virtual {v10, v2}, Lridmik/keyboard/uihelper/FontText;->setTextColor(I)V
+    invoke-virtual {v10, v2}, Lcom/arif/keyboard/uihelper/FontText;->setTextColor(I)V
 
     if-eqz v3, :cond_5
 
@@ -944,7 +944,7 @@
     invoke-virtual {v1, v0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 99
-    iget-object v1, v0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->m:Lridmik/keyboard/uihelper/FontText;
+    iget-object v1, v0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->m:Lcom/arif/keyboard/uihelper/FontText;
 
     new-instance v2, Laa/h;
 
@@ -955,7 +955,7 @@
     invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 100
-    iget-object v1, v0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->l:Lridmik/keyboard/uihelper/FontText;
+    iget-object v1, v0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->l:Lcom/arif/keyboard/uihelper/FontText;
 
     new-instance v2, Laa/h;
 
@@ -966,7 +966,7 @@
     invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 101
-    iget-object v1, v0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->k:Lridmik/keyboard/uihelper/FontText;
+    iget-object v1, v0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->k:Lcom/arif/keyboard/uihelper/FontText;
 
     new-instance v2, Laa/h;
 
@@ -988,7 +988,7 @@
     invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 103
-    iget-object v1, v0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->j:Lridmik/keyboard/uihelper/FontText;
+    iget-object v1, v0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->j:Lcom/arif/keyboard/uihelper/FontText;
 
     new-instance v2, Laa/h;
 
@@ -999,7 +999,7 @@
     invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 104
-    iget-object v1, v0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->r:Lridmik/keyboard/uihelper/FontText;
+    iget-object v1, v0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->r:Lcom/arif/keyboard/uihelper/FontText;
 
     new-instance v2, Laa/h;
 
@@ -1010,7 +1010,7 @@
     invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 105
-    iget-object v1, v0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->s:Lridmik/keyboard/uihelper/FontText;
+    iget-object v1, v0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->s:Lcom/arif/keyboard/uihelper/FontText;
 
     new-instance v2, Laa/h;
 
@@ -1088,7 +1088,7 @@
     return-object p0
 .end method
 
-.method private setSuggestionBarOtherAppLogo(Lridmik/keyboard/model/SuggestionBarAppPackageInfo;)V
+.method private setSuggestionBarOtherAppLogo(Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;)V
     .locals 8
 
     .line 1
@@ -1105,7 +1105,7 @@
     move-result-object v0
 
     .line 8
-    invoke-virtual {v0}, Lcom/android/inputmethod/keyboard/e1;->getCurrentCustomTheme()Lridmik/keyboard/model/CustomThemeModel;
+    invoke-virtual {v0}, Lcom/android/inputmethod/keyboard/e1;->getCurrentCustomTheme()Lcom/arif/keyboard/model/CustomThemeModel;
 
     .line 9
     .line 10
@@ -1131,7 +1131,7 @@
 
     .line 19
     .line 20
-    invoke-virtual {v0}, Lridmik/keyboard/model/CustomThemeModel;->getThemeSuggestionBarTextColor()I
+    invoke-virtual {v0}, Lcom/arif/keyboard/model/CustomThemeModel;->getThemeSuggestionBarTextColor()I
 
     .line 21
     .line 22
@@ -1164,7 +1164,7 @@
 
     .line 36
     .line 37
-    invoke-virtual {p1}, Lridmik/keyboard/model/SuggestionBarAppPackageInfo;->getImageLight()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;->getImageLight()Ljava/lang/String;
 
     .line 38
     .line 39
@@ -1184,7 +1184,7 @@
 
     .line 46
     .line 47
-    invoke-virtual {p1}, Lridmik/keyboard/model/SuggestionBarAppPackageInfo;->getLink()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;->getLink()Ljava/lang/String;
 
     .line 48
     .line 49
@@ -1212,7 +1212,7 @@
     move-result-object v5
 
     .line 61
-    invoke-virtual {p1}, Lridmik/keyboard/model/SuggestionBarAppPackageInfo;->getPackageName()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;->getPackageName()Ljava/lang/String;
 
     .line 62
     .line 63
@@ -1220,7 +1220,7 @@
     move-result-object v6
 
     .line 65
-    invoke-virtual {v0}, Lridmik/keyboard/model/CustomThemeModel;->getThemeSuggestionBarTextColor()I
+    invoke-virtual {v0}, Lcom/arif/keyboard/model/CustomThemeModel;->getThemeSuggestionBarTextColor()I
 
     .line 66
     .line 67
@@ -1249,7 +1249,7 @@
     .line 78
     .line 79
     .line 80
-    invoke-virtual {v0}, Lridmik/keyboard/model/CustomThemeModel;->getThemeSuggestionBarTextColor()I
+    invoke-virtual {v0}, Lcom/arif/keyboard/model/CustomThemeModel;->getThemeSuggestionBarTextColor()I
 
     .line 81
     .line 82
@@ -1284,7 +1284,7 @@
     .line 96
     .line 97
     .line 98
-    invoke-virtual {v0}, Lridmik/keyboard/model/CustomThemeModel;->getThemeSuggestionBarTextColor()I
+    invoke-virtual {v0}, Lcom/arif/keyboard/model/CustomThemeModel;->getThemeSuggestionBarTextColor()I
 
     .line 99
     .line 100
@@ -1310,7 +1310,7 @@
     .line 110
     .line 111
     :cond_1
-    invoke-virtual {p1}, Lridmik/keyboard/model/SuggestionBarAppPackageInfo;->getImageLight()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;->getImageLight()Ljava/lang/String;
 
     .line 112
     .line 113
@@ -1318,7 +1318,7 @@
     move-result-object v5
 
     .line 115
-    invoke-virtual {v0}, Lridmik/keyboard/model/CustomThemeModel;->getThemeSuggestionBarTextColor()I
+    invoke-virtual {v0}, Lcom/arif/keyboard/model/CustomThemeModel;->getThemeSuggestionBarTextColor()I
 
     .line 116
     .line 117
@@ -1340,7 +1340,7 @@
 
     .line 125
     .line 126
-    invoke-virtual {v0}, Lridmik/keyboard/model/CustomThemeModel;->getThemeSuggestionBarTextColor()I
+    invoke-virtual {v0}, Lcom/arif/keyboard/model/CustomThemeModel;->getThemeSuggestionBarTextColor()I
 
     .line 127
     .line 128
@@ -1373,7 +1373,7 @@
 
     .line 142
     .line 143
-    invoke-virtual {p1}, Lridmik/keyboard/model/SuggestionBarAppPackageInfo;->getImageDark()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;->getImageDark()Ljava/lang/String;
 
     .line 144
     .line 145
@@ -1393,7 +1393,7 @@
 
     .line 152
     .line 153
-    invoke-virtual {p1}, Lridmik/keyboard/model/SuggestionBarAppPackageInfo;->getLink()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;->getLink()Ljava/lang/String;
 
     .line 154
     .line 155
@@ -1421,7 +1421,7 @@
     move-result-object v5
 
     .line 167
-    invoke-virtual {p1}, Lridmik/keyboard/model/SuggestionBarAppPackageInfo;->getPackageName()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;->getPackageName()Ljava/lang/String;
 
     .line 168
     .line 169
@@ -1429,7 +1429,7 @@
     move-result-object v6
 
     .line 171
-    invoke-virtual {v0}, Lridmik/keyboard/model/CustomThemeModel;->getThemeSuggestionBarTextColor()I
+    invoke-virtual {v0}, Lcom/arif/keyboard/model/CustomThemeModel;->getThemeSuggestionBarTextColor()I
 
     .line 172
     .line 173
@@ -1458,7 +1458,7 @@
     .line 184
     .line 185
     .line 186
-    invoke-virtual {v0}, Lridmik/keyboard/model/CustomThemeModel;->getThemeSuggestionBarTextColor()I
+    invoke-virtual {v0}, Lcom/arif/keyboard/model/CustomThemeModel;->getThemeSuggestionBarTextColor()I
 
     .line 187
     .line 188
@@ -1493,7 +1493,7 @@
     .line 202
     .line 203
     .line 204
-    invoke-virtual {v0}, Lridmik/keyboard/model/CustomThemeModel;->getThemeSuggestionBarTextColor()I
+    invoke-virtual {v0}, Lcom/arif/keyboard/model/CustomThemeModel;->getThemeSuggestionBarTextColor()I
 
     .line 205
     .line 206
@@ -1519,7 +1519,7 @@
     .line 216
     .line 217
     :cond_4
-    invoke-virtual {p1}, Lridmik/keyboard/model/SuggestionBarAppPackageInfo;->getImageDark()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;->getImageDark()Ljava/lang/String;
 
     .line 218
     .line 219
@@ -1527,7 +1527,7 @@
     move-result-object v5
 
     .line 221
-    invoke-virtual {v0}, Lridmik/keyboard/model/CustomThemeModel;->getThemeSuggestionBarTextColor()I
+    invoke-virtual {v0}, Lcom/arif/keyboard/model/CustomThemeModel;->getThemeSuggestionBarTextColor()I
 
     .line 222
     .line 223
@@ -1561,7 +1561,7 @@
 
     .line 237
     .line 238
-    invoke-virtual {p1}, Lridmik/keyboard/model/SuggestionBarAppPackageInfo;->getImageLight()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;->getImageLight()Ljava/lang/String;
 
     .line 239
     .line 240
@@ -1581,7 +1581,7 @@
 
     .line 247
     .line 248
-    invoke-virtual {p1}, Lridmik/keyboard/model/SuggestionBarAppPackageInfo;->getLink()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;->getLink()Ljava/lang/String;
 
     .line 249
     .line 250
@@ -1609,7 +1609,7 @@
     move-result-object v5
 
     .line 262
-    invoke-virtual {p1}, Lridmik/keyboard/model/SuggestionBarAppPackageInfo;->getPackageName()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;->getPackageName()Ljava/lang/String;
 
     .line 263
     .line 264
@@ -1706,7 +1706,7 @@
 
     .line 311
     :cond_7
-    invoke-virtual {p1}, Lridmik/keyboard/model/SuggestionBarAppPackageInfo;->getImageLight()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;->getImageLight()Ljava/lang/String;
 
     .line 312
     .line 313
@@ -1739,7 +1739,7 @@
 
     .line 327
     :cond_8
-    invoke-virtual {p1}, Lridmik/keyboard/model/SuggestionBarAppPackageInfo;->getImageDark()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;->getImageDark()Ljava/lang/String;
 
     .line 328
     .line 329
@@ -1759,7 +1759,7 @@
 
     .line 336
     .line 337
-    invoke-virtual {p1}, Lridmik/keyboard/model/SuggestionBarAppPackageInfo;->getLink()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;->getLink()Ljava/lang/String;
 
     .line 338
     .line 339
@@ -1787,7 +1787,7 @@
     move-result-object v5
 
     .line 351
-    invoke-virtual {p1}, Lridmik/keyboard/model/SuggestionBarAppPackageInfo;->getPackageName()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;->getPackageName()Ljava/lang/String;
 
     .line 352
     .line 353
@@ -1883,7 +1883,7 @@
 
     .line 399
     :cond_a
-    invoke-virtual {p1}, Lridmik/keyboard/model/SuggestionBarAppPackageInfo;->getImageDark()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;->getImageDark()Ljava/lang/String;
 
     .line 400
     .line 401
@@ -1934,7 +1934,7 @@
 
     .line 423
     .line 424
-    invoke-virtual {p1}, Lridmik/keyboard/model/SuggestionBarAppPackageInfo;->isRedDotEnable()Z
+    invoke-virtual {p1}, Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;->isRedDotEnable()Z
 
     .line 425
     .line 426
@@ -1962,7 +1962,7 @@
 
     .line 435
     .line 436
-    invoke-virtual {p1}, Lridmik/keyboard/model/SuggestionBarAppPackageInfo;->isRedDotEnableOnSetting()Z
+    invoke-virtual {p1}, Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;->isRedDotEnableOnSetting()Z
 
     .line 437
     .line 438
@@ -2022,7 +2022,7 @@
 
     .line 465
     .line 466
-    invoke-virtual {p1}, Lridmik/keyboard/model/SuggestionBarAppPackageInfo;->isShakeEnable()Z
+    invoke-virtual {p1}, Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;->isShakeEnable()Z
 
     .line 467
     .line 468
@@ -2119,7 +2119,7 @@
     move-result-object v0
 
     .line 11
-    invoke-virtual {v0}, Lcom/android/inputmethod/keyboard/e1;->getCurrentCustomTheme()Lridmik/keyboard/model/CustomThemeModel;
+    invoke-virtual {v0}, Lcom/android/inputmethod/keyboard/e1;->getCurrentCustomTheme()Lcom/arif/keyboard/model/CustomThemeModel;
 
     .line 12
     .line 13
@@ -2131,7 +2131,7 @@
 
     .line 16
     .line 17
-    invoke-virtual {v0}, Lridmik/keyboard/model/CustomThemeModel;->getThemeSuggestionBarColor()I
+    invoke-virtual {v0}, Lcom/arif/keyboard/model/CustomThemeModel;->getThemeSuggestionBarColor()I
 
     .line 18
     .line 19
@@ -2146,7 +2146,7 @@
 
     .line 23
     .line 24
-    invoke-virtual {v0}, Lridmik/keyboard/model/CustomThemeModel;->getSuggestionBarBrightness()I
+    invoke-virtual {v0}, Lcom/arif/keyboard/model/CustomThemeModel;->getSuggestionBarBrightness()I
 
     .line 25
     .line 26
@@ -2203,7 +2203,7 @@
 
     .line 51
     :cond_1
-    invoke-virtual {v0}, Lridmik/keyboard/model/CustomThemeModel;->getThemeSuggestionBarColor()I
+    invoke-virtual {v0}, Lcom/arif/keyboard/model/CustomThemeModel;->getThemeSuggestionBarColor()I
 
     .line 52
     .line 53
@@ -2290,7 +2290,7 @@
 
     .line 23
     .line 24
-    iget-object v0, p0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->l:Lridmik/keyboard/uihelper/FontText;
+    iget-object v0, p0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->l:Lcom/arif/keyboard/uihelper/FontText;
 
     .line 25
     .line 26
@@ -2792,7 +2792,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->m:Lridmik/keyboard/uihelper/FontText;
+    iget-object v0, p0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->m:Lcom/arif/keyboard/uihelper/FontText;
 
     .line 2
     .line 3
@@ -2961,7 +2961,7 @@
     return-void
 .end method
 
-.method public controlButtonsOnSuggestionStripViewShown(Lridmik/keyboard/model/SuggestionBarAppPackageInfo;Z)V
+.method public controlButtonsOnSuggestionStripViewShown(Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;Z)V
     .locals 6
 
     .line 1
@@ -2993,7 +2993,7 @@
 
     .line 14
     .line 15
-    invoke-virtual {p1}, Lridmik/keyboard/model/SuggestionBarAppPackageInfo;->isEnabled()Z
+    invoke-virtual {p1}, Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;->isEnabled()Z
 
     .line 16
     .line 17
@@ -3009,7 +3009,7 @@
 
     .line 22
     .line 23
-    invoke-virtual {p1}, Lridmik/keyboard/model/SuggestionBarAppPackageInfo;->getRidmikApp()Ljava/lang/Boolean;
+    invoke-virtual {p1}, Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;->getArifApp()Ljava/lang/Boolean;
 
     .line 24
     .line 25
@@ -3029,7 +3029,7 @@
 
     .line 32
     .line 33
-    invoke-direct {p0, p1}, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->setSuggestionBarOtherAppLogo(Lridmik/keyboard/model/SuggestionBarAppPackageInfo;)V
+    invoke-direct {p0, p1}, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->setSuggestionBarOtherAppLogo(Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;)V
 
     .line 34
     .line 35
@@ -3042,7 +3042,7 @@
 
     .line 38
     .line 39
-    invoke-direct {p0, p1}, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->setSuggestionBarOtherAppLogo(Lridmik/keyboard/model/SuggestionBarAppPackageInfo;)V
+    invoke-direct {p0, p1}, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->setSuggestionBarOtherAppLogo(Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;)V
 
     .line 40
     .line 41
@@ -3130,7 +3130,7 @@
     move-result-object v2
 
     .line 82
-    invoke-virtual {p1}, Lridmik/keyboard/model/SuggestionBarAppPackageInfo;->isRedDotEnableOnSetting()Z
+    invoke-virtual {p1}, Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;->isRedDotEnableOnSetting()Z
 
     .line 83
     .line 84
@@ -3142,7 +3142,7 @@
 
     .line 87
     .line 88
-    invoke-virtual {p1}, Lridmik/keyboard/model/SuggestionBarAppPackageInfo;->getDotId()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;->getDotId()Ljava/lang/String;
 
     .line 89
     .line 90
@@ -3178,7 +3178,7 @@
     .line 105
     :cond_6
     :goto_1
-    iget-object p2, p0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->n:Lridmik/keyboard/uihelper/FontText;
+    iget-object p2, p0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->n:Lcom/arif/keyboard/uihelper/FontText;
 
     .line 106
     .line 107
@@ -3273,7 +3273,7 @@
 
     .line 150
     .line 151
-    invoke-virtual {p1}, Lridmik/keyboard/model/SuggestionBarAppPackageInfo;->isColoredAiIcon()Z
+    invoke-virtual {p1}, Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;->isColoredAiIcon()Z
 
     .line 152
     .line 153
@@ -3369,7 +3369,7 @@
 
     .line 191
     .line 192
-    invoke-virtual {p1}, Lridmik/keyboard/model/SuggestionBarAppPackageInfo;->isAiRedDotEnable()Z
+    invoke-virtual {p1}, Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;->isAiRedDotEnable()Z
 
     .line 193
     .line 194
@@ -3442,7 +3442,7 @@
 
     .line 224
     .line 225
-    invoke-virtual {p1}, Lridmik/keyboard/model/SuggestionBarAppPackageInfo;->isAiShakeEnable()Z
+    invoke-virtual {p1}, Lcom/arif/keyboard/model/SuggestionBarAppPackageInfo;->isAiShakeEnable()Z
 
     .line 226
     .line 227
@@ -3581,7 +3581,7 @@
     .line 17
     .line 18
     .line 19
-    iget-object v0, p0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->m:Lridmik/keyboard/uihelper/FontText;
+    iget-object v0, p0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->m:Lcom/arif/keyboard/uihelper/FontText;
 
     .line 20
     .line 21
@@ -3619,7 +3619,7 @@
     .line 6
     .line 7
     .line 8
-    iget-object v2, p0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->d:Lridmik/keyboard/VoiceView;
+    iget-object v2, p0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->d:Lcom/arif/keyboard/VoiceView;
 
     .line 9
     .line 10
@@ -3627,7 +3627,7 @@
 
     .line 11
     .line 12
-    invoke-direct {v0, p1, v2, v3, v1}, Lbt/p4;-><init>(Landroid/content/Context;Lridmik/keyboard/VoiceView;Landroid/view/View;Ljava/lang/ref/WeakReference;)V
+    invoke-direct {v0, p1, v2, v3, v1}, Lbt/p4;-><init>(Landroid/content/Context;Lcom/arif/keyboard/VoiceView;Landroid/view/View;Ljava/lang/ref/WeakReference;)V
 
     .line 13
     .line 14
@@ -3809,7 +3809,7 @@
     move-result-object v0
 
     .line 69
-    const-class v1, Lridmik/keyboard/AudioPermissionActivity;
+    const-class v1, Lcom/arif/keyboard/AudioPermissionActivity;
 
     .line 70
     .line 71
@@ -3966,7 +3966,7 @@
     move-result-object v0
 
     .line 145
-    const-class v2, Lridmik/keyboard/GoogleAppInstallationActivity;
+    const-class v2, Lcom/arif/keyboard/GoogleAppInstallationActivity;
 
     .line 146
     .line 147
@@ -5050,11 +5050,11 @@
 
     .line 5
     .line 6
-    iget-object v3, p0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->s:Lridmik/keyboard/uihelper/FontText;
+    iget-object v3, p0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->s:Lcom/arif/keyboard/uihelper/FontText;
 
     .line 7
     .line 8
-    iget-object v4, p0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->r:Lridmik/keyboard/uihelper/FontText;
+    iget-object v4, p0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->r:Lcom/arif/keyboard/uihelper/FontText;
 
     .line 9
     .line 10
@@ -5062,19 +5062,19 @@
 
     .line 11
     .line 12
-    iget-object v6, p0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->m:Lridmik/keyboard/uihelper/FontText;
+    iget-object v6, p0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->m:Lcom/arif/keyboard/uihelper/FontText;
 
     .line 13
     .line 14
-    iget-object v7, p0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->l:Lridmik/keyboard/uihelper/FontText;
+    iget-object v7, p0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->l:Lcom/arif/keyboard/uihelper/FontText;
 
     .line 15
     .line 16
-    iget-object v8, p0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->k:Lridmik/keyboard/uihelper/FontText;
+    iget-object v8, p0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->k:Lcom/arif/keyboard/uihelper/FontText;
 
     .line 17
     .line 18
-    iget-object v9, p0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->j:Lridmik/keyboard/uihelper/FontText;
+    iget-object v9, p0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->j:Lcom/arif/keyboard/uihelper/FontText;
 
     .line 19
     .line 20
@@ -5541,11 +5541,11 @@
 
     .line 4
     .line 5
-    iget-object v1, p0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->j:Lridmik/keyboard/uihelper/FontText;
+    iget-object v1, p0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->j:Lcom/arif/keyboard/uihelper/FontText;
 
     .line 6
     .line 7
-    invoke-interface {v0, v1}, Laa/n;->showOrHideSuggestionBarEmojiIcon(Lridmik/keyboard/uihelper/FontText;)V
+    invoke-interface {v0, v1}, Laa/n;->showOrHideSuggestionBarEmojiIcon(Lcom/arif/keyboard/uihelper/FontText;)V
 
     .line 8
     .line 9
@@ -5651,7 +5651,7 @@
     .line 31
     .line 32
     .line 33
-    iget-object v0, p0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->m:Lridmik/keyboard/uihelper/FontText;
+    iget-object v0, p0, Lcom/android/inputmethod/latin/suggestions/SuggestionStripView;->m:Lcom/arif/keyboard/uihelper/FontText;
 
     .line 34
     .line 35

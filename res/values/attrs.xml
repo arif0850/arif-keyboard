@@ -1486,8 +1486,8 @@
         <flag name="fontNormal" value="0x10" />
         <flag name="fontMonoSpace" value="0x20" />
         <flag name="fontDefault" value="0x30" />
-        <flag name="fontRidmikAscii" value="0x50" />
-        <flag name="fontHintRidmikAscii" value="0x100" />
+        <flag name="fontArifAscii" value="0x50" />
+        <flag name="fontHintArifAscii" value="0x100" />
         <flag name="followKeyLargeLetterRatio" value="0x40" />
         <flag name="followKeyLetterRatio" value="0x80" />
         <flag name="followKeyLabelRatio" value="0xc0" />

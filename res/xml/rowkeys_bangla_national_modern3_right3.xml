@@ -3,14 +3,14 @@
   xmlns:latin="http://schemas.android.com/apk/res-auto">
     <switch>
         <case latin:keyboardLayoutSetElement="banglaFixedAlphabetShifted">
-            <Key latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/ridmik_font_size_ratio" latin:keySpec="É|ণ" />
-            <Key latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/ridmik_font_size_ratio" latin:keySpec="Ø|ষ" />
-            <Key latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/ridmik_font_size_ratio" latin:keySpec="×|শ" />
+            <Key latin:keyLabelFlags="fontArifAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/arif_font_size_ratio" latin:keySpec="É|ণ" />
+            <Key latin:keyLabelFlags="fontArifAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/arif_font_size_ratio" latin:keySpec="Ø|ষ" />
+            <Key latin:keyLabelFlags="fontArifAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/arif_font_size_ratio" latin:keySpec="×|শ" />
         </case>
         <default>
-            <Key latin:keyHintLabel="É" latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/ridmik_font_size_ratio" latin:keySpec="Î|ন" latin:moreKeys="É|ণ" />
-            <Key latin:keyHintLabel="Ø" latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/ridmik_font_size_ratio" latin:keySpec="Ù|স" latin:moreKeys="Ø|ষ,×|শ" />
-            <Key latin:keyHintLabel="×" latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/ridmik_font_size_ratio" latin:keySpec="Ó|ম" latin:moreKeys="×|শ" />
+            <Key latin:keyHintLabel="É" latin:keyLabelFlags="fontArifAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/arif_font_size_ratio" latin:keySpec="Î|ন" latin:moreKeys="É|ণ" />
+            <Key latin:keyHintLabel="Ø" latin:keyLabelFlags="fontArifAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/arif_font_size_ratio" latin:keySpec="Ù|স" latin:moreKeys="Ø|ষ,×|শ" />
+            <Key latin:keyHintLabel="×" latin:keyLabelFlags="fontArifAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/arif_font_size_ratio" latin:keySpec="Ó|ম" latin:moreKeys="×|শ" />
         </default>
     </switch>
 </merge>

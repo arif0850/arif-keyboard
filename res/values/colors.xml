@@ -39,10 +39,10 @@
     <color name="applovin_sdk_xmarkColor">#ff3b30</color>
     <color name="auto_correct_color_lxx_dark">#ffffff</color>
     <color name="auto_correct_color_lxx_light">#37474f</color>
-    <color name="background_color_in_ridmik_dark_silver">#dfdac7</color>
-    <color name="background_color_in_ridmik_green_theme">#18807a</color>
-    <color name="background_color_ridmik_green_similar">#7b827a</color>
-    <color name="background_color_ridmik_pure_dark">#000000</color>
+    <color name="background_color_in_arif_dark_silver">#dfdac7</color>
+    <color name="background_color_in_arif_green_theme">#18807a</color>
+    <color name="background_color_arif_green_similar">#7b827a</color>
+    <color name="background_color_arif_pure_dark">#000000</color>
     <color name="background_color_signup">#f7f7f7</color>
     <color name="background_dark_blue_gradient_end_color">#0e5cad</color>
     <color name="background_dark_blue_gradient_start_color">#5cc9a6</color>
@@ -484,7 +484,7 @@
     <color name="product_text_color">#ff5c5c</color>
     <color name="punch">#de4244</color>
     <color name="red_text_color">#e33c3c</color>
-    <color name="ridmik_plus_promotion_background">#e0f1ec</color>
+    <color name="arif_plus_promotion_background">#e0f1ec</color>
     <color name="ripple_color">#2a000000</color>
     <color name="ripple_material_dark">#33ffffff</color>
     <color name="ripple_material_light">#1f000000</color>

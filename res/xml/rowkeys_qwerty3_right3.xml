@@ -4,10 +4,10 @@
     <Key latin:keyHintLabel="'" latin:keySpec="b" latin:moreKeys="',`" />
     <switch>
         <case latin:keyboardLayoutSetElement="avroAlphabet|avroManualShifted|avroAutomaticShifted|avroShiftLocked|avroShiftLockShifted">
-            <Key latin:additionalMoreKeys=":" latin:keyHintLabel=":" latin:keyLabelFlags="fontHintRidmikAscii" latin:keySpec="n" latin:moreKeys=";,à|ঃ" />
+            <Key latin:additionalMoreKeys=":" latin:keyHintLabel=":" latin:keyLabelFlags="fontHintArifAscii" latin:keySpec="n" latin:moreKeys=";,à|ঃ" />
         </case>
         <default>
-            <Key latin:additionalMoreKeys=":" latin:keyHintLabel=":" latin:keyLabelFlags="fontHintRidmikAscii" latin:keySpec="n" latin:moreKeys="!text/morekeys_n" />
+            <Key latin:additionalMoreKeys=":" latin:keyHintLabel=":" latin:keyLabelFlags="fontHintArifAscii" latin:keySpec="n" latin:moreKeys="!text/morekeys_n" />
         </default>
     </switch>
     <Key latin:keyHintLabel="/" latin:keySpec="m" latin:moreKeys="/,\\" />

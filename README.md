@@ -1,6 +1,6 @@
 # Arif Keyboard ⌨️
 
-A powerful modified Android keyboard tailored for developers, terminal users (Termux), and power users. Based on reverse engineering, decompiling, and customizing the popular Ridmik Keyboard base.
+A powerful modified Android keyboard tailored for developers, terminal users (Termux), and power users. Built with a custom modifier engine, standalone native libraries, and developer-focused layouts.
 
 ## 🚀 Key Features Added
 
@@ -17,7 +17,7 @@ A powerful modified Android keyboard tailored for developers, terminal users (Te
    - **Twilight & Pink Themes**: `Alt` button text styled with `followFunctionalTextColor`, ensuring crisp, readable white text on functional key backgrounds.
    - **Dark Mode (Pure Dark, LXX Dark, Holo)**: All missing icons (`Shift` up-arrow, `Shift Locked`, `Backspace/Delete`, `Enter/Return`) restored with proper drawable assets from the original base.
 4. **Standalone Architecture**:
-   - Merged all 7 native 64-bit `.so` libraries (`libjni_ridmik.so`, `libjni_autocorrect.so`, `libdatastore_shared_counter.so`, `libavif_android.so`, `libapplovin-native-crash-reporter.so`, `libanimation-decoder-gif.so`, `libandroidx.graphics.path.so`).
+   - Merged all 7 native 64-bit `.so` libraries (`libjni_arif.so`, `libjni_autocorrect.so`, `libdatastore_shared_counter.so`, `libavif_android.so`, `libapplovin-native-crash-reporter.so`, `libanimation-decoder-gif.so`, `libandroidx.graphics.path.so`).
    - Merged density resources (`xxxhdpi`), eliminating any split APK dependencies.
 5. **Renamed Identity**:
    - Package ID changed to `com.arif.keyboard` (allows installation side-by-side with original keyboard apps without conflict).
@@ -29,9 +29,10 @@ A powerful modified Android keyboard tailored for developers, terminal users (Te
 
 - **Tooling**: Apktool, Baksmali, Smali, AAPT2, Zipalign, Apksigner, OpenJDK.
 - **Modified Smali Classes**:
-  - `ridmik.keyboard.RidmikKeyboard`: Overrides `onCodeInput`, `onPressKey`, and `onReleaseKey` for `-3` (Ctrl) and `-11` (Alt); implements sticky meta-state management, Toast notifications, and direct `InputConnection` key-event dispatching.
-  - `ridmik.keyboard.VoiceView`: Guarded Paint initialization to eliminate startup null pointer exceptions.
+  - `com.arif.keyboard.ArifKeyboard`: Overrides `onCodeInput`, `onPressKey`, and `onReleaseKey` for `-3` (Ctrl) and `-11` (Alt); implements sticky meta-state management, Toast notifications, and direct `InputConnection` key-event dispatching.
+  - `com.arif.keyboard.VoiceView`: Guarded Paint initialization to eliminate startup null pointer exceptions.
   - `com.android.inputmethod.keyboard.MainKeyboardView`: Guarded spacebar indicator drawable rendering (`y` and `z`) against null drawables in custom themes.
+  - `com.android.inputmethod.keyboard.p1`: Enabled `moreKeys` long-press popup on `Alt` (`-11`) to open `@ # & * - ! ?`.
   - `com.android.inputmethod.latin.suggestions.SuggestionStripView`: Added safe icon fallback handling.
 - **Layout & Style Adjustments**:
   - `res/xml/key_to_symbol.xml`: Configured for `Ctrl` key specification.
@@ -80,6 +81,6 @@ adb install -r -d -g arif-keyboard-final.apk
 
 Then enable and select the keyboard in Android Settings:
 ```bash
-adb shell ime enable com.arif.keyboard/ridmik.keyboard.RidmikKeyboard
-adb shell ime set com.arif.keyboard/ridmik.keyboard.RidmikKeyboard
+adb shell ime enable com.arif.keyboard/com.arif.keyboard.ArifKeyboard
+adb shell ime set com.arif.keyboard/com.arif.keyboard.ArifKeyboard
 ```

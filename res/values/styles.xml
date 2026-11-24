@@ -3469,11 +3469,11 @@
         <item name="stickerGifSelectedColor">@color/typed_word_color_lxx_dark</item>
     </style>
     <style name="EmojiPalettesView.Dark_Silver" parent="@style/MainKeyboardView.Dark_Silver">
-        <item name="android:background">@color/background_color_in_ridmik_dark_silver</item>
+        <item name="android:background">@color/background_color_in_arif_dark_silver</item>
         <item name="categoryIndicatorEnabled">false</item>
         <item name="categoryPageIndicatorBackground">@color/transparent</item>
         <item name="categoryPageIndicatorColor">@color/highlight_color_lxx_dark</item>
-        <item name="categoryTabWidgetBackground">@color/background_color_in_ridmik_dark_silver</item>
+        <item name="categoryTabWidgetBackground">@color/background_color_in_arif_dark_silver</item>
         <item name="iconEmojiCategory10Tab">@drawable/ic_emoji_food_lxx_light</item>
         <item name="iconEmojiCategory11Tab">@drawable/ic_emoji_places_lxx_light</item>
         <item name="iconEmojiCategory12Tab">@drawable/ic_emoji_activity_lxx_light</item>
@@ -3491,7 +3491,7 @@
         <item name="iconEmojiCategory8Tab">@drawable/ic_emoji_people_lxx_light</item>
         <item name="iconEmojiCategory9Tab">@drawable/ic_emoji_nature_lxx_light</item>
         <item name="iconEmojiRecentsTab">@null</item>
-        <item name="stickerEmojiBottomBar">@color/background_color_in_ridmik_dark_silver</item>
+        <item name="stickerEmojiBottomBar">@color/background_color_in_arif_dark_silver</item>
         <item name="stickerGifSelectedColor">@color/typed_word_color_lxx_dark</item>
     </style>
     <style name="EmojiPalettesView.GRADIENT_GREEN" parent="@style/MainKeyboardView.GRADIENT_GREEN">
@@ -3573,11 +3573,11 @@
         <item name="stickerGifSelectedColor">@color/typed_word_color_lxx_dark</item>
     </style>
     <style name="EmojiPalettesView.Green" parent="@style/MainKeyboardView.Green">
-        <item name="android:background">@color/background_color_in_ridmik_green_theme</item>
+        <item name="android:background">@color/background_color_in_arif_green_theme</item>
         <item name="categoryIndicatorEnabled">false</item>
         <item name="categoryPageIndicatorBackground">@color/transparent</item>
         <item name="categoryPageIndicatorColor">@color/highlight_color_lxx_dark</item>
-        <item name="categoryTabWidgetBackground">@color/background_color_in_ridmik_green_theme</item>
+        <item name="categoryTabWidgetBackground">@color/background_color_in_arif_green_theme</item>
         <item name="iconEmojiCategory10Tab">@drawable/ic_emoji_food_lxx_dark</item>
         <item name="iconEmojiCategory11Tab">@drawable/ic_emoji_places_lxx_dark</item>
         <item name="iconEmojiCategory12Tab">@drawable/ic_emoji_activity_lxx_dark</item>
@@ -3595,15 +3595,15 @@
         <item name="iconEmojiCategory8Tab">@drawable/ic_emoji_people_lxx_dark</item>
         <item name="iconEmojiCategory9Tab">@drawable/ic_emoji_nature_lxx_dark</item>
         <item name="iconEmojiRecentsTab">@drawable/ic_emoji_recents_lxx_dark</item>
-        <item name="stickerEmojiBottomBar">@color/background_color_in_ridmik_green_theme</item>
+        <item name="stickerEmojiBottomBar">@color/background_color_in_arif_green_theme</item>
         <item name="stickerGifSelectedColor">@color/typed_word_color_lxx_dark</item>
     </style>
     <style name="EmojiPalettesView.Green_Similar" parent="@style/MainKeyboardView.Green_Similar">
-        <item name="android:background">@color/background_color_ridmik_green_similar</item>
+        <item name="android:background">@color/background_color_arif_green_similar</item>
         <item name="categoryIndicatorEnabled">false</item>
         <item name="categoryPageIndicatorBackground">@color/transparent</item>
         <item name="categoryPageIndicatorColor">@color/highlight_color_lxx_dark</item>
-        <item name="categoryTabWidgetBackground">@color/background_color_ridmik_green_similar</item>
+        <item name="categoryTabWidgetBackground">@color/background_color_arif_green_similar</item>
         <item name="iconEmojiCategory10Tab">@drawable/ic_emoji_food_lxx_dark</item>
         <item name="iconEmojiCategory11Tab">@drawable/ic_emoji_places_lxx_dark</item>
         <item name="iconEmojiCategory12Tab">@drawable/ic_emoji_activity_lxx_dark</item>
@@ -3621,7 +3621,7 @@
         <item name="iconEmojiCategory8Tab">@drawable/ic_emoji_people_lxx_dark</item>
         <item name="iconEmojiCategory9Tab">@drawable/ic_emoji_nature_lxx_dark</item>
         <item name="iconEmojiRecentsTab">@drawable/ic_emoji_recents_lxx_dark</item>
-        <item name="stickerEmojiBottomBar">@color/background_color_ridmik_green_similar</item>
+        <item name="stickerEmojiBottomBar">@color/background_color_arif_green_similar</item>
         <item name="stickerGifSelectedColor">@color/typed_word_color_lxx_dark</item>
     </style>
     <style name="EmojiPalettesView.ICS" parent="@style/MainKeyboardView.ICS">
@@ -3808,11 +3808,11 @@
         <item name="stickerGifSelectedColor">@color/typed_word_color_lxx_dark</item>
     </style>
     <style name="EmojiPalettesView.Pure_Dark" parent="@style/MainKeyboardView.Pure_Dark">
-        <item name="android:background">@color/background_color_ridmik_pure_dark</item>
+        <item name="android:background">@color/background_color_arif_pure_dark</item>
         <item name="categoryIndicatorEnabled">false</item>
         <item name="categoryPageIndicatorBackground">@color/transparent</item>
         <item name="categoryPageIndicatorColor">@color/highlight_color_lxx_dark</item>
-        <item name="categoryTabWidgetBackground">@color/background_color_ridmik_pure_dark</item>
+        <item name="categoryTabWidgetBackground">@color/background_color_arif_pure_dark</item>
         <item name="iconEmojiCategory10Tab">@drawable/ic_emoji_food_lxx_dark</item>
         <item name="iconEmojiCategory11Tab">@drawable/ic_emoji_places_lxx_dark</item>
         <item name="iconEmojiCategory12Tab">@drawable/ic_emoji_activity_lxx_dark</item>
@@ -3830,7 +3830,7 @@
         <item name="iconEmojiCategory8Tab">@drawable/ic_emoji_people_lxx_dark</item>
         <item name="iconEmojiCategory9Tab">@drawable/ic_emoji_nature_lxx_dark</item>
         <item name="iconEmojiRecentsTab">@drawable/ic_emoji_recents_lxx_dark</item>
-        <item name="stickerEmojiBottomBar">@color/background_color_ridmik_pure_dark</item>
+        <item name="stickerEmojiBottomBar">@color/background_color_arif_pure_dark</item>
         <item name="stickerGifSelectedColor">@color/typed_word_color_lxx_dark</item>
     </style>
     <style name="EmojiPalettesView.ROUNDED_BLACK" parent="@style/MainKeyboardView.ROUNDED_BLACK">
@@ -4354,7 +4354,7 @@
     </style>
     <style name="KeyboardTheme.Green_Similar" parent="@style/KeyboardTheme.Green_Similar.Base" />
     <style name="KeyboardTheme.Green_Similar.Base" parent="@style/KeyboardIcons.Holo">
-        <item name="backgroundColorInMainKeyboardViewButton">@color/background_color_ridmik_green_similar</item>
+        <item name="backgroundColorInMainKeyboardViewButton">@color/background_color_arif_green_similar</item>
         <item name="emojiPalettesViewStyle">@style/EmojiPalettesView.Green_Similar</item>
         <item name="inputViewStyle">@style/InputView.Holo</item>
         <item name="keyboardStyle">@style/Keyboard.Green_Similar</item>
@@ -4711,7 +4711,7 @@
         <item name="functionalTextColor">@color/key_text_color_holo</item>
         <item name="keyBackground">@drawable/btn_keyboard_key_dark_blue</item>
         <item name="keyHintLabelColor">@color/key_hint_label_color_holo</item>
-        <item name="keyHintLetterColor">@color/background_color_ridmik_green_similar</item>
+        <item name="keyHintLetterColor">@color/background_color_arif_green_similar</item>
         <item name="keyPreviewTextColor">@color/key_text_color_holo</item>
         <item name="keyShiftedLetterHintActivatedColor">@color/key_shifted_letter_hint_activated_color_holo</item>
         <item name="keyShiftedLetterHintInactivatedColor">@color/key_text_inactive_color_lxx_dark</item>
@@ -4721,12 +4721,12 @@
         <item name="spacebarBackground">@drawable/btn_keyboard_spacebar_dark_blue</item>
     </style>
     <style name="KeyboardView.Dark_Silver" parent="@style/KeyboardView.Holo">
-        <item name="android:background">@color/background_color_in_ridmik_dark_silver</item>
+        <item name="android:background">@color/background_color_in_arif_dark_silver</item>
         <item name="functionalKeyBackground">@drawable/btn_keyboard_key_dark_silver</item>
         <item name="functionalTextColor">@color/key_text_color_dark_silver</item>
         <item name="keyBackground">@drawable/btn_keyboard_key_dark_silver</item>
         <item name="keyHintLabelColor">@color/key_text_color_dark_silver</item>
-        <item name="keyHintLetterColor">@color/background_color_ridmik_green_similar</item>
+        <item name="keyHintLetterColor">@color/background_color_arif_green_similar</item>
         <item name="keyPreviewTextColor">@color/key_text_color_dark_silver</item>
         <item name="keyShiftedLetterHintActivatedColor">@color/key_text_color_dark_silver</item>
         <item name="keyShiftedLetterHintInactivatedColor">@color/key_text_color_dark_silver</item>
@@ -4781,33 +4781,33 @@
         <item name="spacebarBackground">@drawable/btn_keyboard_spacebar_background_semi_transparent</item>
     </style>
     <style name="KeyboardView.Green" parent="@style/KeyboardView.Holo">
-        <item name="android:background">@color/background_color_in_ridmik_green_theme</item>
+        <item name="android:background">@color/background_color_in_arif_green_theme</item>
         <item name="functionalKeyBackground">@drawable/btn_keyboard_key_green</item>
         <item name="functionalTextColor">@color/key_text_color_holo</item>
         <item name="keyBackground">@drawable/btn_keyboard_key_green</item>
         <item name="keyHintLabelColor">@color/key_hint_label_color_holo</item>
-        <item name="keyHintLetterColor">@color/background_color_in_ridmik_green_theme</item>
+        <item name="keyHintLetterColor">@color/background_color_in_arif_green_theme</item>
         <item name="keyPreviewTextColor">@color/key_text_color_holo</item>
         <item name="keyShiftedLetterHintActivatedColor">@color/key_shifted_letter_hint_activated_color_holo</item>
         <item name="keyShiftedLetterHintInactivatedColor">@color/key_text_inactive_color_lxx_dark</item>
         <item name="keyTextColor">@color/key_text_color_holo</item>
         <item name="keyTextInactivatedColor">@color/key_functional_text_color_lxx_dark</item>
-        <item name="navigationBarBackground">@color/background_color_in_ridmik_green_theme</item>
+        <item name="navigationBarBackground">@color/background_color_in_arif_green_theme</item>
         <item name="spacebarBackground">@drawable/btn_keyboard_spacebar_green</item>
     </style>
     <style name="KeyboardView.Green_Similar" parent="@style/KeyboardView.Holo">
-        <item name="android:background">@color/background_color_ridmik_green_similar</item>
+        <item name="android:background">@color/background_color_arif_green_similar</item>
         <item name="functionalKeyBackground">@drawable/btn_keyboard_key_green_similar</item>
         <item name="functionalTextColor">@color/key_text_color_holo</item>
         <item name="keyBackground">@drawable/btn_keyboard_key_green_similar</item>
         <item name="keyHintLabelColor">@color/key_hint_label_color_holo</item>
-        <item name="keyHintLetterColor">@color/background_color_ridmik_green_similar</item>
+        <item name="keyHintLetterColor">@color/background_color_arif_green_similar</item>
         <item name="keyPreviewTextColor">@color/key_text_color_holo</item>
         <item name="keyShiftedLetterHintActivatedColor">@color/key_shifted_letter_hint_activated_color_holo</item>
         <item name="keyShiftedLetterHintInactivatedColor">@color/key_text_inactive_color_lxx_dark</item>
         <item name="keyTextColor">@color/key_text_color_holo</item>
         <item name="keyTextInactivatedColor">@color/key_functional_text_color_lxx_dark</item>
-        <item name="navigationBarBackground">@color/background_color_ridmik_green_similar</item>
+        <item name="navigationBarBackground">@color/background_color_arif_green_similar</item>
         <item name="spacebarBackground">@drawable/btn_keyboard_spacebar_green_similar</item>
     </style>
     <style name="KeyboardView.Holo" parent="@style/KeyboardView">
@@ -4935,7 +4935,7 @@
         <item name="spacebarBackground">@drawable/btn_keyboard_spacebar_lxx_dark</item>
     </style>
     <style name="KeyboardView.Pure_Dark" parent="@style/KeyboardView.Holo">
-        <item name="android:background">@color/background_color_ridmik_pure_dark</item>
+        <item name="android:background">@color/background_color_arif_pure_dark</item>
         <item name="functionalKeyBackground">@drawable/btn_keyboard_key_pure_dark</item>
         <item name="functionalTextColor">@color/key_text_color_holo</item>
         <item name="keyBackground">@drawable/btn_keyboard_key_pure_dark</item>
@@ -4946,7 +4946,7 @@
         <item name="keyShiftedLetterHintInactivatedColor">@color/key_text_inactive_color_lxx_dark</item>
         <item name="keyTextColor">@color/key_text_color_holo</item>
         <item name="keyTextInactivatedColor">@color/key_functional_text_color_lxx_dark</item>
-        <item name="navigationBarBackground">@color/background_color_ridmik_pure_dark</item>
+        <item name="navigationBarBackground">@color/background_color_arif_pure_dark</item>
         <item name="spacebarBackground">@drawable/btn_keyboard_spacebar_pure_dark</item>
     </style>
     <style name="KeyboardView.ROUNDED_BLACK" parent="@style/KeyboardView.LXX_Dark">
@@ -5111,7 +5111,7 @@
     <style name="MainKeyboardView.Dark_Silver" parent="@style/KeyboardView.Dark_Silver">
         <item name="gestureFloatingPreviewColor">@color/gesture_floating_preview_color_lxx_dark</item>
         <item name="gestureFloatingPreviewTextColor">@color/key_text_color_dark_silver</item>
-        <item name="gestureTrailColor">@color/background_color_in_ridmik_dark_silver</item>
+        <item name="gestureTrailColor">@color/background_color_in_arif_dark_silver</item>
         <item name="keyPreviewBackground">@drawable/keyboard_key_feedback_dark_silver</item>
         <item name="keyPreviewDismissAnimator">@anim/key_preview_dismiss_holo</item>
         <item name="keyPreviewHeight">@dimen/config_key_preview_height_holo</item>
@@ -5120,7 +5120,7 @@
         <item name="languageOnSpacebarTextColor">@color/key_text_color_dark_silver</item>
         <item name="languageOnSpacebarTextShadowColor">@color/key_text_color_dark_silver</item>
         <item name="languageOnSpacebarTextShadowRadius">1.0</item>
-        <item name="slidingKeyInputPreviewColor">@color/background_color_in_ridmik_dark_silver</item>
+        <item name="slidingKeyInputPreviewColor">@color/background_color_in_arif_dark_silver</item>
         <item name="spacePreviewBackground">@null</item>
     </style>
     <style name="MainKeyboardView.GRADIENT_GREEN" parent="@style/KeyboardView.GRADIENT_GREEN">
@@ -6798,7 +6798,7 @@
         <item name="suggestionsCountInStrip">@integer/config_suggestions_count_in_strip</item>
     </style>
     <style name="SuggestionStripView.Dark_Silver" parent="@style/KeyboardView.Dark_Silver">
-        <item name="android:background">@color/background_color_in_ridmik_dark_silver</item>
+        <item name="android:background">@color/background_color_in_arif_dark_silver</item>
         <item name="android:src">@null</item>
         <item name="alphaObsoleted">70.00001%</item>
         <item name="centerSuggestionPercentile">@fraction/config_center_suggestion_percentile</item>
@@ -6862,7 +6862,7 @@
         <item name="suggestionsCountInStrip">@integer/config_suggestions_count_in_strip</item>
     </style>
     <style name="SuggestionStripView.Green" parent="@style/KeyboardView.Green">
-        <item name="android:background">@color/background_color_in_ridmik_green_theme</item>
+        <item name="android:background">@color/background_color_in_arif_green_theme</item>
         <item name="android:src">@null</item>
         <item name="alphaObsoleted">70.00001%</item>
         <item name="centerSuggestionPercentile">@fraction/config_center_suggestion_percentile</item>
@@ -6878,7 +6878,7 @@
         <item name="suggestionsCountInStrip">@integer/config_suggestions_count_in_strip</item>
     </style>
     <style name="SuggestionStripView.Green_Similar" parent="@style/KeyboardView.Green_Similar">
-        <item name="android:background">@color/background_color_ridmik_green_similar</item>
+        <item name="android:background">@color/background_color_arif_green_similar</item>
         <item name="android:src">@null</item>
         <item name="alphaObsoleted">70.00001%</item>
         <item name="centerSuggestionPercentile">@fraction/config_center_suggestion_percentile</item>
@@ -7006,7 +7006,7 @@
         <item name="suggestionsCountInStrip">@integer/config_suggestions_count_in_strip</item>
     </style>
     <style name="SuggestionStripView.Pure_Dark" parent="@style/KeyboardView.Pure_Dark">
-        <item name="android:background">@color/background_color_ridmik_pure_dark</item>
+        <item name="android:background">@color/background_color_arif_pure_dark</item>
         <item name="android:src">@null</item>
         <item name="alphaObsoleted">70.00001%</item>
         <item name="centerSuggestionPercentile">@fraction/config_center_suggestion_percentile</item>
@@ -10666,7 +10666,7 @@
         <item name="useMaterialThemeColors">false</item>
     </style>
     <style name="mainKeyboardOthersViewRootStyleGreen">
-        <item name="android:background">@color/background_color_in_ridmik_green_theme</item>
+        <item name="android:background">@color/background_color_in_arif_green_theme</item>
     </style>
     <style name="mainKeyboardOthersViewRootStyle_BLUE">
         <item name="android:background">@color/blue</item>
@@ -10687,7 +10687,7 @@
         <item name="android:background">@drawable/keyboard_background_dark_blue</item>
     </style>
     <style name="mainKeyboardOthersViewRootStyle_Dark_Silver">
-        <item name="android:background">@color/background_color_in_ridmik_dark_silver</item>
+        <item name="android:background">@color/background_color_in_arif_dark_silver</item>
     </style>
     <style name="mainKeyboardOthersViewRootStyle_Gradient_Green">
         <item name="android:background">@drawable/keyboard_background_gradient_green</item>
@@ -10696,7 +10696,7 @@
         <item name="android:background">@color/emoji_tab_page_indicator_background_lxx_light</item>
     </style>
     <style name="mainKeyboardOthersViewRootStyle_Green_Similar">
-        <item name="android:background">@color/background_color_ridmik_green_similar</item>
+        <item name="android:background">@color/background_color_arif_green_similar</item>
     </style>
     <style name="mainKeyboardOthersViewRootStyle_ICS">
         <item name="android:background">@color/emoji_tab_page_indicator_background_holo</item>
@@ -10723,7 +10723,7 @@
         <item name="android:background">@color/pink</item>
     </style>
     <style name="mainKeyboardOthersViewRootStyle_Pure_Dark">
-        <item name="android:background">@color/background_color_ridmik_pure_dark</item>
+        <item name="android:background">@color/background_color_arif_pure_dark</item>
     </style>
     <style name="mainKeyboardOthersViewRootStyle_Purple">
         <item name="android:background">@drawable/keyboard_background_gradient_purple</item>

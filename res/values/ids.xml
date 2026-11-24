@@ -627,10 +627,10 @@
     <id name="followKeyLargeLetterRatio" />
     <id name="followKeyLetterRatio" />
     <id name="fontDefault" />
-    <id name="fontHintRidmikAscii" />
+    <id name="fontHintArifAscii" />
     <id name="fontMonoSpace" />
     <id name="fontNormal" />
-    <id name="fontRidmikAscii" />
+    <id name="fontArifAscii" />
     <id name="footerTv" />
     <id name="forever" />
     <id name="fragment_container_view_tag" />
@@ -1143,8 +1143,8 @@
     <id name="reverseSawtooth" />
     <id name="rewarded_control_button" />
     <id name="rewarded_control_view" />
-    <id name="ridmikLogo" />
-    <id name="ridmikTitle" />
+    <id name="arifLogo" />
+    <id name="arifTitle" />
     <id name="right" />
     <id name="rightToLeft" />
     <id name="right_icon" />

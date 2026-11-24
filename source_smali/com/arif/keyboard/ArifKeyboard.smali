@@ -1,6 +1,6 @@
-.class public Lridmik/keyboard/RidmikKeyboard;
+.class public Lcom/arif/keyboard/ArifKeyboard;
 .super Lcom/android/inputmethod/latin/h1;
-.source "RidmikKeyboard.java"
+.source "ArifKeyboard.java"
 
 
 # static fields
@@ -29,22 +29,22 @@
 
     const/4 v8, 0x0
 
-    sget-boolean v9, Lridmik/keyboard/RidmikKeyboard;->sCtrlActive:Z
+    sget-boolean v9, Lcom/arif/keyboard/ArifKeyboard;->sCtrlActive:Z
 
-    if-eqz v9, :cond_ctrl
+    if-eqz v9, :cond_0
 
     const/16 v9, 0x3000
 
     or-int/2addr v8, v9
 
-    :cond_ctrl
-    sget-boolean v9, Lridmik/keyboard/RidmikKeyboard;->sAltActive:Z
+    :cond_0
+    sget-boolean v9, Lcom/arif/keyboard/ArifKeyboard;->sAltActive:Z
 
-    if-eqz v9, :cond_alt
+    if-eqz v9, :cond_1
 
     or-int/lit8 v8, v8, 0x12
 
-    :cond_alt
+    :cond_1
     move v6, p1
 
     const/4 v7, 0x0
@@ -199,7 +199,7 @@
 .method private showModifierToast(Ljava/lang/String;)V
     .locals 2
 
-    :try_start_toast
+    :try_start_0
     const/4 v0, 0x0
 
     invoke-static {p0, p1, v0}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
@@ -207,10 +207,10 @@
     move-result-object v0
 
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
-    :try_end_toast
-    .catchall {:try_start_toast .. :try_end_toast} :catch_toast
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    :catch_toast
+    :catchall_0
     return-void
 .end method
 
@@ -223,24 +223,24 @@
 
     if-ne p1, v0, :cond_1
 
-    sget-boolean v0, Lridmik/keyboard/RidmikKeyboard;->sCtrlActive:Z
+    sget-boolean v0, Lcom/arif/keyboard/ArifKeyboard;->sCtrlActive:Z
 
     xor-int/lit8 v0, v0, 0x1
 
-    sput-boolean v0, Lridmik/keyboard/RidmikKeyboard;->sCtrlActive:Z
+    sput-boolean v0, Lcom/arif/keyboard/ArifKeyboard;->sCtrlActive:Z
 
     if-eqz v0, :cond_0
 
     const-string v0, "Ctrl ON"
 
-    invoke-direct {p0, v0}, Lridmik/keyboard/RidmikKeyboard;->showModifierToast(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/arif/keyboard/ArifKeyboard;->showModifierToast(Ljava/lang/String;)V
 
     goto :goto_0
 
     :cond_0
     const-string v0, "Ctrl OFF"
 
-    invoke-direct {p0, v0}, Lridmik/keyboard/RidmikKeyboard;->showModifierToast(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/arif/keyboard/ArifKeyboard;->showModifierToast(Ljava/lang/String;)V
 
     :goto_0
     return-void
@@ -250,34 +250,34 @@
 
     if-ne p1, v0, :cond_3
 
-    sget-boolean v0, Lridmik/keyboard/RidmikKeyboard;->sAltActive:Z
+    sget-boolean v0, Lcom/arif/keyboard/ArifKeyboard;->sAltActive:Z
 
     xor-int/lit8 v0, v0, 0x1
 
-    sput-boolean v0, Lridmik/keyboard/RidmikKeyboard;->sAltActive:Z
+    sput-boolean v0, Lcom/arif/keyboard/ArifKeyboard;->sAltActive:Z
 
     if-eqz v0, :cond_2
 
     const-string v0, "Alt ON"
 
-    invoke-direct {p0, v0}, Lridmik/keyboard/RidmikKeyboard;->showModifierToast(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/arif/keyboard/ArifKeyboard;->showModifierToast(Ljava/lang/String;)V
 
     goto :goto_1
 
     :cond_2
     const-string v0, "Alt OFF"
 
-    invoke-direct {p0, v0}, Lridmik/keyboard/RidmikKeyboard;->showModifierToast(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/arif/keyboard/ArifKeyboard;->showModifierToast(Ljava/lang/String;)V
 
     :goto_1
     return-void
 
     :cond_3
-    sget-boolean v0, Lridmik/keyboard/RidmikKeyboard;->sCtrlActive:Z
+    sget-boolean v0, Lcom/arif/keyboard/ArifKeyboard;->sCtrlActive:Z
 
     if-nez v0, :cond_4
 
-    sget-boolean v0, Lridmik/keyboard/RidmikKeyboard;->sAltActive:Z
+    sget-boolean v0, Lcom/arif/keyboard/ArifKeyboard;->sAltActive:Z
 
     if-nez v0, :cond_4
 
@@ -286,7 +286,7 @@
     return-void
 
     :cond_4
-    invoke-static {p1}, Lridmik/keyboard/RidmikKeyboard;->getAndroidKeyCode(I)I
+    invoke-static {p1}, Lcom/arif/keyboard/ArifKeyboard;->getAndroidKeyCode(I)I
 
     move-result v0
 
@@ -294,9 +294,9 @@
 
     const/4 v0, 0x0
 
-    sput-boolean v0, Lridmik/keyboard/RidmikKeyboard;->sCtrlActive:Z
+    sput-boolean v0, Lcom/arif/keyboard/ArifKeyboard;->sCtrlActive:Z
 
-    sput-boolean v0, Lridmik/keyboard/RidmikKeyboard;->sAltActive:Z
+    sput-boolean v0, Lcom/arif/keyboard/ArifKeyboard;->sAltActive:Z
 
     invoke-super {p0, p1, p2, p3, p4}, Lcom/android/inputmethod/latin/h1;->onCodeInput(IIIZ)V
 
@@ -309,14 +309,14 @@
 
     if-eqz v1, :cond_6
 
-    invoke-static {v1, v0}, Lridmik/keyboard/RidmikKeyboard;->dispatchModifiedKey(Landroid/view/inputmethod/InputConnection;I)V
+    invoke-static {v1, v0}, Lcom/arif/keyboard/ArifKeyboard;->dispatchModifiedKey(Landroid/view/inputmethod/InputConnection;I)V
 
     :cond_6
     const/4 v0, 0x0
 
-    sput-boolean v0, Lridmik/keyboard/RidmikKeyboard;->sCtrlActive:Z
+    sput-boolean v0, Lcom/arif/keyboard/ArifKeyboard;->sCtrlActive:Z
 
-    sput-boolean v0, Lridmik/keyboard/RidmikKeyboard;->sAltActive:Z
+    sput-boolean v0, Lcom/arif/keyboard/ArifKeyboard;->sAltActive:Z
 
     return-void
 .end method
@@ -326,18 +326,18 @@
 
     const/4 v0, -0x3
 
-    if-ne p1, v0, :cond_check_alt
+    if-ne p1, v0, :cond_0
 
     return-void
 
-    :cond_check_alt
+    :cond_0
     const/16 v0, -0xb
 
-    if-ne p1, v0, :cond_normal
+    if-ne p1, v0, :cond_1
 
     return-void
 
-    :cond_normal
+    :cond_1
     invoke-super {p0, p1, p2, p3}, Lcom/android/inputmethod/latin/h1;->onPressKey(IIZ)V
 
     return-void
@@ -348,18 +348,18 @@
 
     const/4 v0, -0x3
 
-    if-ne p1, v0, :cond_check_alt
+    if-ne p1, v0, :cond_0
 
     return-void
 
-    :cond_check_alt
+    :cond_0
     const/16 v0, -0xb
 
-    if-ne p1, v0, :cond_normal
+    if-ne p1, v0, :cond_1
 
     return-void
 
-    :cond_normal
+    :cond_1
     invoke-super {p0, p1, p2}, Lcom/android/inputmethod/latin/h1;->onReleaseKey(IZ)V
 
     return-void

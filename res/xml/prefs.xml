@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen android:key="english_ime_settings"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <ridmik.keyboard.helper.CustomPreference android:title="@string/pref_backup_settings_title" android:key="custom_backup_settings_pref" android:summary="@string/pref_backup_settings_summary" />
+    <com.arif.keyboard.helper.CustomPreference android:title="@string/pref_backup_settings_title" android:key="custom_backup_settings_pref" android:summary="@string/pref_backup_settings_summary" />
     <PreferenceScreen android:layout="@layout/divider_layout" />
     <PreferenceScreen android:title="@string/settings_screen_preferences" android:key="screen_preferences" android:fragment="com.android.inputmethod.latin.settings.PreferencesSettingsFragment" app:iconSpaceReserved="false" />
     <PreferenceScreen android:layout="@layout/divider_layout" />
@@ -10,7 +10,7 @@
     <PreferenceScreen android:title="@string/settings_screen_correction" android:key="screen_correction" android:fragment="com.android.inputmethod.latin.settings.CorrectionSettingsFragment" app:iconSpaceReserved="false" />
     <PreferenceScreen android:layout="@layout/divider_layout" />
     <PreferenceScreen android:title="@string/pref_more_languages_title" android:key="extra_languages" android:summary="@string/pref_more_languages_summary" app:iconSpaceReserved="false">
-        <intent android:action="ridmik.keyboard.InstallLanguageActivity" />
+        <intent android:action="com.arif.keyboard.InstallLanguageActivity" />
     </PreferenceScreen>
     <PreferenceScreen android:layout="@layout/divider_layout" />
     <PreferenceScreen android:title="@string/settings_screen_advanced" android:key="screen_advanced" android:fragment="com.android.inputmethod.latin.settings.AdvancedSettingsFragment" app:iconSpaceReserved="false" />
@@ -18,12 +18,12 @@
     <PreferenceScreen android:title="@string/pref_gif_quality_title" android:key="screen_gif_quality" android:fragment="com.android.inputmethod.latin.settings.GifQualitySettingsFragment" app:iconSpaceReserved="false" />
     <PreferenceScreen android:layout="@layout/divider_layout" />
     <PreferenceScreen android:title="@string/pref_release_notes_title" android:key="change_log" app:iconSpaceReserved="false">
-        <intent android:action="ridmik.keyboard.AppChangeLogActivity" />
+        <intent android:action="com.arif.keyboard.AppChangeLogActivity" />
     </PreferenceScreen>
     <PreferenceScreen android:layout="@layout/divider_layout" />
     <PreferenceScreen android:title="@string/pref_app_language_title" android:key="app_language" android:summary="@string/pref_app_language_summary" app:iconSpaceReserved="false" />
     <PreferenceScreen android:layout="@layout/divider_layout" />
     <PreferenceScreen android:title="@string/pref_about_title" android:key="about" android:summary="@string/pref_about_summary" app:iconSpaceReserved="false">
-        <intent android:action="ridmik.keyboard.extra.AboutActivity" />
+        <intent android:action="com.arif.keyboard.extra.AboutActivity" />
     </PreferenceScreen>
 </PreferenceScreen>

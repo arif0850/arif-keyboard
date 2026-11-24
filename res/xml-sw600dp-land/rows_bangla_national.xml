@@ -19,7 +19,7 @@
             <case latin:isSplitLayout="true">
                 <include latin:keyWidth="7.0000052%p" latin:keyXPos="3.9999962%p" latin:keyboardLayout="@xml/rowkeys_bangla_national2_left5" />
                 <Spacer latin:keyWidth="21.000004%p" />
-                <Key latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/ridmik_font_size_ratio" latin:keySpec="ñ|্" latin:keyWidth="7.0000052%p" />
+                <Key latin:keyLabelFlags="fontArifAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/arif_font_size_ratio" latin:keySpec="ñ|্" latin:keyWidth="7.0000052%p" />
                 <include latin:keyWidth="7.0000052%p" latin:keyboardLayout="@xml/rowkeys_bangla_national2_right4" />
             </case>
             <default>

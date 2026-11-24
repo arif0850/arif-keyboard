@@ -17,29 +17,29 @@
             </switch>
             <Row>
                 <Spacer latin:keyWidth="20.000004%p" />
-                <Key latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/ridmik_font_size_ratio_for_num" latin:keySpec="¤|১" latin:keyStyle="numKeyStyle" latin:keyWidth="20.000004%p" />
-                <Key latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/ridmik_font_size_ratio_for_num" latin:keySpec="¥|২" latin:keyStyle="numKeyStyle" latin:keyWidth="20.000004%p" />
-                <Key latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/ridmik_font_size_ratio_for_num" latin:keySpec="¦|৩" latin:keyStyle="numKeyStyle" latin:keyWidth="20.000004%p" />
+                <Key latin:keyLabelFlags="fontArifAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/arif_font_size_ratio_for_num" latin:keySpec="¤|১" latin:keyStyle="numKeyStyle" latin:keyWidth="20.000004%p" />
+                <Key latin:keyLabelFlags="fontArifAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/arif_font_size_ratio_for_num" latin:keySpec="¥|২" latin:keyStyle="numKeyStyle" latin:keyWidth="20.000004%p" />
+                <Key latin:keyLabelFlags="fontArifAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/arif_font_size_ratio_for_num" latin:keySpec="¦|৩" latin:keyStyle="numKeyStyle" latin:keyWidth="20.000004%p" />
                 <Key latin:backgroundType="functional" latin:keyLabelFlags="followFunctionalTextColor" latin:keySpec="%" latin:keyStyle="numKeyStyle" latin:keyWidth="fillRight" />
             </Row>
             <Row>
                 <Spacer latin:keyWidth="20.000004%p" />
-                <Key latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/ridmik_font_size_ratio_for_num" latin:keySpec="§|৪" latin:keyStyle="numKeyStyle" latin:keyWidth="20.000004%p" />
-                <Key latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/ridmik_font_size_ratio_for_num" latin:keySpec="¨|৫" latin:keyStyle="numKeyStyle" latin:keyWidth="20.000004%p" />
-                <Key latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/ridmik_font_size_ratio_for_num" latin:keySpec="ª|৬" latin:keyStyle="numKeyStyle" latin:keyWidth="20.000004%p" />
-                <Key latin:backgroundType="functional" latin:keyActionFlags="noKeyPreview" latin:keyLabelFlags="followFunctionalTextColor" latin:keyLabelSize="@fraction/ridmik_font_size_ratio_num_switch" latin:keySpec="123|-16" latin:keyWidth="fillRight" />
+                <Key latin:keyLabelFlags="fontArifAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/arif_font_size_ratio_for_num" latin:keySpec="§|৪" latin:keyStyle="numKeyStyle" latin:keyWidth="20.000004%p" />
+                <Key latin:keyLabelFlags="fontArifAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/arif_font_size_ratio_for_num" latin:keySpec="¨|৫" latin:keyStyle="numKeyStyle" latin:keyWidth="20.000004%p" />
+                <Key latin:keyLabelFlags="fontArifAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/arif_font_size_ratio_for_num" latin:keySpec="ª|৬" latin:keyStyle="numKeyStyle" latin:keyWidth="20.000004%p" />
+                <Key latin:backgroundType="functional" latin:keyActionFlags="noKeyPreview" latin:keyLabelFlags="followFunctionalTextColor" latin:keyLabelSize="@fraction/arif_font_size_ratio_num_switch" latin:keySpec="123|-16" latin:keyWidth="fillRight" />
             </Row>
             <Row>
                 <Spacer latin:keyWidth="20.000004%p" />
-                <Key latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/ridmik_font_size_ratio_for_num" latin:keySpec="«|৭" latin:keyStyle="numKeyStyle" latin:keyWidth="20.000004%p" />
-                <Key latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/ridmik_font_size_ratio_for_num" latin:keySpec="¬|৮" latin:keyStyle="numKeyStyle" latin:keyWidth="20.000004%p" />
-                <Key latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/ridmik_font_size_ratio_for_num" latin:keySpec="¯|৯" latin:keyStyle="numKeyStyle" latin:keyWidth="20.000004%p" />
+                <Key latin:keyLabelFlags="fontArifAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/arif_font_size_ratio_for_num" latin:keySpec="«|৭" latin:keyStyle="numKeyStyle" latin:keyWidth="20.000004%p" />
+                <Key latin:keyLabelFlags="fontArifAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/arif_font_size_ratio_for_num" latin:keySpec="¬|৮" latin:keyStyle="numKeyStyle" latin:keyWidth="20.000004%p" />
+                <Key latin:keyLabelFlags="fontArifAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/arif_font_size_ratio_for_num" latin:keySpec="¯|৯" latin:keyStyle="numKeyStyle" latin:keyWidth="20.000004%p" />
                 <Key latin:backgroundType="functional" latin:keyLabelFlags="followFunctionalTextColor" latin:keyStyle="deleteKeyStyle" latin:keyWidth="fillRight" />
             </Row>
             <Row>
                 <Spacer latin:keyWidth="20.000004%p" />
                 <Key latin:backgroundType="functional" latin:keyLabelFlags="followFunctionalTextColor" latin:keySpec="." latin:keyStyle="numKeyStyle" latin:keyWidth="20.000004%p" />
-                <Key latin:keyLabelFlags="fontRidmikAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/ridmik_font_size_ratio_for_num" latin:keySpec="¡|০" latin:keyStyle="numKeyStyle" latin:keyWidth="20.000004%p" />
+                <Key latin:keyLabelFlags="fontArifAscii|followKeyLabelRatio" latin:keyLabelSize="@fraction/arif_font_size_ratio_for_num" latin:keySpec="¡|০" latin:keyStyle="numKeyStyle" latin:keyWidth="20.000004%p" />
                 <Key latin:keyStyle="numSpaceKeyStyle" latin:keyWidth="20.000004%p" />
                 <Key latin:backgroundType="functional" latin:keyLabelFlags="followFunctionalTextColor" latin:keyStyle="enterKeyStyle" latin:keyWidth="fillRight" />
             </Row>
@@ -69,7 +69,7 @@
                 <Key latin:keySpec="٤" latin:keyStyle="numKeyStyle" latin:keyWidth="20.000004%p" />
                 <Key latin:keySpec="٥" latin:keyStyle="numKeyStyle" latin:keyWidth="20.000004%p" />
                 <Key latin:keySpec="٦" latin:keyStyle="numKeyStyle" latin:keyWidth="20.000004%p" />
-                <Key latin:backgroundType="functional" latin:keyLabelFlags="followFunctionalTextColor" latin:keyLabelSize="@fraction/ridmik_font_size_ratio_num_switch" latin:keySpec="123|-16" latin:keyWidth="fillRight" />
+                <Key latin:backgroundType="functional" latin:keyLabelFlags="followFunctionalTextColor" latin:keyLabelSize="@fraction/arif_font_size_ratio_num_switch" latin:keySpec="123|-16" latin:keyWidth="fillRight" />
             </Row>
             <Row>
                 <Spacer latin:keyWidth="20.000004%p" />
@@ -111,7 +111,7 @@
                 <Key latin:keySpec="𑄺" latin:keyStyle="numKeyStyle" latin:keyWidth="20.000004%p" />
                 <Key latin:keySpec="𑄻" latin:keyStyle="numKeyStyle" latin:keyWidth="20.000004%p" />
                 <Key latin:keySpec="𑄼" latin:keyStyle="numKeyStyle" latin:keyWidth="20.000004%p" />
-                <Key latin:backgroundType="functional" latin:keyActionFlags="noKeyPreview" latin:keyLabelFlags="followFunctionalTextColor" latin:keyLabelSize="@fraction/ridmik_font_size_ratio_num_switch" latin:keySpec="123|-16" latin:keyWidth="fillRight" />
+                <Key latin:backgroundType="functional" latin:keyActionFlags="noKeyPreview" latin:keyLabelFlags="followFunctionalTextColor" latin:keyLabelSize="@fraction/arif_font_size_ratio_num_switch" latin:keySpec="123|-16" latin:keyWidth="fillRight" />
             </Row>
             <Row>
                 <Spacer latin:keyWidth="20.000004%p" />
@@ -155,13 +155,13 @@
                 <Key latin:keySpec="6" latin:keyStyle="numKeyStyle" latin:keyWidth="20.000004%p" />
                 <switch>
                     <case latin:currentLanguageType="arabic">
-                        <Key latin:backgroundType="functional" latin:keyActionFlags="noKeyPreview" latin:keyLabelFlags="followFunctionalTextColor" latin:keyLabelSize="@fraction/ridmik_font_size_ratio_num_switch" latin:keySpec="١٢٣|-16" latin:keyWidth="fillRight" />
+                        <Key latin:backgroundType="functional" latin:keyActionFlags="noKeyPreview" latin:keyLabelFlags="followFunctionalTextColor" latin:keyLabelSize="@fraction/arif_font_size_ratio_num_switch" latin:keySpec="١٢٣|-16" latin:keyWidth="fillRight" />
                     </case>
                     <case latin:currentLanguageType="chakma">
-                        <Key latin:backgroundType="functional" latin:keyActionFlags="noKeyPreview" latin:keyLabelFlags="followFunctionalTextColor" latin:keyLabelSize="@fraction/ridmik_font_size_ratio_num_switch" latin:keySpec="𑄷𑄸𑄹|-16" latin:keyWidth="fillRight" />
+                        <Key latin:backgroundType="functional" latin:keyActionFlags="noKeyPreview" latin:keyLabelFlags="followFunctionalTextColor" latin:keyLabelSize="@fraction/arif_font_size_ratio_num_switch" latin:keySpec="𑄷𑄸𑄹|-16" latin:keyWidth="fillRight" />
                     </case>
                     <default>
-                        <Key latin:backgroundType="functional" latin:keyActionFlags="noKeyPreview" latin:keyLabelFlags="followFunctionalTextColor" latin:keyLabelSize="@fraction/ridmik_font_size_ratio_num_switch" latin:keySpec="১২৩|-16" latin:keyWidth="fillRight" />
+                        <Key latin:backgroundType="functional" latin:keyActionFlags="noKeyPreview" latin:keyLabelFlags="followFunctionalTextColor" latin:keyLabelSize="@fraction/arif_font_size_ratio_num_switch" latin:keySpec="১২৩|-16" latin:keyWidth="fillRight" />
                     </default>
                 </switch>
             </Row>
