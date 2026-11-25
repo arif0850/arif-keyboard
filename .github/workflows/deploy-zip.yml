@@ -56,7 +56,7 @@ jobs:
 
           print(f"Downloading from {url}...")
           if "drive.google.com" in url:
-              gdown.download(url, output, quiet=False, fuzzy=True)
+              gdown.download(url, output, quiet=False)
           else:
               resp = requests.get(url, stream=True, timeout=120)
               resp.raise_for_status()
