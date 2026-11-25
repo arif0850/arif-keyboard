@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "themes": [
+    {
+      "id": "victory-day",
+      "themeId": 9001,
+      "name": "Victory Day (বিজয় দিবস)",
+      "eventTag": "16 December",
+      "baseThemeId": 16,
+      "backgroundType": "gradient",
+      "gradientStart": "#006A4E",
+      "gradientEnd": "#062F24",
+      "gradientAngle": 135,
+      "backgroundImage": "themes/victory-day/bg.png",
+      "backgroundImageLand": "themes/victory-day/bg.png",
+      "icon": "themes/victory-day/icon.png",
+      "keyBgColor": "#3B000000",
+      "keyTextColor": "#FFFFFFFF",
+      "keyHintColor": "#CCFFE082",
+      "functionalKeyBgColor": "#7AF42A41",
+      "functionalKeyTextColor": "#FFFFFFFF",
+      "suggestionBarBgColor": "#CC004B37",
+      "suggestionBarTextColor": "#FFFFFFFF",
+      "keySelectedBgColor": "#99F42A41",
+      "popUpBgColor": "#FF004F3A",
+      "popUpSelectedBgColor": "#FFF42A41",
+      "popUpTextColor": "#FFFFFFFF",
+      "themeBrightness": 95,
+      "keyBrightness": 200,
+      "functionalKeyBrightness": 220,
+      "suggestionBarBrightness": 90,
+      "withKeyBg": 1,
+      "fullImage": 1
+    }
+  ]
+}

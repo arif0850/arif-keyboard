@@ -6,10 +6,10 @@
             <include latin:keyboardLayout="@xml/key_comma" />
             <Key latin:keyStyle="spaceKeyStyle" latin:keyWidth="29.999996%p" />
             <include latin:keyboardLayout="@xml/key_period" />
-            <Key latin:keyLabelFlags="preserveCase|followFunctionalTextColor|hasPopupHint" latin:keySpec="Alt|!code/key_emoji" latin:keyStyle="emojiKeyStyle" />
+            <Key latin:keyLabelFlags="preserveCase|followFunctionalTextColor" latin:keySpec="Alt|!code/key_emoji" latin:keyStyle="emojiKeyStyle" />
         </case>
         <default>
-            <Key latin:keyLabelFlags="preserveCase|followFunctionalTextColor|hasPopupHint" latin:keySpec="Alt|!code/key_emoji" latin:keyStyle="emojiKeyStyle" />
+            <Key latin:keyLabelFlags="preserveCase|followFunctionalTextColor" latin:keySpec="Alt|!code/key_emoji" latin:keyStyle="emojiKeyStyle" />
             <include latin:keyboardLayout="@xml/key_comma" />
             <Key latin:keyStyle="spaceKeyStyle" latin:keyWidth="39.999996%p" />
             <include latin:keyboardLayout="@xml/key_period" />

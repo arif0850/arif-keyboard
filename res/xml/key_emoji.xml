@@ -5,7 +5,7 @@
             <Key latin:keyStyle="comKeyStyle" latin:keyWidth="fillRight" />
         </case>
         <default>
-            <Key latin:keyLabelFlags="preserveCase|followFunctionalTextColor|hasPopupHint" latin:keySpec="Alt|!code/key_emoji" latin:keyStyle="emojiKeyStyle" latin:keyWidth="fillRight" />
+            <Key latin:keyLabelFlags="preserveCase|followFunctionalTextColor" latin:keySpec="Alt|!code/key_emoji" latin:keyStyle="emojiKeyStyle" latin:keyWidth="fillRight" />
         </default>
     </switch>
 </merge>

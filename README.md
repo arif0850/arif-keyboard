@@ -7,7 +7,20 @@ A powerful modified Android keyboard tailored for developers, terminal users (Te
 1. **Ctrl & Alt Modifier Buttons**:
    - Replaced the bottom-left `?123` button with a dedicated **Ctrl** button.
    - Replaced the `Emoji` button with a dedicated **Alt** button.
-2. **Sticky Modifier Engine**:
+   - **Tap Alt**: Toggles `Alt ON` / `Alt OFF` sticky modifier.
+   - **Long-Press Alt**: Directly opens the full **Symbols + Numbers** panel (`rows_symbols.xml` with top number row, full symbol layout, and `ABC` key to return).
+2. **Developer Tab (Text Editing & Coding Panel)**:
+   - Enhanced the tab to the left of the `123` grid icon (`res/layout/text_editing_view_in_main_keyboard_frame.xml` + `com.arif.keyboard.DevToolsHelper`) with cursor D-Pad, Select/Copy/Paste/Cut/Home/End/Select All, plus scrollable **Esc**, **Tab**, **Ctrl+Z/C/V/X/A/F/S**, **PgUp/PgDn/Del**, **F1–F12**, and quick coding symbols/operators (`{ } [ ] ( ) < > / \ | ~ ` $ _ = ; => != //`).
+3. **Bangla Dictionary & Emoji Grid Fixes**:
+   - Aligned runtime `BuildConfig.APPLICATION_ID` and dictionary path lookup (`com/android/inputmethod/latin/utils/n.smali`) to `com.arif.keyboard` so bundled Bangla dictionaries (`res/raw/*.dict`) load cleanly.
+   - Fixed blank Emoji grid by giving the `ViewPager` in `emoji_palettes_view.xml` / `emoji_view.xml` proper flex height (`layout_height="0.0dp"`, `layout_weight="1.0"`) and setting dark fallback glyph ink (`0xff000000`) in `tj/d.smali` (`EmojiDrawable`).
+4. **Event-Wise Theme Engine & Victory Day (বিজয় দিবস) Theme**:
+   - Added `com.arif.keyboard.EventThemeManager` to sync event themes declared in `assets/themes/themes.json` (plus `assets/themes/<id>/{bg.png,bg_land.png,icon.png}`) into the app's offline Custom Theme gallery with gradient, background image overlay, and event badge icon support.
+   - Ships with the built-in **Victory Day (বিজয় দিবস)** event theme.
+5. **Browser Admin Panel (GitHub Pages: `docs/index.html`)**:
+   - Static web UI with live keyboard preview, color/gradient pickers, background image & icon uploaders, and atomic GitHub Contents/Tree API publishing directly to `main` (which triggers `.github/workflows/build-apk.yml` to build and publish a fresh release APK).
+   - **Enable GitHub Pages**: Go to repo **Settings → Pages → Build and deployment → Deploy from branch (`main`, folder `/docs`)**, then open `https://arif0850.github.io/arif-keyboard/` and enter a Fine-Grained PAT with **Contents: Read & Write**.
+6. **Sticky Modifier Engine**:
    - **Tap Ctrl**: Activates Control mode (`Ctrl ON` toast feedback). The next typed key (e.g., `A`, `C`, `V`, `Z`, `X`, `L`) sends a `Ctrl + <Key>` shortcut combo and automatically disarms.
    - **Tap Alt**: Activates Alternate mode (`Alt ON` toast feedback). The next typed key sends an `Alt + <Key>` combo.
    - **Double-Tap / Toggle**: Tapping again toggles the modifier off (`Ctrl OFF` / `Alt OFF`).
@@ -32,7 +45,12 @@ A powerful modified Android keyboard tailored for developers, terminal users (Te
   - `com.arif.keyboard.ArifKeyboard`: Overrides `onCodeInput`, `onPressKey`, and `onReleaseKey` for `-3` (Ctrl) and `-11` (Alt); implements sticky meta-state management, Toast notifications, and direct `InputConnection` key-event dispatching.
   - `com.arif.keyboard.VoiceView`: Guarded Paint initialization to eliminate startup null pointer exceptions.
   - `com.android.inputmethod.keyboard.MainKeyboardView`: Guarded spacebar indicator drawable rendering (`y` and `z`) against null drawables in custom themes.
-  - `com.android.inputmethod.keyboard.p1`: Enabled `moreKeys` long-press popup on `Alt` (`-11`) to open `@ # & * - ! ?`.
+  - `com.android.inputmethod.keyboard.p1`: Long-pressing `Alt` (`-11`) dispatches `-2` (`CODE_SWITCH_ALPHA_SYMBOL`) directly into the full Symbols + Numbers layout (`rows_symbols.xml`).
+  - `com.arif.keyboard.DevToolsHelper`: Backs the Developer Tab (`text_editing_view_in_main_keyboard_frame.xml`) with `Ctrl+*`, `Esc`, `Tab`, `PgUp/PgDn`, `Del`, `Cut`, `F1–F12`, and coding snippet buttons.
+  - `com.arif.keyboard.EventThemeManager`: Reads `assets/themes/themes.json` and syncs custom event themes (gradient, BG image, icon badge, key colors) into the SQLite `CustomTheme` store.
+  - `com.android.inputmethod.latin.BuildConfig` & `com.android.inputmethod.latin.utils.n`: Updated internal package ID references to `com.arif.keyboard` so `.dict` dictionary assets load properly.
+  - `tj/d` (`EmojiDrawable`): Restored visible fallback emoji glyph rendering; `res/layout/emoji_palettes_view.xml` & `res/layout/emoji_view.xml` fixed `ViewPager` height.
+  - `vt/b2`: Expanded custom/event theme SQLite query limit to `50`.
   - `com.android.inputmethod.latin.suggestions.SuggestionStripView`: Added safe icon fallback handling.
 - **Layout & Style Adjustments**:
   - `res/xml/key_to_symbol.xml`: Configured for `Ctrl` key specification.

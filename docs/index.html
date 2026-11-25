@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arif Keyboard — Event Theme Studio</title>
+  <style>
+    :root {
+      --bg: #0b1116;
+      --surface: #131c24;
+      --surface2: #19242f;
+      --border: #263545;
+      --text: #e6edf3;
+      --muted: #8b9bb0;
+      --accent: #00b87c;
+      --accent2: #f42a41;
+      --radius: 12px;
+      --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.45;
+    }
+    header {
+      background: linear-gradient(120deg, #09271e, #121b26 60%, #2a0d16);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    header h1 { margin: 0; font-size: 1.25rem; display: flex; align-items: center; gap: 10px; }
+    .badge {
+      font-size: 0.72rem;
+      padding: 3px 8px;
+      border-radius: 999px;
+      background: rgba(0, 184, 124, 0.18);
+      color: #4ce8b0;
+      border: 1px solid rgba(0, 184, 124, 0.35);
+      font-weight: 600;
+    }
+    .header-links { display: flex; gap: 8px; flex-wrap: wrap; }
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 18px;
+      display: grid;
+      grid-template-columns: 310px 1fr;
+      gap: 18px;
+    }
+    @media (max-width: 900px) {
+      .container { grid-template-columns: 1fr; }
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px;
+      margin-bottom: 16px;
+    }
+    .card h2 {
+      margin: 0 0 12px;
+      font-size: 0.98rem;
+      color: #c8d6e5;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    label {
+      display: block;
+      font-size: 0.78rem;
+      color: var(--muted);
+      margin-bottom: 4px;
+      font-weight: 600;
+    }
+    input[type="text"], input[type="password"], input[type="number"], select, textarea {
+      width: 100%;
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      color: var(--text);
+      border-radius: 8px;
+      padding: 8px 10px;
+      font-size: 0.86rem;
+      outline: none;
+    }
+    input:focus, select:focus, textarea:focus { border-color: var(--accent); }
+    .row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 10px; }
+    .row-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 10px; }
+    @media (max-width: 600px) {
+      .row, .row-3 { grid-template-columns: 1fr; }
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      border: 1px solid var(--border);
+      background: var(--surface2);
+      color: var(--text);
+      padding: 8px 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 0.84rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.15s, border-color 0.15s;
+    }
+    .btn:hover { background: #22303e; border-color: #3a5068; }
+    .btn-primary {
+      background: linear-gradient(135deg, #008b5e, #00b87c);
+      border-color: #00d48f;
+      color: #041d14;
+    }
+    .btn-primary:hover { filter: brightness(1.08); }
+    .btn-danger {
+      background: rgba(244, 42, 65, 0.14);
+      border-color: rgba(244, 42, 65, 0.45);
+      color: #ff808e;
+    }
+    .btn-sm { padding: 5px 9px; font-size: 0.78rem; }
+    .theme-item {
+      padding: 10px 12px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      margin-bottom: 8px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      background: var(--surface2);
+    }
+    .theme-item.active { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
+    .swatch {
+      width: 34px; height: 34px; border-radius: 8px; flex-shrink: 0;
+      border: 1px solid rgba(255,255,255,0.2);
+      display: flex; align-items: center; justify-content: center;
+      overflow: hidden;
+    }
+    .swatch img { width: 22px; height: 22px; object-fit: contain; }
+    .color-field {
+      display: flex; gap: 6px; align-items: center;
+    }
+    .color-field input[type="color"] {
+      width: 38px; height: 34px; border: 1px solid var(--border); border-radius: 8px;
+      background: transparent; padding: 2px; cursor: pointer; flex-shrink: 0;
+    }
+    .preview-stage {
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      position: relative;
+      background-size: cover;
+      background-position: center;
+      padding: 8px 6px 10px;
+      user-select: none;
+    }
+    .preview-overlay {
+      position: absolute; inset: 0; pointer-events: none;
+    }
+    .preview-content { position: relative; z-index: 2; }
+    .kb-suggestions {
+      display: flex; justify-content: space-around; align-items: center;
+      border-radius: 8px; padding: 6px 8px; margin-bottom: 8px; font-size: 0.85rem; font-weight: 600;
+    }
+    .kb-row { display: flex; gap: 5px; justify-content: center; margin-bottom: 6px; }
+    .kb-key {
+      flex: 1; min-width: 28px; height: 40px; border-radius: 6px;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      position: relative; font-size: 0.92rem; font-weight: 500;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.35);
+    }
+    .kb-key .hint {
+      position: absolute; top: 2px; right: 4px; font-size: 0.62rem; line-height: 1;
+    }
+    .kb-key.fn { flex: 1.35; font-size: 0.78rem; font-weight: 700; }
+    .kb-key.space { flex: 3.6; font-size: 0.76rem; }
+    .preview-badge {
+      position: absolute; right: 12px; bottom: 54px; z-index: 3;
+      width: 44px; height: 44px; object-fit: contain;
+      filter: drop-shadow(0 2px 6px rgba(0,0,0,0.5));
+      pointer-events: none;
+    }
+    .popup-demo {
+      display: inline-flex; gap: 6px; padding: 6px 10px; border-radius: 8px;
+      margin-top: 8px; font-size: 0.84rem; font-weight: 600;
+      border: 1px solid rgba(255,255,255,0.15);
+    }
+    .popup-demo span { padding: 3px 8px; border-radius: 5px; }
+    .preset-bar { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
+    .status-log {
+      font-family: var(--mono);
+      font-size: 0.78rem;
+      background: #080c10;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 10px;
+      max-height: 180px;
+      overflow-y: auto;
+      white-space: pre-wrap;
+      color: #a9c7df;
+    }
+    .upload-box {
+      border: 1px dashed #3b536b;
+      border-radius: 10px;
+      padding: 10px;
+      text-align: center;
+      background: rgba(255,255,255,0.02);
+    }
+    .upload-box img { max-height: 64px; margin-top: 6px; border-radius: 6px; max-width: 100%; }
+    .muted { color: var(--muted); font-size: 0.8rem; }
+    .tabs { display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; }
+  </style>
+</head>
+<body>
+<header>
+  <div>
+    <h1>
+      <span>⌨️ Arif Keyboard — Event Theme Studio</span>
+      <span class="badge">GitHub Pages Admin</span>
+    </h1>
+    <div class="muted">Manage event themes, gradients, background images &amp; icons. Commits to <code>main</code> automatically build a new APK via GitHub Actions.</div>
+  </div>
+  <div class="header-links">
+    <a class="btn btn-sm" id="actionsLink" href="https://github.com/arif0850/arif-keyboard/actions" target="_blank" rel="noopener">⚙️ Actions Builds</a>
+    <a class="btn btn-sm" id="releasesLink" href="https://github.com/arif0850/arif-keyboard/releases/tag/latest" target="_blank" rel="noopener">📦 Latest APK Release</a>
+  </div>
+</header>
+
+<div class="container">
+  <!-- LEFT COLUMN -->
+  <div>
+    <div class="card">
+      <h2>🔗 GitHub Connection</h2>
+      <div class="row">
+        <div>
+          <label>Owner</label>
+          <input type="text" id="ghOwner" value="arif0850" />
+        </div>
+        <div>
+          <label>Repository</label>
+          <input type="text" id="ghRepo" value="arif-keyboard" />
+        </div>
+      </div>
+      <div class="row">
+        <div>
+          <label>Branch</label>
+          <input type="text" id="ghBranch" value="main" />
+        </div>
+        <div>
+          <label>Schema Version</label>
+          <input type="number" id="schemaVersion" value="1" min="1" />
+        </div>
+      </div>
+      <div style="margin-bottom: 10px;">
+        <label>GitHub Token (Fine-Grained PAT: Contents Read &amp; Write)</label>
+        <input type="password" id="ghToken" placeholder="github_pat_..." />
+      </div>
+      <div style="display:flex; gap:8px; flex-wrap:wrap;">
+        <button class="btn btn-sm" onclick="saveSettings()">💾 Save Settings</button>
+        <button class="btn btn-sm" onclick="loadFromGitHub()">⬇️ Fetch from GitHub</button>
+      </div>
+      <p class="muted" style="margin:8px 0 0;">Token is stored only in your browser's <code>localStorage</code> and never committed.</p>
+    </div>
+
+    <div class="card">
+      <h2>
+        <span>🎨 Event Themes (<span id="themeCount">0</span>)</span>
+        <button class="btn btn-sm btn-primary" onclick="addTheme()">+ New</button>
+      </h2>
+      <div class="preset-bar">
+        <button class="btn btn-sm" onclick="addPreset('victory-day')">🇧🇩 16 Dec</button>
+        <button class="btn btn-sm" onclick="addPreset('ekushey')">🕊️ 21 Feb</button>
+        <button class="btn btn-sm" onclick="addPreset('boishakh')">🪅 Boishakh</button>
+        <button class="btn btn-sm" onclick="addPreset('eid')">🌙 Eid</button>
+      </div>
+      <div id="themeList"></div>
+      <div style="display:flex; gap:8px; flex-wrap:wrap; margin-top:10px;">
+        <button class="btn btn-sm" onclick="downloadJson()">⬇️ Export themes.json</button>
+        <label class="btn btn-sm" style="margin:0; cursor:pointer;">
+          📂 Import JSON
+          <input type="file" accept=".json" style="display:none" onchange="importJson(event)" />
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <!-- RIGHT COLUMN -->
+  <div>
+    <!-- LIVE PREVIEW -->
+    <div class="card">
+      <h2>
+        <span>👁️ Live Theme Preview</span>
+        <span class="muted" id="previewMeta"></span>
+      </h2>
+      <div class="preview-stage" id="previewStage">
+        <div class="preview-overlay" id="previewOverlay"></div>
+        <img class="preview-badge" id="previewIconBadge" alt="" style="display:none;" />
+        <div class="preview-content">
+          <div class="kb-suggestions" id="previewSugBar">
+            <span>আমার</span>
+            <span>বাংলাদেশ</span>
+            <span>স্বাধীনতা</span>
+          </div>
+          <div class="kb-row" id="row1"></div>
+          <div class="kb-row" id="row2"></div>
+          <div class="kb-row" id="row3"></div>
+          <div class="kb-row" id="row4"></div>
+        </div>
+      </div>
+      <div style="display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:10px; margin-top:10px;">
+        <div class="popup-demo" id="previewPopup">
+          <span id="pop1">@</span>
+          <span id="pop2">#</span>
+          <span id="pop3">&amp;</span>
+        </div>
+        <div style="display:flex; gap:8px; align-items:center;">
+          <button class="btn btn-primary" onclick="publishToGitHub()">🚀 Commit to GitHub &amp; Build APK</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- THEME EDITOR -->
+    <div class="card" id="editorCard">
+      <h2>
+        <span>🛠️ Edit Selected Theme</span>
+        <button class="btn btn-sm btn-danger" onclick="deleteCurrentTheme()">🗑️ Delete Theme</button>
+      </h2>
+
+      <div class="row-3">
+        <div>
+          <label>Theme Slug ID (folder name)</label>
+          <input type="text" id="f_id" oninput="updateField('id', this.value)" />
+        </div>
+        <div>
+          <label>Display Name</label>
+          <input type="text" id="f_name" oninput="updateField('name', this.value)" />
+        </div>
+        <div>
+          <label>Event Tag</label>
+          <input type="text" id="f_eventTag" oninput="updateField('eventTag', this.value)" />
+        </div>
+      </div>
+
+      <div class="row-3">
+        <div>
+          <label>Unique Theme ID (&gt;= 9001)</label>
+          <input type="number" id="f_themeId" min="9001" oninput="updateField('themeId', parseInt(this.value || 9001))" />
+        </div>
+        <div>
+          <label>Base Layout Theme ID</label>
+          <input type="number" id="f_baseThemeId" value="16" oninput="updateField('baseThemeId', parseInt(this.value || 16))" />
+        </div>
+        <div>
+          <label>Background Mode</label>
+          <select id="f_backgroundType" onchange="updateField('backgroundType', this.value)">
+            <option value="gradient">Gradient (+ Optional BG Overlay)</option>
+            <option value="image">Image Only (+ Gradient Fallback)</option>
+            <option value="solid">Solid Color (Gradient Start)</option>
+          </select>
+        </div>
+      </div>
+
+      <h2 style="margin-top:12px;">🌈 Gradient &amp; Artwork Upload</h2>
+      <div class="row-3">
+        <div>
+          <label>Gradient Start</label>
+          <div class="color-field">
+            <input type="color" id="c_gradientStart" oninput="syncHex('gradientStart', this.value)" />
+            <input type="text" id="f_gradientStart" oninput="syncPicker('gradientStart', this.value)" />
+          </div>
+        </div>
+        <div>
+          <label>Gradient End</label>
+          <div class="color-field">
+            <input type="color" id="c_gradientEnd" oninput="syncHex('gradientEnd', this.value)" />
+            <input type="text" id="f_gradientEnd" oninput="syncPicker('gradientEnd', this.value)" />
+          </div>
+        </div>
+        <div>
+          <label>Gradient Angle (deg)</label>
+          <input type="number" id="f_gradientAngle" min="0" max="360" oninput="updateField('gradientAngle', parseInt(this.value || 0))" />
+        </div>
+      </div>
+
+      <div class="row-3">
+        <div class="upload-box">
+          <label>Background Image (PNG/JPG)</label>
+          <input type="text" id="f_backgroundImage" placeholder="themes/victory-day/bg.png" oninput="updateField('backgroundImage', this.value)" style="margin-bottom:6px;" />
+          <input type="file" accept="image/*" onchange="handleAssetUpload(event, 'bg')" />
+          <div id="up_bg_status" class="muted"></div>
+          <img id="up_bg_img" alt="" style="display:none;" />
+        </div>
+        <div class="upload-box">
+          <label>Landscape BG (optional)</label>
+          <input type="text" id="f_backgroundImageLand" placeholder="themes/victory-day/bg.png" oninput="updateField('backgroundImageLand', this.value)" style="margin-bottom:6px;" />
+          <input type="file" accept="image/*" onchange="handleAssetUpload(event, 'bgLand')" />
+          <div id="up_bgLand_status" class="muted"></div>
+          <img id="up_bgLand_img" alt="" style="display:none;" />
+        </div>
+        <div class="upload-box">
+          <label>Event Icon Badge (PNG)</label>
+          <input type="text" id="f_icon" placeholder="themes/victory-day/icon.png" oninput="updateField('icon', this.value)" style="margin-bottom:6px;" />
+          <input type="file" accept="image/*" onchange="handleAssetUpload(event, 'icon')" />
+          <div id="up_icon_status" class="muted"></div>
+          <img id="up_icon_img" alt="" style="display:none;" />
+        </div>
+      </div>
+
+      <h2 style="margin-top:12px;">🎛️ Key, Suggestion &amp; Popup Colors (ARGB Hex supported, e.g. #7AF42A41)</h2>
+      <div class="row-3" id="colorGrid"></div>
+
+      <div class="row-3" style="margin-top:10px;">
+        <div>
+          <label>Theme Brightness (0-255)</label>
+          <input type="number" id="f_themeBrightness" min="0" max="255" oninput="updateField('themeBrightness', parseInt(this.value || 95))" />
+        </div>
+        <div>
+          <label>Key Brightness (0-255)</label>
+          <input type="number" id="f_keyBrightness" min="0" max="255" oninput="updateField('keyBrightness', parseInt(this.value || 200))" />
+        </div>
+        <div>
+          <label>Functional Key Brightness (0-255)</label>
+          <input type="number" id="f_functionalKeyBrightness" min="0" max="255" oninput="updateField('functionalKeyBrightness', parseInt(this.value || 220))" />
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>📜 Sync &amp; Deploy Log</h2>
+      <div class="status-log" id="statusLog">Ready. Configure your GitHub PAT or test offline previews.</div>
+    </div>
+  </div>
+</div>
+
+<script>
+const DEFAULT_THEMES = {
+  version: 1,
+  themes: [
+    {
+      id: "victory-day",
+      themeId: 9001,
+      name: "Victory Day (বিজয় দিবস)",
+      eventTag: "16 December",
+      baseThemeId: 16,
+      backgroundType: "gradient",
+      gradientStart: "#006A4E",
+      gradientEnd: "#062F24",
+      gradientAngle: 135,
+      backgroundImage: "themes/victory-day/bg.png",
+      backgroundImageLand: "themes/victory-day/bg.png",
+      icon: "themes/victory-day/icon.png",
+      keyBgColor: "#3B000000",
+      keyTextColor: "#FFFFFFFF",
+      keyHintColor: "#CCFFE082",
+      functionalKeyBgColor: "#7AF42A41",
+      functionalKeyTextColor: "#FFFFFFFF",
+      suggestionBarBgColor: "#CC004B37",
+      suggestionBarTextColor: "#FFFFFFFF",
+      keySelectedBgColor: "#99F42A41",
+      popUpBgColor: "#FF004F3A",
+      popUpSelectedBgColor: "#FFF42A41",
+      popUpTextColor: "#FFFFFFFF",
+      themeBrightness: 95,
+      keyBrightness: 200,
+      functionalKeyBrightness: 220,
+      suggestionBarBrightness: 90,
+      withKeyBg: 1,
+      fullImage: 1
+    }
+  ]
+};
+
+const PRESETS = {
+  "victory-day": DEFAULT_THEMES.themes[0],
+  "ekushey": {
+    id: "ekushey-feb",
+    name: "Ekushey February (একুশে)",
+    eventTag: "21 February",
+    gradientStart: "#181818",
+    gradientEnd: "#3E0A12",
+    gradientAngle: 135,
+    keyBgColor: "#40000000",
+    keyTextColor: "#FFFFFFFF",
+    keyHintColor: "#CCFFCDD2",
+    functionalKeyBgColor: "#80C62828",
+    functionalKeyTextColor: "#FFFFFFFF",
+    suggestionBarBgColor: "#D91B1B1B",
+    suggestionBarTextColor: "#FFFFFFFF",
+    keySelectedBgColor: "#99E53935",
+    popUpBgColor: "#FF262626",
+    popUpSelectedBgColor: "#FFD32F2F",
+    popUpTextColor: "#FFFFFFFF"
+  },
+  "boishakh": {
+    id: "pohela-boishakh",
+    name: "Pohela Boishakh (বৈশাখ)",
+    eventTag: "14 April",
+    gradientStart: "#B71C1C",
+    gradientEnd: "#4A0909",
+    gradientAngle: 120,
+    keyBgColor: "#45FFF8E1",
+    keyTextColor: "#FFFFFFFF",
+    keyHintColor: "#CCFFE082",
+    functionalKeyBgColor: "#99FFB300",
+    functionalKeyTextColor: "#FF2A0808",
+    suggestionBarBgColor: "#CC8E0E0E",
+    suggestionBarTextColor: "#FFFFF8E1",
+    keySelectedBgColor: "#99FF8F00",
+    popUpBgColor: "#FF8E0E0E",
+    popUpSelectedBgColor: "#FFFFB300",
+    popUpTextColor: "#FFFFFFFF"
+  },
+  "eid": {
+    id: "eid-mubarak",
+    name: "Eid Mubarak (ঈদ মোবারক)",
+    eventTag: "Eid Festival",
+    gradientStart: "#0B2447",
+    gradientEnd: "#19376D",
+    gradientAngle: 145,
+    keyBgColor: "#3D0A1931",
+    keyTextColor: "#FFFFFFFF",
+    keyHintColor: "#CCFFD54F",
+    functionalKeyBgColor: "#80D4AF37",
+    functionalKeyTextColor: "#FF091B33",
+    suggestionBarBgColor: "#CC0B2242",
+    suggestionBarTextColor: "#FFFFECB3",
+    keySelectedBgColor: "#99D4AF37",
+    popUpBgColor: "#FF132D57",
+    popUpSelectedBgColor: "#FFD4AF37",
+    popUpTextColor: "#FFFFFFFF"
+  }
+};
+
+const COLOR_FIELDS = [
+  ["keyBgColor", "Key BG"],
+  ["keyTextColor", "Key Text"],
+  ["keyHintColor", "Key Hint"],
+  ["functionalKeyBgColor", "Functional Key BG"],
+  ["functionalKeyTextColor", "Functional Text"],
+  ["suggestionBarBgColor", "Suggestion Bar BG"],
+  ["suggestionBarTextColor", "Suggestion Text"],
+  ["keySelectedBgColor", "Key Pressed BG"],
+  ["popUpBgColor", "Popup BG"],
+  ["popUpSelectedBgColor", "Popup Highlight"],
+  ["popUpTextColor", "Popup Text"]
+];
+
+let state = structuredClone(DEFAULT_THEMES);
+let selectedIndex = 0;
+// Maps repo-relative asset path ("assets/themes/...") -> { base64, dataUrl }
+let pendingUploads = {};
+
+function log(msg) {
+  const el = document.getElementById("statusLog");
+  const ts = new Date().toLocaleTimeString();
+  el.textContent += `\n[${ts}] ${msg}`;
+  el.scrollTop = el.scrollHeight;
+}
+
+function androidHexToCss(hex, fallback = "rgba(0,0,0,0.4)") {
+  if (!hex || typeof hex !== "string") return fallback;
+  const h = hex.trim().replace(/^#/, "");
+  if (h.length === 6) return `#${h}`;
+  if (h.length === 8) {
+    const a = parseInt(h.slice(0, 2), 16) / 255;
+    const r = parseInt(h.slice(2, 4), 16);
+    const g = parseInt(h.slice(4, 6), 16);
+    const b = parseInt(h.slice(6, 8), 16);
+    return `rgba(${r}, ${g}, ${b}, ${a.toFixed(2)})`;
+  }
+  return fallback;
+}
+
+function to6DigitHex(hex) {
+  if (!hex) return "#000000";
+  const h = hex.trim().replace(/^#/, "");
+  if (h.length === 6) return `#${h}`;
+  if (h.length === 8) return `#${h.slice(2)}`;
+  return "#000000";
+}
+
+function preserveAlphaHex(oldArgb, new6Hex) {
+  const old = (oldArgb || "#FF000000").replace(/^#/, "");
+  const rgb = new6Hex.replace(/^#/, "").toUpperCase();
+  if (old.length === 8) return `#${old.slice(0, 2).toUpperCase()}${rgb}`;
+  return `#${rgb}`;
+}
+
+function saveSettings() {
+  localStorage.setItem("ak_owner", document.getElementById("ghOwner").value.trim());
+  localStorage.setItem("ak_repo", document.getElementById("ghRepo").value.trim());
+  localStorage.setItem("ak_branch", document.getElementById("ghBranch").value.trim());
+  localStorage.setItem("ak_token", document.getElementById("ghToken").value.trim());
+  updateHeaderLinks();
+  log("Saved repository settings and token locally.");
+}
+
+function loadSettings() {
+  if (localStorage.getItem("ak_owner")) document.getElementById("ghOwner").value = localStorage.getItem("ak_owner");
+  if (localStorage.getItem("ak_repo")) document.getElementById("ghRepo").value = localStorage.getItem("ak_repo");
+  if (localStorage.getItem("ak_branch")) document.getElementById("ghBranch").value = localStorage.getItem("ak_branch");
+  if (localStorage.getItem("ak_token")) document.getElementById("ghToken").value = localStorage.getItem("ak_token");
+  updateHeaderLinks();
+}
+
+function updateHeaderLinks() {
+  const owner = document.getElementById("ghOwner").value.trim() || "arif0850";
+  const repo = document.getElementById("ghRepo").value.trim() || "arif-keyboard";
+  document.getElementById("actionsLink").href = `https://github.com/${owner}/${repo}/actions`;
+  document.getElementById("releasesLink").href = `https://github.com/${owner}/${repo}/releases/tag/latest`;
+}
+
+function resolveAssetUrl(relPath) {
+  if (!relPath) return "";
+  const fullRepoPath = relPath.startsWith("assets/") ? relPath : `assets/${relPath}`;
+  if (pendingUploads[fullRepoPath]) return pendingUploads[fullRepoPath].dataUrl;
+  const owner = document.getElementById("ghOwner").value.trim() || "arif0850";
+  const repo = document.getElementById("ghRepo").value.trim() || "arif-keyboard";
+  const branch = document.getElementById("ghBranch").value.trim() || "main";
+  return `https://raw.githubusercontent.com/${owner}/${repo}/${branch}/${fullRepoPath}?t=${Date.now()}`;
+}
+
+async function loadFromGitHub() {
+  const owner = document.getElementById("ghOwner").value.trim();
+  const repo = document.getElementById("ghRepo").value.trim();
+  const branch = document.getElementById("ghBranch").value.trim();
+  const token = document.getElementById("ghToken").value.trim();
+  const headers = { "Accept": "application/vnd.github+json" };
+  if (token) headers["Authorization"] = `Bearer ${token}`;
+
+  try {
+    log(`Fetching assets/themes/themes.json from ${owner}/${repo}@${branch}...`);
+    const res = await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/assets/themes/themes.json?ref=${encodeURIComponent(branch)}`, { headers });
+    if (!res.ok) throw new Error(`HTTP ${res.status}: ${await res.text()}`);
+    const data = await res.json();
+    const decoded = decodeURIComponent(escape(atob(data.content.replace(/\n/g, ""))));
+    state = JSON.parse(decoded);
+    if (!Array.isArray(state.themes)) state.themes = [];
+    document.getElementById("schemaVersion").value = state.version || 1;
+    selectedIndex = 0;
+    pendingUploads = {};
+    renderAll();
+    log(`Loaded ${state.themes.length} theme(s) cleanly.`);
+  } catch (err) {
+    log(`Fetch error: ${err.message}`);
+  }
+}
+
+function buildColorGrid() {
+  const grid = document.getElementById("colorGrid");
+  grid.innerHTML = "";
+  COLOR_FIELDS.forEach(([key, title]) => {
+    const div = document.createElement("div");
+    div.innerHTML = `
+      <label>${title}</label>
+      <div class="color-field">
+        <input type="color" id="c_${key}" oninput="syncHex('${key}', this.value)" />
+        <input type="text" id="f_${key}" oninput="syncPicker('${key}', this.value)" />
+      </div>`;
+    grid.appendChild(div);
+  });
+}
+
+function syncHex(key, pickerHex) {
+  const t = state.themes[selectedIndex];
+  if (!t) return;
+  if (key === "gradientStart" || key === "gradientEnd") {
+    t[key] = pickerHex.toUpperCase();
+  } else {
+    t[key] = preserveAlphaHex(t[key], pickerHex);
+  }
+  const f = document.getElementById(`f_${key}`);
+  if (f) f.value = t[key];
+  renderPreview();
+  renderThemeList();
+}
+
+function syncPicker(key, textHex) {
+  const t = state.themes[selectedIndex];
+  if (!t) return;
+  t[key] = textHex;
+  const c = document.getElementById(`c_${key}`);
+  if (c && /^#([0-9a-f]{6}|[0-9a-f]{8})$/i.test(textHex.trim())) {
+    c.value = to6DigitHex(textHex);
+  }
+  renderPreview();
+  renderThemeList();
+}
+
+function updateField(key, val) {
+  const t = state.themes[selectedIndex];
+  if (!t) return;
+  t[key] = val;
+  renderPreview();
+  renderThemeList();
+}
+
+function handleAssetUpload(ev, kind) {
+  const file = ev.target.files[0];
+  const t = state.themes[selectedIndex];
+  if (!file || !t) return;
+  const slug = (t.id || "event").toLowerCase().replace(/[^a-z0-9-_]/g, "-") || "event";
+  const filename = kind === "icon" ? "icon.png" : (kind === "bgLand" ? "bg_land.png" : "bg.png");
+  const assetRel = `themes/${slug}/${filename}`;
+  const repoPath = `assets/${assetRel}`;
+
+  const reader = new FileReader();
+  reader.onload = () => {
+    const dataUrl = reader.result;
+    const base64 = dataUrl.split(",")[1];
+    pendingUploads[repoPath] = { base64, dataUrl, name: file.name };
+    if (kind === "icon") {
+      t.icon = assetRel;
+      document.getElementById("f_icon").value = assetRel;
+    } else if (kind === "bgLand") {
+      t.backgroundImageLand = assetRel;
+      document.getElementById("f_backgroundImageLand").value = assetRel;
+    } else {
+      t.backgroundImage = assetRel;
+      document.getElementById("f_backgroundImage").value = assetRel;
+      if (!t.backgroundImageLand) {
+        t.backgroundImageLand = assetRel;
+        document.getElementById("f_backgroundImageLand").value = assetRel;
+      }
+    }
+    log(`Staged ${file.name} -> ${repoPath} (will commit on Publish).`);
+    renderEditor();
+    renderPreview();
+    renderThemeList();
+  };
+  reader.readAsDataURL(file);
+}
+
+function renderThemeList() {
+  const list = document.getElementById("themeList");
+  document.getElementById("themeCount").textContent = state.themes.length;
+  list.innerHTML = "";
+  state.themes.forEach((t, idx) => {
+    const item = document.createElement("div");
+    item.className = "theme-item" + (idx === selectedIndex ? " active" : "");
+    item.onclick = () => { selectedIndex = idx; renderAll(); };
+    const grad = `linear-gradient(${t.gradientAngle || 135}deg, ${t.gradientStart || "#006A4E"}, ${t.gradientEnd || "#062F24"})`;
+    const iconUrl = t.icon ? resolveAssetUrl(t.icon) : "";
+    item.innerHTML = `
+      <div style="display:flex; align-items:center; gap:10px; min-width:0;">
+        <div class="swatch" style="background:${grad};">
+          ${iconUrl ? `<img src="${iconUrl}" onerror="this.style.display='none'" alt="" />` : ""}
+        </div>
+        <div style="min-width:0;">
+          <div style="font-weight:700; font-size:0.88rem; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">${t.name || t.id}</div>
+          <div class="muted">${t.eventTag || "Custom"} · #${t.themeId}</div>
+        </div>
+      </div>`;
+    list.appendChild(item);
+  });
+}
+
+function renderEditor() {
+  const t = state.themes[selectedIndex];
+  const card = document.getElementById("editorCard");
+  if (!t) {
+    card.style.opacity = "0.45";
+    return;
+  }
+  card.style.opacity = "1";
+  const fields = ["id","name","eventTag","themeId","baseThemeId","backgroundType","gradientStart","gradientEnd","gradientAngle","backgroundImage","backgroundImageLand","icon","themeBrightness","keyBrightness","functionalKeyBrightness"];
+  fields.forEach(k => {
+    const el = document.getElementById(`f_${k}`);
+    if (el) el.value = t[k] ?? "";
+  });
+  ["gradientStart", "gradientEnd"].forEach(k => {
+    const c = document.getElementById(`c_${k}`);
+    if (c) c.value = to6DigitHex(t[k]);
+  });
+  COLOR_FIELDS.forEach(([k]) => {
+    const f = document.getElementById(`f_${k}`);
+    const c = document.getElementById(`c_${k}`);
+    if (f) f.value = t[k] || "";
+    if (c) c.value = to6DigitHex(t[k]);
+  });
+
+  [["bg", t.backgroundImage], ["bgLand", t.backgroundImageLand], ["icon", t.icon]].forEach(([kind, rel]) => {
+    const img = document.getElementById(`up_${kind}_img`);
+    const st = document.getElementById(`up_${kind}_status`);
+    const fullPath = rel ? (rel.startsWith("assets/") ? rel : `assets/${rel}`) : "";
+    if (rel) {
+      img.src = resolveAssetUrl(rel);
+      img.style.display = "inline-block";
+      img.onerror = () => { img.style.display = "none"; };
+      st.textContent = pendingUploads[fullPath] ? `Pending upload (${pendingUploads[fullPath].name})` : "Linked from repo assets";
+    } else {
+      img.style.display = "none";
+      st.textContent = "No image selected";
+    }
+  });
+}
+
+function renderPreview() {
+  const t = state.themes[selectedIndex];
+  if (!t) return;
+  document.getElementById("previewMeta").textContent = `${t.name} · ID ${t.themeId}`;
+  const stage = document.getElementById("previewStage");
+  const overlay = document.getElementById("previewOverlay");
+  const angle = t.gradientAngle ?? 135;
+  const gStart = t.gradientStart || "#006A4E";
+  const gEnd = t.backgroundType === "solid" ? gStart : (t.gradientEnd || "#062F24");
+
+  stage.style.backgroundImage = `linear-gradient(${angle}deg, ${gStart}, ${gEnd})`;
+  if (t.backgroundImage) {
+    const url = resolveAssetUrl(t.backgroundImage);
+    stage.style.backgroundImage = `url("${url}"), linear-gradient(${angle}deg, ${gStart}, ${gEnd})`;
+  }
+  const b = Math.min(255, Math.max(0, t.themeBrightness ?? 95));
+  const darkAlpha = (1 - b / 255) * 0.45;
+  overlay.style.background = `rgba(0, 0, 0, ${darkAlpha.toFixed(2)})`;
+
+  const sug = document.getElementById("previewSugBar");
+  sug.style.background = androidHexToCss(t.suggestionBarBgColor, "rgba(0,75,55,0.8)");
+  sug.style.color = androidHexToCss(t.suggestionBarTextColor, "#ffffff");
+
+  const badge = document.getElementById("previewIconBadge");
+  if (t.icon) {
+    badge.src = resolveAssetUrl(t.icon);
+    badge.style.display = "block";
+    badge.onerror = () => { badge.style.display = "none"; };
+  } else {
+    badge.style.display = "none";
+  }
+
+  const keyBg = androidHexToCss(t.keyBgColor, "rgba(0,0,0,0.3)");
+  const keyText = androidHexToCss(t.keyTextColor, "#ffffff");
+  const keyHint = androidHexToCss(t.keyHintColor, "#ffe082");
+  const fnBg = androidHexToCss(t.functionalKeyBgColor, "rgba(244,42,65,0.5)");
+  const fnText = androidHexToCss(t.functionalKeyTextColor, "#ffffff");
+
+  const makeKey = (label, hint = "", cls = "") => {
+    const isFn = cls.includes("fn");
+    return `<div class="kb-key ${cls}" style="background:${isFn ? fnBg : keyBg}; color:${isFn ? fnText : keyText};">
+      ${hint ? `<span class="hint" style="color:${keyHint};">${hint}</span>` : ""}
+      <span>${label}</span>
+    </div>`;
+  };
+
+  document.getElementById("row1").innerHTML =
+    [["q","1"],["w","2"],["e","3"],["r","4"],["t","5"],["y","6"],["u","7"],["i","8"],["o","9"],["p","0"]]
+      .map(([k,h]) => makeKey(k, h)).join("");
+  document.getElementById("row2").innerHTML =
+    ["a","s","d","f","g","h","j","k","l"].map(k => makeKey(k)).join("");
+  document.getElementById("row3").innerHTML =
+    makeKey("⇧", "", "fn") +
+    ["z","x","c","v","b","n","m"].map(k => makeKey(k)).join("") +
+    makeKey("⌫", "", "fn");
+  document.getElementById("row4").innerHTML =
+    makeKey("Ctrl", "", "fn") +
+    makeKey(",", "") +
+    makeKey("Arif Keyboard", "", "space") +
+    makeKey("Alt", "Sym", "fn") +
+    makeKey("⏎", "", "fn");
+
+  const pop = document.getElementById("previewPopup");
+  pop.style.background = androidHexToCss(t.popUpBgColor, "#004F3A");
+  pop.style.color = androidHexToCss(t.popUpTextColor, "#ffffff");
+  document.getElementById("pop2").style.background = androidHexToCss(t.popUpSelectedBgColor, "#F42A41");
+}
+
+function addTheme(template = null) {
+  const maxId = state.themes.reduce((m, x) => Math.max(m, Number(x.themeId) || 9000), 9000);
+  const n = state.themes.length + 1;
+  const base = structuredClone(DEFAULT_THEMES.themes[0]);
+  const merged = Object.assign(base, template || {}, {
+    themeId: maxId + 1,
+    id: (template && template.id) ? template.id : `event-${n}`,
+    name: (template && template.name) ? template.name : `Custom Event ${n}`,
+    eventTag: (template && template.eventTag) ? template.eventTag : "Special Event",
+    backgroundImage: template && template.id ? `themes/${template.id}/bg.png` : "",
+    backgroundImageLand: template && template.id ? `themes/${template.id}/bg.png` : "",
+    icon: template && template.id ? `themes/${template.id}/icon.png` : ""
+  });
+  state.themes.push(merged);
+  selectedIndex = state.themes.length - 1;
+  renderAll();
+  log(`Added theme "${merged.name}" (#${merged.themeId}).`);
+}
+
+function addPreset(key) {
+  addTheme(PRESETS[key]);
+}
+
+function deleteCurrentTheme() {
+  if (state.themes.length <= 1) {
+    alert("Keep at least 1 theme in themes.json.");
+    return;
+  }
+  const removed = state.themes.splice(selectedIndex, 1)[0];
+  selectedIndex = Math.max(0, selectedIndex - 1);
+  renderAll();
+  log(`Deleted theme "${removed.name}".`);
+}
+
+function downloadJson() {
+  state.version = Number(document.getElementById("schemaVersion").value || 1);
+  const blob = new Blob([JSON.stringify(state, null, 2)], { type: "application/json" });
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = "themes.json";
+  a.click();
+  log("Downloaded themes.json locally.");
+}
+
+function importJson(ev) {
+  const file = ev.target.files[0];
+  if (!file) return;
+  const r = new FileReader();
+  r.onload = () => {
+    try {
+      const parsed = JSON.parse(r.result);
+      if (!Array.isArray(parsed.themes)) throw new Error("Missing themes array");
+      state = parsed;
+      selectedIndex = 0;
+      renderAll();
+      log(`Imported ${state.themes.length} theme(s) from ${file.name}.`);
+    } catch (e) {
+      alert("Invalid JSON: " + e.message);
+    }
+  };
+  r.readAsText(file);
+}
+
+async function ghApi(path, opts = {}) {
+  const owner = document.getElementById("ghOwner").value.trim();
+  const repo = document.getElementById("ghRepo").value.trim();
+  const token = document.getElementById("ghToken").value.trim();
+  const res = await fetch(`https://api.github.com/repos/${owner}/${repo}${path}`, {
+    ...opts,
+    headers: {
+      "Accept": "application/vnd.github+json",
+      "Authorization": `Bearer ${token}`,
+      "Content-Type": "application/json",
+      ...(opts.headers || {})
+    }
+  });
+  const text = await res.text();
+  if (!res.ok) throw new Error(`GitHub API ${res.status}: ${text}`);
+  return text ? JSON.parse(text) : {};
+}
+
+async function publishToGitHub() {
+  const token = document.getElementById("ghToken").value.trim();
+  const branch = document.getElementById("ghBranch").value.trim() || "main";
+  if (!token) {
+    alert("Enter a GitHub Fine-Grained Personal Access Token (Contents: Read & Write) first.");
+    return;
+  }
+  saveSettings();
+  state.version = Number(document.getElementById("schemaVersion").value || 1) + 1;
+  document.getElementById("schemaVersion").value = state.version;
+
+  try {
+    log(`Publishing ${state.themes.length} theme(s) and ${Object.keys(pendingUploads).length} staged image(s) to ${branch}...`);
+    const refData = await ghApi(`/git/ref/heads/${encodeURIComponent(branch)}`);
+    const latestCommitSha = refData.object.sha;
+    const commitData = await ghApi(`/git/commits/${latestCommitSha}`);
+    const baseTreeSha = commitData.tree.sha;
+
+    const treeEntries = [];
+    // Upload staged binary images first as blobs
+    for (const [repoPath, asset] of Object.entries(pendingUploads)) {
+      log(`Uploading blob: ${repoPath}...`);
+      const blobRes = await ghApi(`/git/blobs`, {
+        method: "POST",
+        body: JSON.stringify({ content: asset.base64, encoding: "base64" })
+      });
+      treeEntries.push({ path: repoPath, mode: "100644", type: "blob", sha: blobRes.sha });
+    }
+
+    // Upload updated themes.json
+    const jsonStr = JSON.stringify(state, null, 2) + "\n";
+    const jsonB64 = btoa(unescape(encodeURIComponent(jsonStr)));
+    const jsonBlob = await ghApi(`/git/blobs`, {
+      method: "POST",
+      body: JSON.stringify({ content: jsonB64, encoding: "base64" })
+    });
+    treeEntries.push({ path: "assets/themes/themes.json", mode: "100644", type: "blob", sha: jsonBlob.sha });
+
+    const newTree = await ghApi(`/git/trees`, {
+      method: "POST",
+      body: JSON.stringify({ base_tree: baseTreeSha, tree: treeEntries })
+    });
+
+    const themeNames = state.themes.map(t => t.name || t.id).join(", ");
+    const newCommit = await ghApi(`/git/commits`, {
+      method: "POST",
+      body: JSON.stringify({
+        message: `Update event themes (v${state.version}): ${themeNames}`,
+        tree: newTree.sha,
+        parents: [latestCommitSha]
+      })
+    });
+
+    await ghApi(`/git/refs/heads/${encodeURIComponent(branch)}`, {
+      method: "PATCH",
+      body: JSON.stringify({ sha: newCommit.sha })
+    });
+
+    pendingUploads = {};
+    renderEditor();
+    log(`✅ Committed ${newCommit.sha.slice(0, 7)} to ${branch}! GitHub Actions is now building the new APK.`);
+  } catch (err) {
+    log(`❌ Publish failed: ${err.message}`);
+  }
+}
+
+function renderAll() {
+  renderThemeList();
+  renderEditor();
+  renderPreview();
+}
+
+buildColorGrid();
+loadSettings();
+renderAll();
+// Auto-load live themes.json if hosted or reachable
+fetch("../assets/themes/themes.json").then(r => r.ok ? r.json() : null).then(d => {
+  if (d && Array.isArray(d.themes)) {
+    state = d;
+    document.getElementById("schemaVersion").value = state.version || 1;
+    renderAll();
+    log("Loaded relative ../assets/themes/themes.json.");
+  }
+}).catch(() => {});
+</script>
+</body>
+</html>

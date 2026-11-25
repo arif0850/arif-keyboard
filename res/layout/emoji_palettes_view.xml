@@ -11,6 +11,6 @@
                 </FrameLayout>
             </TabHost>
         </LinearLayout>
-        <androidx.viewpager.widget.ViewPager android:id="@id/emoji_keyboard_pager" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/config_suggestions_strip_height" />
+        <androidx.viewpager.widget.ViewPager android:id="@id/emoji_keyboard_pager" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0" android:layout_marginBottom="@dimen/config_suggestions_strip_height" />
     </LinearLayout>
 </com.android.inputmethod.keyboard.emoji.EmojiPalettesView>
