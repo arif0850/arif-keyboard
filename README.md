@@ -1,106 +1,151 @@
-![Devord Keyboard Banner](banners/devord_banner_hd_1280x720.png)
+![Arif Keyboard Banner](banners/devord_banner_hd_1280x720.png)
 
 # Arif Keyboard ⌨️
 
-A powerful modified Android keyboard tailored for developers, terminal users (Termux), and power users. Built with a custom modifier engine, standalone native libraries, and developer-focused layouts.
+**A developer-grade Android keyboard, rebuilt from the ground up for coding on the go.**
 
-## 🚀 Key Features Added
+Arif Keyboard is a deeply modified Android keyboard (reverse-engineered from an AOSP LatinIME-based IME) tailored for developers, terminal users (Termux), and power users. It ships with a sticky Ctrl/Alt modifier engine, a full Developer Tab, offline Bangla dictionary support, a 3,600+ color emoji pack, event themes (including a Victory Day বিজয় দিবস theme), a static GitHub Pages admin panel, and CI that builds a signed APK on every push — all as one standalone, dependency-free APK.
 
-1. **Ctrl & Alt Modifier Buttons**:
-   - Replaced the bottom-left `?123` button with a dedicated **Ctrl** button.
-   - Replaced the `Emoji` button with a dedicated **Alt** button.
-   - **Tap Alt**: Toggles `Alt ON` / `Alt OFF` sticky modifier.
-   - **Long-Press Alt**: Directly opens the full **Symbols + Numbers** panel (`rows_symbols.xml` with top number row, full symbol layout, and `ABC` key to return).
-2. **Developer Tab (Text Editing & Coding Panel)**:
-   - Enhanced the tab to the left of the `123` grid icon (`res/layout/text_editing_view_in_main_keyboard_frame.xml` + `com.arif.keyboard.DevToolsHelper`) with cursor D-Pad, Select/Copy/Paste/Cut/Home/End/Select All, plus scrollable **Esc**, **Tab**, **Ctrl+Z/C/V/X/A/F/S**, **PgUp/PgDn/Del**, **F1–F12**, and quick coding symbols/operators (`{ } [ ] ( ) < > / \ | ~ ` $ _ = ; => != //`).
-3. **Bangla Dictionary & Emoji Grid Fixes**:
-   - Aligned runtime `BuildConfig.APPLICATION_ID` and dictionary path lookup (`com/android/inputmethod/latin/utils/n.smali`) to `com.arif.keyboard` so bundled Bangla dictionaries (`res/raw/*.dict`) load cleanly.
-   - Fixed blank Emoji grid by giving the `ViewPager` in `emoji_palettes_view.xml` / `emoji_view.xml` proper flex height (`layout_height="0.0dp"`, `layout_weight="1.0"`) and setting dark fallback glyph ink (`0xff000000`) in `tj/d.smali` (`EmojiDrawable`).
-4. **Event-Wise Theme Engine & Victory Day (বিজয় দিবস) Theme**:
-   - Added `com.arif.keyboard.EventThemeManager` to sync event themes declared in `assets/themes/themes.json` (plus `assets/themes/<id>/{bg.png,bg_land.png,icon.png}`) into the app's offline Custom Theme gallery with gradient, background image overlay, and event badge icon support.
-   - Ships with the built-in **Victory Day (বিজয় দিবস)** event theme.
-5. **Browser Admin Panel (GitHub Pages: `docs/index.html`)**:
-   - Static web UI with live keyboard preview, color/gradient pickers, background image & icon uploaders, and atomic GitHub Contents/Tree API publishing directly to `main` (which triggers `.github/workflows/build-apk.yml` to build and publish a fresh release APK).
-   - **Enable GitHub Pages**: Go to repo **Settings → Pages → Build and deployment → Deploy from branch (`main`, folder `/docs`)**, then open `https://arif0850.github.io/arif-keyboard/` and enter a Fine-Grained PAT with **Contents: Read & Write**.
-6. **Sticky Modifier Engine**:
-   - **Tap Ctrl**: Activates Control mode (`Ctrl ON` toast feedback). The next typed key (e.g., `A`, `C`, `V`, `Z`, `X`, `L`) sends a `Ctrl + <Key>` shortcut combo and automatically disarms.
-   - **Tap Alt**: Activates Alternate mode (`Alt ON` toast feedback). The next typed key sends an `Alt + <Key>` combo.
-   - **Double-Tap / Toggle**: Tapping again toggles the modifier off (`Ctrl OFF` / `Alt OFF`).
-   - **Layout Stability**: Overrides keyboard switcher events so pressing Ctrl or Alt preserves the alphabet keyboard layout without jumping into symbol or emoji mode.
-   - Works natively in **Termux** (SIGINT `Ctrl+C`, EOF `Ctrl+D`, Suspend `Ctrl+Z`, Clear `Ctrl+L`), shell editors (Nano, Vim), and standard Android applications (Select All, Copy, Paste, Cut, Undo).
-3. **Theme & Visual Polish**:
-   - **Twilight & Pink Themes**: `Alt` button text styled with `followFunctionalTextColor`, ensuring crisp, readable white text on functional key backgrounds.
-   - **Dark Mode (Pure Dark, LXX Dark, Holo)**: All missing icons (`Shift` up-arrow, `Shift Locked`, `Backspace/Delete`, `Enter/Return`) restored with proper drawable assets from the original base.
-4. **Standalone Architecture**:
-   - Merged all 7 native 64-bit `.so` libraries (`libjni_arif.so`, `libjni_autocorrect.so`, `libdatastore_shared_counter.so`, `libavif_android.so`, `libapplovin-native-crash-reporter.so`, `libanimation-decoder-gif.so`, `libandroidx.graphics.path.so`).
-   - Merged density resources (`xxxhdpi`), eliminating any split APK dependencies.
-5. **Renamed Identity**:
-   - Package ID changed to `com.arif.keyboard` (allows installation side-by-side with original keyboard apps without conflict).
-   - Display name set to **Arif Keyboard** across all system locales and IME selection dialogs.
+> **Package ID:** `com.arif.keyboard` · **Version:** 20.0.0 (336) · **License:** Personal / educational use
+
+---
+
+## ✨ Feature Highlights
+
+### 🎛️ Sticky Ctrl & Alt Modifier Engine
+- **Dedicated Ctrl key** replaces the bottom-left `?123` button, and a **dedicated Alt key** replaces the Emoji button.
+- **Tap Ctrl / Alt** → sticky modifier ON (`Ctrl ON` / `Alt ON` toast). The next key press (e.g. `A`, `C`, `V`, `Z`, `X`, `L`) sends a real `Ctrl + <Key>` or `Alt + <Key>` combo and auto-disarms.
+- **Tap again** to toggle OFF; double-tap / long-press behave as expected.
+- **Layout stability:** pressing Ctrl or Alt never kicks you into symbol or emoji mode — the alphabet layout stays put.
+- Works natively in **Termux** (`Ctrl+C` SIGINT, `Ctrl+D` EOF, `Ctrl+Z` suspend, `Ctrl+L` clear), shell editors (Nano, Vim), and standard Android apps (Select All, Copy, Paste, Cut, Undo).
+
+### 🧑‍💻 Developer Tab (Text Editing & Coding Panel)
+- Sits to the left of the `123` grid icon on the main keyboard.
+- **Cursor D-Pad**, **Select / Copy / Paste / Cut / Home / End / Select All**.
+- Scrollable strips of **Esc**, **Tab**, **Ctrl+Z/C/V/X/A/F/S**, **PgUp / PgDn / Del**, **F1–F12**.
+- One-tap coding symbols and operators: `{ } [ ] ( ) < > / \ | ~ ` $ _ = ; => != //`.
+
+### 🔣 Alt Long-Press → Full Symbols Panel
+- **Long-press Alt** jumps straight to the complete **Symbols + Numbers** panel (top number row, full symbol grid, and `ABC` key to return) — no more paging through symbol sub-layouts.
+
+### 🇧🇩 Bangla Dictionary & Emoji Grid Fixes
+- Runtime `BuildConfig.APPLICATION_ID` and dictionary path lookup were realigned to `com.arif.keyboard`, so bundled Bangla dictionaries (`res/raw/main_bn.dict`, `emoji_bn.dict`) load cleanly.
+- The Emoji picker's blank-grid bug is fixed (proper `ViewPager` flex height) with dark-mode-safe glyph ink, plus a **full 3,600+ color emoji pack rendered in a dense 8×5 grid with category tab icons**.
+
+### 🎨 Event-Wise Theme Engine + Victory Day Theme
+- `com.arif.keyboard.EventThemeManager` syncs event themes declared in `assets/themes/themes.json` (with `assets/themes/<id>/{bg.png,bg_land.png,icon.png}`) into the app's offline Custom Theme gallery.
+- Supports gradients, background image overlays, event badge icons, and per-key color overrides.
+- Ships with the built-in **Victory Day (বিজয় দিবস)** theme (16 December).
+
+### 🌐 Browser Admin Panel (GitHub Pages)
+- `docs/index.html` is a static **Event Theme Studio**: live keyboard preview, color/gradient pickers, background image & icon uploaders, and atomic GitHub Contents/Tree API publishing straight to `main` — which auto-triggers the APK build workflow.
+- **Enable it:** repo **Settings → Pages → Deploy from branch (`main`, folder `/docs`)**, then open <https://arif0850.github.io/arif-keyboard/> and paste a Fine-Grained PAT with **Contents: Read & Write**.
+- Bonus static pages: `docs/help/index.html` and `docs/keymap/index.html`.
+
+### 🔌 Repointed Endpoints (Fully Offline)
+- `scripts/patch_endpoints.py` rewrites dead `*.arif.com` / `hasnath.net` URLs inside `classes*.dex` to this repo's GitHub Pages static API (`https://arif0850.github.io/arif-keyboard/...`) — covering AI, articles, assets, config, store, surveys and tutorial endpoints.
+- Committed, API-28-patched DEXs are included, so SDK 35–37 installs cleanly.
+
+### 📦 Standalone Architecture
+- All **7 native 64-bit `.so` libraries** merged (`libjni_arif.so`, `libjni_autocorrect.so`, `libdatastore_shared_counter.so`, `libavif_android.so`, `libapplovin-native-crash-reporter.so`, `libanimation-decoder-gif.so`, `libandroidx.graphics.path.so`).
+- Density resources merged (`xxxhdpi`) — **zero split-APK dependencies** (`INSTALL_FAILED_NO_SPLIT_APK` impossible).
+- **Renamed identity:** package `com.arif.keyboard`, display name **Arif Keyboard** in all system locales and IME dialogs; installs side-by-side with the original keyboard app without conflict.
 
 ---
 
 ## 🛠️ Reverse Engineering & Implementation Details
 
-- **Tooling**: Apktool, Baksmali, Smali, AAPT2, Zipalign, Apksigner, OpenJDK.
-- **Modified Smali Classes**:
-  - `com.arif.keyboard.ArifKeyboard`: Overrides `onCodeInput`, `onPressKey`, and `onReleaseKey` for `-3` (Ctrl) and `-11` (Alt); implements sticky meta-state management, Toast notifications, and direct `InputConnection` key-event dispatching.
-  - `com.arif.keyboard.VoiceView`: Guarded Paint initialization to eliminate startup null pointer exceptions.
-  - `com.android.inputmethod.keyboard.MainKeyboardView`: Guarded spacebar indicator drawable rendering (`y` and `z`) against null drawables in custom themes.
-  - `com.android.inputmethod.keyboard.p1`: Long-pressing `Alt` (`-11`) dispatches `-2` (`CODE_SWITCH_ALPHA_SYMBOL`) directly into the full Symbols + Numbers layout (`rows_symbols.xml`).
-  - `com.arif.keyboard.DevToolsHelper`: Backs the Developer Tab (`text_editing_view_in_main_keyboard_frame.xml`) with `Ctrl+*`, `Esc`, `Tab`, `PgUp/PgDn`, `Del`, `Cut`, `F1–F12`, and coding snippet buttons.
-  - `com.arif.keyboard.EventThemeManager`: Reads `assets/themes/themes.json` and syncs custom event themes (gradient, BG image, icon badge, key colors) into the SQLite `CustomTheme` store.
-  - `com.android.inputmethod.latin.BuildConfig` & `com.android.inputmethod.latin.utils.n`: Updated internal package ID references to `com.arif.keyboard` so `.dict` dictionary assets load properly.
-  - `tj/d` (`EmojiDrawable`): Restored visible fallback emoji glyph rendering; `res/layout/emoji_palettes_view.xml` & `res/layout/emoji_view.xml` fixed `ViewPager` height.
-  - `vt/b2`: Expanded custom/event theme SQLite query limit to `50`.
-  - `com.android.inputmethod.latin.suggestions.SuggestionStripView`: Added safe icon fallback handling.
-- **Layout & Style Adjustments**:
-  - `res/xml/key_to_symbol.xml`: Configured for `Ctrl` key specification.
-  - `res/xml/key_emoji.xml` & `res/xml/key_styles_common.xml`: Configured for `Alt` key specification with functional text coloring.
-  - `res/values/styles.xml`: Restored authentic `KeyboardIcons` drawable references across all dark and light themes.
+**Tooling:** Apktool · Baksmali · Smali · AAPT2 · Zipalign · Apksigner · OpenJDK 21
+
+**Modified smali classes**
+
+| Class | What changed |
+|---|---|
+| `com.arif.keyboard.ArifKeyboard` | Overrides `onCodeInput`, `onPressKey`, `onReleaseKey` for `-3` (Ctrl) and `-11` (Alt); sticky meta-state management, toasts, direct `InputConnection` key dispatch |
+| `com.arif.keyboard.DevToolsHelper` | Backs the Developer Tab (`text_editing_view_in_main_keyboard_frame.xml`) — `Ctrl+*`, Esc, Tab, PgUp/PgDn, Del, Cut, F1–F12, coding snippet keys |
+| `com.arif.keyboard.EventThemeManager` | Reads `assets/themes/themes.json`; syncs event themes (gradient, BG image, icon badge, key colors) into the SQLite `CustomTheme` store |
+| `com.arif.keyboard.VoiceView` | Guarded Paint initialization (startup NPE eliminated) |
+| `com.android.inputmethod.keyboard.MainKeyboardView` | Spacebar indicator drawable rendering guarded against nulls in custom themes |
+| `com.android.inputmethod.keyboard.p1` | Long-press Alt (`-11`) dispatches `-2` (`CODE_SWITCH_ALPHA_SYMBOL`) into `rows_symbols.xml` |
+| `com.android.inputmethod.latin.BuildConfig` + `utils.n` | Internal package ID references updated to `com.arif.keyboard` so `.dict` assets load |
+| `tj.d` (`EmojiDrawable`) | Restored visible fallback emoji glyph rendering |
+| `vt.b2` | Custom/event theme SQLite query limit expanded to 50 |
+| `SuggestionStripView` | Safe icon fallback handling |
+
+**Layout & style changes**
+
+- `res/xml/key_to_symbol.xml` → Ctrl key spec; `res/xml/key_emoji.xml` + `res/xml/key_styles_common.xml` → Alt key spec with functional text coloring.
+- `res/layout/emoji_palettes_view.xml` / `emoji_view.xml` → fixed `ViewPager` height (`layout_height="0dp"` + `layout_weight="1"`).
+- `res/values/styles.xml` → authentic `KeyboardIcons` drawable references restored across dark and light themes.
 
 ---
 
-## 📦 How to Build from Source
+## 🏗️ Building from Source
+
+Requires **OpenJDK 21**, Python 3.11, and Apktool (the CI workflow installs these automatically; `build.sh` handles the local path).
 
 ```bash
-# Clone the repository
 git clone https://github.com/arif0850/arif-keyboard.git
 cd arif-keyboard
-
-# Build, zipalign, and sign APK
-bash build.sh
+bash build.sh        # builds, zipaligns, and signs the APK
 ```
 
-The signed, aligned standalone APK will be generated at `dist/arif-keyboard-final.apk`.
+Output: `dist/arif-keyboard-final.apk` (signed, aligned, standalone).
 
 ---
 
-## 🔄 Mobile ZIP Auto-Deploy & CI APK Build
+## 🔄 Automation & CI
 
-This repository includes two automated GitHub Actions workflows so you can easily add, modify, or delete features from mobile:
+Two GitHub Actions workflows keep the repo deployable straight from your phone:
 
-1. **Google Drive Auto-Deploy (`Arif-Keyboard-Auto-Deployer`)**:
-   - Upload any `.zip` containing your updated/added files (preserving paths like `res/xml/...`, `res/values/...`, `classes5.dex`, etc., or a zipped project folder) into the **`Arif-Keyboard-Deploy`** folder in Google Drive (`arifspramanik@gmail.com`).
-   - To **delete** files via ZIP, include a `_delete.txt` file at the root of your ZIP with one relative file path per line.
-   - The Apps Script trigger checks every minute, dispatches `.github/workflows/deploy-zip.yml`, commits changes to `main`, and automatically triggers an APK build.
+| Workflow | Trigger | What it does |
+|---|---|---|
+| **`build-apk.yml`** — *Build Arif Keyboard APK* | Every push to `main`, or manual run | Builds, zipaligns, signs with the persistent `KEYSTORE_BASE64` secret, uploads the `arif-keyboard-final-apk` artifact, and **publishes/updates the `latest` GitHub Release** (with SHA-256 checksum) |
+| **`deploy-zip.yml`** — *Deploy ZIP to Main* | `repository_dispatch` + manual | Downloads a ZIP from a URL / Google Drive link, extracts and applies it over the repo, commits to `main`, which triggers the APK build |
 
-2. **Automatic APK Build (`.github/workflows/build-apk.yml`)**:
-   - Runs automatically on every push to `main` (or manually via **Actions → Build Arif Keyboard APK → Run workflow**).
-   - Outputs `arif-keyboard-final.apk` as a downloadable **Workflow Artifact**.
+**Mobile ZIP auto-deploy (`Arif-Keyboard-Auto-Deployer`):** drop a ZIP of updated files (paths preserved, e.g. `res/xml/...`, `classes5.dex`) into the **`Arif-Keyboard-Deploy`** Google Drive folder (`arifspramanik@gmail.com`). An Apps Script trigger polls every minute, dispatches `deploy-zip.yml`, commits to `main`, and the APK build follows. To **delete** files via ZIP, add a `_delete.txt` at the ZIP root with one relative path per line. Commits also include **CRC & SHA-256 release checks**.
 
 ---
 
 ## 📲 Installation
 
-Download the signed `arif-keyboard-final.apk` from the [GitHub Releases](https://github.com/arif0850/arif-keyboard/releases) page, then install via ADB or directly on your Android device:
+Grab the signed APK from the [**Releases**](https://github.com/arif0850/arif-keyboard/releases) page (or from the workflow artifacts), then install:
 
 ```bash
 adb install -r -d -g arif-keyboard-final.apk
 ```
 
-Then enable and select the keyboard in Android Settings:
+Enable and select the keyboard:
+
 ```bash
 adb shell ime enable com.arif.keyboard/com.arif.keyboard.ArifKeyboard
 adb shell ime set com.arif.keyboard/com.arif.keyboard.ArifKeyboard
 ```
+
+Or via the phone: **Settings → System → Languages & input → On-screen keyboard → Arif Keyboard → Enable**, then switch keyboards with the input-method picker.
+
+---
+
+## 🗂️ Repository Layout
+
+```
+├── AndroidManifest.xml          # com.arif.keyboard, v20.0.0 (336)
+├── apktool.yml
+├── assets/themes/               # Event themes (themes.json + victory-day/)
+├── banners/                     # README / Play-store artwork
+├── build.sh                     # One-command local build
+├── classes*.dex                 # API-28-patched DEXs (committed)
+├── dist/                        # Build outputs (final APK + SHA-256)
+├── docs/                        # GitHub Pages: Event Theme Studio, help, keymap, static API
+├── res/                         # Layouts, XML key specs, raw Bangla dictionaries
+├── scripts/patch_endpoints.py   # DEX endpoint rewriter
+└── .github/workflows/           # build-apk.yml + deploy-zip.yml
+```
+
+---
+
+## 📄 License & Disclaimer
+
+This project is a reverse-engineered modification of a third-party Android keyboard, provided for **personal and educational use**. It is not affiliated with or endorsed by the original app's developers. All trademarks belong to their respective owners.
+
+**Star ⭐ this repo if it saves you some typing!**
