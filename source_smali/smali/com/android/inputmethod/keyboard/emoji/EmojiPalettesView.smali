@@ -115,8 +115,10 @@
 
     const/4 v0, 0x0
 
+    const/4 v1, 0x1
+
     .line 3
-    iput v0, p0, Lcom/android/inputmethod/keyboard/emoji/EmojiPalettesView;->D:I
+    iput v1, p0, Lcom/android/inputmethod/keyboard/emoji/EmojiPalettesView;->D:I
 
     .line 4
     sget-object v1, Lcom/android/inputmethod/keyboard/h;->L8:Lcom/android/inputmethod/keyboard/g;
@@ -181,6 +183,13 @@
 
     move-result v4
 
+    if-nez v4, :cond_store_tab_ic
+
+    invoke-static {p3}, Lcom/arif/keyboard/FullEmojiHelper;->getDefaultTabIcon(I)I
+
+    move-result v4
+
+    :cond_store_tab_ic
     aput v4, v2, p3
 
     add-int/lit8 p3, p3, 0x1
@@ -2222,42 +2231,28 @@
     .line 202
     if-eqz v0, :cond_6
 
-    .line 203
-    .line 204
     invoke-virtual {v0}, Lcom/arif/keyboard/model/CustomThemeModel;->getThemeSuggestionBarTextColor()I
 
-    .line 205
-    .line 206
-    .line 207
     move-result v6
 
-    .line 208
-    if-eq v6, v5, :cond_6
+    goto :cond_resolve_tint
 
-    .line 209
-    .line 210
-    invoke-virtual {v0}, Lcom/arif/keyboard/model/CustomThemeModel;->getThemeSuggestionBarTextColor()I
+    :cond_6
+    const/4 v6, -0x1
 
-    .line 211
-    .line 212
-    .line 213
+    :cond_resolve_tint
+    iget v5, p0, Lcom/android/inputmethod/keyboard/emoji/EmojiPalettesView;->x:I
+
+    invoke-static {v5, v6}, Lcom/arif/keyboard/FullEmojiHelper;->resolveTabTint(II)I
+
     move-result v5
 
-    .line 214
     invoke-static {v5}, Landroid/content/res/ColorStateList;->valueOf(I)Landroid/content/res/ColorStateList;
 
-    .line 215
-    .line 216
-    .line 217
     move-result-object v5
 
-    .line 218
     invoke-virtual {v9, v5}, Landroid/widget/ImageView;->setImageTintList(Landroid/content/res/ColorStateList;)V
 
-    .line 219
-    .line 220
-    .line 221
-    :cond_6
     invoke-virtual {v8, v9}, Landroid/widget/TabHost$TabSpec;->setIndicator(Landroid/view/View;)Landroid/widget/TabHost$TabSpec;
 
     .line 222
@@ -2446,6 +2441,33 @@
     .line 312
     .line 313
     invoke-direct {p0, v0}, Lcom/android/inputmethod/keyboard/emoji/EmojiPalettesView;->setEmojiSearchButtonBgAndSelectedColor(Lcom/arif/keyboard/model/CustomThemeModel;)V
+
+    const/4 v2, -0x1
+
+    if-eqz v0, :cond_search_tint
+
+    invoke-virtual {v0}, Lcom/arif/keyboard/model/CustomThemeModel;->getThemeSuggestionBarTextColor()I
+
+    move-result v2
+
+    :cond_search_tint
+    iget v3, p0, Lcom/android/inputmethod/keyboard/emoji/EmojiPalettesView;->x:I
+
+    invoke-static {v3, v2}, Lcom/arif/keyboard/FullEmojiHelper;->resolveTabTint(II)I
+
+    move-result v2
+
+    iget-object v3, p0, Lcom/android/inputmethod/keyboard/emoji/EmojiPalettesView;->z:Landroid/widget/ImageView;
+
+    if-eqz v3, :cond_after_search_tint
+
+    invoke-static {v2}, Landroid/content/res/ColorStateList;->valueOf(I)Landroid/content/res/ColorStateList;
+
+    move-result-object v2
+
+    invoke-virtual {v3, v2}, Landroid/widget/ImageView;->setImageTintList(Landroid/content/res/ColorStateList;)V
+
+    :cond_after_search_tint
 
     .line 314
     .line 315

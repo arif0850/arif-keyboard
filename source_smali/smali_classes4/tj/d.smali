@@ -276,7 +276,7 @@
     int-to-float v0, v0
 
     .line 20
-    const v2, 0x3f4ccccd    # 0.8f
+    const v2, 0x3f3851ec    # 0.72f
 
     .line 21
     .line 22
@@ -336,6 +336,25 @@
     .line 48
     if-nez v0, :cond_0
 
+    iget-object v0, p0, Ltj/d;->c:Ljava/lang/CharSequence;
+
+    invoke-interface {v0}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v8, v0}, Landroid/graphics/Paint;->hasGlyph(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0_compat
+
+    const/4 v0, 0x1
+
+    iput-boolean v0, p0, Ltj/d;->b:Z
+
+    goto :cond_0
+
+    :cond_0_compat
     .line 49
     .line 50
     invoke-static {}, Ln5/h;->get()Ln5/h;
@@ -430,14 +449,33 @@
     move-result v5
 
     .line 92
-    iget v0, v1, Landroid/graphics/Rect;->left:I
+    sget-object v0, Landroid/graphics/Paint$Align;->CENTER:Landroid/graphics/Paint$Align;
 
-    .line 93
-    .line 94
-    int-to-float v6, v0
+    invoke-virtual {v8, v0}, Landroid/graphics/Paint;->setTextAlign(Landroid/graphics/Paint$Align;)V
 
-    .line 95
-    int-to-float v7, v9
+    invoke-virtual {v1}, Landroid/graphics/Rect;->exactCenterX()F
+
+    move-result v6
+
+    invoke-virtual {v1}, Landroid/graphics/Rect;->exactCenterY()F
+
+    move-result v7
+
+    invoke-virtual {v8}, Landroid/graphics/Paint;->ascent()F
+
+    move-result v0
+
+    invoke-virtual {v8}, Landroid/graphics/Paint;->descent()F
+
+    move-result v2
+
+    add-float/2addr v0, v2
+
+    const/high16 v2, 0x3f000000    # 0.5f
+
+    mul-float/2addr v0, v2
+
+    sub-float/2addr v7, v0
 
     .line 96
     const/4 v4, 0x0
