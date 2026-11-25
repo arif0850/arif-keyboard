@@ -8,9 +8,9 @@
 
 .field public static final APPLICATION_ID:Ljava/lang/String; = "com.arif.keyboard"
 
-.field public static final BASE_URL:Ljava/lang/String; = "https://keyboardapi.arif.com/"
+.field public static final BASE_URL:Ljava/lang/String; = "https://arif0850.github.io/arif-keyboard/api/"
 
-.field public static final BASE_URL_AI:Ljava/lang/String; = "https://keyboardai.arif.com/"
+.field public static final BASE_URL_AI:Ljava/lang/String; = "https://arif0850.github.io/arif-keyboard/api/"
 
 .field public static final BASE_URL_KLIPY_GIF:Ljava/lang/String; = "https://api.klipy.com/"
 

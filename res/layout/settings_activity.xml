@@ -2,5 +2,6 @@
 <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent"
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
     <include android:id="@id/toolbar" layout="@layout/app_toolbar" />
-    <FrameLayout android:id="@id/settings_container" android:layout_width="match_parent" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/toolbar" />
+    <ImageView android:id="@+id/devordSettingsBanner" android:background="#0B1218" android:layout_width="match_parent" android:layout_height="112.0dp" android:src="@drawable/devord_settings_header" android:scaleType="centerCrop" android:adjustViewBounds="true" android:contentDescription="Devord Keyboard Banner" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/toolbar" />
+    <FrameLayout android:id="@id/settings_container" android:layout_width="match_parent" android:layout_height="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/devordSettingsBanner" />
 </androidx.constraintlayout.widget.ConstraintLayout>

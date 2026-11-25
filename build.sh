@@ -1,6 +1,11 @@
 #!/usr/bin/env bash
 set -e
 
+echo "=== Patching Dead API Endpoints to Repo Pages ==="
+if [ -f scripts/patch_endpoints.py ]; then
+    python3 scripts/patch_endpoints.py || echo "Warning: endpoint patch skipped"
+fi
+
 echo "=== Building Arif Keyboard APK ==="
 mkdir -p dist
 apktool b . -o dist/arif-keyboard-unsigned.apk

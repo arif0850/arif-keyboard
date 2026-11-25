@@ -1,0 +1,41 @@
+{
+  "status": "ok",
+  "data": [
+    {
+      "id": 1,
+      "name": "Trending",
+      "name_bn": "ট্রেন্ডিং",
+      "query": "trending"
+    },
+    {
+      "id": 2,
+      "name": "Funny",
+      "name_bn": "মজার",
+      "query": "funny"
+    },
+    {
+      "id": 3,
+      "name": "Love",
+      "name_bn": "ভালোবাসা",
+      "query": "love"
+    },
+    {
+      "id": 4,
+      "name": "Reactions",
+      "name_bn": "রিঅ্যাকশন",
+      "query": "reaction"
+    },
+    {
+      "id": 5,
+      "name": "Coding",
+      "name_bn": "কোডিং",
+      "query": "coding"
+    },
+    {
+      "id": 6,
+      "name": "Celebration",
+      "name_bn": "উৎসব",
+      "query": "celebration"
+    }
+  ]
+}

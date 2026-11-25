@@ -1,3 +1,5 @@
+![Devord Keyboard Banner](banners/devord_banner_hd_1280x720.png)
+
 # Arif Keyboard ⌨️
 
 A powerful modified Android keyboard tailored for developers, terminal users (Termux), and power users. Built with a custom modifier engine, standalone native libraries, and developer-focused layouts.

@@ -1,0 +1,80 @@
+{
+  "status": "ok",
+  "data": [
+    {
+      "title": "Devord Featured Themes",
+      "title_bn": "ডেভোর্ড ফিচার্ড থিম",
+      "subtitle": "Built-in offline & repo themes",
+      "subtitle_bn": "ফ্রি অফলাইন ও রিপো থিমসমূহ",
+      "more": "",
+      "items": [
+        {
+          "id": 9001,
+          "name": "Victory Day (বিজয় দিবস)",
+          "image": "https://arif0850.github.io/arif-keyboard/api/assets/icon_devord.png",
+          "cover": "https://arif0850.github.io/arif-keyboard/api/assets/banner_devord.png",
+          "type": "theme",
+          "price_bdt": 0,
+          "price_bdt_original": 0,
+          "giftable": false,
+          "tags": [
+            {
+              "text": "Free",
+              "color": "#FFFFFF",
+              "background": "#00B87C"
+            }
+          ],
+          "style": "large",
+          "free": true
+        },
+        {
+          "id": 9002,
+          "name": "Devord Dark Studio",
+          "image": "https://arif0850.github.io/arif-keyboard/api/assets/icon_circle.png",
+          "cover": "https://arif0850.github.io/arif-keyboard/api/assets/header_devord.png",
+          "type": "theme",
+          "price_bdt": 0,
+          "price_bdt_original": 0,
+          "giftable": false,
+          "tags": [
+            {
+              "text": "Official",
+              "color": "#FFFFFF",
+              "background": "#0B1218"
+            }
+          ],
+          "style": "small",
+          "free": true
+        }
+      ]
+    },
+    {
+      "title": "Sticker Packs",
+      "title_bn": "স্টিকার প্যাক",
+      "subtitle": "More packs coming soon to your repo",
+      "subtitle_bn": "আরও বাংলা স্টিকার প্যাক শীঘ্রই আসছে",
+      "more": "",
+      "items": [
+        {
+          "id": 101,
+          "name": "Devord Essentials",
+          "image": "https://arif0850.github.io/arif-keyboard/api/assets/icon_devord.png",
+          "cover": "https://arif0850.github.io/arif-keyboard/api/assets/header_devord.png",
+          "type": "sticker",
+          "price_bdt": 0,
+          "price_bdt_original": 0,
+          "giftable": false,
+          "tags": [
+            {
+              "text": "Free",
+              "color": "#FFFFFF",
+              "background": "#00B87C"
+            }
+          ],
+          "style": "large",
+          "free": true
+        }
+      ]
+    }
+  ]
+}

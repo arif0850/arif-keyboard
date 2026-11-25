@@ -1,0 +1,56 @@
+{
+  "status": "ok",
+  "data": [
+    {
+      "id": 1,
+      "title": "Avro Phonetic Basics",
+      "title_bn": "অভ্র ফোনেটিক বেসিক",
+      "subtitle": "Learn everyday Bangla typing with phonetic rules",
+      "subtitle_bn": "সহজে বাংলা ফোনেটিক টাইপিং শিখুন",
+      "level": 1,
+      "words": [
+        "ami",
+        "bangla",
+        "bhalobashi",
+        "desh",
+        "shonar",
+        "akash",
+        "nodi",
+        "phul"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Juktakhor (যুক্তবর্ণ) Practice",
+      "title_bn": "যুক্তবর্ণ প্র্যাকটিস",
+      "subtitle": "Master common Bangla conjuncts",
+      "subtitle_bn": "গুরুত্বপূর্ণ যুক্তবর্ণ অনুশীলন",
+      "level": 2,
+      "words": [
+        "kotha",
+        "bondhu",
+        "shikkha",
+        "proyojon",
+        "bishsho",
+        "shundor",
+        "bangladesh"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Developer Shortcuts & Termux",
+      "title_bn": "ডেভেলপার শর্টকাট ও টার্মাক্স",
+      "subtitle": "Practice Ctrl, Alt, and Dev Tab symbols",
+      "subtitle_bn": "Ctrl, Alt ও কোডিং সিম্বল প্র্যাকটিস",
+      "level": 3,
+      "words": [
+        "git status",
+        "ls -la",
+        "cd ..",
+        "npm run",
+        "python3",
+        "grep -rn"
+      ]
+    }
+  ]
+}

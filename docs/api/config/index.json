@@ -1,0 +1,8 @@
+{
+  "status": "ok",
+  "show_suggestion_bar_emoji_icon": true,
+  "enable_home_test_api": false,
+  "emoji_height_multiplier": 1.0,
+  "show_other_app_promo": false,
+  "coming_soon_ai": true
+}

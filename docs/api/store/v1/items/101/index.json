@@ -1,0 +1,20 @@
+{
+  "id": 101,
+  "name": "Devord Essentials",
+  "description": "Free official Devord icon & badge pack hosted directly in your repository.",
+  "image": "https://arif0850.github.io/arif-keyboard/api/assets/icon_devord.png",
+  "cover": "https://arif0850.github.io/arif-keyboard/api/assets/banner_devord.png",
+  "type": "sticker",
+  "free": true,
+  "price_bdt": 0,
+  "stickers": [
+    {
+      "id": 1,
+      "url": "https://arif0850.github.io/arif-keyboard/api/assets/icon_devord.png"
+    },
+    {
+      "id": 2,
+      "url": "https://arif0850.github.io/arif-keyboard/api/assets/icon_circle.png"
+    }
+  ]
+}
