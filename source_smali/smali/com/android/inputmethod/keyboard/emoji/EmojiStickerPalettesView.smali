@@ -340,6 +340,10 @@
 
     move-result v1
 
+    if-lez p3, :cond_6
+
+    if-lez v1, :cond_6
+
     sget-object v2, Landroid/graphics/Bitmap$Config;->ARGB_8888:Landroid/graphics/Bitmap$Config;
 
     invoke-static {p3, v1, v2}, Landroid/graphics/Bitmap;->createBitmap(IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;
