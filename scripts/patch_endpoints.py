@@ -59,12 +59,26 @@ public class SmaliDirCompiler {
 """
 
 def find_apktool_jar():
-    for c in [
+    candidates = [
+        os.environ.get("APKTOOL_JAR", ""),
+        os.path.join(os.environ.get("PREFIX", ""), "share", "java", "apktool.jar"),
+        "/data/data/ai.antigem/files/usr/share/java/apktool.jar",
+        "/data/data/com.termux/files/usr/share/java/apktool.jar",
         os.path.expanduser("~/.local/bin/apktool.jar"),
         "/usr/local/bin/apktool.jar",
         "/usr/share/apktool/apktool.jar",
-    ]:
-        if os.path.isfile(c):
+    ]
+    apktool_bin = shutil.which("apktool")
+    if apktool_bin and os.path.isfile(apktool_bin):
+        try:
+            import re
+            txt = open(apktool_bin, "r", encoding="utf-8", errors="ignore").read()
+            for m in re.findall(r'([^\s"\']*apktool[^\s"\']*\.jar)', txt):
+                candidates.append(os.path.expandvars(os.path.expanduser(m)))
+        except Exception:
+            pass
+    for c in candidates:
+        if c and os.path.isfile(c):
             return c
     return None
 

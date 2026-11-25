@@ -79,21 +79,23 @@ jobs:
           COMMIT_SHA=$(git rev-parse --short HEAD)
           COMMIT_MSG=$(git log -1 --pretty=%s)
           CERT_SHA256=$(apksigner verify --print-certs dist/arif-keyboard-final.apk | grep "SHA-256 digest" | head -n 1 | awk '{print $NF}')
+          APK_SHA256=$(sha256sum dist/arif-keyboard-final.apk | awk '{print $1}')
 
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git tag -f latest HEAD
           git push -f origin latest
 
-          NOTES=$(printf '%s\n\n%s\n%s\n%s\n' \
+          NOTES=$(printf '%s\n\n%s\n%s\n%s\n%s\n' \
             "Auto-built standalone APK from \`main\` (\`${COMMIT_SHA}\`): ${COMMIT_MSG}" \
             "- **Package**: \`com.arif.keyboard\`" \
+            "- **APK SHA-256**: \`${APK_SHA256}\`" \
             "- **Signing Certificate SHA-256**: \`${CERT_SHA256}\`" \
             "- **Direct Update Compatible**: Signed with the same persistent keystore as your device build.")
 
           if gh release view latest >/dev/null 2>&1; then
-            gh release upload latest dist/arif-keyboard-final.apk --clobber
+            gh release upload latest dist/arif-keyboard-final.apk dist/arif-keyboard-final.apk.sha256 --clobber
             gh release edit latest --title "Arif Keyboard Latest (${COMMIT_SHA})" --notes "$NOTES"
           else
-            gh release create latest dist/arif-keyboard-final.apk --target main --title "Arif Keyboard Latest (${COMMIT_SHA})" --notes "$NOTES"
+            gh release create latest dist/arif-keyboard-final.apk dist/arif-keyboard-final.apk.sha256 --target main --title "Arif Keyboard Latest (${COMMIT_SHA})" --notes "$NOTES"
           fi

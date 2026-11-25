@@ -99,10 +99,11 @@ def zipalign(in_path, out_path, alignment=4):
         new_cd_end = f_out.tell()
         new_cd_size = new_cd_end - new_cd_start
 
-        # Write EOCD
+        # Write EOCD (preserve 22-byte header without trailing comment mismatches)
         new_eocd = bytearray(data[eocd_idx:eocd_idx+22])
         new_eocd[12:16] = struct.pack('<I', new_cd_size)
         new_eocd[16:20] = struct.pack('<I', new_cd_start)
+        new_eocd[20:22] = b'\x00\x00'
         f_out.write(new_eocd)
 
 if __name__ == '__main__':

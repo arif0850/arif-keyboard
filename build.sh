@@ -25,5 +25,8 @@ fi
 
 apksigner sign --v1-signing-enabled true --v2-signing-enabled true --v3-signing-enabled true --ks debug.keystore --ks-pass pass:android --out dist/arif-keyboard-final.apk dist/arif-keyboard-aligned.apk
 apksigner verify --verbose dist/arif-keyboard-final.apk
+python3 -c 'import zipfile, sys; bad=zipfile.ZipFile("dist/arif-keyboard-final.apk").testzip(); assert bad is None, f"CRC failure on {bad}"; print("ZIP integrity check: OK")'
+sha256sum dist/arif-keyboard-final.apk > dist/arif-keyboard-final.apk.sha256
+cat dist/arif-keyboard-final.apk.sha256
 
 echo "=== Build Complete: dist/arif-keyboard-final.apk ==="
